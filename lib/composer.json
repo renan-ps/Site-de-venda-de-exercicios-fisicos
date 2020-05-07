@@ -1,0 +1,18 @@
+{
+    "name": "renan/personal",
+    "description": "Site de venda e propaganda pessoal de exercícios aeróbicos",
+    "authors": [
+        {
+            "name": "Renan Pereira",
+            "email": "renansoaresinfo@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\":"../classes/",
+            "Models\\":"../models/",
+            "Traits\\":"../traits/"
+        }
+    }
+}
