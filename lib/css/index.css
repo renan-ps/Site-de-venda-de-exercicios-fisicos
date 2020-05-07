@@ -1,6 +1,40 @@
-h1{
+.style-navbar{
 
-    color: pink;
-    font-size: 300px;
-    text-align: center;
+	height: 100px;
+	background-color: #BFBFBA;
+
+}
+
+.container-navbar{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container-navbar .menu{
+
+	display: flex;
+	justify-content: space-around;
+	
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.container-navbar h3{
+
+	color: black;
+}
+
+.menu a{
+	color: black;
+	text-decoration: none;
+}
+
+.carrossel{
+
+	height: 90px!important;
 }
