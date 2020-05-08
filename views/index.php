@@ -24,14 +24,14 @@
 			  	<a class="navbar-brand" href="#"><h3>Personal</h3></a>
 
 				<ul class="menu">
-				 <li><a href="#">Home</a></li>
-				 <li><a href="#">O Personal</a></li>
-				 <li><a href="#">A Consultoria</a></li>
-				 <li><a href="#">Planos</a></li>
-				 <li><a href="#">Como funciona ?</a></li>
-				 <li><a href="#">Por que contratar ?</a></li>
-				 <li><a href="#">Blog</a></li>
-				 <li><a href="#">Loja</a></li>
+				 <li><a href="home.php">Home</a></li>
+				 <li><a href="personal.php">O Personal</a></li>
+				 <li><a href="consultoria.php">A Consultoria</a></li>
+				 <li><a href="planos.php">Planos</a></li>
+				 <li><a href="como-funciona.php">Como funciona ?</a></li>
+				 <li><a href="por-que-contratar.php">Por que contratar ?</a></li>
+				 <li><a href="blog.php">Blog</a></li>
+				 <li><a href="loja.php">Loja</a></li>
 				</ul>
 			</section>
 		</nav>	
