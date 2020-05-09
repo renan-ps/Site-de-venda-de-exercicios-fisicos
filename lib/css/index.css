@@ -34,7 +34,32 @@
 	text-decoration: none;
 }
 
-.carrossel{
+.contatos{
 
-	height: 90px!important;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.duvidas{
+
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+
+.duvidas li{
+
+	list-style: none;
+	margin-right: 5px;
+}
+
+.icon-carta{
+
+	font-size: 55px;
+}
+
+.caracter-do-contato{
+
+	font-weight: bold;
 }
