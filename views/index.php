@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" type="text/css" href="lib/css/reset.css">
-	<link rel="shortcut icon" href="image/personal-icon-2.png">
+	<link rel="shortcut icon" href="image/personal-favicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -18,45 +18,148 @@
 <body>
 	
 	<header>
-		
 		<nav class="navbar navbar-dark style-navbar">
+		  
 		  <section class="container-navbar">
 
-			  	<a class="navbar-brand" href="#"><h3>Personal</h3></a>
+			  	<a class="navbar-brand" href="#"></a>
 
 				<ul class="menu">
-				 <li><a href="home.php">Home</a></li>
-				 <li><a href="personal.php">O Personal</a></li>
-				 <li><a href="consultoria.php">A Consultoria</a></li>
-				 <li><a href="planos.php">Planos</a></li>
-				 <li><a href="como-funciona.php">Como funciona ?</a></li>
-				 <li><a href="por-que-contratar.php">Por que contratar ?</a></li>
-				 <li><a href="blog.php">Blog</a></li>
-				 <li><a href="loja.php">Loja</a></li>
+					<li><a class="cor-padrao" href="home.php">Home</a></li>
+					<li><a class="cor-padrao" href="personal.php">O Personal</a></li>
+					<li><a class="cor-padrao" href="consultoria.php">A Consultoria</a></li>
+					<li><a class="cor-padrao" href="planos.php">Planos</a></li>
+					<li><a class="cor-padrao" href="como-funciona.php">Como funciona ?</a></li>
+					<li><a class="cor-padrao" href="por-que-contratar.php">Por que contratar ?</a></li>
+					<li><a class="cor-padrao" href="blog.php">Blog</a></li>
+					<li><a class="cor-padrao" href="loja.php">Loja</a></li>
 				</ul>
+
 			</section>
+
 		</nav>	
 	</header>
 
 	<main>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
-		<p>.</p>
+
+		<section class="artigos">
+
+			<h1 class="titulo-artigos cor-padrao">Artigos</h1>
+			
+			<div class="dicas">
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Como emagrecer treinando em casa</p>
+						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos […]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Consultoria fitness online.<br>Como funciona?</p>
+						<p class="dica-texto cor-padrao">Gostaria de mudar seu corpo mas está sem foco na academia? Conheça a minha consultoria fitness online[…]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+				<ul class="imagem-e-texto">
+
+					<li class="imagem-dica">
+						<img src="image/imagem-artigo.jpg">
+					</li>
+
+					<li>
+						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
+					</li>
+
+					<li class="leia-mais">
+						<p>&#128366;</p>
+						<a href="leia-mais.php">Leia mais</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</section>
+
 	</main>
 
 
@@ -70,12 +173,12 @@
 	  	<div class="contatos">
 
 	  		<ul class="duvidas">
-	  			<li class="icon-carta">&#9993;</li> 
+	  			<li class="icon-contato">&#9993;</li> 
 	  			<li class="caracter-do-contato">Você ainda tem dúvidas ?<br>ygor-renan-joalison@gmail.com</li>
 	  		</ul>
 
 	  		<ul class="duvidas">
-	  			<li class="icon-carta">&#9743;</li> 
+	  			<li class="icon-contato">&#9743;</li> 
 	  			<li class="caracter-do-contato">Telefone<br>(21) 9999-9999</li>
 	  		</ul>
 	  	</div>
