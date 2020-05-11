@@ -27,12 +27,12 @@
 				<ul class="menu">
 					<li><a class="cor-padrao" href="<?php echo DIRPAGE.'home'; ?>">Home</a></li>
 					<li><a class="cor-padrao" href="<?php echo DIRPAGE.'personal'; ?>">O Personal</a></li>
-					<li><a class="cor-padrao" href="consultoria.php">A Consultoria</a></li>
-					<li><a class="cor-padrao" href="planos.php">Planos</a></li>
-					<li><a class="cor-padrao" href="como-funciona.php">Como funciona ?</a></li>
-					<li><a class="cor-padrao" href="por-que-contratar.php">Por que contratar ?</a></li>
-					<li><a class="cor-padrao" href="blog.php">Blog</a></li>
-					<li><a class="cor-padrao" href="loja.php">Loja</a></li>
+					<li><a class="cor-padrao" href="consultoria">A Consultoria</a></li>
+					<li><a class="cor-padrao" href="planos">Planos</a></li>
+					<li><a class="cor-padrao" href="como-funciona">Como funciona ?</a></li>
+					<li><a class="cor-padrao" href="por-que-contratar">Por que contratar ?</a></li>
+					<li><a class="cor-padrao" href="blog">Blog</a></li>
+					<li><a class="cor-padrao" href="loja">Loja</a></li>
 				</ul>
 
 			</section>
@@ -61,7 +61,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -79,7 +79,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -97,7 +97,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -115,7 +115,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -133,7 +133,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -151,7 +151,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
