@@ -56,7 +56,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Como emagrecer treinando em casa</p>
-						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos a[…]</p>
+						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos a solução ideal para esse[…]</p>
 					</li>
 
 					<li class="leia-mais">
@@ -92,7 +92,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo.  Em todo programa de treinamento voltado para o esforço físico em jejum[…]</p>
 					</li>
 
 					<li class="leia-mais">
