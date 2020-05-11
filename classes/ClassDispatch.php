@@ -72,9 +72,10 @@ class ClassDispatch{
         if(file_exists($dirAbs.$this->file.'.php')){
             $this->page=$dirAbs.$this->file.'.php';
         }elseif(file_exists($dirAbs.'index.php')){
-            $this->page = $dirAbs.'index.php';
+            //$this->page=$dirAbs.'index.php';
+            $this->page=DIRREQ.'views/404.php';
         }else{
-            $this->page = DIRREQ.'views/404.php';
+            $this->page=DIRREQ.'views/404.php';
         }
     }
 
