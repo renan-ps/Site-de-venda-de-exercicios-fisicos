@@ -1,5 +1,6 @@
 <?php echo \Classes\ClassLayout::setHeader('Homepage', "", ""); ?>
 
+
 		<section class="artigos">
 
 			<h1 class="titulo-artigos cor-padrao">Artigos</h1>
@@ -19,7 +20,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -37,7 +38,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -55,7 +56,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -73,7 +74,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -91,7 +92,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
@@ -109,7 +110,7 @@
 
 					<li class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais.php">Leia mais</a>
+						<a href="leia-mais">Leia mais</a>
 					</li>
 
 				</ul>
