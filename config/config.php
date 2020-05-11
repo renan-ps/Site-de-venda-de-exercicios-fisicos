@@ -1,5 +1,8 @@
 <?php
 
+#Informações do site
+define('NAME', "Projeto Tuga");
+
 #Caminhos absolutos
 $pastaInterna="personal/";
 define('DIRPAGE',"http://{$_SERVER['HTTP_HOST']}/{$pastaInterna}");

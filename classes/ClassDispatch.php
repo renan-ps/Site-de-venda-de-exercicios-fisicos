@@ -51,7 +51,7 @@ class ClassDispatch{
                     $this->dir.='views/';
                 }
 
-                if(is_dir($this->dir.=$this->url[$i])){
+                if(is_dir($this->dir.$this->url[$i])){
                     $this->dir.=$this->url[$i].'/';
                 }else{
                     $this->file=$this->url[$i];
