@@ -25,8 +25,8 @@
 			  	<a class="navbar-brand" href="#"></a>
 
 				<ul class="menu">
-					<li><a class="cor-padrao" href="home.php">Home</a></li>
-					<li><a class="cor-padrao" href="personal.php">O Personal</a></li>
+					<li><a class="cor-padrao" href="<?php echo DIRPAGE.'home'; ?>">Home</a></li>
+					<li><a class="cor-padrao" href="<?php echo DIRPAGE.'personal'; ?>">O Personal</a></li>
 					<li><a class="cor-padrao" href="consultoria.php">A Consultoria</a></li>
 					<li><a class="cor-padrao" href="planos.php">Planos</a></li>
 					<li><a class="cor-padrao" href="como-funciona.php">Como funciona ?</a></li>
