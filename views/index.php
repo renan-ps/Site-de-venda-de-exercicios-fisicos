@@ -56,7 +56,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Como emagrecer treinando em casa</p>
-						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos […]</p>
+						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos a[…]</p>
 					</li>
 
 					<li class="leia-mais">
@@ -74,7 +74,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Consultoria fitness online.<br>Como funciona?</p>
-						<p class="dica-texto cor-padrao">Gostaria de mudar seu corpo mas está sem foco na academia? Conheça a minha consultoria fitness online[…]</p>
+						<p class="dica-texto cor-padrao">Gostaria de mudar seu corpo mas está sem foco na academia? Conheça a minha consultoria[…]</p>
 					</li>
 
 					<li class="leia-mais">
@@ -127,7 +127,7 @@
 					</li>
 
 					<li>
-						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
+						<p class="titulo-dica-texto  cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
 						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
 					</li>
 
@@ -282,6 +282,10 @@
 	  </div>
 	 
 	</footer>
+
+	<script src="views/js/jquery.js"></script>
+	<script src="views/js/index.js"></script>
+
 
 </body>
 </html>
