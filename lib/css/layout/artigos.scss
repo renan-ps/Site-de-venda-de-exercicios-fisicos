@@ -1,0 +1,96 @@
+/*Artigos*/
+.artigos{
+	
+	width: 80%;
+	margin: 0 auto;
+
+	margin-top: 3.5em;
+	margin-bottom: 2em;
+}
+
+
+.titulo-artigos{
+
+	@include text-center;
+	@include cor-padrao;
+}
+
+.dicas{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	width: 100%;
+	margin-top: 3.5em;
+}
+
+
+.imagem-e-texto{
+
+	width: 31.8%;
+	height: 34em;
+	border: 1px solid #cccccc;
+	box-shadow: 0.2em 0.2em 0.2em #cccccc;
+	margin-bottom: 2em;
+	padding: 0.9em;
+
+	@media (max-width: 1105px){
+
+	    width: 47%;	
+	}
+
+	@media (max-width: 770px){
+
+		width: 100%;
+		border: none;
+		box-shadow: none;
+		height: 32em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.imagem-dica img {
+
+	width: 100%;
+}
+
+
+.titulo-dica-texto{
+
+	margin-top: 1em;
+	@include font-size-padrao(1.7em);
+	@include cor-padrao;
+	@include text-center;
+}
+
+
+.dica-texto{
+
+	@include font-weight-bold;
+	@include text-center;
+	@include cor-padrao;	
+}
+
+
+.leia-mais{
+
+	display: flex;
+	justify-content: flex-end;	
+}
+
+
+.leia-mais a{
+
+	@include font-size-padrao;
+	color: #87D5FF;
+	margin-left: 0.6em;
+	@include font-weight-bold;
+	margin-right: 1em;
+}
+
+
+.leia-mais p{
+
+	@include font-size-padrao;
+	color: black;
+}

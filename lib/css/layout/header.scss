@@ -1,0 +1,36 @@
+/*Header*/
+.style-navbar{
+
+	height: 7em;
+	background-color: #BFBFBA;
+}
+
+
+.container-navbar{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.menu{
+
+	display: flex;
+	justify-content: space-around;
+	
+	width: 100%;
+	margin-bottom: 0;
+}
+
+
+
+.menu a{
+
+	text-decoration: none;
+	@include cor-padrao;
+}
+

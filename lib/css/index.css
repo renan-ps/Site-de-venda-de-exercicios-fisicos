@@ -1,200 +1,130 @@
 /*Header*/
-.style-navbar{
+.style-navbar {
+  height: 7em;
+  background-color: #BFBFBA; }
 
-	height: 7em;
-	background-color: #BFBFBA;
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto; }
 
-}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0; }
 
-.cor-padrao{
-
-	color: #1A1B16;
-}
-
-.container-navbar{
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	width: 80%;
-	margin: 0 auto;
-}
-
-.menu{
-
-	display: flex;
-	justify-content: space-around;
-	
-	width: 100%;
-	margin-bottom: 0;
-	color: red;
-}
-
-.container-navbar h3{
-
-	color: black;
-}
-
-.menu a{
-	text-decoration: none;
-}
+.menu a {
+  text-decoration: none;
+  color: #1A1B16; }
 
 /*Artigos*/
+.artigos {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3.5em;
+  margin-bottom: 2em; }
 
-.artigos{
-	
-	width: 80%;
-	margin: 0 auto;
+.titulo-artigos {
+  text-align: center;
+  color: #1A1B16; }
 
-	margin-top: 3.5em;
-	margin-bottom: 2em;
+.dicas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3.5em; }
 
-}
-
-
-.titulo-artigos{
-
-	text-align: center;
-}
-
-.dicas{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-
-	width: 100%;
-	margin-top: 3.5em;
-}
-
-
-.imagem-e-texto{
-
-	width: 31.5%;
-	height: 32em;
-	border: 1px solid #cccccc;
-	box-shadow: 0.2em 0.2em 0.2em #cccccc;
-	margin-bottom: 2em;
-	padding: 8px;
-
-}
-
+.imagem-e-texto {
+  width: 31.8%;
+  height: 34em;
+  border: 1px solid #cccccc;
+  box-shadow: 0.2em 0.2em 0.2em #cccccc;
+  margin-bottom: 2em;
+  padding: 0.9em; }
+  @media (max-width: 1105px) {
+    .imagem-e-texto {
+      width: 47%; } }
+  @media (max-width: 770px) {
+    .imagem-e-texto {
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      height: 32em;
+      margin-bottom: 0.5em; } }
 
 .imagem-dica img {
+  width: 100%; }
 
-	width: 100%;
+.titulo-dica-texto {
+  margin-top: 1em;
+  font-size: 1.7em;
+  color: #1A1B16;
+  text-align: center; }
 
-}
+.dica-texto {
+  font-weight: bold;
+  text-align: center;
+  color: #1A1B16; }
 
-.titulo-dica-texto{
+.leia-mais {
+  display: flex;
+  justify-content: flex-end; }
 
-	margin-top: 1em;
-	font-size: 2em;
-	text-align: center;
-}
+.leia-mais a {
+  font-size: 1em;
+  color: #87D5FF;
+  margin-left: 0.6em;
+  font-weight: bold;
+  margin-right: 1em; }
 
-.dica-texto{
-
-	font-weight: bold;
-	text-align: center;
-	
-}
-
-.leia-mais{
-
-	display: flex;
-	justify-content: flex-end;
-	
-}
-
-.leia-mais a{
-
-	font-size: 1em;
-	color: #87D5FF;
-	margin-left: 0.6em;
-	font-weight: bold;
-	margin-right: 1em;
-}
-
-.leia-mais p{
-
-	font-size: 1em;
-	color: black;
-}
-
-.rede-social{
-
-	text-align: center!important;
-}
-
-
+.leia-mais p {
+  font-size: 1em;
+  color: black; }
 
 /*Footer*/
-.contatos{
+.contatos {
+  display: flex;
+  justify-content: space-around; }
+  @media (max-width: 510px) {
+    .contatos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20%;
+      padding-right: 10%; } }
 
-	display: flex;
-	justify-content: space-around;
-}
+.duvidas {
+  display: flex;
+  align-items: center;
+  padding: 0; }
 
+.duvidas li {
+  list-style: none;
+  margin-right: 0.2em; }
 
-.duvidas{
+.icon-contato {
+  font-size: 4em;
+  color: #fff !important; }
+  @media (max-width: 371px) {
+    .icon-contato {
+      font-size: 3em; } }
 
-	display: flex;
-	align-items: center;
-	padding: 0;
-}
+.caracter-do-contato {
+  font-weight: bold;
+  color: #fff !important;
+  font-size: 1em; }
+  @media (max-width: 371px) {
+    .caracter-do-contato {
+      font-size: 0.7em; } }
 
-.duvidas li{
+.rede-social {
+  text-align: center !important; }
 
-	list-style: none;
-	margin-right: 0.2em;
-}
+.rede-social i, .copyright-style {
+  color: #fff !important; }
 
-.icon-contato{
-
-	font-size: 4em;
-}
-
-.caracter-do-contato{
-
-	font-weight: bold;
-}
-
-
-
-@media (max-width: 1105px){
-
-
-	.imagem-e-texto{
-
-	width: 47%;
-
-	}
-}
-
-@media (max-width: 742px){
-
-	.imagem-e-texto{
-
-	width: 95%;
-	border: none;
-	box-shadow: none;
-
-	}
-}
-
-@media (max-width: 510px){
-
-	.contatos{
-
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 20%;
-	padding-right: 10%;
-	}
-
-}
-
-
-
+/*# sourceMappingURL=index.css.map */
