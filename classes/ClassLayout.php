@@ -31,11 +31,11 @@ class ClassLayout{
 		$html .= "                <a class='navbar-brand' href='#'></a>\n";
 		$html .= "                <ul class='menu'>\n";
 		$html .= "                    <li><a class='cor-padrao' href='<?php echo DIRPAGE; ?>'>Home</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='<?php echo DIRPAGE.'personal'; ?>'>O Personal</a></li>\n";
+		$html .= "                    <li><a class='cor-padrao' href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
 		$html .= "                    <li><a class='cor-padrao' href='consultoria'>A Consultoria</a></li>\n";
 		$html .= "                    <li><a class='cor-padrao' href='planos'>Planos</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='como-funciona'>Como funciona?</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='por-que-contratar'>Por que contratar?</a></li>\n";
+		$html .= "                    <li><a class='cor-padrao' href='como-funciona'>Como funciona ?</a></li>\n";
+		$html .= "                    <li><a class='cor-padrao' href='por-que-contratar'>Por que contratar ?</a></li>\n";
 		$html .= "                    <li><a class='cor-padrao' href='blog'>Blog</a></li>\n";
 		$html .= "                    <li><a class='cor-padrao' href='loja'>Loja</a></li>\n";
 		$html .= "              </ul>\n\n";
@@ -138,7 +138,7 @@ class ClassLayout{
               </div>
         
               <!--Redes sociais-->
-              <div class='col-md-6 mb-3 col-lg-7 text-center text-md-right'>
+              <div class='mb-3 text-center text-md-right rede-social'>
         
         
                 <a class='fb-ic' href='https://www.facebook.com/ygor.regato.5'>

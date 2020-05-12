@@ -1,6 +1,7 @@
 <?php echo \Classes\ClassLayout::setHeader('Homepage', "", ""); ?>
 
 
+
 		<section class="artigos">
 
 			<h1 class="titulo-artigos cor-padrao">Artigos</h1>
@@ -51,7 +52,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo.  Em todo programa de treinamento voltado para o esforço físico em jejum[…]</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
 					</li>
 
 					<li class="leia-mais">
@@ -119,4 +120,4 @@
 
 		</section>
 
-<?php echo Classes\ClassLayout::setFooter(); ?>
+<?php echo \Classes\ClassLayout::setFooter() ?>
