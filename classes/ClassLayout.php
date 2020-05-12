@@ -30,14 +30,14 @@ class ClassLayout{
         $html .= "            <section class='container-navbar'>\n\n";
 		$html .= "                <a class='navbar-brand' href='#'></a>\n";
 		$html .= "                <ul class='menu'>\n";
-		$html .= "                    <li><a class='cor-padrao' href='<?php echo DIRPAGE; ?>'>Home</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='consultoria'>A Consultoria</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='planos'>Planos</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='como-funciona'>Como funciona ?</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='por-que-contratar'>Por que contratar ?</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='blog'>Blog</a></li>\n";
-		$html .= "                    <li><a class='cor-padrao' href='loja'>Loja</a></li>\n";
+		$html .= "                    <li><a href='<?php echo DIRPAGE; ?>'>Home</a></li>\n";
+		$html .= "                    <li><a href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
+		$html .= "                    <li><a href='consultoria'>A Consultoria</a></li>\n";
+		$html .= "                    <li><a href='planos'>Planos</a></li>\n";
+		$html .= "                    <li><a href='como-funciona'>Como funciona ?</a></li>\n";
+		$html .= "                    <li><a href='por-que-contratar'>Por que contratar ?</a></li>\n";
+		$html .= "                    <li><a  href='blog'>Blog</a></li>\n";
+		$html .= "                    <li><a href='loja'>Loja</a></li>\n";
 		$html .= "              </ul>\n\n";
 		$html .= "            </section>\n\n";
 		$html .= "        </nav>\n\n";
@@ -61,7 +61,7 @@ class ClassLayout{
         
                     <ul class='duvidas'>
                         <li class='icon-contato'>&#9993;</li>
-                        <li class='caracter-do-contato'>Você ainda tem dúvidas ?<br>ygor-renan-joalison@gmail.com</li>
+                        <li class='caracter-do-contato'>Você ainda tem dúvidas ?<br>ygrejo@gmail.com</li>
                     </ul>
         
                     <ul class='duvidas'>
@@ -137,24 +137,26 @@ class ClassLayout{
                 </div>
               </div>
         
+
               <!--Redes sociais-->
+
               <div class='mb-3 text-center text-md-right rede-social'>
         
         
                 <a class='fb-ic' href='https://www.facebook.com/ygor.regato.5'>
-                  <i class='fab fa-facebook-f white-text mr-4'> </i>
+                  <i class='fab fa-facebook-f mr-4'> </i>
                 </a>
         
                 <a class='tw-ic'>
-                  <i class='fab fa-twitter white-text mr-4'> </i>
+                  <i class='fab fa-twitter mr-4'> </i>
                 </a>
         
                 <a class='li-ic'>
-                  <i class='fab fa-linkedin-in white-text mr-4'> </i>
+                  <i class='fab fa-linkedin-in mr-4'> </i>
                 </a>
         
                 <a class='ins-ic'>
-                  <i class='fab fa-instagram white-text mr-4'> </i>
+                  <i class='fab fa-instagram mr-4'> </i>
                 </a>
         
                 <a class='ins-ic'>
@@ -164,8 +166,9 @@ class ClassLayout{
               </div>
         
               <!--Copyright-->
-              <div class='footer-copyright text-center py-3'>©Copyright 2020 |
-                <a href='https://mdbootstrap.com/'> José Personal. Todos os Direitos Reservados. Criado pela equipe YgReJo</a>
+
+              <div class=' text-center py-3 copyright-style' >©Copyright 2020 |
+                <a class='copyright-style' href='copyright'> José Personal. Todos os Direitos Reservados. Criado pela equipe YgReJo</a>
               </div>
         
             </footer>
