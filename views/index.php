@@ -92,7 +92,7 @@
 
 					<li>
 						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo.  Em todo programa de treinamento voltado para o esforço físico em jejum[…]</p>
+						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
 					</li>
 
 					<li class="leia-mais">
@@ -174,12 +174,12 @@
 
 	  		<ul class="duvidas">
 	  			<li class="icon-contato">&#9993;</li> 
-	  			<li class="caracter-do-contato">Você ainda tem dúvidas ?<br>ygor-renan-joalison@gmail.com</li>
+	  			<li class="caracter-do-contato">Você ainda tem dúvidas ?<br>ygrejo@gmail.com</li>
 	  		</ul>
 
 	  		<ul class="duvidas">
 	  			<li class="icon-contato">&#9743;</li> 
-	  			<li class="caracter-do-contato">Telefone<br>(21) 9999-9999</li>
+	  			<li class="caracter-do-contato">Telefone:<br>(21) 9999-9999</li>
 	  		</ul>
 	  	</div>
 
@@ -251,28 +251,28 @@
 	  </div>
 	  
 	  <!--Redes sociais-->
-      <div class="col-md-6 mb-3 col-lg-7 text-center text-md-right">
+      <div class=" mb-3 text-center text-md-right rede-social">
 
           
-        <a class="fb-ic" href="https://www.facebook.com/ygor.regato.5">
-          <i class="fab fa-facebook-f white-text mr-4"> </i>
-        </a>
-          
-        <a class="tw-ic">
-          <i class="fab fa-twitter white-text mr-4"> </i>
-        </a>
-          
-        <a class="li-ic">
-          <i class="fab fa-linkedin-in white-text mr-4"> </i>
-        </a>
-          
-        <a class="ins-ic">
-          <i class="fab fa-instagram white-text mr-4"> </i>
-        </a>
+	       <a class="fb-ic" href="https://www.facebook.com/ygor.regato.5">
+	         <i class="fab fa-facebook-f white-text mr-4"> </i>
+	       </a>
+	          
+	       <a class="tw-ic">
+	         <i class="fab fa-twitter white-text mr-4"> </i>
+	       </a>
+	          
+	       <a class="li-ic">
+	         <i class="fab fa-linkedin-in white-text mr-4"> </i>
+	       </a>
+	          
+	       <a class="ins-ic">
+	         <i class="fab fa-instagram white-text mr-4"> </i>
+	       </a>
 
-        <a class="ins-ic">
-          <i class="fab fa-youtube"></i> </i>
-        </a>
+	       <a class="ins-ic">
+	         <i class="fab fa-youtube"></i> </i>
+	       </a>
 
       </div>
       
@@ -283,8 +283,8 @@
 	 
 	</footer>
 
-	<script src="views/js/jquery.js"></script>
-	<script src="views/js/index.js"></script>
+	<script src="lib/js/jquery.js"></script>
+	<script src="lib/js/index.js"></script>
 
 
 </body>

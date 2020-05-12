@@ -1,7 +1,7 @@
 /*Header*/
 .style-navbar{
 
-	height: 100px;
+	height: 7em;
 	background-color: #BFBFBA;
 
 }
@@ -40,8 +40,96 @@
 	text-decoration: none;
 }
 
+/*Artigos*/
 
-/*Contatos*/
+.artigos{
+	
+	width: 80%;
+	margin: 0 auto;
+
+	margin-top: 3.5em;
+	margin-bottom: 2em;
+
+}
+
+
+.titulo-artigos{
+
+	text-align: center;
+}
+
+.dicas{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	width: 100%;
+	margin-top: 3.5em;
+}
+
+
+.imagem-e-texto{
+
+	width: 31.5%;
+	height: 32em;
+	border: 1px solid #cccccc;
+	box-shadow: 0.2em 0.2em 0.2em #cccccc;
+	margin-bottom: 2em;
+	padding: 8px;
+
+}
+
+
+.imagem-dica img {
+
+	width: 100%;
+
+}
+
+.titulo-dica-texto{
+
+	margin-top: 1em;
+	font-size: 2em;
+	text-align: center;
+}
+
+.dica-texto{
+
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.leia-mais{
+
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.leia-mais a{
+
+	font-size: 1em;
+	color: #87D5FF;
+	margin-left: 0.6em;
+	font-weight: bold;
+	margin-right: 1em;
+}
+
+.leia-mais p{
+
+	font-size: 1em;
+	color: black;
+}
+
+.rede-social{
+
+	text-align: center!important;
+}
+
+
+
+/*Footer*/
 .contatos{
 
 	display: flex;
@@ -59,12 +147,12 @@
 .duvidas li{
 
 	list-style: none;
-	margin-right: 5px;
+	margin-right: 0.2em;
 }
 
 .icon-contato{
 
-	font-size: 55px;
+	font-size: 4em;
 }
 
 .caracter-do-contato{
@@ -72,77 +160,41 @@
 	font-weight: bold;
 }
 
-/*Artigos*/
 
-.artigos{
-	
-	width: 1100px;
-	margin: 0 auto;
 
-	margin-top: 40px;
-	margin-bottom: 80px;
+@media (max-width: 1105px){
 
+
+	.imagem-e-texto{
+
+	width: 47%;
+
+	}
 }
 
+@media (max-width: 742px){
 
-.titulo-artigos{
+	.imagem-e-texto{
 
-	text-align: center;
+	width: 95%;
+	border: none;
+	box-shadow: none;
+
+	}
 }
 
-.dicas{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+@media (max-width: 510px){
 
-	width: 100%;
-	margin-top: 60px;
-}
-
-
-.imagem-e-texto{
-
-	width: 31.5%;
-}
-
-
-.imagem-dica img {
-
-	width: 100%;
-}
-
-.titulo-dica-texto{
-
-	margin-top: 30px;
-	font-size: 2em;
-	text-align: center;
-}
-
-.dica-texto{
-
-	font-weight: bold;
-	text-align: center;
-	
-}
-
-.leia-mais{
+	.contatos{
 
 	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 70px;
-	
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20%;
+	padding-right: 10%;
+	}
+
 }
 
-.leia-mais a{
 
-	color: #87D5FF;
-	margin-left: 8px;
-	font-weight: bold;
-	margin-right: 7px;
-}
 
-.leia-mais p{
-
-	font-size: 17px;
-	color: black;
-}
