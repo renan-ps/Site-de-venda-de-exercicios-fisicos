@@ -38,37 +38,66 @@
   width: 100%;
   margin-top: 3.5em; }
 
-.imagem-e-texto {
-  width: 31.8%;
-  height: 34em;
-  border: 1px solid #cccccc;
-  box-shadow: 0.2em 0.2em 0.2em #cccccc;
-  margin-bottom: 2em;
-  padding: 0.9em; }
-  @media (max-width: 1105px) {
-    .imagem-e-texto {
+.container-dicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  margin-bottom: 1.5em; }
+  @media (max-width: 800px) {
+    .container-dicas {
       width: 47%; } }
-  @media (max-width: 770px) {
-    .imagem-e-texto {
-      width: 100%;
-      border: none;
-      box-shadow: none;
-      height: 32em;
-      margin-bottom: 0.5em; } }
+  @media (max-width: 615px) {
+    .container-dicas {
+      width: 100%; } }
 
-.imagem-dica img {
-  width: 100%; }
+.imagem {
+  width: auto;
+  height: auto;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+  padding: 0.5em; }
+  @media (max-width: 800px) {
+    .imagem {
+      width: 100%;
+      margin-bottom: 0.5em;
+      border: none;
+      box-shadow: none; } }
+
+.imagem img {
+  max-width: 100%; }
+
+.box-dicas {
+  width: 100%;
+  height: auto;
+  padding: 0.1em;
+  margin-bottom: 0.2em; }
 
 .titulo-dica-texto {
-  margin-top: 1em;
-  font-size: 1.7em;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+  margin-top: 0.1em;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5em;
   color: #1A1B16;
   text-align: center; }
 
 .dica-texto {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: Ellipsis;
+  width: 90%;
+  margin: 0 auto;
   font-weight: bold;
   text-align: center;
   color: #1A1B16; }
+
+.box-leia-mais {
+  width: 100%;
+  align-items: flex-end; }
 
 .leia-mais {
   display: flex;

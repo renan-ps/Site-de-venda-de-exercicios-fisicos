@@ -7,22 +7,30 @@ class ClassLayout{
 
     public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
         $html = "<!DOCTYPE html>\n";
-        $html .= "<html lang='pt-br'>\n";
+        $html .= "<html lang='pt-pt'>\n";
         $html .= "<head>\n";
         $html .= "    <title>".NAME." - $title</title>\n\n";
 
         $html .= "    <meta charset='utf-8'>\n";
-        $html .= "    <meta name='viewport' content='width=device-width'>\n";
+        $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
+        $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
+
+        $html .= "    <a href='https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        z-index:1000;' target='_blank'>
+        <i style='margin-top:16px' class='fab fa-whatsapp'></i>
+        </a>\n";
+
         $html .= "    <meta name='description' content='$description'>\n";
         $html .= "    <meta name='author' content='$author'>\n\n";
 
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css\n'>";
-        $html .= "    <link rel='shortcut icon' href='".DIRIMG."personal-favicon.png'>\n";
+        $html .= "    <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>\n";
         $html .= "    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>";
         $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css' rel='stylesheet'>\n";
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/index.css'>\n";
+
         $html .= "</head>\n\n";
         $html .= "<body>\n";
         $html .= "    <header>\n\n";
@@ -30,7 +38,7 @@ class ClassLayout{
         $html .= "            <section class='container-navbar'>\n\n";
 		$html .= "                <a class='navbar-brand' href='#'></a>\n";
 		$html .= "                <ul class='menu'>\n";
-		$html .= "                    <li><a href='<?php echo DIRPAGE; ?>'>Home</a></li>\n";
+		$html .= "                    <li><a href='" . DIRPAGE. "'>Home</a></li>\n";
 		$html .= "                    <li><a href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
 		$html .= "                    <li><a href='consultoria'>A Consultoria</a></li>\n";
 		$html .= "                    <li><a href='planos'>Planos</a></li>\n";
@@ -173,8 +181,8 @@ class ClassLayout{
         
             </footer>
         
-            <script src='views/js/jquery.js'></script>
-            <script src='views/js/index.js'></script>
+            <script src='lib/js/jquery.js'></script>
+            <script src='lib/js/index.js'></script>
         
         
         </body>
@@ -183,3 +191,30 @@ class ClassLayout{
         return $html;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
