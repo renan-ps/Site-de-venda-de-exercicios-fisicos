@@ -29,7 +29,7 @@ class ClassLayout{
         $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css' rel='stylesheet'>\n";
-        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/index.css'>\n";
+        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
 
         $html .= "</head>\n\n";
         $html .= "<body>\n";

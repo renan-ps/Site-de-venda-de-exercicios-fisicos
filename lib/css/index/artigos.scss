@@ -10,10 +10,11 @@
 
 
 .titulo-artigos{
-
+	
 	@include text-center;
 	@include cor-padrao;
 }
+
 
 .dicas{
 
@@ -24,6 +25,7 @@
 	width: 100%;
 	margin-top: 3.5em;
 }
+
 
 .container-dicas{
 
@@ -43,7 +45,6 @@
 
 		width: 100%;
 	}
-
 }
 
 
@@ -51,33 +52,31 @@
 
 	width: auto;
 	height: auto;
-	border: 1px solid #cccccc;
-	box-shadow: 0 .125rem .25rem rgba(0,0,0,0.5);
 	margin-bottom: 1em;
 	padding: 0.5em;
+
 
 
 	@media (max-width: 800px){
 
 		width: 100%;
 		margin-bottom: 0.5em;
-		border: none;
-		box-shadow: none;
-		
 	}
 }
 
 .imagem img {
 
 	max-width: 100%;
+	@include border-radius-default;
 }
 
 .box-dicas{
  
-	width: 100%;
+	width: 95%;
 	height: auto;
 	padding: 0.1em;
 	margin-bottom: 0.2em;
+	border: 0.5px solid #F2F2F2;
 }
 
 .titulo-dica-texto{
@@ -87,13 +86,10 @@
     text-overflow: Ellipsis;
 
 	margin-top: 0.1em;
-	width: 100%;
-	margin:0 auto;
 
 	@include font-size-padrao(1.5em);
 	@include cor-padrao;
 	@include text-center;
-
 }
 
 
@@ -103,13 +99,10 @@
     overflow: hidden;
     text-overflow: Ellipsis;
 
-	width: 90%;
-	margin:0 auto;
-
+	@include alinha-elemento-centro(90%);
 	@include font-weight-bold;
 	@include text-center;
-	@include cor-padrao;
-		
+	@include cor-padrao;	
 }
 
 .box-leia-mais{
@@ -129,9 +122,10 @@
 .leia-mais a{
 
 	@include font-size-padrao;
+	@include font-weight-bold;
+	
 	color: #87D5FF;
 	margin-left: 0.6em;
-	@include font-weight-bold;
 	margin-right: 1em;
 }
 
@@ -141,5 +135,14 @@
 	@include font-size-padrao;
 	color: black;
 }
+
+.efeito-grid-js{
+	
+	object-fit: cover;
+	opacity: 0.7;
+	transform: scale(1.03);
+	transition: 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
 
 

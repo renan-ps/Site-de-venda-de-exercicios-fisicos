@@ -1,0 +1,136 @@
+/*Principal com propagandas*/
+
+.article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.propaganda-left {
+    width: $largura-propagandas;
+    @include text-center;
+    border-right: $borda-lateral-padrao;
+}
+
+.propaganda-left p {
+    margin-top: 3em;
+}
+
+.grid-principal {
+    width: 50%;
+    @include text-center;
+    margin-bottom: 1em;
+}
+
+.grid-principal h2 {
+    margin-top: 4%;
+}
+
+.primeira-imagem {
+    @include width-img-text-articles(85%);
+    height: auto;
+    margin: 2em auto 1em;
+    @include border-radius-default;
+    @include box-shadow-default;
+}
+
+.primeiro-texto {
+    @include width-img-text-articles(85%);
+    margin: 0 auto 5em;
+    @include font-size-padrao(1.3em);
+}
+
+.grid-princ-imagem {
+    height: auto;
+    margin: 2em auto 1em;
+    @include width-img-text-articles;
+    @include box-shadow-default;
+}
+
+.grid-princ-imagem img,
+.primeira-imagem img {
+    width: 100%;
+    @include border-radius-default;
+}
+
+.grid-princ-texto {
+    @include width-img-text-articles;
+    margin: 0 auto 5em;
+    @include font-size-padrao(1.3em);
+}
+
+.links {
+    margin-bottom: 3em;
+}
+
+.links,
+.links p,
+a {
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.links p {
+    margin-bottom: 0.5em;
+    color: $cor-padrao;
+    @include font-weight-bold;
+}
+
+.links a {
+    @include font-weight-bold;
+    text-decoration: underline;
+}
+
+.links li:before {
+    content: "\2713";
+}
+
+.grid-imagem-alongamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-imagem-alongamento img {
+    width: 32%;
+    margin-bottom: 2%;
+}
+
+.princ-texto-girls {
+    @include width-img-text-articles;
+    margin: 0 auto 1em;
+    font-size: 1.3em;
+}
+
+.exercicio-queima-caloria {
+    @include width-img-text-articles;
+    margin: 0 auto 1em;
+    font-size: 1.3em;
+}
+
+.polichinelos {
+    text-align: left;
+    margin: 3em 0 0.2em;
+    font-weight: bold;
+}
+
+.iframe-polichinelo {
+    @include width-img-text-articles;
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto 1em;
+}
+
+.iframe-polichinelo iframe {
+    width: 100%;
+    height: 20em;
+}
+
+.propaganda-right {
+    width: $largura-propagandas;
+    @include text-center;
+    border-left: $borda-lateral-padrao;
+}
+
+.propaganda-right p {
+    margin-top: 3em;
+}
