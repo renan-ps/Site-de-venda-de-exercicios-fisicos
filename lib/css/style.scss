@@ -1,24 +1,14 @@
-
 @import "helpers/variaveis";
 @import "helpers/mixins";
-
-
 @import "index/header";
+@import "index/carousel";
+@import "index/apresentacao";
+@import "index/depoimentos";
 @import "index/artigos";
+@import "index/parallax-divider";
+@import "index/parallax-divider1";
 @import "index/footer";
-
-@import "artigo-um/imagem";
-@import "artigo-um/principal-com-propaganda";
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import "dica/imagem";
+@import "dica/article";
+@import "dica/form";
+@import "erro-404/erro-404";

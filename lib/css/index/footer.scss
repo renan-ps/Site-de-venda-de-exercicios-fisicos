@@ -1,69 +1,54 @@
 /*Footer*/
-.contatos{
 
-	display: flex;
-	justify-content: space-around;
-
-	@media (max-width: 510px){
-
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			margin-left: 20%;
-			padding-right: 10%;
-	}
+.color-footer {
+    background-color: #0E0E1A;
 }
 
-
-.duvidas{
-
-	display: flex;
-	align-items: center;
-	padding: 0;
+.contatos {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 510px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20%;
+        padding-right: 10%;
+    }
 }
 
-
-.duvidas li{
-
-	list-style: none;
-	margin-right: 0.2em;
+.duvidas {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
-
-.icon-contato{
-
-	@include font-size-padrao(4em);
-	@include cor-font-footer;
-
-	@media (max-width: 371px){
-
-		@include font-size-padrao(3em);
-	}
+.duvidas li {
+    list-style: none;
+    margin-right: 0.2em;
 }
 
-
-.caracter-do-contato{
-
-	@include font-weight-bold;
-	@include cor-font-footer;
-	@include font-size-padrao;
-
-	@media (max-width: 371px){
-
-		@include font-size-padrao(0.7em);
-	}
+.icon-contato {
+    @include font-size-padrao(4em);
+    @include cor-font-footer;
+    font-weight: normal;
+    @media (max-width: 371px) {
+        @include font-size-padrao(3em);
+    }
 }
 
-
-.rede-social{
-
-	text-align: center!important;
-
+.caracter-do-contato {
+    @include cor-font-footer;
+    @include font-size-padrao;
+    @media (max-width: 371px) {
+        @include font-size-padrao(0.7em);
+    }
 }
 
-
-.rede-social i, .copyright-style{
-
-	@include cor-font-footer;
+.rede-social {
+    text-align: center!important;
 }
 
+.rede-social i,
+.copyright-style {
+    @include cor-font-footer;
+}

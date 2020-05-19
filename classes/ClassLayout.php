@@ -22,7 +22,7 @@ class ClassLayout{
 
         $html .= "    <meta name='description' content='$description'>\n";
         $html .= "    <meta name='author' content='$author'>\n\n";
-
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>\n";
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css\n'>";
         $html .= "    <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>\n";
         $html .= "    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>";
@@ -34,19 +34,46 @@ class ClassLayout{
         $html .= "</head>\n\n";
         $html .= "<body>\n";
         $html .= "    <header>\n\n";
-		$html .= "        <nav class='navbar navbar-dark style-navbar'>\n\n" ;
-        $html .= "            <section class='container-navbar'>\n\n";
-		$html .= "                <a class='navbar-brand' href='#'></a>\n";
-		$html .= "                <ul class='menu'>\n";
-		$html .= "                    <li><a href='" . DIRPAGE. "'>Home</a></li>\n";
-		$html .= "                    <li><a href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
-		$html .= "                    <li><a href='consultoria'>A Consultoria</a></li>\n";
-		$html .= "                    <li><a href='planos'>Planos</a></li>\n";
-		$html .= "                    <li><a href='como-funciona'>Como funciona ?</a></li>\n";
-		$html .= "                    <li><a href='por-que-contratar'>Por que contratar ?</a></li>\n";
-		$html .= "                    <li><a  href='blog'>Blog</a></li>\n";
-		$html .= "                    <li><a href='loja'>Loja</a></li>\n";
-		$html .= "              </ul>\n\n";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white  py-3'>";
+
+    $html .= "            <div class='container'>";
+    $html .= "                <a class='navbar-brand' href='#'>
+                                <img src='https://filipefranco.com.br/wp-content/uploads/2018/02/retina_logo_filipe.png' height='44' width='185' alt='mdb logo'>
+                              </a>";
+                              
+    $html .= "                <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
+                                aria-controls='basicExampleNav' aria-expanded='false' aria-label='Toggle navigation'>
+                                <span class='navbar-toggler-icon'></span>
+                             </button>";
+    $html .= "               <div class='collapse navbar-collapse' id='basicExampleNav'>";
+      $html .= "                <ul class='menu'>";
+      $html .= "                    <li class='nav-item'>
+                                      <a class='nav-link waves-effect  text-wrap' href='index' target='_blank'>Home</a>
+                                    </li>";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='personal' target='_blank'><span>O Personal</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>A Consultoria</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>Planos</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>Como funciona ?</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>Por que contratar ?</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>Loja</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='' target='_blank'><span>FAQ</span></a>
+                                    </li>\n";
+      $html .= "                  </ul>\n\n";
+    $html .= "                </div>";
+    $html .= "              </div>";
 		$html .= "            </section>\n\n";
 		$html .= "        </nav>\n\n";
 	    $html .= "    </header>\n\n\n";
@@ -60,7 +87,7 @@ class ClassLayout{
         $html = "
         </main>
             <!-- Footer -->
-            <footer class='page-footer font-small mdb-color lighten-3 pt-4'>
+            <footer class='page-footer font-small color-footer lighten-3 pt-4'>
         
               <!--Imagens-->
               <div class='container'>
@@ -180,10 +207,17 @@ class ClassLayout{
               </div>
         
             </footer>
-        
+
+
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+          <!-- Bootstrap tooltips -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>
+          <!-- Bootstrap core JavaScript -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+          <!-- MDB core JavaScript -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
             <script src='lib/js/jquery.js'></script>
             <script src='lib/js/index.js'></script>
-        
         
         </body>
         </html>

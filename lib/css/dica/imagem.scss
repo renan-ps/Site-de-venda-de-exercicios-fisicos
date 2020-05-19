@@ -4,13 +4,15 @@
     background: url("../../image/treino-em-casa.jpg")repeat;
     background-position: center;
     height: 140px;
+    margin-top: 87px!important;
 }
 
 .imagem-background p {
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 70px;
     @include text-center;
-    @include font-size-padrao(1.5em);
+    font-family: 'EB Garamond', serif;
+    font-size: 2em;
+    color: #2EFEF7;
 }

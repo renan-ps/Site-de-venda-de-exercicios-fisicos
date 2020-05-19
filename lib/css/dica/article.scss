@@ -1,61 +1,69 @@
-/*Principal com propagandas*/
+/*Artigo da página*/
 
-.article {
-    display: flex;
-    justify-content: space-around;
+body {
+    background-color: $background-color-article;
 }
 
-.propaganda-left {
-    width: $largura-propagandas;
+.icon-treino-em-casa img {
+    width: 2.5em;
+}
+
+.article-container {
+    width: 70%;
     @include text-center;
-    border-right: $borda-lateral-padrao;
+    margin: 0 auto;
+    @media (max-width: 960px) {
+        width: 80%;
+    }
+    @media (max-width: 830px) {
+        width: 100%;
+    }
 }
 
-.propaganda-left p {
-    margin-top: 3em;
-}
-
-.grid-principal {
-    width: 50%;
-    @include text-center;
-    margin-bottom: 1em;
-}
-
-.grid-principal h2 {
+.article-container h2 {
     margin-top: 4%;
 }
 
 .primeira-imagem {
-    @include width-img-text-articles(85%);
+    @include width-img-text-articles;
     height: auto;
     margin: 2em auto 1em;
+}
+
+.primeira-imagem img {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    @include border-radius-default;
+    @include box-shadow-default;
+    @media (max-width: 1132px) {
+        object-position: 0.1px 0;
+    }
+}
+
+.primeiro-texto {
+    @include width-img-text-articles;
+    margin: 0 auto 5em;
+    @include font-size-padrao;
+}
+
+.article-imagem {
+    height: auto;
+    margin: 2em auto 1em;
+    @include width-img-text-articles;
     @include border-radius-default;
     @include box-shadow-default;
 }
 
-.primeiro-texto {
-    @include width-img-text-articles(85%);
-    margin: 0 auto 5em;
-    @include font-size-padrao(1.3em);
-}
-
-.grid-princ-imagem {
-    height: auto;
-    margin: 2em auto 1em;
-    @include width-img-text-articles;
-    @include box-shadow-default;
-}
-
-.grid-princ-imagem img,
-.primeira-imagem img {
+.article-imagem img {
     width: 100%;
     @include border-radius-default;
 }
 
-.grid-princ-texto {
+.article-texto {
     @include width-img-text-articles;
     margin: 0 auto 5em;
-    @include font-size-padrao(1.3em);
+    @include font-size-padrao;
 }
 
 .links {
@@ -65,7 +73,7 @@
 .links,
 .links p,
 a {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: left;
 }
 
@@ -77,10 +85,11 @@ a {
 
 .links a {
     @include font-weight-bold;
+    color: #000;
     text-decoration: underline;
 }
 
-.links li:before {
+.links a:before {
     content: "\2713";
 }
 
@@ -93,18 +102,25 @@ a {
 .grid-imagem-alongamento img {
     width: 32%;
     margin-bottom: 2%;
+    @include border-radius-default;
+    @media (max-width: 510px) {
+        width: 49%;
+    }
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 }
 
 .princ-texto-girls {
     @include width-img-text-articles;
     margin: 0 auto 1em;
-    font-size: 1.3em;
+    @include font-size-padrao;
 }
 
-.exercicio-queima-caloria {
+.texto-apresentacao-iframe {
     @include width-img-text-articles;
     margin: 0 auto 1em;
-    font-size: 1.3em;
+    @include font-size-padrao;
 }
 
 .polichinelos {
@@ -113,24 +129,24 @@ a {
     font-weight: bold;
 }
 
-.iframe-polichinelo {
+.iframe-polichinelo,
+.iframe-burpee {
     @include width-img-text-articles;
     max-width: 100%;
     height: auto;
     margin: 2em auto 1em;
 }
 
-.iframe-polichinelo iframe {
+.iframe-polichinelo iframe,
+.iframe-burpee iframe {
     width: 100%;
     height: 20em;
+    @include border-radius-default;
 }
 
-.propaganda-right {
-    width: $largura-propagandas;
-    @include text-center;
-    border-left: $borda-lateral-padrao;
-}
-
-.propaganda-right p {
-    margin-top: 3em;
+.recomendacao {
+    background: #E8E8E8;
+    padding: 0 0.9em;
+    @include font-size-padrao(0.9em);
+    @include border-radius-default;
 }
