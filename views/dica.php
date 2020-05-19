@@ -14,7 +14,7 @@
 				<p>Entenda como a prática de atividades físicas em casa pode ir além do básico</p>
 				<p>por <strong>Ygor Joalison Renan ● 18/05/2020</strong></p>
 				<div class="icon-treino-em-casa">
-					<img src="image/icon-treino-em-casa.jpg">
+					<img src="image/icon-treino-em-casa.png">
 				</div>
 
 				<div class="primeira-imagem image-effect">
