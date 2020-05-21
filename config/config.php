@@ -2,6 +2,7 @@
 
 #Informações do site
 define('NAME', "Projeto Tuga");
+define('WHATSAPP', "5521976990053");
 
 #Caminhos absolutos
 $pastaInterna="personal/";

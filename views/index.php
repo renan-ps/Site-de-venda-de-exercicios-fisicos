@@ -1,122 +1,146 @@
 <?php echo \Classes\ClassLayout::setHeader('Homepage', "", ""); ?>
 
 
-		<section class="artigos">
+	<section class="artigos">
 
-			<h1 class="titulo-artigos cor-padrao">Artigos</h1>
+		<h1 class="titulo-artigos">Artigos</h1>
 			
-			<div class="dicas">
+		<div class="dicas">
 
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
+			<div class="container-dicas">
+			
+				<div class="imagem">
 						<img src="image/imagem-artigo.jpg">
-					</li>
+				</div>
 
-					<li>
-						<p class="titulo-dica-texto cor-padrao">Como emagrecer treinando em casa</p>
-						<p class="dica-texto cor-padrao">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos a solução ideal para esse[…]</p>
-					</li>
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Emagrecer treinando em casa</p>
+						<p class="dica-texto">Em tempos de coronavírus onde a recomendação é que se fique em casa e, além disso, todos os parques e academias da cidade estão fechados. Temos […]</p>
+					</div>
+				</div>
 
-					<li class="leia-mais">
+				<div class="box-leia-mais">
+					<div class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
+						<a href= "dica-um">Leia mais</a>
+					</div>
 
-				</ul>
+				</div>
+			</div>
+		
 
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
+			<div class="container-dicas">
+			
+				<div class="imagem">
 						<img src="image/imagem-artigo.jpg">
-					</li>
+				</div>
 
-					<li>
-						<p class="titulo-dica-texto cor-padrao">Consultoria fitness online.<br>Como funciona?</p>
-						<p class="dica-texto cor-padrao">Gostaria de mudar seu corpo mas está sem foco na academia? Conheça a minha consultoria[…]</p>
-					</li>
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Consultoria online</p>
+						<p class="dica-texto">Gostaria de mudar seu corpo mas está sem foco na academia? Conheça a minha consultoria fitness online e se surpreenda. O que é a Consultoria Fitness […]</p>
+					</div>
+				</div>
 
-					<li class="leia-mais">
+				<div class="box-leia-mais">
+					<div class="leia-mais">
 						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
+						<a href= "dica-um">Leia mais</a>
+					</div>
 
-				</ul>
-
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
-						<img src="image/imagem-artigo.jpg">
-					</li>
-
-					<li>
-						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo.  Em todo programa de treinamento voltado para o esforço físico em jejum[…]</p>
-					</li>
-
-					<li class="leia-mais">
-						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
-
-				</ul>
-
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
-						<img src="image/imagem-artigo.jpg">
-					</li>
-
-					<li>
-						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
-					</li>
-
-					<li class="leia-mais">
-						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
-
-				</ul>
-
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
-						<img src="image/imagem-artigo.jpg">
-					</li>
-
-					<li>
-						<p class="titulo-dica-texto  cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
-					</li>
-
-					<li class="leia-mais">
-						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
-
-				</ul>
-
-				<ul class="imagem-e-texto">
-
-					<li class="imagem-dica">
-						<img src="image/imagem-artigo.jpg">
-					</li>
-
-					<li>
-						<p class="titulo-dica-texto cor-padrao">Aeróbio em jejum: Como utilizar para perder peso</p>
-						<p class="dica-texto cor-padrao">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo[…]</p>
-					</li>
-
-					<li class="leia-mais">
-						<p>&#128366;</p>
-						<a href="leia-mais">Leia mais</a>
-					</li>
-
-				</ul>
-
+				</div>
 			</div>
 
-		</section>
+			<div class="container-dicas">
+			
+				<div class="imagem">
+						<img src="image/imagem-artigo.jpg">
+				</div>
 
-<?php echo Classes\ClassLayout::setFooter(); ?>
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Aeróbio em jejum</p>
+						<p class="dica-texto">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+					</div>
+				</div>
+
+				<div class="box-leia-mais">
+					<div class="leia-mais">
+						<p>&#128366;</p>
+						<a href= "dica-um">Leia mais</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-dicas">
+			
+				<div class="imagem">
+						<img src="image/imagem-artigo.jpg">
+				</div>
+
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Aeróbio em jejum</p>
+						<p class="dica-texto">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+					</div>
+				</div>
+
+				<div class="box-leia-mais">
+					<div class="leia-mais">
+						<p>&#128366;</p>
+						<a href= "dica-um">Leia mais</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-dicas">
+			
+				<div class="imagem">
+						<img src="image/imagem-artigo.jpg">
+				</div>
+
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Aeróbio em jejum</p>
+						<p class="dica-texto">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+					</div>
+				</div>
+
+				<div class="box-leia-mais">
+					<div class="leia-mais">
+						<p>&#128366;</p>
+						<a href= "dica-um">Leia mais</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container-dicas">
+			
+				<div class="imagem">
+						<img src="image/imagem-artigo.jpg">
+				</div>
+
+				<div class="box-dicas">
+					<div>
+						<p class="titulo-dica-texto">Aeróbio em jejum</p>
+						<p class="dica-texto">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+					</div>
+				</div>
+
+				<div class="box-leia-mais">
+					<div class="leia-mais">
+						<p>&#128366;</p>
+						<a href= "dica-um">Leia mais</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<?php echo \Classes\ClassLayout::setFooter() ?>
