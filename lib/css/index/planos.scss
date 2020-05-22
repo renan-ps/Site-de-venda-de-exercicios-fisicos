@@ -1,0 +1,32 @@
+.color-card {
+    background-color: #fff;
+}
+
+.color-buttom {
+    background-color: #f0c20a;
+}
+
+.color-card:hover {
+    background-color: #f0c20a;
+    transition: 600ms;
+}
+
+.color-card:hover .color-text-plan {
+    color: white;
+    transition: 600ms;
+}
+
+.color-card:hover .color-buttom {
+    background-color: white;
+    transition: 700ms;
+}
+
+.color-card:hover .color-text-buttom {
+    color: #f0c20a!important;
+    font-weight: bold;
+    transition: 700ms;
+}
+
+.color-buttom:active {
+    transform: scale(1.1);
+}

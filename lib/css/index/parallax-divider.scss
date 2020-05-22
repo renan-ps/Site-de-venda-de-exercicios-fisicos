@@ -1,0 +1,25 @@
+/*Parallax-divider*/
+
+.parallax {
+    /* The image used */
+    background-image: url('https://filipefranco.com.br/wp-content/uploads/2018/02/Gym-Background1.png');
+    /* Full height */
+    height: 60%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-divider {
+    height: 350px;
+    width: 100%;
+}
+
+.texto_descricao_marca {
+    z-index: 99;
+    position: absolute;
+    margin-top: -150px;
+    color: white;
+}
