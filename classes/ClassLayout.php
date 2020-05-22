@@ -32,11 +32,11 @@ class ClassLayout{
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
 
         $html .= "</head>\n\n";
-        $html .= "<body>\n";
+        $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white  py-3'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
 
-    $html .= "            <div class='container'>";
+    $html .= "            <div class='container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
                                 <img src='https://filipefranco.com.br/wp-content/uploads/2018/02/retina_logo_filipe.png' height='44' width='185' alt='mdb logo'>
                               </a>";
@@ -46,7 +46,7 @@ class ClassLayout{
                                 <span class='navbar-toggler-icon'></span>
                              </button>";
     $html .= "               <div class='collapse navbar-collapse' id='basicExampleNav'>";
-      $html .= "                <ul class='menu'>";
+      $html .= "                <ul class='menu navbar-nav mr-auto'>";
       $html .= "                    <li class='nav-item'>
                                       <a class='nav-link waves-effect  text-wrap' href='index' target='_blank'>Home</a>
                                     </li>";
@@ -90,7 +90,7 @@ class ClassLayout{
             <footer class='page-footer font-small style-footer lighten-3 pt-4'>
         
               <!--Imagens-->
-              <div class='container'>
+              <div class='container-footer'>
         
                 <div class='contatos'>
         

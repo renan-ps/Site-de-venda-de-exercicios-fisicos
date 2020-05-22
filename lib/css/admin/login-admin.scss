@@ -1,0 +1,42 @@
+body {
+    background: $background-color-article;
+}
+
+.container {
+    width: 50%!important;
+    margin: 0 auto;
+}
+
+.style-form {
+    background: $background-color-article;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.style-form:focus {
+    background: $background-color-article;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+.style-checkbox {
+    background: $background-color-article;
+}
+
+.style-button {
+    border-radius: 25px;
+    background: #6E6E6E;
+    color: blanchedalmond;
+}
+
+.style-button:hover {
+    color: blanchedalmond;
+}
+
+.style-button:active {
+    color: blanchedalmond;
+    background: darkslategrey;
+}

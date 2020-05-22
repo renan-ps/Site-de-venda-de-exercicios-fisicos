@@ -1,7 +1,12 @@
 /*Footer*/
 
+.container-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .style-footer {
-    background-color: #0E0E1A;
+    background-color: #36639a!important;
     @media (max-width: 769px) {
         .edit-width {
             width: 70%;

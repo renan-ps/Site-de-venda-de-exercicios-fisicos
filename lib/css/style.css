@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /*Header*/
 .navbar {
-  padding: .10rem, .1rem;
-  /*Joalison*/ }
+  padding: .10rem, .1rem; }
 
 .nav-item {
   border-right: 2px inset;
@@ -11,8 +10,7 @@
   font-family: "Comfortaa", Arial, Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0px;
-  /*Joalison*/ }
+  letter-spacing: 0px; }
   @media only screen and (max-width: 991px) {
     .nav-item {
       border: none; } }
@@ -23,12 +21,11 @@
   border: 0 !important;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  /*Joalison*/ }
+  vertical-align: baseline; }
 
 .style-navbar {
-  height: 7em;
-  background-color: #BFBFBA; }
+  height: 5em;
+  background-color: #f0c20a !important; }
 
 .container-navbar {
   display: flex;
@@ -38,8 +35,7 @@
   margin: 0 auto; }
 
 .container-navbar h3 {
-  color: black;
-  /*Joalison*/ }
+  color: black; }
 
 .menu {
   display: flex;
@@ -49,7 +45,7 @@
 
 .menu a {
   text-decoration: none;
-  color: #1A1B16; }
+  color: #333333; }
 
 /*Carousel*/
 .carousel-inner {
@@ -92,6 +88,32 @@
 .depoimentos {
   padding-top: -200px !important; }
 
+.color-card {
+  background-color: #fff; }
+
+.color-buttom {
+  background-color: #f0c20a; }
+
+.color-card:hover {
+  background-color: #f0c20a;
+  transition: 600ms; }
+
+.color-card:hover .color-text-plan {
+  color: white;
+  transition: 600ms; }
+
+.color-card:hover .color-buttom {
+  background-color: white;
+  transition: 700ms; }
+
+.color-card:hover .color-text-buttom {
+  color: #f0c20a !important;
+  font-weight: bold;
+  transition: 700ms; }
+
+.color-buttom:active {
+  transform: scale(1.1); }
+
 /*Artigos*/
 .artigos {
   width: 80%;
@@ -101,7 +123,7 @@
 
 .titulo-artigos {
   text-align: center;
-  color: #1A1B16; }
+  color: #333333; }
 
 .dicas {
   display: flex;
@@ -150,7 +172,7 @@
   text-overflow: Ellipsis;
   margin-top: 0.1em;
   font-size: 1.5em;
-  color: #1A1B16;
+  color: #333333;
   text-align: center; }
 
 .dica-texto {
@@ -161,30 +183,29 @@
   margin: 0 auto;
   font-weight: bold;
   text-align: center;
-  color: #1A1B16; }
+  color: #333333; }
 
 .box-leia-mais {
   width: 100%;
   align-items: flex-end; }
 
 .leia-mais {
-  display: flex;
-  justify-content: flex-end; }
+  text-align: right;
+  margin-right: 0.5em; }
+
+.leia-mais p::before {
+  content: "\1F4D6"; }
 
 .leia-mais a {
   font-size: 1em;
   font-weight: bold;
-  color: #87D5FF;
+  color: #36639a;
   margin-left: 0.6em;
   margin-right: 1em; }
 
-.leia-mais p {
-  font-size: 1.1em;
-  color: black; }
-
 .efeito-grid-js {
-  object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.9;
+  box-shadow: 3px 3px 5px rgba(252, 224, 114, 0.6) !important;
   transform: scale(1.03);
   transition: 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95); }
 
@@ -237,8 +258,12 @@
   width: 100%; }
 
 /*Footer*/
+.container-footer {
+  width: 90%;
+  margin: 0 auto; }
+
 .style-footer {
-  background-color: #0E0E1A; }
+  background-color: #36639a !important; }
   @media (max-width: 769px) {
     .style-footer .edit-width {
       width: 70%;
@@ -300,7 +325,7 @@
   background: url("../../image/treino-em-casa.jpg") repeat;
   background-position: center;
   height: 140px;
-  margin-top: 87px !important; }
+  margin-top: 79.5px !important; }
 
 .imagem-background p {
   margin: 0 auto;
@@ -379,7 +404,7 @@ a {
 
 .links p {
   margin-bottom: 0.5em;
-  color: #1A1B16;
+  color: #333333;
   font-weight: bold; }
 
 .links a {
@@ -465,7 +490,7 @@ a {
       width: 100%; } }
 
 .style-botao-form {
-  background: #A6A099;
+  background: #f0c20a;
   color: #fff;
   border-radius: 25px; }
 
@@ -554,5 +579,39 @@ body {
 
   .notfound .notfound-404 h1 {
     font-size: 112px; } }
+body {
+  background: #F2F2F2; }
+
+.container {
+  width: 50% !important;
+  margin: 0 auto; }
+
+.style-form {
+  background: #F2F2F2;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none; }
+
+.style-form:focus {
+  background: #F2F2F2;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 1px solid #2E2E2E; }
+
+.style-checkbox {
+  background: #F2F2F2; }
+
+.style-button {
+  border-radius: 25px;
+  background: #6E6E6E;
+  color: blanchedalmond; }
+
+.style-button:hover {
+  color: blanchedalmond; }
+
+.style-button:active {
+  color: blanchedalmond;
+  background: darkslategrey; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 <?php echo \Classes\ClassLayout::setHeader('Homepage', "", ""); ?>
 
+	
+
 	<!--APRESENTAÇÃO-->
 	<div data-spy="scroll" data-target="#navbar-example2" class="scrollspy-example z-depth-1 mt-4" data-offset="0">
 		<h4 id="carousel_home"></h4>
@@ -82,6 +84,22 @@
 			</div>			
 		</div>		
 	</div>
+
+	<div class="parallax1 parallax-divider1" ></div>
+
+		<div class="mask rgba-gradient align-items-center" >
+				
+			<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
+				<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2">A Consultoria</h4>
+				<hr class="hr-light my-4 w-75">
+				<h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
+				<button class="btn btn-amber btn-lg">Ver planos</button>
+			</div>
+		</div>
+
+	
+	
+	<div class="parallax1 parallax-divider1" style="margin-bottom: -47px;"></div>
 
 	<!--DEPOIMENTOS-->
 	<div class="container-fluid my-5 px-5 pt-5 pb-3 depoimentos " style="background-color: #E8E7E7; height: 440px;">
@@ -180,9 +198,9 @@
 		<section class="text-center dark-grey-text">
 
 			<!-- Section heading -->
-			<h3 class="font-weight-bold pb-2 mb-4">Our pricing plans</h3>
-			<!-- Section description -->
-			<p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<h3 class="font-weight-bold pb-2 mb-4 color-text-plan">Nossos planos</h3>
+			<!-- Section deion -->
+			<p class="text-muted w-responsive mx-auto mb-5 color-text-plan">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 		
 			<div class="row">
@@ -194,20 +212,20 @@
 					<div class="card">
 
 					<!-- Content -->
-					<div class="card-body">
+					<div class="card-body color-card">
 						
-						<h5 class="mb-4">Basic plan</h5>
+						<h5 class="mb-4 color-text-plan">Plano Básico</h5>
 						<div class="d-flex justify-content-center">
 							<div class="card-circle d-flex justify-content-center align-items-center">
-								<i class="fas fa-home indigo-text"></i>
+								<i class="fas fa-home color-text-plan"></i>
 							</div>
 						</div>
 
 						
-						<h2 class="font-weight-bold my-4">59$</h2>
-						<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id
+						<h2 class="font-weight-bold my-4 color-text-plan">£59</h2>
+						<p class="color-text-plan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id
 						nobis accusamus deleniti cumque hic laborum.</p>
-						<a class="btn btn-indigo btn-rounded">Buy now</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom">Compre agora</a>
 
 					</div>
 					
@@ -224,21 +242,21 @@
 				<div class="card indigo">
 
 					<!-- Content -->
-					<div class="card-body white-text">
+					<div class="card-body color-card">
 
 						<!-- Offer -->
-						<h5 class="mb-4">Premium plan</h5>
+						<h5 class="mb-4 color-text-plan">Plano Premium</h5>
 						<div class="d-flex justify-content-center">
 						<div class="card-circle d-flex justify-content-center align-items-center">
-							<i class="fas fa-users"></i>
+							<i class="fas fa-users color-text-plan"></i>
 						</div>
 						</div>
 
 						<!--Price -->
-						<h2 class="font-weight-bold my-4">79$</h2>
-						<p>Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio cupiditate
+						<h2 class="font-weight-bold my-4 color-text-plan">£79</h2>
+						<p class="color-text-plan">Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio cupiditate
 						sequi atque.</p>
-						<a class="btn btn-outline-white btn-rounded">Buy now</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom">Compre agora</a>
 					</div>
 				</div>
 			</div>
@@ -246,20 +264,20 @@
 
 			<div class="col-lg-4 col-md-6 mb-4">	
 				<div class="card">	
-					<div class="card-body">
+					<div class="card-body color-card">
 		
-						<h5 class="mb-4">Advanced plan</h5>
+						<h5 class="mb-4 color-text-plan">Plano Advanced</h5>
 						<div class="d-flex justify-content-center">
 						<div class="card-circle d-flex justify-content-center align-items-center">
-							<i class="fas fa-chart-line indigo-text"></i>
+							<i class="fas fa-chart-line color-text-plan"></i>
 						</div>
 						</div>
 
 						<!--Price -->
-						<h2 class="font-weight-bold my-4">99$</h2>
-						<p class="grey-text">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni
+						<h2 class="font-weight-bold my-4 color-text-plan">£99</h2>
+						<p class="color-text-plan">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni
 						accusantium repellat eveniet quia vitae.</p>
-						<a class="btn btn-indigo btn-rounded">Buy now</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom">Compre agora</a>
 
 					</div>
 				</div>
@@ -275,22 +293,8 @@
 
 		</div>
 		
-		<div class="parallax1 parallax-divider1" ></div>
-
-		<div class="mask rgba-gradient align-items-center" >
-				
-			<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
-				<h4 class="display-2 font-weight-bold white-text mb-0 pt-md-2 pt-2">A Consultoria</h4>
-				<hr class="hr-light my-4 w-75">
-				<h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
-				<button class="btn btn-amber btn-lg">Ver planos</button>
-			</div>
-		</div>
-
-	
-	<!--COMO FUNCIONA-->
-	<div class="parallax1 parallax-divider1" ></div>
-
+		
+<!--COMO FUNCIONA-->
 	<div class="container-fluid  my-5 pt-5 pb-3 px-5">
 
 		<!-- Section -->
@@ -386,10 +390,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 		
@@ -409,10 +411,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica-um">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 
@@ -431,10 +431,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica-um">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 
@@ -453,10 +451,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica-um">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 
@@ -475,10 +471,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica-um">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 
@@ -497,10 +491,8 @@
 
 				<div class="box-leia-mais">
 					<div class="leia-mais">
-						<p>&#128366;</p>
-						<a href= "dica-um">Leia mais</a>
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -512,7 +504,7 @@
 	<div class="mask rgba-gradient align-items-center" >
 				<!-- Content -->
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
-					<h4 class="display-2 font-weight-bold white-text mb-0 pt-md-2 pt-2">A Consultoria</h4>
+					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2">A Consultoria</h4>
 					<hr class="hr-light my-4 w-75">
 					<h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
 					<button class="btn btn-amber btn-lg">Ver planos</button>

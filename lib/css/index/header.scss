@@ -2,7 +2,6 @@
 
 .navbar {
     padding: .10rem, .1rem;
-    /*Joalison*/
 }
 
 .nav-item {
@@ -16,7 +15,6 @@
     @media only screen and (max-width: 991px) {
         border: none;
     }
-    /*Joalison*/
 }
 
 .nav-item span {
@@ -26,12 +24,11 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    /*Joalison*/
 }
 
 .style-navbar {
-    height: 7em;
-    background-color: #BFBFBA;
+    height: 5em;
+    background-color: #f0c20a!important;
 }
 
 .container-navbar {
@@ -44,7 +41,6 @@
 
 .container-navbar h3 {
     color: black;
-    /*Joalison*/
 }
 
 .menu {
