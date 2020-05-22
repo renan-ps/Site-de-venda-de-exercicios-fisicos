@@ -1,0 +1,37 @@
+/*Formulário*/
+
+.borda-personalizada-e-no-effect {
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-bottom: 1px solid #292A32;
+    outline: 0!important;
+    box-shadow: none!important;
+    border-radius: 0;
+    background-color: $background-color-article;
+}
+
+.color-box {
+    background-color: $background-color-article;
+}
+
+.form-contato {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 10em;
+    @include border-radius-default;
+    @include width-img-text-articles(75%);
+    background-color: $background-color-article;
+    @media (max-width: 500px) {
+        @include width-img-text-articles(100%);
+    }
+}
+
+.style-botao-form {
+    background: #f0c20a;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.style-botao-form:hover {
+    color: #fff!important;
+}

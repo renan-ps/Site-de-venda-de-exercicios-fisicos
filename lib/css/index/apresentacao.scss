@@ -1,0 +1,39 @@
+/*Apresentação*/
+
+.apresentacao {
+    margin-top: 50px;
+    height: 350px;
+    width: 100%;
+}
+
+.foto_descricao_fundo img {
+    opacity: 0.8;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.texto_descricao_marca {
+    z-index: 99;
+    position: absolute;
+    margin-top: -200px;
+    color: white;
+}
+
+.depoimentos {
+    margin-top: 300px;
+    background-color: #E8E7E7 !important;
+    height: auto;
+}
+
+@media only screen and (max-width: 584px) {
+    .depoimentos {
+        height: 600px;
+        background-color: yellow;
+    }
+}
+
+.fa-play:before {
+    margin-left: .3rem;
+}

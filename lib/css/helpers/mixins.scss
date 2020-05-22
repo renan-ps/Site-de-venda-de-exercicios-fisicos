@@ -1,24 +1,36 @@
-@mixin font-size-padrao($font:1em){
-
-	font-size: $font;
+@mixin font-size-padrao($font:1.1em) {
+    font-size: $font;
 }
 
-@mixin font-weight-bold{
-
-	font-weight: bold;
+@mixin font-weight-bold {
+    font-weight: bold;
 }
 
-@mixin cor-padrao{
-
-	color: $cor-padrao;
+@mixin cor-padrao {
+    color: $cor-padrao;
 }
 
-@mixin text-center{
-
-	text-align: center;
+@mixin text-center {
+    text-align: center;
 }
 
-@mixin cor-font-footer($font-footer:#fff){
+@mixin cor-font-footer($font-footer:#fff) {
+    color: $font-footer!important;
+}
 
-	color: $font-footer!important;
+@mixin width-img-text-articles($width:80%) {
+    width: $width;
+}
+
+@mixin alinha-elemento-centro($width-default) {
+    width: $width-default;
+    margin: 0 auto;
+}
+
+@mixin border-radius-default($border: 4px) {
+    border-radius: $border;
+}
+
+@mixin box-shadow-default($shadow:3px 3px 5px rgba(0, 0, 0, 0.8)) {
+    box-shadow: $shadow;
 }
