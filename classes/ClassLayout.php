@@ -15,7 +15,7 @@ class ClassLayout{
         $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
         $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
 
-        $html .= "    <a href='https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
         <i style='margin-top:16px' class='fab fa-whatsapp'></i>
         </a>\n";
@@ -38,8 +38,8 @@ class ClassLayout{
         $html .= "            <section class='container-navbar'>\n\n";
 		$html .= "                <a class='navbar-brand' href='#'></a>\n";
 		$html .= "                <ul class='menu'>\n";
-		$html .= "                    <li><a href='" . DIRPAGE. "'>Home</a></li>\n";
-		$html .= "                    <li><a href='<?php echo DIRPAGE.'personal'; ?> O Personal</a></li>\n";
+		$html .= "                    <li><a href='" . DIRPAGE . "'>Home</a></li>\n";
+		$html .= "                    <li><a href='" .  DIRPAGE . "personal'>O Personal</a></li>\n";
 		$html .= "                    <li><a href='consultoria'>A Consultoria</a></li>\n";
 		$html .= "                    <li><a href='planos'>Planos</a></li>\n";
 		$html .= "                    <li><a href='como-funciona'>Como funciona ?</a></li>\n";
@@ -180,9 +180,10 @@ class ClassLayout{
               </div>
         
             </footer>
-        
-            <script src='lib/js/jquery.js'></script>
-            <script src='lib/js/index.js'></script>
+            <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='". DIRPAGE ."lib/js/javascript.js'></script>
+            <script src='". DIRPAGE ."lib/js/jquery.js'></script>
+            <script src='". DIRPAGE ."lib/js/index.js'></script>
         
         
         </body>
