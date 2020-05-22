@@ -15,7 +15,7 @@ class ClassLayout{
         $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
         $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
 
-        $html .= "    <a href='https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
         <i style='margin-top:16px' class='fab fa-whatsapp'></i>
         </a>\n";
@@ -34,6 +34,7 @@ class ClassLayout{
         $html .= "</head>\n\n";
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
+        
 		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
 
     $html .= "            <div class='container-navbar'>";
@@ -74,6 +75,7 @@ class ClassLayout{
       $html .= "                  </ul>\n\n";
     $html .= "                </div>";
     $html .= "              </div>";
+
 		$html .= "            </section>\n\n";
 		$html .= "        </nav>\n\n";
 	    $html .= "    </header>\n\n\n";
@@ -207,6 +209,7 @@ class ClassLayout{
               </div>
         
             </footer>
+<<<<<<< HEAD
 
 
             <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
@@ -218,6 +221,12 @@ class ClassLayout{
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
             <script src='lib/js/jquery.js'></script>
             <script src='lib/js/index.js'></script>
+=======
+            <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='". DIRPAGE ."lib/js/javascript.js'></script>
+            <script src='". DIRPAGE ."lib/js/jquery.js'></script>
+            <script src='". DIRPAGE ."lib/js/index.js'></script>
+>>>>>>> 03483f13d24a16158c87238d06b561d87338e88f
         
         </body>
         </html>
