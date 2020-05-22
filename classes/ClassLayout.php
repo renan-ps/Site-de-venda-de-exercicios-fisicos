@@ -180,9 +180,10 @@ class ClassLayout{
               </div>
         
             </footer>
-        
-            <script src='lib/js/jquery.js'></script>
-            <script src='lib/js/index.js'></script>
+            <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='". DIRPAGE ."lib/js/javascript.js'></script>
+            <script src='". DIRPAGE ."lib/js/jquery.js'></script>
+            <script src='". DIRPAGE ."lib/js/index.js'></script>
         
         
         </body>
