@@ -209,7 +209,6 @@ class ClassLayout{
               </div>
         
             </footer>
-<<<<<<< HEAD
 
 
             <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
@@ -219,14 +218,10 @@ class ClassLayout{
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
           <!-- MDB core JavaScript -->
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
-            <script src='lib/js/jquery.js'></script>
-            <script src='lib/js/index.js'></script>
-=======
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
->>>>>>> 03483f13d24a16158c87238d06b561d87338e88f
         
         </body>
         </html>
