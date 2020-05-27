@@ -89,6 +89,18 @@ body {
   .depoimentos {
     height: 600px;
     background-color: yellow; } }
+.card-meio {
+  position: relative !important; }
+
+.top-seller {
+  position: absolute;
+  width: 22%;
+  z-index: 2;
+  right: 4%; }
+
+.top-seller img {
+  width: 100%; }
+
 .color-card {
   background-color: #fff; }
 
@@ -926,13 +938,17 @@ body {
   height: auto;
   border-radius: 10px;
   transition: all 0.3s; }
-  @media (max-width: 1102px) {
+  @media (max-width: 1100px) {
     .produto {
       width: 45%;
-      margin-bottom: 3em; } }
+      margin-bottom: 3em;
+      box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7); } }
   @media (max-width: 683px) {
     .produto {
       width: 97%; } }
+
+.produto:hover {
+  box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7); }
 
 .imagem-produto {
   width: 100%;
@@ -949,22 +965,28 @@ body {
   height: 15em;
   border-radius: 10px;
   transition: all 0.3s; }
+  @media (max-width: 1100px) {
+    .imagem-produto img {
+      border-radius: 10px; } }
   @media (max-width: 683px) {
     .imagem-produto img {
       object-fit: cover;
       object-position: center; } }
 
-.produto:hover {
-  box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7); }
-
 .box-saiba-mais-produto {
   display: flex;
-  border-bottom: 0.5px solid #ccc;
   position: absolute;
   width: 100%; }
 
 .saiba-mais-produto {
   border-right: 2px solid #ccc; }
+  @media (max-width: 1100px) {
+    .saiba-mais-produto {
+      border-radius: 0 0 0px 10px; } }
+
+@media (max-width: 1100px) {
+  .favorito-produto {
+    border-radius: 0 0 10px 0; } }
 
 .favorito-produto,
 .saiba-mais-produto {
@@ -988,9 +1010,15 @@ body {
 .descricao-produto {
   text-align: center;
   padding: 1em;
-  height: 10.5em;
+  height: 11em;
   width: 95%;
   overflow: hidden; }
+  @media (max-width: 1261px) {
+    .descricao-produto {
+      font-size: 0.9em; } }
+  @media (max-width: 1100px) {
+    .descricao-produto {
+      font-size: 1em; } }
   @media (max-width: 683px) {
     .descricao-produto {
       font-size: 1.1em;
