@@ -6,6 +6,10 @@
     font-weight: bold;
 }
 
+@mixin color-body-default {
+    background-color: #ebeef3;
+}
+
 @mixin cor-padrao {
     color: $cor-padrao;
 }

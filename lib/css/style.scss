@@ -1,6 +1,5 @@
 @import "helpers/variaveis";
 @import "helpers/mixins";
-@import "body/body";
 @import "index/header";
 @import "index/carousel";
 @import "index/apresentacao";
@@ -14,4 +13,6 @@
 @import "dica/article";
 @import "dica/form";
 @import "erro-404/erro-404";
-@import "admin/login-admin";
+@import "forms/login";
+@import "forms/cadastro";
+@import "loja/produtos";

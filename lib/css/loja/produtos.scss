@@ -1,0 +1,169 @@
+    .titulo-loja {
+        width: 90%;
+        margin: 3em auto 0;
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+        font-size: 2.5em;
+        text-decoration: underline;
+    }
+    
+    .container-loja {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 3em auto 2em;
+    }
+    
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        height: auto;
+        border-radius: 10px;
+        transition: all 0.3s;
+        @media (max-width: 1102px) {
+            width: 45%;
+            margin-bottom: 3em;
+        }
+        @media (max-width: 683px) {
+            width: 97%;
+        }
+    }
+    
+    .imagem-produto {
+        width: 100%;
+        position: relative;
+    }
+    
+    .container-produto {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 89.7%;
+    }
+    
+    .imagem-produto img {
+        width: 100%;
+        max-width: 100%;
+        height: 15em;
+        border-radius: 10px 10px 10px 10px;
+        transition: all 0.3s;
+        @media (max-width: 683px) {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    .produto:hover {
+        box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7);
+    }
+    
+    .box-saiba-mais-produto {
+        display: flex;
+        border-bottom: 0.5px solid #ccc;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .saiba-mais-produto {
+        border-right: 2px solid #ccc;
+    }
+    
+    .personalize-produto,
+    .saiba-mais-produto {
+        width: 50%;
+        text-align: center;
+        background-color: transparentize($color: #36639a, $amount: 0.5px);
+    }
+    
+    .personalize-produto a,
+    .saiba-mais-produto a {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .personalize-produto::before {
+        content: "\2661";
+        color: white;
+        margin-right: 0.3em;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .descricao-produto {
+        text-align: center;
+        padding: 1em;
+        height: 10.5em;
+        width: 95%;
+        overflow: hidden;
+        @media (max-width: 683px) {
+            font-size: 1.1em;
+            font-weight: 400;
+            height: 7em;
+        }
+        @media (max-width: 683px) {
+            height: 10em;
+        }
+    }
+    
+    .tamanho-roupa-produto label {
+        margin-left: 1em;
+    }
+    
+    .valor-produto {
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    .valor-produto span {
+        font-weight: 800;
+    }
+    
+    .paypal {
+        text-align: center;
+    }
+    
+    .paypal p {
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .paypal img {
+        width: 5em;
+    }
+    
+    .botao-produto {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .botao-produto input {
+        background-color: #f0c20a!important;
+        width: 85%!important;
+        border: none;
+        color: white;
+        padding: 15px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 13px;
+        -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4)!important;
+        box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        margin: 30px 20px 40px 20px;
+    }
+    
+    .botao-produto:active {
+        -moz-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    }
