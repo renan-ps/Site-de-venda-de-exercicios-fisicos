@@ -2,7 +2,7 @@
 
 .apresentacao {
     margin-top: 50px;
-    height: 350px;
+    height: 400px!important;
     width: 100%;
 }
 
@@ -19,19 +19,6 @@
     position: absolute;
     margin-top: -200px;
     color: white;
-}
-
-.depoimentos {
-    margin-top: 300px;
-    background-color: #E8E7E7 !important;
-    height: auto;
-}
-
-@media only screen and (max-width: 584px) {
-    .depoimentos {
-        height: 600px;
-        background-color: yellow;
-    }
 }
 
 .fa-play:before {

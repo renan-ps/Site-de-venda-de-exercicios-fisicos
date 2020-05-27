@@ -12,7 +12,7 @@
 }
 
 .color-card:hover .color-text-plan {
-    color: white;
+    color: white!important;
     transition: 600ms;
 }
 
@@ -28,5 +28,5 @@
 }
 
 .color-buttom:active {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }

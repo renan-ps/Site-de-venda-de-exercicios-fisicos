@@ -1,5 +1,9 @@
 /*Header*/
 
+body {
+    @include color-body-default;
+}
+
 .navbar {
     padding: .10rem, .1rem;
 }
