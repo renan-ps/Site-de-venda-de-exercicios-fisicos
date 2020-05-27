@@ -10,7 +10,7 @@
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
                     <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
-                    <div class="personalize-produto"><a href="#">Favoritos</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
                     <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
-                    <div class="personalize-produto"><a href="#">Favoritos</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
                     <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
-                    <div class="personalize-produto"><a href="#">Favoritos</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
                 </div>
             </div>
 
