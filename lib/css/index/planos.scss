@@ -1,3 +1,18 @@
+.card-meio {
+    position: relative!important;
+}
+
+.top-seller {
+    position: absolute;
+    width: 22%;
+    z-index: 2;
+    right: 4%;
+}
+
+.top-seller img {
+    width: 100%;
+}
+
 .color-card {
     background-color: #fff;
 }
@@ -12,7 +27,7 @@
 }
 
 .color-card:hover .color-text-plan {
-    color: white;
+    color: white!important;
     transition: 600ms;
 }
 
@@ -28,5 +43,5 @@
 }
 
 .color-buttom:active {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }

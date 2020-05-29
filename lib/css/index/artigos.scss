@@ -35,7 +35,7 @@
 }
 
 .imagem {
-    width: auto;
+    width: 100%;
     height: auto;
     margin-bottom: 1em;
     padding: 0.5em;
@@ -46,8 +46,19 @@
 }
 
 .imagem img {
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     @include border-radius-default;
+    -webkit-transition: all 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.imagem img:hover {
+    opacity: 0.9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6)!important;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .box-dicas {
@@ -100,11 +111,9 @@
     margin-right: 1em;
 }
 
-.efeito-grid-js {
-    opacity: 0.9;
-    box-shadow: 3px 3px 5px rgba(252, 224, 114, 0.6)!important;
-    transform: scale(1.03);
-    transition: 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+.leia-mais a:active {
+    transform: scale(0.9);
+    color: #fff;
 }
 
 ::-webkit-scrollbar-track {
