@@ -1834,7 +1834,7 @@
 											"font": "Arial;13;1",
 											"left": 189,
 											"top": 583,
-											"width": 146.05322265625,
+											"width": 185.3134765625,
 											"height": 13,
 											"text": "ClassCadastro"
 										},
@@ -1869,7 +1869,7 @@
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 576,
-									"width": 156.05322265625,
+									"width": 195.3134765625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFyZzj040vqODk="
@@ -1896,7 +1896,7 @@
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 601,
-									"width": 156.05322265625,
+									"width": 195.3134765625,
 									"height": 10
 								},
 								{
@@ -1921,7 +1921,7 @@
 											"font": "Arial;13;0",
 											"left": 189,
 											"top": 616,
-											"width": 146.05322265625,
+											"width": 185.3134765625,
 											"height": 13,
 											"text": "+insertCad(arrVar: string)",
 											"horizontalAlignment": 0
@@ -1943,13 +1943,30 @@
 											"height": 13,
 											"text": "+Operation1()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFyZ4X8gExMhH0=",
+											"_parent": {
+												"$ref": "AAAAAAFyZzj05Evv2D4="
+											},
+											"model": {
+												"$ref": "AAAAAAFyZ4X8N0xJuJk="
+											},
+											"font": "Arial;13;0",
+											"left": 189,
+											"top": 631,
+											"width": 185.3134765625,
+											"height": 13,
+											"text": "+getIssetEmail(email: string): int",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 184,
 									"top": 611,
-									"width": 156.05322265625,
-									"height": 23
+									"width": 195.3134765625,
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1988,8 +2005,8 @@
 							"containerChangeable": true,
 							"left": 184,
 							"top": 576,
-							"width": 156.05322265625,
-							"height": 58,
+							"width": 195.3134765625,
+							"height": 73,
 							"nameCompartment": {
 								"$ref": "AAAAAAFyZzj04kvpff0="
 							},
@@ -2027,8 +2044,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 243,
-									"top": 535,
+									"left": 254,
+									"top": 537,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2048,8 +2065,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 228,
-									"top": 535,
+									"left": 239,
+									"top": 539,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2069,8 +2086,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 272,
-									"top": 534,
+									"left": 283,
+									"top": 532,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2088,7 +2105,7 @@
 								"$ref": "AAAAAAFyZzj04EvoadM="
 							},
 							"lineStyle": 1,
-							"points": "260:575;257:507",
+							"points": "275:575;264:507",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFyZzumNUw6byk="
@@ -2885,6 +2902,34 @@
 								"$ref": "AAAAAAFyZzj030vm3CQ="
 							},
 							"name": "Operation1"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFyZ4X8N0xJuJk=",
+							"_parent": {
+								"$ref": "AAAAAAFyZzj030vm3CQ="
+							},
+							"name": "getIssetEmail",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFyZ4ZmhExQp3I=",
+									"_parent": {
+										"$ref": "AAAAAAFyZ4X8N0xJuJk="
+									},
+									"name": "email",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFyZ4ZmhExR0tk=",
+									"_parent": {
+										"$ref": "AAAAAAFyZ4X8N0xJuJk="
+									},
+									"type": "int",
+									"direction": "return"
+								}
+							]
 						}
 					]
 				}
