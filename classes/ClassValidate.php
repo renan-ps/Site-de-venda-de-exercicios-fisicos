@@ -40,6 +40,28 @@ class ClassValidate{
         }
     }
 
+    #Verifica se o e-mail existe no banco de dados.
+    #action = r para registrar e action = l para login
+    public function validateIssetEmail($email, $action){
+        $b=$this->cadastro->getIssetEmail($email);
+
+        if($action == 'r'){
+            if($b > 0){
+                $this->setErro("E-mail já cadastrado.");
+                return false;
+            }else{
+                return true;
+            }
+        }elseif($action == 'l'){
+            if ($b > 0){
+                return true;
+            }else{
+                $this->setErro("E-mail não cadastrado.");
+                return false;
+            }
+        }
+    }
+
     #Valida se o dado é uma data
     public function validateData($par){
         $data= \DateTime::createFromFormat("d/m/Y",$par);

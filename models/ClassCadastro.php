@@ -32,4 +32,18 @@ class ClassCadastro extends ClassCrud{
           )
         );
     }
+
+    #Verifica no banco se o e-mail está cadastrado.
+    public function getIssetEmail($email){
+        $b=$this->selectDB(
+            "*",
+            "users",
+            "where email = ?",
+            array(
+                $email
+            )
+        );
+
+        return $r = $b->rowCount();
+    }
 }
