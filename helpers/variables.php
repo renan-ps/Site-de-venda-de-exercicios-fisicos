@@ -6,7 +6,7 @@ if (isset($_POST['nome'])){
 }
 
 if (isset($_POST['email'])){
-    $email=filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL);
+    $email=filter_input(INPUT_POST,'email', FILTER_VALIDATE_EMAIL);
 }else{
     $email=null;
 }
@@ -21,6 +21,12 @@ if (isset($_POST['telefone'])){
     $telefone=filter_input(INPUT_POST,'telefone', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 }else{
     $telefone=null;
+}
+
+if (isset($_POST['endereco'])){
+    $endereco=filter_input(INPUT_POST,'endereco', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+}else{
+    $endereco=null;
 }
 
 if (isset($_POST['senha'])){

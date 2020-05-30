@@ -1,7 +1,7 @@
 <?php echo \Classes\ClassLayout::setHeader('Cadastro', "Faça seu cadastro", ""); ?>
 
 <div class="container-cadastro">
-    <form action="post" name="formCadastro" id="formCadastro" action="<?php echo DIRPAGE . 'controllers/controllerCadastro'; ?>">
+    <form method="post" name="formCadastro" id="formCadastro" action="<?php echo DIRPAGE . 'controllers/controllerCadastro'; ?>">
         <h2>Cadastro</h2>
         <p>Todos os campos são obrigatórios.</p>
         <div class="cadastro text-center" style="margin: 3% auto">

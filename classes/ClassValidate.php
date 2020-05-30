@@ -43,7 +43,7 @@ class ClassValidate{
         }
     }
 
-    public function getErro(): array{
+    public function getErro(){
         return $this->erro;
     }
 
