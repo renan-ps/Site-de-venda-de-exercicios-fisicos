@@ -1,8 +1,10 @@
 <?php
 $validate = new \Classes\ClassValidate();
-
+/*
 $validate->validateFields($_POST);
-$validate->validateEmail($_POST['email']);
-$validate->validateData($_POST['dataNascimento']);
+$validate->validateEmail($email);
+$validate->validateData($dataNascimento);
 
-var_dump($validate->getErro());
+var_dump($validate->getErro());*/
+
+$validate->validateFinalCad($arrVar);

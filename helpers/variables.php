@@ -46,3 +46,15 @@ if (isset($_POST['senhaConf'])){
 $dataCreate = date("Y-m-d H:i:s");
 
 $token = bin2hex(random_bytes(64));
+
+$arrVar=[
+    "nome"=>$nome,
+    "email"=>$email,
+    "dataNascimento"=>$dataNascimento,
+    "telefone"=>$telefone,
+    "endereco"=>$endereco,
+    "senha"=>$senha,
+    "hashSenha"=>$hashSenha,
+    "dataCreate"=>$dataCreate,
+    "token"=>$token
+];

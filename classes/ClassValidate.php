@@ -2,8 +2,16 @@
 
 namespace Classes;
 
+Use Models\ClassCadastro;
+
 class ClassValidate{
     private $erro=[];
+    private $cadastro;
+
+    public function __construct()
+    {
+        $this->cadastro=new ClassCadastro();
+    }
 
     #Valida se os campos desejados foram preenchidos.
     public function validateFields($par){
@@ -49,6 +57,11 @@ class ClassValidate{
 
     public function setErro($erro){
         array_push($this->erro,$erro);
+    }
+
+    #validação final do cadastro
+    public function validateFinalCad($arrVar){
+        $this->cadastro->insertCad($arrVar);
     }
 
 
