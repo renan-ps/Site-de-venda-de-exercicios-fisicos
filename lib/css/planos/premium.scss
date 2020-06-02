@@ -1,7 +1,3 @@
-.plano-premium {
-    background-color: $cor-padrao-cliente-3;
-}
-
 .container-plano-premium {
     @include alinha-elemento-centro(90%);
     padding-top: 7.5em;
@@ -11,7 +7,7 @@
 .container-plano-premium h1 {
     @include font-family-default;
     @include font-weight-tittle;
-    color: $cor-padrao-cliente-2;
+    color: #000;
 }
 
 .container-apresentacao-plano-premium {
@@ -117,7 +113,6 @@
     font-size: 1.2em;
     font-weight: 300;
     margin-top: 1.3em;
-    color: black;
 }
 
 .valor-premium {
@@ -130,14 +125,12 @@
 .descricao-plano-premium {
     width: 40%;
     font-size: 1.5em;
-    color: black;
 }
 
 .video-experimental-plano-premium {
     width: 40%;
     margin: 0 auto 3em;
     text-align: center;
-    color: black;
 }
 
 .video-experimental-plano-premium iframe {
@@ -167,34 +160,33 @@
 }
 
 .incluso-plano-premium h4,
-.lista-item {
+.lista-item-plano-premium {
     text-align: start;
-    color: black;
 }
 
-.lista-item {
+.lista-item-plano-premium {
     font-size: 1.3em;
     font-weight: 400;
 }
 
-.lista-item li {
+.lista-item-plano-premium li {
     margin-bottom: 0.5em
 }
 
-.lista-item li::before {
+.lista-item-plano-premium li::before {
     content: "\2713";
     margin-right: 5px;
 }
 
-.lista-item li:nth-child(4) {
+.lista-item-plano-premium li:nth-child(4) {
     text-decoration: none
 }
 
-.lista-item li:nth-child(5) {
+.lista-item-plano-premium li:nth-child(5) {
     text-decoration: none;
 }
 
-.lista-item li:last-child {
+.lista-item-plano-premium li:last-child {
     text-decoration: line-through;
 }
 
@@ -207,7 +199,6 @@
 
 .forma-de-pagamento h5 {
     font-weight: 600;
-    color: black;
 }
 
 .cartoes-plano-premium {

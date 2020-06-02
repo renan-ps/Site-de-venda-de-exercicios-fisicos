@@ -31,7 +31,7 @@
             <div class="incluso-plano-basico">
                 <h4>O que compõe o plano Básico:</h4>
                 <br>
-                <ul class="lista-item">
+                <ul class="lista-item-plano-basico">
                     <li>1 Consulta</li>
                     <li>3 videos por mês</li>
                     <li>Dúvidas por Whatsapp ilimitado</li>

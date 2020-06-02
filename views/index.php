@@ -300,7 +300,7 @@
 						<h2 class="font-weight-bold my-4 color-text-plan">£99</h2>
 						<p class="color-text-plan">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni
 						accusantium repellat eveniet quia vitae.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="">Saiba mais</a>
 
 					</div>
 				</div>
