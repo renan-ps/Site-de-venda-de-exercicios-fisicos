@@ -11,7 +11,7 @@
             <input type="text" id="telefone" name="telefone" placeholder="Telefone">
             <input type="text" id="endereco" name="endereco" placeholder="Endereco">
             <input type="password" id="senha" name="senha" placeholder="Senha">
-            <input type="password" id="confSenha" name="confSenha" placeholder="Confirme sua senha">
+            <input type="password" id="senhaConf" name="senhaConf" placeholder="Confirme sua senha">
             <input type="submit" value="Cadastrar">
         </div>
     </form>

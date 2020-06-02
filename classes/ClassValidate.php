@@ -3,6 +3,7 @@
 namespace Classes;
 
 Use Models\ClassCadastro;
+Use ZxcvbnPhp\Zxcvbn;
 
 class ClassValidate{
     private $erro=[];
@@ -70,6 +71,35 @@ class ClassValidate{
         }else{
             $this->setErro("Data inválida.");
             return false;
+        }
+    }
+
+    #Verifica se as senhas digitadas estão iguais.
+    public function validateConfSenha($senha, $senhaConf){
+        if ($senha === $senhaConf){
+            return true;
+        }else{
+            $this->setErro("As senhas não combinam.");
+            return false;
+        }
+    }
+
+    #Verifica a força da senha.
+    public function validateForcaSenha($senha, $par=null){
+        $zx = new Zxcvbn();
+        $forca = $zx->passwordStrength($senha);
+
+        if ($par==null){
+            #Cadastro
+            if ($forca['score'] >= 2 ){
+                return true;
+            }else{
+                $this->setErro("Utilize uma senha mais forte.");
+                return false;
+            }
+
+        }else{
+            #login
         }
     }
 

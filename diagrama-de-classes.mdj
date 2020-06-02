@@ -1501,7 +1501,7 @@
 											"font": "Arial;13;1",
 											"left": 581,
 											"top": 159,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "ClassValidate"
 										},
@@ -1536,7 +1536,7 @@
 									"font": "Arial;13;0",
 									"left": 576,
 									"top": 152,
-									"width": 217.02880859375,
+									"width": 373.1494140625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFyUy9ujCj9FV8="
@@ -1573,7 +1573,7 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 182,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "-erro: string",
 											"horizontalAlignment": 0
@@ -1590,7 +1590,7 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 197,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+cadastro: string",
 											"horizontalAlignment": 0
@@ -1599,7 +1599,7 @@
 									"font": "Arial;13;0",
 									"left": 576,
 									"top": 177,
-									"width": 217.02880859375,
+									"width": 373.1494140625,
 									"height": 38
 								},
 								{
@@ -1624,7 +1624,7 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 220,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+__construct()",
 											"horizontalAlignment": 0
@@ -1641,7 +1641,7 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 235,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+validateFields(par: string): boolean",
 											"horizontalAlignment": 0
@@ -1658,7 +1658,7 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 250,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+validateEmail(par: string): boolean",
 											"horizontalAlignment": 0
@@ -1675,9 +1675,43 @@
 											"font": "Arial;13;0",
 											"left": 581,
 											"top": 265,
-											"width": 207.02880859375,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+validateData(par: string): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFydr6xEvy/zCo=",
+											"_parent": {
+												"$ref": "AAAAAAFyUy9ujSkCjxM="
+											},
+											"model": {
+												"$ref": "AAAAAAFydr6w9/y8RkQ="
+											},
+											"font": "Arial;13;0",
+											"left": 581,
+											"top": 280,
+											"width": 363.1494140625,
+											"height": 13,
+											"text": "+validateConfSenha(senha: string, senhaConf: string): boolean",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFydr9gPPzPF3c=",
+											"_parent": {
+												"$ref": "AAAAAAFyUy9ujSkCjxM="
+											},
+											"model": {
+												"$ref": "AAAAAAFydr9gL/zMcVM="
+											},
+											"font": "Arial;13;0",
+											"left": 581,
+											"top": 295,
+											"width": 363.1494140625,
+											"height": 13,
+											"text": "+validateForcaSenha(senha: string, par: string): boolean",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1691,8 +1725,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 581,
-											"top": 280,
-											"width": 207.02880859375,
+											"top": 310,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+getErro(): string",
 											"horizontalAlignment": 0
@@ -1708,8 +1742,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 581,
-											"top": 295,
-											"width": 207.02880859375,
+											"top": 325,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+setErro(erro: string)",
 											"horizontalAlignment": 0
@@ -1725,8 +1759,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 581,
-											"top": 310,
-											"width": 207.02880859375,
+											"top": 340,
+											"width": 363.1494140625,
 											"height": 13,
 											"text": "+validateFinalCad(arrVar: string)",
 											"horizontalAlignment": 0
@@ -1735,8 +1769,8 @@
 									"font": "Arial;13;0",
 									"left": 576,
 									"top": 215,
-									"width": 217.02880859375,
-									"height": 113
+									"width": 373.1494140625,
+									"height": 143
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1775,8 +1809,8 @@
 							"containerChangeable": true,
 							"left": 576,
 							"top": 152,
-							"width": 217.02880859375,
-							"height": 176,
+							"width": 373.1494140625,
+							"height": 206,
 							"nameCompartment": {
 								"$ref": "AAAAAAFyUy9ujCj8oy0="
 							},
@@ -2983,6 +3017,80 @@
 									"_id": "AAAAAAFyWC8mWilyrCQ=",
 									"_parent": {
 										"$ref": "AAAAAAFyWC7jByloWGk="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFydr6w9/y8RkQ=",
+							"_parent": {
+								"$ref": "AAAAAAFyUy9uiij55k0="
+							},
+							"name": "validateConfSenha",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr9CwvzGVDs=",
+									"_parent": {
+										"$ref": "AAAAAAFydr6w9/y8RkQ="
+									},
+									"name": "senha",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr9Cw/zHJmM=",
+									"_parent": {
+										"$ref": "AAAAAAFydr6w9/y8RkQ="
+									},
+									"name": "senhaConf",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr9Cw/zIJ08=",
+									"_parent": {
+										"$ref": "AAAAAAFydr6w9/y8RkQ="
+									},
+									"type": "boolean",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFydr9gL/zMcVM=",
+							"_parent": {
+								"$ref": "AAAAAAFyUy9uiij55k0="
+							},
+							"name": "validateForcaSenha",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr/nZPzW/QI=",
+									"_parent": {
+										"$ref": "AAAAAAFydr9gL/zMcVM="
+									},
+									"name": "senha",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr/nZfzXmug=",
+									"_parent": {
+										"$ref": "AAAAAAFydr9gL/zMcVM="
+									},
+									"name": "par",
+									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFydr/nZfzYS7c=",
+									"_parent": {
+										"$ref": "AAAAAAFydr9gL/zMcVM="
 									},
 									"type": "boolean",
 									"direction": "return"
