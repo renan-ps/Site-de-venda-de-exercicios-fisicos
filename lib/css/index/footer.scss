@@ -1,16 +1,14 @@
-/*Footer*/
+/*FOOTER*/
 
 .container-footer {
-    width: 90%;
-    margin: 0 auto;
+    @include alinha-elemento-centro(90%);
 }
 
 .style-footer {
-    background-color: #36639a!important;
+    background-color: $cor-padrao-cliente-1!important;
     @media (max-width: 769px) {
         .edit-width {
-            width: 70%;
-            margin: 0 auto;
+            @include alinha-elemento-centro(70%);
         }
     }
 }
@@ -21,7 +19,7 @@
 
 .img-footer img {
     box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    @include border-radius-default;
 }
 
 .img-footer img:hover {
@@ -37,8 +35,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 70%;
-        margin: 0 auto;
+        @include alinha-elemento-centro(70%);
     }
 }
 
@@ -61,7 +58,7 @@
 
 .icon-contato {
     @include font-size-padrao(4em);
-    @include cor-font-footer;
+    color: $color-font-footer;
     font-weight: normal;
     @media (max-width: 371px) {
         @include font-size-padrao(3em);
@@ -69,7 +66,7 @@
 }
 
 .caracter-do-contato {
-    @include cor-font-footer;
+    color: $color-font-footer;
     @include font-size-padrao;
     @media (max-width: 401px) {
         @include font-size-padrao(1em);
@@ -97,7 +94,7 @@
 
 .rede-social i,
 .copyright-style {
-    @include cor-font-footer;
+    color: $color-font-footer;
 }
 
 .falcon-tecnol {

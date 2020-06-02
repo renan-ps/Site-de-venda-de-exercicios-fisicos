@@ -54,7 +54,7 @@
 
     <div class=' text-center py-3 copyright-style'>©Copyright 2020 |
         <a class='copyright-style' href='copyright'>Treino do Zé. Todos os Direitos Reservados.
-            Criado pela equipe <span class='falcon-tecnol'>Falcon Technology</span></a>
+            Criado pela equipe <span class='falcon-tecnol'>CornOut Technology</span></a>
     </div>
 
 </footer>
