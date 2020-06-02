@@ -1,7 +1,10 @@
-/*Header*/
+/*HEADER*/
 
 body {
-    @include color-body-default;
+    background-color: $background-color-body-default;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
 }
 
 .navbar {
@@ -21,26 +24,27 @@ body {
     }
 }
 
+.container-navbar img {
+    width: 4.3em;
+}
+
 .nav-item span {
     margin: 0 !important;
     padding: 0!important;
     border: 0 !important;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
 .style-navbar {
     height: 5em;
-    background-color: #f0c20a!important;
+    background-color: $cor-padrao-cliente-2!important;
 }
 
 .container-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+    @include alinha-elemento-centro(80%);
 }
 
 .container-navbar h3 {
@@ -56,5 +60,5 @@ body {
 
 .menu a {
     text-decoration: none;
-    @include cor-padrao;
+    color: $cor-font-padrao;
 }

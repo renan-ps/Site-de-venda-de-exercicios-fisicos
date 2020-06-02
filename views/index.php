@@ -243,10 +243,10 @@
 						</div>
 
 						
-						<h2 class="font-weight-bold my-4 color-text-plan">£59</h2>
+						<h2 class="font-weight-bold my-4 color-text-plan">R$89,90</h2>
 						<p class="color-text-plan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id
 						nobis accusamus deleniti cumque hic laborum.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="plano-basico">Saiba mais</a>
 
 					</div>
 					
@@ -276,10 +276,10 @@
 						</div>
 
 						<!--Price -->
-						<h2 class="font-weight-bold my-4 color-text-plan">£79</h2>
+						<h2 class="font-weight-bold my-4 color-text-plan">R$115,50</h2>
 						<p class="color-text-plan">Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio
 							 cupiditate sequi atque elit.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="plano-premium">Saiba mais</a>
 					</div>
 				</div>
 			</div>
@@ -300,7 +300,7 @@
 						<h2 class="font-weight-bold my-4 color-text-plan">£99</h2>
 						<p class="color-text-plan">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni
 						accusantium repellat eveniet quia vitae.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="">Saiba mais</a>
 
 					</div>
 				</div>

@@ -29,8 +29,10 @@ class ClassLayout{
         $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css' rel='stylesheet'>\n";
-        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>
-        ";
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>";
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap' rel='stylesheet'>";
+        $html .= "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>";
+
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
 
         $html .= "</head>\n\n";
@@ -41,7 +43,7 @@ class ClassLayout{
 
     $html .= "            <div class='container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
-                                <img>
+                                <img src='image/logo.png'>
                               </a>";
                               
     $html .= "                <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
@@ -208,7 +210,7 @@ class ClassLayout{
 
               <div class=' text-center py-3 copyright-style' >©Copyright 2020 |
                 <a class='copyright-style' href='copyright'> Treino do Zé. Todos os Direitos Reservados. 
-                Criado pela equipe <span class='falcon-tecnol'>Falcon Tecnologia</span></a>
+                Criado pela equipe <span class='falcon-tecnol'>CornOut Tecnologia</span></a>
               </div>
         
             </footer>
@@ -221,11 +223,12 @@ class ClassLayout{
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
           <!-- MDB core JavaScript -->
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
+
+  
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
-        
         </body>
         </html>
         ";

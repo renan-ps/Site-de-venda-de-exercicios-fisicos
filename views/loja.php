@@ -5,7 +5,8 @@
     
     <div class="produto" id="1">
         <div class="imagem-produto">
-            <img src="image/blusa-produto-frente.jpeg">
+            <img class="img-propaganda-1-1" src="image/blusa-produto-frente.jpeg" alt="imagem de propaganda de roupa">
+            <img class="img-produto-2 img-propaganda-1-2" src="image/blusa-produto-verso.jpeg" alt="imagem de propaganda de roupa">
 
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
@@ -35,7 +36,9 @@
 
     <div class="produto" id="2">
         <div class="imagem-produto">
-            <img src="image/img-equipamento-loja.jpg">
+            <img class="img-propaganda-2-1" src="image/img-equipamento-loja.jpg" alt="imagem de equipamento de musculação">
+            <img class="img-produto-2 img-propaganda-2-2" src="image/img-equipamento-loja-2.jpg" alt="imagem de equipamento de musculação">
+
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
                     <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
@@ -57,7 +60,8 @@
 
     <div class="produto" id="3">
         <div class="imagem-produto" >
-            <img src="image/img-treino-loja.jpg">
+            <img src="image/img-treino-loja.jpg" class="img-propaganda-3-1" alt="imagem de pessoas se exercitando">
+            <img src="image/img-treino-loja-2.jpeg" class="img-produto-2 img-propaganda-3-2"  alt="imagem de pessoas se exercitando">
 
             <div class="container-produto">
                 <div class="box-saiba-mais-produto">
@@ -82,7 +86,7 @@
 
 <div class="paypal">
     <p>Pague com:</p>
-    <img src="image/paypal.png" alt="icon-paypal">
+    <img src="image/icon-paypal.svg" alt="icon-paypal">
 </div>
 
 
@@ -124,7 +128,7 @@
 
     <div class=' text-center py-3 copyright-style'>©Copyright 2020 |
         <a class='copyright-style' href='copyright'>Treino do Zé. Todos os Direitos Reservados.
-            Criado pela equipe <span class='falcon-tecnol'>Falcon Technology</span></a>
+            Criado pela equipe <span class='falcon-tecnol'>CornOut Technology</span></a>
     </div>
 
 </footer>

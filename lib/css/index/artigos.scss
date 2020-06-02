@@ -1,15 +1,14 @@
-/*Artigos*/
+/*ARTIGOS*/
 
 .artigos {
-    width: 80%;
-    margin: 0 auto;
+    @include alinha-elemento-centro(80%);
     margin-top: 3.5em;
     margin-bottom: 2em;
 }
 
 .titulo-artigos {
-    @include text-center;
-    @include cor-padrao;
+    text-align: center;
+    color: $cor-font-padrao;
 }
 
 .dicas {
@@ -49,9 +48,10 @@
     width: 100%;
     height: 100%;
     max-width: 100%;
+    border: $border-img-default;
     @include border-radius-default;
     -webkit-transition: all 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    transition: all 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .imagem img:hover {
@@ -62,7 +62,7 @@
 }
 
 .box-dicas {
-    width: 95%;
+    @include alinha-elemento-centro(95%);
     height: auto;
     padding: 0.1em;
     margin-bottom: 0.2em;
@@ -75,18 +75,18 @@
     text-overflow: Ellipsis;
     margin-top: 0.1em;
     @include font-size-padrao(1.5em);
-    @include cor-padrao;
-    @include text-center;
+    color: $cor-font-padrao;
+    text-align: center;
 }
 
 .dica-texto {
     white-space: normal;
     overflow: hidden;
     text-overflow: Ellipsis;
+    text-align: center;
     @include alinha-elemento-centro(90%);
     @include font-weight-bold;
-    @include text-center;
-    @include cor-padrao;
+    color: $cor-font-padrao;
 }
 
 .box-leia-mais {
@@ -106,7 +106,7 @@
 .leia-mais a {
     @include font-size-padrao(1em);
     @include font-weight-bold;
-    color: #36639a;
+    color: $cor-padrao-cliente-1;
     margin-left: 0.6em;
     margin-right: 1em;
 }

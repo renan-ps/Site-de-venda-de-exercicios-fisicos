@@ -6,7 +6,7 @@
     position: absolute;
     width: 22%;
     z-index: 2;
-    right: 4%;
+    right: 3.3%;
 }
 
 .top-seller img {
@@ -18,11 +18,15 @@
 }
 
 .color-buttom {
-    background-color: #f0c20a;
+    background-color: $cor-padrao-cliente-2;
+}
+
+.color-card a {
+    color: #fff!important;
 }
 
 .color-card:hover {
-    background-color: #f0c20a;
+    background-color: $cor-padrao-cliente-2;
     transition: 600ms;
 }
 
@@ -37,8 +41,8 @@
 }
 
 .color-card:hover .color-text-buttom {
-    color: #f0c20a!important;
-    font-weight: bold;
+    color: $cor-padrao-cliente-2!important;
+    @include font-weight-bold;
     transition: 700ms;
 }
 
