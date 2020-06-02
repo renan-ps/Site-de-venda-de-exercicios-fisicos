@@ -1,4 +1,7 @@
 <?php
+
+$objPass = new Classes\ClassPassword();
+
 if (isset($_POST['nome'])){
     $nome=filter_input(INPUT_POST,'nome', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 }else{
@@ -31,7 +34,7 @@ if (isset($_POST['endereco'])){
 
 if (isset($_POST['senha'])){
     $senha = $_POST['senha'];
-    $hashSenha = '';
+    $hashSenha = $objPass->passwordHash($senha);
 }else{
     $senha=null;
     $hashSenha = null;
