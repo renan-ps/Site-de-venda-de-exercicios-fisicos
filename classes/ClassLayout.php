@@ -222,6 +222,7 @@ class ClassLayout{
           <!-- MDB core JavaScript -->
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>

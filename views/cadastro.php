@@ -12,6 +12,7 @@
             <input type="text" id="endereco" name="endereco" placeholder="Endereco">
             <input type="password" id="senha" name="senha" placeholder="Senha">
             <input type="password" id="senhaConf" name="senhaConf" placeholder="Confirme sua senha">
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
             <input type="submit" value="Cadastrar">
         </div>
     </form>
@@ -66,4 +67,5 @@
 <script src='lib/js/jquery.js'></script>
 <script src='lib/js/index.js'></script>
 <script src='lib/js/vanilla-masker.min.js'></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lf-sP8UAAAAAJBsCaxkocgA4CfOaLlvGv-TyYfm"></script>
 <script src='lib/js/javascript.js'></script>

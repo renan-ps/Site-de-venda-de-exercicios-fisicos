@@ -7,6 +7,7 @@ $validate->validateIssetEmail($email, 'r');
 $validate->validateData($dataNascimento);
 $validate->validateConfSenha($senha, $senhaConf);
 $validate->validateForcaSenha($senha);
+$validate->validateCaptcha($gRecaptchaResponse);
 
 var_dump($validate->getErro());
 

@@ -50,6 +50,12 @@ $dataCreate = date("Y-m-d H:i:s");
 
 $token = bin2hex(random_bytes(64));
 
+if (isset($_POST['g-recaptcha-response'])){
+    $gRecaptchaResponse = $_POST['g-recaptcha-response'];
+}else{
+    $gRecaptchaResponse = null;
+}
+
 $arrVar=[
     "nome"=>$nome,
     "email"=>$email,
