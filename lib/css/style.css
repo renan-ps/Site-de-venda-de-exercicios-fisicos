@@ -362,9 +362,17 @@ body {
 
 .texto_descricao_marca {
   z-index: 99;
-  position: absolute;
-  margin-top: -150px;
+  position: absolute!important;
+  margin-top: 50px!important;
   color: white; }
+
+  .texto_descricao_marca1 {
+  z-index: 99;
+  position: absolute!important;
+  margin-top: 50px !important;
+  color: white; }
+
+  
 
 /*Parallax-divider1*/
 .parallax1 {
@@ -1588,4 +1596,34 @@ body {
   -webkit-transform: scale(0.9);
   transform: scale(0.9); }
 
+
+* NEWS LATTER */
+    .input-grey .input-group-lg>.input-group-prepend>.input-group-text {
+        border-radius: .125rem;
+      }
+
+      .input-grey .form-control {
+        border-radius: .125rem;
+      }
+
+      .input-grey .form-control.form-control-lg {
+        font-size: 1rem;
+      }
+      
+      .form-control:focus {
+        background-color: rgba(255,255,255,.3);
+      }
+
+      .input-grey input::placeholder {
+        color: #fff;
+      }
+
+      .input-grey .input-group-lg>.form-control:not(textarea) {
+        height: calc(1.5em + 1rem + 6px);
+      }
+
+      .social .fab {
+        width: 30px;
+        height: 30px;
+      }
 /*# sourceMappingURL=style.css.map */
