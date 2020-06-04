@@ -75,44 +75,4 @@
 </div>
 
 <!-- Footer -->
-<footer class='page-footer font-small style-footer lighten-3 pt-4'>
-
-
-
-    <!--Redes sociais-->
-
-    <div class='mb-3 text-center text-md-right rede-social'>
-
-
-        <a class='fb-ic' href='https://www.facebook.com/'>
-            <i class='fab fa-facebook-f mr-4'> </i>
-        </a>
-
-        <a class='tw-ic'>
-            <i class='fab fa-twitter mr-4'> </i>
-        </a>
-
-        <a class='li-ic'>
-            <i class='fab fa-linkedin-in mr-4'> </i>
-        </a>
-
-        <a class='ins-ic'>
-            <i class='fab fa-instagram mr-4'> </i>
-        </a>
-
-        <a class='ins-ic'>
-            <i class='fab fa-youtube'></i> </i>
-        </a>
-
-    </div>
-
-    <!--Copyright-->
-
-    <div class=' text-center py-3 copyright-style'>©Copyright 2020 |
-        <a class='copyright-style' href='copyright'>Treino do Zé. Todos os Direitos Reservados.
-            Criado pela equipe <span class='falcon-tecnol'>Cornout Technology</span></a>
-    </div>
-
-</footer>
-<script src="lib/js/jquery.js"></script>
-<script src="lib/js/planos.js"></script>
+<?php echo \Classes\ClassLayout::setFooter() ?>

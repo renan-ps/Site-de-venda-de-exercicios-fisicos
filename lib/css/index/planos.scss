@@ -19,6 +19,11 @@
 
 .color-buttom {
     background-color: $cor-padrao-cliente-2;
+    @include border-radius-buttom-default;
+    width: 60%;
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 }
 
 .color-card a {
