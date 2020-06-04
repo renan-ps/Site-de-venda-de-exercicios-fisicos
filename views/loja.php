@@ -93,52 +93,5 @@
 
 
 <!-- Footer -->
-<footer class='page-footer font-small style-footer lighten-3 pt-4'>
+<?php echo \Classes\ClassLayout::setFooter() ?>
 
-
-
-    <!--Redes sociais-->
-
-    <div class='mb-3 text-center text-md-right rede-social'>
-
-
-        <a class='fb-ic' href='https://www.facebook.com/ygor.regato.5'>
-            <i class='fab fa-facebook-f mr-4'> </i>
-        </a>
-
-        <a class='tw-ic'>
-            <i class='fab fa-twitter mr-4'> </i>
-        </a>
-
-        <a class='li-ic'>
-            <i class='fab fa-linkedin-in mr-4'> </i>
-        </a>
-
-        <a class='ins-ic'>
-            <i class='fab fa-instagram mr-4'> </i>
-        </a>
-
-        <a class='ins-ic'>
-            <i class='fab fa-youtube'></i> </i>
-        </a>
-
-    </div>
-
-    <!--Copyright-->
-
-    <div class=' text-center py-3 copyright-style'>©Copyright 2020 |
-        <a class='copyright-style' href='copyright'>Treino do Zé. Todos os Direitos Reservados.
-            Criado pela equipe <span class='falcon-tecnol'>CornOut Technology</span></a>
-    </div>
-
-</footer>
-
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
-<script src='lib/js/jquery.js'></script>
-<script src='lib/js/index.js'></script>
-<script src="lib/js/loja.js"></script>
-<script src='lib/js/vanilla-masker.min.js'></script>
-<script src='lib/js/javascript.js'></script>

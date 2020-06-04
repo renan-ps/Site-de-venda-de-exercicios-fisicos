@@ -11,13 +11,38 @@ body {
     padding: .10rem, .1rem;
 }
 
+.container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include alinha-elemento-centro(80%);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: $cor-font-padrao;
+    padding-right: 0!important;
+    font-family: "Comfortaa", Arial, Tahoma, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
 .nav-item {
     border-right: 2px inset;
+    padding-right: 1em;
     border-color: rgba(0, 0, 0, .05);
     padding-left: 0 20px;
-    font-family: "Comfortaa", Arial, Tahoma, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
     letter-spacing: 0px;
     @media only screen and (max-width: 991px) {
         border: none;
@@ -38,27 +63,4 @@ body {
 .style-navbar {
     height: 5em;
     background-color: $cor-padrao-cliente-2!important;
-}
-
-.container-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include alinha-elemento-centro(80%);
-}
-
-.container-navbar h3 {
-    color: black;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: $cor-font-padrao;
 }

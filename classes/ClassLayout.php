@@ -93,126 +93,60 @@ class ClassLayout{
         $html = "
         </main>
             <!-- Footer -->
-            <footer class='page-footer font-small style-footer lighten-3 pt-4'>
-        
-              <!--Imagens-->
-              <div class='container-footer'>
-        
-                <div class='contatos'>
-        
-                    <ul class='duvidas'>
-                        <li class='icon-contato'>&#9993;</li>
-                        <li class='caracter-do-contato'>Você ainda tem dúvidas ?<br>ygrejo@gmail.com</li>
-                    </ul>
-        
-                    <ul class='duvidas'>
-                        <li class='icon-contato'>&#9743;</li>
-                        <li class='caracter-do-contato'>Telefone<br>(21) 9999-9999</li>
-                    </ul>
-                </div>
-        
-                <div class='row grid-footer'>
-        
-                <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                  <div class=' overlay z-depth-1-half img-footer'>
-                    <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg' class='img-fluid'
-                      alt=''>
-                    <a href=''>
-                      <div class='mask rgba-white-light'></div>
-                    </a>
-                  </div>
-                </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                    <div class='overlay z-depth-1-half img-footer'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                    <div class='overlay z-depth-1-half img-footer'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-                  </div>
+            <footer>
+		
+              <div class=footer-container>
 
-                  <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                  <div class='overlay z-depth-1-half img-footer'>
-                    <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg' class='img-fluid'
-                      alt=''>
-                    <a href=''>
-                      <div class='mask rgba-white-light'></div>
-                    </a>
-                  </div>
-                </div>
-        
-                  
-        
-                  <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                      <div class='overlay z-depth-1-half img-footer'>
-                        <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg' class='img-fluid'
-                          alt=''>
-                        <a href=''>
-                          <div class='mask rgba-white-light'></div>
-                        </a>
+                    <div class=colun-footer-1>
+                      <div class=img-footer>
+                        <img src=image/logo.png alt=Logotipo Treino do Zé>
                       </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4 edit-width'>
-                    <div class='overlay z-depth-1-half img-footer'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
+                      <div class=sobre-mim-footer>
+                        <h3>Sobre mim</h3>
+                        <p>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
+                          a sua relação com seu corpo.</p>
+                      </div>
+                      <ul class=contact-footer>
+                        <li> <h3>Entre em Contato</h3></li>
+                        <li><p><i class='fab fa-whatsapp icon-whatsapp-footer'></i> +351 35263789</p></li>
+                        <li><p class=email-footer>treinodoze@gmail.com</p></li>
+                      </ul>
+                    </div>
+                  
+                    <div class=colun-footer-2>
+                      <ul class=secoes-footer>
+                        <li><h3>Seções</h3></li>
+                        <li><a href=#>Sobre mim</a></li>
+                        <li><a href=#>Como vou te ajudar</a></li>
+                        <li><a href=#>Seu treino entregue em alto nível</a></li>
+                        <li><a href=#>Passo a passo para contratar</a></li>
+                        <li><a href=#>Planos</a></li>
+                        <li><a href=#>Depoimentos</a></li>
+                        <li><a href=#>Perguntas frequentes</a></li>
+                      </ul>
+                    </div>
+
+                    <div class=colun-footer-3>
+                      <ul class=links-uteis-footer>
+                        <li><h3>Links úteis</h3></li>
+                        <li><a href=#>Plano Básico</a></li>
+                        <li><a href=#>Plano Premium</a></li>
+                        <li><a href=#>Plano Advanced</a></li>
+                        <li><a href=#>Como funciona</a></li>
+                        <li><a href=#>Loja</a></li>
+                        <li><a href=#>Artigos</a></li>
+                        <li><a href=#>A consultoria</a></li>
+                      </ul>
                     </div>
                   </div>
-        
+              
+                <div class=container-redes-sociais-footer>
+                  <a href=facebook><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
+                  <a href=twitter><i class='fab fa-twitter icons-rede-sociais-footer'></i></a>
+                  <a href=instagram><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
+                  <a href=youtube><i class='fab fa-youtube icons-rede-sociais-footer'></i></a>
+                  <a href=whatsapp><i class='fab fa-whatsapp icons-rede-sociais-footer'></i></a>
                 </div>
-              </div>
-        
-
-              <!--Redes sociais-->
-
-              <div class='mb-3 text-center text-md-right rede-social'>
-        
-        
-                <a class='fb-ic' href='https://www.facebook.com/ygor.regato.5'>
-                  <i class='fab fa-facebook-f mr-4'> </i>
-                </a>
-        
-                <a class='tw-ic'>
-                  <i class='fab fa-twitter mr-4'> </i>
-                </a>
-        
-                <a class='li-ic'>
-                  <i class='fab fa-linkedin-in mr-4'> </i>
-                </a>
-        
-                <a class='ins-ic'>
-                  <i class='fab fa-instagram mr-4'> </i>
-                </a>
-        
-                <a class='ins-ic'>
-                  <i class='fab fa-youtube'></i> </i>
-                </a>
-        
-              </div>
-        
-              <!--Copyright-->
-
-              <div class=' text-center py-3 copyright-style' >©Copyright 2020 |
-                <a class='copyright-style' href='copyright'> Treino do Zé. Todos os Direitos Reservados. 
-                Criado pela equipe <span class='falcon-tecnol'>CornOut Tecnologia</span></a>
-              </div>
-        
             </footer>
 
             <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
@@ -229,6 +163,8 @@ class ClassLayout{
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
+            <script src='lib/js/loja.js'></script>
+            <script src='lib/js/planos.js'></script>
         </body>
         </html>
         ";
