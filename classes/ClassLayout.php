@@ -39,9 +39,9 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white '>";
 
-    $html .= "            <div class='container-navbar'>";
+    $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
                                 <img src='image/logo.png'>
                               </a>";
