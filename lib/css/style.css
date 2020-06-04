@@ -9,8 +9,12 @@ body {
 .navbar {
   padding: .10rem, .1rem; }
 
+  .white {
+    background-color: #ffc107 !important;
+}
+
 .container-navbar {
-  display: flex;
+ 
   align-items: center;
   justify-content: space-between;
   width: 80%;
@@ -29,6 +33,13 @@ body {
   font-family: "Comfortaa", Arial, Tahoma, sans-serif;
   font-size: 1.1em;
   font-weight: 300; }
+
+  @media (max-width: 1265px) {
+.menu a{
+  font-size: 0.9em;
+ 
+ }
+}
 
 .menu a:hover {
   text-decoration: underline; }
@@ -1626,4 +1637,35 @@ body {
         width: 30px;
         height: 30px;
       }
+
+
+    /*DIV SOBRE PERSONAL*/
+@media (max-width: 767px) {
+.sobre_personal{
+  margin-top: -100px;
+  height: 820px;
+ }
+}
+
+@media (max-width: 767px) {
+.texto_descricao_marca1{
+  margin-top: -10px !important;
+ 
+ }
+}
+@media (max-width: 767px) {
+.texto_descricao_marca{
+  margin-top: -10px !important;
+ 
+ }
+}
+@media (max-width: 767px) {
+.depoimentos{
+  margin-bottom: 300px !important;
+  height: 300px !important;
+ 
+ }
+}
+
+
 /*# sourceMappingURL=style.css.map */

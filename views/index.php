@@ -62,9 +62,13 @@
 	</div>
 	
 	
+
+	<style type="text/css" media="screen">
+		
+	</style>
 	<!--SOBRE O PERSONAL-->
 	
-	<div class="container pt-5 pb-5" id="personal">
+	<div class="container pt-5 pb-5 sobre_personal" id="personal">
 		<div class="row apresentacao">
 			
 			<!-- FOTO APRESENTAÇÃO-->
@@ -81,13 +85,17 @@
 				<!-- TEXTO APRESENTAÇÃO-->
 				
 			<div class="col-md-6 col-sm-12 " id="navbar-example2-mdo">
-				<h3 class="text-lg-center">José Acácio:</h3>
+				 <span id="span_sobre"></span>
+				<span>SOBRE MIN</span>
+				<h3 class="text-lg-left" style="">José Acácio:</h3>
+				<hr class="bg-warning w-100 text-left ">
 				<p align="justify">Desde que se formou em educação física o professor José Acácio já planejava levar sua filosofia de trabalho para as 
 					pessoas. Uma filosofia baseada em hábitos saudáveis práticas regulares de atividade física, que, aliás, é uma forma 
 					de lazer e socialização além de ser a forma mais inteligente de promover a saúde do nosso corpo; alimentação como um 
 					prazer e não como uma compulsão, pois em excesso será um fardo carregado pela maioria das pessoas. Hoje não se pode 
 					falar de bem-estar sem citar exercícios físicos. Como costuma dizer José: “o tempo não espera 
 					ninguém”.</p>
+					<hr class="bg-warning w-100 text-left ">
 			</div>			
 		</div>		
 	</div>
@@ -95,11 +103,11 @@
 
 
 	<!--CONSULTORIA-->
-	<div id="consultoria"></div>
-	<div class="view">
+	
+	<div class="view ">
 	<div class="parallax1 parallax-divider1" ></div>
 
-		<div class="mask rgba-black-strong align-items-center" >
+		<div class="mask rgba-black-strong align-items-center " >
 				
 			<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca1" >
 				<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">A Consultoria</h4>
@@ -209,7 +217,8 @@
 			
 		</section>
 		
-	</div>     
+	</div>  
+
 
 
 	<!--PLANOS-->
@@ -548,7 +557,7 @@
 				<!-- Content -->
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
 					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">Por que nos contratar ?</h4>
-					<hr class="hr-light my-4 w-75">
+					<hr class="hr-light my-4 w-50">
 					<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">Vejo que muitos estão buscando videos de treinos no youtube e ficando perdidos no 
 						meio do caminho, não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento, o que 
 						fazer ? como fazer ? quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
