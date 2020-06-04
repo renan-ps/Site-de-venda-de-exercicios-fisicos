@@ -103,7 +103,7 @@ class ClassLayout{
                       </div>
                       <div class=sobre-mim-footer>
                         <h3>Sobre mim</h3>
-                        <p>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
+                        <p align='justify'>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
                           a sua relação com seu corpo.</p>
                       </div>
                       <ul class=contact-footer>
@@ -118,7 +118,7 @@ class ClassLayout{
                         <li><h3>Seções</h3></li>
                         <li><a href=#>Sobre mim</a></li>
                         <li><a href=#>Como vou te ajudar</a></li>
-                        <li><a href=#>Seu treino entregue em alto nível</a></li>
+                        <li><a href=#>Seu treino em alto nível</a></li>
                         <li><a href=#>Passo a passo para contratar</a></li>
                         <li><a href=#>Planos</a></li>
                         <li><a href=#>Depoimentos</a></li>
