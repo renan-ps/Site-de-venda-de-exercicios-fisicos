@@ -1,0 +1,195 @@
+    .titulo-loja {
+        width: 90%;
+        margin: 3em auto 0;
+        text-align: center;
+        color: $cor-padrao-cliente-1;
+        @include font-family-default;
+        font-size: 2.5em;
+    }
+    
+    .container-loja {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 3em auto 2em;
+    }
+    
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        height: auto;
+        @include border-radius-default;
+        transition: all 0.3s;
+        @media (max-width: 1100px) {
+            width: 45%;
+            margin-bottom: 3em;
+            box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7);
+        }
+        @media (max-width: 683px) {
+            width: 97%;
+        }
+    }
+    
+    .produto:hover {
+        box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7);
+    }
+    
+    .produto:hover img {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .imagem-produto {
+        width: 100%;
+        position: relative;
+    }
+    
+    .container-produto {
+        width: 100%;
+        position: absolute;
+        top: 89.7%;
+    }
+    
+    .img-produto-2 {
+        display: none;
+        width: 100%;
+        max-width: 100%;
+        height: 15em;
+        border-radius: 10px;
+    }
+    
+    .imagem-produto img {
+        width: 100%;
+        max-width: 100%;
+        height: 15em;
+        border-radius: 10px;
+        transition: all 0.3s;
+        @media (max-width: 1100px) {
+            border-radius: 10px;
+        }
+        @media (max-width: 683px) {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    .box-saiba-mais-produto {
+        display: flex;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .saiba-mais-produto {
+        border-right: 2px solid #ccc;
+        @media (max-width: 1100px) {
+            border-radius: 0 0 0px 10px;
+        }
+    }
+    
+    .favorito-produto {
+        @media (max-width: 1100px) {
+            border-radius: 0 0 10px 0;
+        }
+    }
+    
+    .favorito-produto,
+    .saiba-mais-produto {
+        width: 50%;
+        text-align: center;
+        background-color: transparentize($color: $cor-padrao-cliente-1, $amount: 0.5px);
+    }
+    
+    .favorito-produto a,
+    .saiba-mais-produto a {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .favorito-produto::before {
+        content: "\2661";
+        color: white;
+        margin-right: 0.3em;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .descricao-produto {
+        text-align: center;
+        padding: 1em;
+        height: 11em;
+        width: 95%;
+        overflow: hidden;
+        @media (max-width: 1261px) {
+            font-size: 0.9em;
+        }
+        @media (max-width:1100px) {
+            font-size: 1em;
+        }
+        @media (max-width: 683px) {
+            font-size: 1.1em;
+            font-weight: 400;
+            height: 7em;
+        }
+        @media (max-width: 683px) {
+            height: 10em;
+        }
+    }
+    
+    .tamanho-roupa-produto label {
+        margin-left: 1em;
+    }
+    
+    .valor-produto {
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    .valor-produto span {
+        font-weight: 800;
+    }
+    
+    .paypal {
+        text-align: center;
+    }
+    
+    .paypal p {
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .paypal img {
+        width: 6.5em;
+    }
+    
+    .botao-produto {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .botao-produto input {
+        background-color: $cor-padrao-cliente-2!important;
+        width: 85%!important;
+        margin: 30px 20px 40px 20px;
+        border: none;
+        color: white;
+        padding: 15px 80px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 13px;
+        -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4)!important;
+        box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+        @include border-radius-buttom-default;
+    }
+    
+    .botao-produto:active {
+        -moz-transform: scale(0.95);
+        -webkit-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+    }

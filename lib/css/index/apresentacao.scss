@@ -1,0 +1,26 @@
+/*APRESENTAÇÃO*/
+
+.apresentacao {
+    margin-top: 50px;
+    height: 400px!important;
+    width: 100%;
+}
+
+.foto_descricao_fundo img {
+    opacity: 0.8;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.texto_descricao_marca {
+    z-index: 99;
+    position: absolute;
+    margin-top: -200px;
+    color: white;
+}
+
+.fa-play:before {
+    margin-left: .3rem;
+}

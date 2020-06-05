@@ -1,24 +1,34 @@
-@mixin font-size-padrao($font:1em){
-
-	font-size: $font;
+@mixin font-size-padrao($font:1.1em) {
+    font-size: $font;
 }
 
-@mixin font-weight-bold{
-
-	font-weight: bold;
+@mixin font-family-default {
+    font-family: 'Nunito', sans-serif;
 }
 
-@mixin cor-padrao{
-
-	color: $cor-padrao;
+@mixin font-weight-bold($bold:bold) {
+    font-weight: bold;
 }
 
-@mixin text-center{
-
-	text-align: center;
+@mixin font-weight-tittle ($weight: 600) {
+    font-weight: $weight;
 }
 
-@mixin cor-font-footer($font-footer:#fff){
+@mixin width-img-text-articles($width:80%) {
+    width: $width;
+}
 
-	color: $font-footer!important;
+@mixin alinha-elemento-centro($width-default) {
+    width: $width-default;
+    margin: 0 auto;
+}
+
+@mixin border-radius-default($border: 10px) {
+    -webkit-border-radius: $border;
+    border-radius: $border;
+}
+
+@mixin border-radius-buttom-default($border-buttom:25px) {
+    -webkit-border-radius: $border-buttom;
+    border-radius: $border-buttom;
 }

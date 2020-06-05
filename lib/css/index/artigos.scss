@@ -1,0 +1,132 @@
+/*ARTIGOS*/
+
+.artigos {
+    @include alinha-elemento-centro(80%);
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+
+.titulo-artigos {
+    text-align: center;
+    color: $cor-font-padrao;
+}
+
+.dicas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3.5em;
+}
+
+.container-dicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+    margin-bottom: 1.5em;
+    @media (max-width: 1070px) {
+        width: 47%;
+    }
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+.imagem {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    @media (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: $border-img-default;
+    @include border-radius-default;
+    -webkit-transition: all 300ms cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    @media (max-width: 1070px) {}
+}
+
+.imagem img:hover {
+    opacity: 0.9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6)!important;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.box-dicas {
+    @include alinha-elemento-centro(95%);
+    height: auto;
+    padding: 0.1em;
+    margin-bottom: 0.2em;
+    border: 0.5px solid #F2F2F2;
+}
+
+.titulo-dica-texto {
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: Ellipsis;
+    margin-top: 0.1em;
+    @include font-size-padrao(1.5em);
+    color: $cor-font-padrao;
+    text-align: center;
+}
+
+.dica-texto {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: Ellipsis;
+    text-align: center;
+    @include alinha-elemento-centro(90%);
+    @include font-weight-bold;
+    color: $cor-font-padrao;
+}
+
+.box-leia-mais {
+    width: 100%;
+    align-items: flex-end;
+}
+
+.leia-mais {
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.leia-mais p::before {
+    content: "\1F4D6";
+}
+
+.leia-mais a {
+    @include font-size-padrao(1em);
+    @include font-weight-bold;
+    color: $cor-padrao-cliente-1;
+    margin-left: 0.6em;
+    margin-right: 1em;
+}
+
+.leia-mais a:active {
+    transform: scale(0.9);
+    color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #dad7d7;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #585858;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #585858;
+    border-radius: 20px;
+}

@@ -1,0 +1,112 @@
+/*FOOTER*/
+
+footer {
+    background-color: #000;
+    padding: 4em 0 1em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin: 0 0 0.5em 5em;
+}
+
+.footer-container h3 {
+    color: $cor-padrao-cliente-2;
+}
+
+.footer-container a,
+.footer-container p {
+    text-decoration: none;
+    color: #54535a;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.colun-footer-1,
+.colun-footer-2,
+.colun-footer-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.3%;
+    margin: 0 6%;
+}
+
+.colun-footer-2,
+.colun-footer-3 {
+    padding-bottom: 1em;
+}
+
+.img-footer {
+    width: 55%;
+    padding-bottom: 2em;
+}
+
+.img-footer img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-footer,
+.secoes-footer,
+.links-uteis-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-container a:hover::before {
+    content: "\2713";
+    color: #fff;
+    margin-right: 0.2em;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.footer-container a:hover {
+    color: #fff;
+}
+
+.footer-container p:hover {
+    color: #fff;
+}
+
+.footer-container i:hover {
+    color: #fff;
+}
+
+.contact-footer {
+    padding-top: 1.5em;
+}
+
+.icon-whatsapp-footer {
+    font-weight: 400;
+    color: #ccc;
+    margin-right: 1em;
+}
+
+.email-footer::before {
+    content: "\1F582";
+    color: #ccc;
+    font-weight: 600;
+    margin-right: 1em;
+}
+
+.container-redes-sociais-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.icons-rede-sociais-footer {
+    color: #ccc;
+    margin: 0 1em 0;
+    font-size: 1.2em;
+}
+
+.icons-rede-sociais-footer:hover {
+    color: #fff;
+}

@@ -22,31 +22,64 @@ class ClassLayout{
 
         $html .= "    <meta name='description' content='$description'>\n";
         $html .= "    <meta name='author' content='$author'>\n\n";
-
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>\n";
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css\n'>";
         $html .= "    <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>\n";
         $html .= "    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>";
         $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>\n";
-        $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css' rel='stylesheet'>\n";
-        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/index.css'>\n";
+        $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css' rel='stylesheet'>\n";
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>";
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap' rel='stylesheet'>";
+        $html .= "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>";
+
+        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
 
         $html .= "</head>\n\n";
-        $html .= "<body>\n";
+        $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
-		$html .= "        <nav class='navbar navbar-dark style-navbar'>\n\n" ;
-        $html .= "            <section class='container-navbar'>\n\n";
-		$html .= "                <a class='navbar-brand' href='#'></a>\n";
-		$html .= "                <ul class='menu'>\n";
-		$html .= "                    <li><a href='" . DIRPAGE . "'>Home</a></li>\n";
-		$html .= "                    <li><a href='" .  DIRPAGE . "personal'>O Personal</a></li>\n";
-		$html .= "                    <li><a href='consultoria'>A Consultoria</a></li>\n";
-		$html .= "                    <li><a href='planos'>Planos</a></li>\n";
-		$html .= "                    <li><a href='como-funciona'>Como funciona ?</a></li>\n";
-		$html .= "                    <li><a href='por-que-contratar'>Por que contratar ?</a></li>\n";
-		$html .= "                    <li><a  href='blog'>Blog</a></li>\n";
-		$html .= "                    <li><a href='loja'>Loja</a></li>\n";
-		$html .= "              </ul>\n\n";
+        
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
+
+    $html .= "            <div class='container-navbar'>";
+    $html .= "                <a class='navbar-brand' href='#'>
+                                <img src='image/logo.png'>
+                              </a>";
+                              
+    $html .= "                <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
+                                aria-controls='basicExampleNav' aria-expanded='false' aria-label='Toggle navigation'>
+                                <span class='navbar-toggler-icon'></span>
+                             </button>";
+    $html .= "               <div class='collapse navbar-collapse' id='basicExampleNav'>";
+      $html .= "                <ul class='menu navbar-nav mr-auto'>";
+      $html .= "                    <li class='nav-item'>
+                                      <a class='nav-link waves-effect  text-wrap' href='index' target='_self'>Home</a>
+                                    </li>";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect effect-scroll' href='index#personal' target='_self' id='#personal'><span>O Personal</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect effect-scroll' href='index#consultoria' target='_self' id='#consultoria'><span>A Consultoria</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect effect-scroll' href='index#planos' target='_self' id='#planos'><span>Planos</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect effect-scroll' href='index#como-funciona' target='_self' id='#como-funciona'><span>Como funciona ?</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect effect-scroll' href='index#porque-contratar' target='_self' id='#porque-contratar'><span>Por que contratar ?</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
+                                    </li>\n";
+      $html .= "                    <li class='nav-item'>
+                                        <a class='nav-link waves-effect' href='xxx' target='_blank'><span>FAQ</span></a>
+                                    </li>\n";
+      $html .= "                  </ul>\n\n";
+    $html .= "                </div>";
+    $html .= "              </div>";
+
 		$html .= "            </section>\n\n";
 		$html .= "        </nav>\n\n";
 	    $html .= "    </header>\n\n\n";
@@ -60,132 +93,79 @@ class ClassLayout{
         $html = "
         </main>
             <!-- Footer -->
-            <footer class='page-footer font-small mdb-color lighten-3 pt-4'>
-        
-              <!--Imagens-->
-              <div class='container'>
-        
-                <div class='contatos'>
-        
-                    <ul class='duvidas'>
-                        <li class='icon-contato'>&#9993;</li>
-                        <li class='caracter-do-contato'>Você ainda tem dúvidas ?<br>ygrejo@gmail.com</li>
-                    </ul>
-        
-                    <ul class='duvidas'>
-                        <li class='icon-contato'>&#9743;</li>
-                        <li class='caracter-do-contato'>Telefone<br>(21) 9999-9999</li>
-                    </ul>
-                </div>
-        
-                <div class='row'>
-        
-        
-                  <div class='col-lg-2 col-md-12 mb-4'>
-                    <div class='view overlay z-depth-1-half'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4'>
-                    <div class='view overlay z-depth-1-half'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4'>
-                    <div class='view overlay z-depth-1-half'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-12 mb-4'>
-                    <div class='view overlay z-depth-1-half'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
-                    </div>
-        
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4'>
-                      <div class='view overlay z-depth-1-half'>
-                        <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg' class='img-fluid'
-                          alt=''>
-                        <a href=''>
-                          <div class='mask rgba-white-light'></div>
-                        </a>
+            <footer>
+		
+              <div class=footer-container>
+
+                    <div class=colun-footer-1>
+                      <div class=img-footer>
+                        <img src=image/logo.png alt=Logotipo Treino do Zé>
                       </div>
-                  </div>
-        
-                  <div class='col-lg-2 col-md-6 mb-4'>
-                    <div class='view overlay z-depth-1-half'>
-                      <img src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg' class='img-fluid'
-                        alt=''>
-                      <a href=''>
-                        <div class='mask rgba-white-light'></div>
-                      </a>
+                      <div class=sobre-mim-footer>
+                        <h3>Sobre mim</h3>
+                        <p>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
+                          a sua relação com seu corpo.</p>
+                      </div>
+                      <ul class=contact-footer>
+                        <li> <h3>Entre em Contato</h3></li>
+                        <li><p><i class='fab fa-whatsapp icon-whatsapp-footer'></i> +351 35263789</p></li>
+                        <li><p class=email-footer>treinodoze@gmail.com</p></li>
+                      </ul>
+                    </div>
+                  
+                    <div class=colun-footer-2>
+                      <ul class=secoes-footer>
+                        <li><h3>Seções</h3></li>
+                        <li><a href=#>Sobre mim</a></li>
+                        <li><a href=#>Como vou te ajudar</a></li>
+                        <li><a href=#>Seu treino entregue em alto nível</a></li>
+                        <li><a href=#>Passo a passo para contratar</a></li>
+                        <li><a href=#>Planos</a></li>
+                        <li><a href=#>Depoimentos</a></li>
+                        <li><a href=#>Perguntas frequentes</a></li>
+                      </ul>
+                    </div>
+
+                    <div class=colun-footer-3>
+                      <ul class=links-uteis-footer>
+                        <li><h3>Links úteis</h3></li>
+                        <li><a href=#>Plano Básico</a></li>
+                        <li><a href=#>Plano Premium</a></li>
+                        <li><a href=#>Plano Advanced</a></li>
+                        <li><a href=#>Como funciona</a></li>
+                        <li><a href=#>Loja</a></li>
+                        <li><a href=#>Artigos</a></li>
+                        <li><a href=#>A consultoria</a></li>
+                      </ul>
                     </div>
                   </div>
-        
+              
+                <div class=container-redes-sociais-footer>
+                  <a href=facebook><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
+                  <a href=twitter><i class='fab fa-twitter icons-rede-sociais-footer'></i></a>
+                  <a href=instagram><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
+                  <a href=youtube><i class='fab fa-youtube icons-rede-sociais-footer'></i></a>
+                  <a href=whatsapp><i class='fab fa-whatsapp icons-rede-sociais-footer'></i></a>
                 </div>
-              </div>
-        
-
-              <!--Redes sociais-->
-
-              <div class='mb-3 text-center text-md-right rede-social'>
-        
-        
-                <a class='fb-ic' href='https://www.facebook.com/ygor.regato.5'>
-                  <i class='fab fa-facebook-f mr-4'> </i>
-                </a>
-        
-                <a class='tw-ic'>
-                  <i class='fab fa-twitter mr-4'> </i>
-                </a>
-        
-                <a class='li-ic'>
-                  <i class='fab fa-linkedin-in mr-4'> </i>
-                </a>
-        
-                <a class='ins-ic'>
-                  <i class='fab fa-instagram mr-4'> </i>
-                </a>
-        
-                <a class='ins-ic'>
-                  <i class='fab fa-youtube'></i> </i>
-                </a>
-        
-              </div>
-        
-              <!--Copyright-->
-
-              <div class=' text-center py-3 copyright-style' >©Copyright 2020 |
-                <a class='copyright-style' href='copyright'> José Personal. Todos os Direitos Reservados. Criado pela equipe YgReJo</a>
-              </div>
-        
             </footer>
+
+            <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+          <!-- Bootstrap tooltips -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>
+          <!-- Bootstrap core JavaScript -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+          <!-- MDB core JavaScript -->
+          <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
+
+  
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
-        
-        
+            <script src='lib/js/loja.js'></script>
+            <script src='lib/js/planos.js'></script>
         </body>
         </html>
         ";
