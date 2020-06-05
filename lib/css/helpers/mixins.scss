@@ -29,6 +29,6 @@
 }
 
 @mixin border-radius-buttom-default($border-buttom:25px) {
-    -webkit-border-radius: $border-buttom;
-    border-radius: $border-buttom;
+    -webkit-border-radius: $border-buttom!important;
+    border-radius: $border-buttom!important;
 }

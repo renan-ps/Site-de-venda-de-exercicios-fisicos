@@ -549,9 +549,9 @@
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
 					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">Por que nos contratar ?</h4>
 					<hr class="hr-light my-4 w-75">
-					<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">Vejo que muitos estão buscando videos de treinos no youtube e ficando perdidos no 
-						meio do caminho, não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento, o que 
-						fazer ? como fazer ? quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
+					<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">Vejo que muitos estão buscando videos de treinos no Youtube e ficando perdidos no 
+						meio do caminho. Não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento. O que 
+						fazer ? Como fazer ? O Quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
 						com videos gratuitos. Você precisa de organização mesmo treinando em casa, a organização nos treinos é muito importante 
 						para que não sobrecarregue a musculatura.</h4>
 					<button class="btn btn-amber btn-lg botao-parallax">
@@ -568,11 +568,12 @@
   <!--Section: Content-->
   <section class="mt-5">
 
-    <!-- Section heading -->
-    <h3 class="font-weight-bold black-text mb-4 pb-2 text-center ">Frequently Asked Questions</h3>
+	<!-- Section heading -->
+	<p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center perguntas-ficou-duvidas">Ficou alguma dúvida ?</p>
+    <h3 class="font-weight-bold black-text mb-4 pb-2 text-center perguntas-frequentes-titulo">Perguntas Frequêntes</h3>
     <hr class="w-header">
     <!-- Section description -->
-    <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Got a question? We've got answers. If you have some other questions, see our support center.</p>
+    
 
 		<div class="row">
       <div class="col-md-12 col-lg-10 mx-auto mb-5">
@@ -584,11 +585,11 @@
           <div class="card border-top border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 class="black-text font-weight-normal mb-0">
-                  Is this a secure site for purchases? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="black-text font-weight-normal mb-0 bloco-perguntas">
+				Você prescreve dieta na sua consultoria fitness ? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -597,7 +598,7 @@
             <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
               data-parent="#accordionEx">
               <div class="card-body">
-                Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
+			  	Não. Prescrição de dieta é prática exclusiva do nutricionista
               </div>
             </div>
 
@@ -608,11 +609,11 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="black-text font-weight-normal mb-0">
-                  How long are your contracts? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="black-text font-weight-normal mb-0 bloco-perguntas">
+				Você troca o treino toda semana ? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -621,7 +622,8 @@
             <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
               data-parent="#accordionEx">
               <div class="card-body">
-              	Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.
+			  Não. Os treinos são trocados a cada 30 dias. Esse é o período mínimo para que o método escolhido proporcione as 
+			  adaptações esperadas e a periodização possa seguir em frente.
               </div>
             </div>
 
@@ -632,11 +634,11 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingThree3">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="black-text font-weight-normal mb-0">
-                  Can I cancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="black-text font-weight-normal mb-0 bloco-perguntas">
+				Quando começa a vigência do plano de consultoria? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -645,7 +647,7 @@
             <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
               data-parent="#accordionEx">
               <div class="card-body">
-								You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.
+			  A partir do dia em que eu te entrego a periodização pronta começamos a contar os 30 dias de validade para cada planilha.
               </div>
             </div>
 
@@ -656,11 +658,11 @@
           <div class="card border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingThree4">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
-                <h5 class="black-text font-weight-normal mb-0">
-                  Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="black-text font-weight-normal mb-0 bloco-perguntas">
+				Como vou saber se estou malhando certo? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -669,7 +671,8 @@
             <div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
               data-parent="#accordionEx">
               <div class="card-body">
-								Unfortunately, not. We do not issue full or partial refunds for any reason.    
+			  Na minha página de treino temos fotos e vídeos demonstrativos de todos os exercícios. Mas caso precise de alguma orientação
+			   extra é só me chamar no whatsapp.   
               </div>
             </div>
 
@@ -699,33 +702,27 @@
 
       <div class="container text-center my-5">
 
-        <h3 class="font-weight-bold text-center white-text pb-2">News and Updates</h3>
-        <p class="lead text-center white-text pt-2 mb-5">Subscribe to our newsletter and receive the latest news
-          from MDB.</p>
+        <h3 class="font-weight-bold text-center white-text pb-2">Novidades e atualizações</h3>
+        <p class="lead text-center white-text pt-2 mb-5">Se inscreva em nosso boletim de notícias para receber novidades
+			 e atualizações informando-nos seu email.</p>
 
         <form class="input-grey mb-5" action="" method="post" target="_blank">
           <div class="form-row">
             <div class="col-md-4 ml-auto">
               <div class="input-group input-group-lg z-depth-1">
                 <div class="input-group-prepend">
-                  <span class="input-group-text rgba-white-light border-0"><i class="fa fa-envelope white-text"></i></span>
+                  <span class="input-group-text rgba-black-light border-0"><i class="fa fa-envelope white-text"></i></span>
                 </div>
-                <input type="email" name="EMAIL" class="form-control form-control-lg rgba-white-light white-text border-0 z-depth-0" placeholder="Email Address">
+				<input type="email" name="EMAIL" class="form-control form-control-lg rgba-black-light black-text border-0 z-depth-0"
+				 placeholder="Email">
               </div>
             </div>
 
             <div class="col-md-2 mr-auto">
-              <button class="btn btn-block btn-primary">Subscribe</button>
+              <button class="btn btn-block botao-duvidas">Se inscrever</button>
             </div>
           </div>
         </form>
-
-        <div class="social text-center">
-          <a class="mx-1" href="#"><i class="fab fa-facebook-f p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-twitter p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-linkedin-in p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-instagram p-2 rounded rgba-white-light white-text"></i></a>
-        </div>
 
       </div>
 

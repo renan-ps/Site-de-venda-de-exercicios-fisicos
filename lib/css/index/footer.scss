@@ -10,11 +10,11 @@ footer {
     justify-content: space-around;
     height: auto;
     margin: 0 0 0.5em 5em;
-    @media (max-width: 700px) {
+    @media (max-width: 780px) {
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        align-items: center;
+        align-items: start;
         margin: 0;
     }
 }
@@ -36,8 +36,8 @@ footer {
 }
 
 .sobre-mim-footer p {
-    @media (max-width: 700px) {
-        width: 60%;
+    @media (max-width: 928px) {
+        width: 80%;
     }
 }
 
@@ -67,7 +67,7 @@ footer {
         font-size: 1.1em;
     }
     @media (max-width: 368px) {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 }
 
@@ -90,10 +90,8 @@ footer {
         width: 30%;
         margin: 0 2.5%;
     }
-    @media (max-width: 700px) {
-        width: 60%;
-        text-align: start;
-        margin: 0;
+    @media (max-width: 780px) {
+        width: 80%;
     }
 }
 
@@ -105,6 +103,18 @@ footer {
 .img-footer {
     width: 55%;
     padding-bottom: 2em;
+    @media (max-width: 780px) {
+        width: 30%;
+    }
+    @media (max-width: 620px) {
+        width: 40%;
+    }
+    @media (max-width: 490px) {
+        width: 50%;
+    }
+    @media (max-width: 335px) {
+        width: 60%;
+    }
 }
 
 .img-footer img {
@@ -119,6 +129,13 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.colun-footer-2 li,
+.colun-footer-3 li {
+    @media (max-width: 780px) {
+        margin-bottom: 1em;
+    }
 }
 
 .footer-container a:hover::before {
