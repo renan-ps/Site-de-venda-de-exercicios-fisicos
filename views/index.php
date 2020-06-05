@@ -557,7 +557,7 @@
 				<!-- Content -->
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
 					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">Por que nos contratar ?</h4>
-					<hr class="hr-light my-4 w-75">
+					<hr class="hr-light my-4 w-50">
 					<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">Vejo que muitos estão buscando videos de treinos no Youtube e ficando perdidos no 
 						meio do caminho. Não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento. O que 
 						fazer ? Como fazer ? O Quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
