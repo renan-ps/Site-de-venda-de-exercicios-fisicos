@@ -39,9 +39,9 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white '>";
 
-    $html .= "            <div class='container-navbar'>";
+    $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
                                 <img src='image/logo.png'>
                               </a>";
@@ -160,6 +160,7 @@ class ClassLayout{
 
   
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
+            <script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>
             <script src='". DIRPAGE ."lib/js/jquery.js'></script>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
