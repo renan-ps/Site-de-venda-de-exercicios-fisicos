@@ -2,9 +2,9 @@
         width: 90%;
         margin: 3em auto 0;
         text-align: center;
-        font-family: 'Indie Flower', cursive;
+        color: $cor-padrao-cliente-1;
+        @include font-family-default;
         font-size: 2.5em;
-        text-decoration: underline;
     }
     
     .container-loja {
@@ -21,7 +21,7 @@
         align-items: center;
         width: 25%;
         height: auto;
-        border-radius: 10px;
+        @include border-radius-default;
         transition: all 0.3s;
         @media (max-width: 1100px) {
             width: 45%;
@@ -37,6 +37,10 @@
         box-shadow: 2px 2px 2px rgba(240, 194, 10, 0.7), -2px -2px 2px rgba(240, 194, 10, 0.7);
     }
     
+    .produto:hover img {
+        border-radius: 10px 10px 0 0;
+    }
+    
     .imagem-produto {
         width: 100%;
         position: relative;
@@ -46,6 +50,14 @@
         width: 100%;
         position: absolute;
         top: 89.7%;
+    }
+    
+    .img-produto-2 {
+        display: none;
+        width: 100%;
+        max-width: 100%;
+        height: 15em;
+        border-radius: 10px;
     }
     
     .imagem-produto img {
@@ -86,7 +98,7 @@
     .saiba-mais-produto {
         width: 50%;
         text-align: center;
-        background-color: transparentize($color: #36639a, $amount: 0.5px);
+        background-color: transparentize($color: $cor-padrao-cliente-1, $amount: 0.5px);
     }
     
     .favorito-produto a,
@@ -149,7 +161,7 @@
     }
     
     .paypal img {
-        width: 5em;
+        width: 6.5em;
     }
     
     .botao-produto {
@@ -158,8 +170,9 @@
     }
     
     .botao-produto input {
-        background-color: #f0c20a!important;
+        background-color: $cor-padrao-cliente-2!important;
         width: 85%!important;
+        margin: 30px 20px 40px 20px;
         border: none;
         color: white;
         padding: 15px 80px;
@@ -170,9 +183,7 @@
         font-size: 13px;
         -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4)!important;
         box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-        -webkit-border-radius: 25px;
-        border-radius: 25px;
-        margin: 30px 20px 40px 20px;
+        @include border-radius-buttom-default;
     }
     
     .botao-produto:active {

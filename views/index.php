@@ -16,32 +16,36 @@
 			</ol>
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg">
+				<img class="" src="image/img-carousel-1.jpg">
 				<div class="container">
 				<div class="carousel-caption text-left">
-					<h1>Example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-					<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+					<h1>Treinos ao ar livre.</h1>
+					<p>Todo mundo sabe que a prática de atividades físicas faz bem para a saúde, contribuindo para uma vida ativa e saudável.
+						 Porém, nem todos gostam de frequentar academias, e acabam optando por exercícios físicos ao ar livre, que oferecem
+						  diversos benefícios para a mente e para o corpo.</p>
+					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Assine hoje</a></p>
 				</div>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg">
+				<img class="" src="image/img-carousel-2.jpg">
 				<div class="container">
 				<div class="carousel-caption">
-					<h1>Another example headline.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-					<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+					<h1>Alongamentos matinais.</h1>
+					<p>Os alongamentos matinais são uma atividade segura e útil para toda a gente e podem ajudar a melhorar a flexibilidade
+						 geral, a coordenação neuromuscular, o equilíbrio e a consciência postural.</p>
+					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Leia mais</a></p>
 				</div>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg">
+				<img class="" src="image/img-carousel-3.jpeg">
 				<div class="container">
 				<div class="carousel-caption text-right">
-					<h1>One more for good measure.</h1>
-					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-					<p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+					<h1>Corrida diária.</h1>
+					<p>Praticar um esporte como a corrida também é uma das melhores coisas que você pode fazer pelo seu cérebro em termos de 
+						humor, memória e aprendizado.</p>
+					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Consulte</a></p>
 				</div>
 				</div>
 			</div>
@@ -221,7 +225,7 @@
 			<!-- Section heading -->
 			<h3 class="font-weight-bold pb-2 mb-4 color-text-plan">Nossos planos</h3>
 			<!-- Section deion -->
-			<p class="text-muted w-responsive mx-auto mb-5 color-text-plan">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p class="text-muted w-responsive mx-auto mb-5 color-text-plan">Confira o plano que mais se enquadra ao perfil do seu dia a dia.</p>
 
 		
 			<div class="row">
@@ -235,7 +239,7 @@
 					<!-- Content -->
 					<div class="card-body color-card">
 						
-						<h5 class="mb-4 color-text-plan">Plano Básico</h5>
+						<h5 class="mb-4 color-text-plan">Plano Basic One</h5>
 						<div class="d-flex justify-content-center">
 							<div class="card-circle d-flex justify-content-center align-items-center">
 								<i class="fas fa-home color-text-plan"></i>
@@ -243,10 +247,10 @@
 						</div>
 
 						
-						<h2 class="font-weight-bold my-4 color-text-plan">£59</h2>
-						<p class="color-text-plan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa pariatur id
-						nobis accusamus deleniti cumque hic laborum.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<h2 class="font-weight-bold my-4 color-text-plan">R$89,90</h2>
+						<p class="color-text-plan">Você que tem o dia apertado e não consegue parar para fazer exercícios, nosso plano Basic One
+													é perfeito pra você .</p>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="plano-basico">Saiba mais</a>
 
 					</div>
 					
@@ -276,10 +280,10 @@
 						</div>
 
 						<!--Price -->
-						<h2 class="font-weight-bold my-4 color-text-plan">£79</h2>
-						<p class="color-text-plan">Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio
-							 cupiditate sequi atque elit.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<h2 class="font-weight-bold my-4 color-text-plan">R$115,50</h2>
+						<p class="color-text-plan">Se você quer além um treino, acompanhamento presencial de um nutricionista,
+												conferira o plano Premium.</p>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="plano-premium">Saiba mais</a>
 					</div>
 				</div>
 			</div>
@@ -297,10 +301,9 @@
 						</div>
 
 						<!--Price -->
-						<h2 class="font-weight-bold my-4 color-text-plan">£99</h2>
-						<p class="color-text-plan">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni
-						accusantium repellat eveniet quia vitae.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom">Saiba mais</a>
+						<h2 class="font-weight-bold my-4 color-text-plan">R$129,90</h2>
+						<p class="color-text-plan">Se você procura algo mais completo e intenso, com direito a equipamentos, veja o plano Advanced.</p>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="">Saiba mais</a>
 
 					</div>
 				</div>
@@ -327,14 +330,15 @@
 			
 			<!-- Modal -->
 			<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-				<div class="modal-content">
-				<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-					<iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				 aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/GhZGxW_8sQo" frameborder="0" allow="accelerometer; 
+							autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
-				</div>
-			</div>
 			</div>
 
 			<h3 class="font-weight-bold text-center dark-grey-text pb-2">Como Funciona ?</h3>
@@ -343,11 +347,12 @@
 
 			<div class="row align-items-center">
 
-			<div class="col-lg-6 mb-4">
+			<div class="col-lg-5 mb-4">
 				<div class="view z-depth-1-half rounded">
-				<img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(6).jpg" alt="Video title">
-				<div class="mask flex-center rgba-black-light">
-					<a id="play" class="btn-floating btn-primary btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+				<img class="rounded img-fluid" src="image/img-como-funciona.jpeg" alt="Título de Vídeo">
+				<div class="mask flex-center rgba-white">
+					<a id="play" class="btn-floating buttom-como-funciona btn-lg text-white" data-toggle="modal" data-target="#modal1">
+						<i class="fas fa-play"></i></a>
 				</div>
 				</div>
 			</div>
@@ -360,7 +365,7 @@
 					<span class="number">1</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">Write your requirements</h6>
+					<h6 class="font-weight-bold dark-grey-text mb-3">Contrate-nos</h6>
 					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
@@ -369,7 +374,7 @@
 					<span class="number">2</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">Sign the contract</h6>
+					<h6 class="font-weight-bold dark-grey-text mb-3">Entre em nossa plataforma</h6>
 					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
@@ -378,7 +383,7 @@
 					<span class="number">3</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">We start developing</h6>
+					<h6 class="font-weight-bold dark-grey-text mb-3">Escolha a modalidade que mais se enquadra no seu perfil</h6>
 					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
@@ -403,13 +408,14 @@
 			<div class="container-dicas">
 			
 				<div class="imagem">
-						<img src="image/imagem-artigo.jpg">
+						<img src="image/img-artigo-1.jpeg">
 				</div>
 
 				<div class="box-dicas">
 					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+						<p class="titulo-dica-texto" align="justify">Massa Magra</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
 					</div>
 				</div>
 
@@ -424,13 +430,14 @@
 			<div class="container-dicas">
 			
 				<div class="imagem image-effect">
-						<img src="image/imagem-artigo.jpg">
+						<img src="image/img-artigo-2.jpeg">
 				</div>
 
 				<div class="box-dicas">
 					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+						<p class="titulo-dica-texto" align="justify">Desafio 30 Dias</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
 					</div>
 				</div>
 
@@ -444,13 +451,14 @@
 			<div class="container-dicas">
 			
 				<div class="imagem image-effect">
-						<img src="image/imagem-artigo.jpg">
+						<img src="image/img-artigo-3.jpeg">
 				</div>
 
 				<div class="box-dicas">
 					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+						<p class="titulo-dica-texto" align="justify">Treino em Casa</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
 					</div>
 				</div>
 
@@ -464,13 +472,38 @@
 			<div class="container-dicas">
 			
 				<div class="imagem image-effect">
-						<img src="image/imagem-artigo.jpg">
+						<img src="image/img-artigo-4.jpeg">
+				</div>
+
+				<div class="box-dicas">
+					<div align=justify>
+						<p class="titulo-dica-texto" align="justify">Efeito platô</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o[…]</p>
+					</div>
+				</div>
+				
+				<div class="box-leia-mais">
+					<div class="leia-mais">
+						<p aling="justify"><a href= "dica">Leia mais</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-dicas">
+			
+				<div class="imagem image-effect">
+						<img class="img-artigo-5" src="image/img-artigo-5.jpeg">
 				</div>
 
 				<div class="box-dicas">
 					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+						<p class="titulo-dica-texto" align="justify">Contínuo ou Intervalado ?</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o
+							 […]
+						</p>
+						
 					</div>
 				</div>
 
@@ -484,33 +517,14 @@
 			<div class="container-dicas">
 			
 				<div class="imagem image-effect">
-						<img src="image/imagem-artigo.jpg">
+						<img src="image/img-artigo-6.jpeg">
 				</div>
 
 				<div class="box-dicas">
 					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
-					</div>
-				</div>
-
-				<div class="box-leia-mais">
-					<div class="leia-mais">
-						<p aling="justify"><a href= "dica">Leia mais</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container-dicas">
-			
-				<div class="imagem image-effect">
-						<img src="image/imagem-artigo.jpg">
-				</div>
-
-				<div class="box-dicas">
-					<div>
-						<p class="titulo-dica-texto" align="justify">Aeróbio em jejum</p>
-						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
+						<p class="titulo-dica-texto" align="justify">Treino Hiit</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o[…]</p>
 					</div>
 				</div>
 
@@ -545,7 +559,7 @@
 			</div>
 	<div class="parallax parallax-divider" style="margin-bottom: -47px;"></div>
 
-
+	<?php echo \Classes\ClassLayout::setFooter() ?>
 	
 
-<?php echo \Classes\ClassLayout::setFooter() ?>
+
