@@ -1,17 +1,18 @@
-<?php echo \Classes\ClassLayout::setHeader('Cadastro', "| Faça seu cadastro", ""); ?>
+<?php echo \Classes\ClassLayout::setHeader('Cadastro', "Faça seu cadastro", ""); ?>
 
 <div class="container-cadastro">
-    <form action="post" name="formCadastro" id="formCadastro" action="<?php echo DIRPAGE . 'controllers/controllerCadastro'; ?>">
-        <h2>Cadastro  </h2>
-        <p>Os campos marcados com * são de preenchimento obrigatórios </p>
+    <form method="post" name="formCadastro" id="formCadastro" action="<?php echo DIRPAGE . 'controllers/controllerCadastro'; ?>">
+        <h2>Cadastro</h2>
+        <p>Todos os campos são obrigatórios.</p>
         <div class="cadastro text-center" style="margin: 3% auto">
-            <input type="text" id="nome" name="nome" placeholder="Nome  *"><br>
-            <input type="email" id="email" name="email" placeholder="E-mail  "><br>
-            <input type="text" id="cpf" name="cpf" placeholder="CPF  *"><br>
-            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento  *"><br>
-            <input type="text" id="endereco" name="endereco" placeholder="Telefone  *"><br>
-            <input type="password" id="senha" name="senha" placeholder="Senha  *"><br>
-            <input type="password" id="confSenha" name="confSenha" placeholder="Confirme sua senha  *"><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="text" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento">
+            <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+            <input type="text" id="endereco" name="endereco" placeholder="Endereco">
+            <input type="password" id="senha" name="senha" placeholder="Senha">
+            <input type="password" id="senhaConf" name="senhaConf" placeholder="Confirme sua senha">
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
             <input type="submit" value="Cadastrar">
         </div>
     </form>
@@ -66,4 +67,5 @@
 <script src='lib/js/jquery.js'></script>
 <script src='lib/js/index.js'></script>
 <script src='lib/js/vanilla-masker.min.js'></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6Lf-sP8UAAAAAJBsCaxkocgA4CfOaLlvGv-TyYfm"></script>
 <script src='lib/js/javascript.js'></script>
