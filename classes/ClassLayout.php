@@ -14,6 +14,9 @@ class ClassLayout{
         $html .= "    <meta charset='utf-8'>\n";
         $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
         $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
+        $html .= "  <meta name=theme-color content=#FCC00A>\n";
+        $html.="<meta name=apple-mobile-web-app-status-bar-style content=#FCC00A>\n";
+        $html.="<meta name=msapplication-navbutton-color content=#75b529>\n";
 
         $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
@@ -74,7 +77,7 @@ class ClassLayout{
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
-                                        <a class='nav-link waves-effect' href='xxx' target='_blank'><span>FAQ</span></a>
+                                        <a class='nav-link waves-effect' href='index#faq' id='#faq' target='_self'><span>FAQ</span></a>
                                     </li>\n";
       $html .= "                  </ul>\n\n";
     $html .= "                </div>";

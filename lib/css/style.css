@@ -95,16 +95,22 @@ body {
   height: 32rem; }
 
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-  object-fit: cover;
-  object-position: bottom; }
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    min-width: 100%;
+    height: 43em;
+    object-fit: cover;
+    /* object-position: bottom; */
+}
 
 .carousel-indicators li {
   background-color: white !important; }
+  
+  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 100px;
+    height: 100px;
+}
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -171,14 +177,30 @@ body {
 /*DEPOIMENTOS*/
 .depoimentos {
   margin-top: 300px;
-  background-color: #E8E7E7 !important;
+  
   padding-top: -200px !important;
-  height: auto; }
+  }
 
-@media only screen and (max-width: 584px) {
-  .depoimentos {
-    height: 600px;
-    background-color: #f0c20a; } }
+.carousel-indicators li {
+    background-color: #ffc107 !important;
+}
+
+    @media only screen and (max-width: 767px) {
+  .carousel-indicators, ol{
+        display: none;
+   }
+    }
+
+    @media only screen and (max-width: 375px) {
+  .carousel-indicators, ol{
+    display: none;
+   } }
+
+
+
+
+   
+
 .card-meio {
   position: relative !important; }
 
@@ -374,7 +396,7 @@ body {
 .texto_descricao_marca {
   z-index: 99;
   position: absolute!important;
-  margin-top: 50px!important;
+  
   color: white; }
 
   .texto_descricao_marca1 {
@@ -1666,6 +1688,55 @@ body {
  
  }
 }
+@media only screen and  (max-width: 767px) {
+ .parallax-divider1 {
+    height: 400px;
+  width: 100%; }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .parallax-divider {
+    height: 400px;
+  width: 100%; }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .depoimentos {
+    height: 600px;
+   }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .artigos {
+    margin-top: 200px;
+   }
+ 
+ }
+ @media only screen and  (min-width: 500px) {
+ .texto_descricao_marca1 {
+    margin-top: 120px !important
+    ;
+   }
+ 
+ }
+  @media only screen and  (min-width: 500px) {
+ .texto_descricao_marca {
+    margin-top: 120px !important
+    ;
+   }
+ 
+ }
+
+ 
+
+ /*Faq - COLOR*/
+.card-header {
+    
+    background-color: #ffc107;}
+    
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */
