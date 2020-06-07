@@ -95,13 +95,14 @@ body {
   height: 32rem; }
 
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-  object-fit: cover;
-  object-position: bottom; }
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    min-width: 100%;
+    height: 43em;
+    object-fit: cover;
+    /* object-position: bottom; */
+}
 
 .carousel-indicators li {
   background-color: white !important; }
@@ -171,14 +172,28 @@ body {
 /*DEPOIMENTOS*/
 .depoimentos {
   margin-top: 300px;
-  background-color: #E8E7E7 !important;
+  
   padding-top: -200px !important;
-  height: auto; }
+  }
 
-@media only screen and (max-width: 584px) {
-  .depoimentos {
-    height: 600px;
-    background-color: #f0c20a; } }
+.carousel-indicators li {
+    background-color: #ffc107 !important;
+}
+    @media only screen and (max-width: 767px) {
+  .carousel-indicators, ol{
+        margin-bottom: -120px !important;
+   } }
+
+    @media only screen and (max-width: 375px) {
+  .carousel-indicators, ol{
+        margin-bottom: -199px !important;
+   } }
+
+
+
+
+    carousel-indicators
+
 .card-meio {
   position: relative !important; }
 
@@ -1666,6 +1681,39 @@ body {
  
  }
 }
+@media only screen and  (max-width: 767px) {
+ .parallax-divider1 {
+    height: 400px;
+  width: 100%; }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .parallax-divider {
+    height: 400px;
+  width: 100%; }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .depoimentos {
+    height: 600px;
+   }
+ 
+ }
+ @media only screen and  (max-width: 767px) {
+ .artigos {
+    margin-top: 200px;
+   }
+ 
+ }
+
+ /*Faq - COLOR*/
+.card-header {
+    
+    background-color: #ffc107;
+    
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */

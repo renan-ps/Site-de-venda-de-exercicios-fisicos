@@ -3,7 +3,7 @@
 	
 
 	<!--APRESENTAÇÃO-->
-	<div data-spy="scroll" data-target="#navbar-example2" class="scrollspy-example z-depth-1 " style="margin-top: 81px!important;" data-offset="0">
+	<div data-spy="scroll" data-target="#navbar-example2" class="scrollspy-example z-depth-1 " style="margin-top: 94px!important;" data-offset="0">
 		<h4 id="carousel_home"></h4>
 
 		<main role="main">
@@ -16,7 +16,7 @@
 			</ol>
 			<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="" src="image/img-carousel-1.jpg">
+				<img class="d-block w-100" src="image/img-carousel-1.jpg">
 				<div class="container">
 				<div class="carousel-caption text-left">
 					<h1>Treinos ao ar livre.</h1>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="" src="image/img-carousel-2.jpg">
+				<img class="d-block w-100" src="image/img-carousel-2.jpg">
 				<div class="container">
 				<div class="carousel-caption">
 					<h1>Alongamentos matinais.</h1>
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="" src="image/img-carousel-3.jpeg">
+				<img class="d-block w-100" src="image/img-carousel-3.jpeg">
 				<div class="container">
 				<div class="carousel-caption text-right">
 					<h1>Corrida diária.</h1>
@@ -60,6 +60,8 @@
 			</a>
 		</div>
 	</div>
+
+
 	
 	
 
@@ -112,12 +114,12 @@
 			<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca1" >
 				<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">A Consultoria</h4>
 				<hr class="hr-light my-4 w-75">
-				<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">A CONSULTORIA DO ZÉ é um acompanhamento personalizado, 
+				<h5 class="subtext-header mt-2 mb-4  container" align="justify">A CONSULTORIA DO ZÉ é um acompanhamento personalizado, 
 					eficiente e completo para você se motivar e obter resultados nesse periodo mesmo treinando 
 					em casa, você terá seu treino totalmente personalizado e adequado ao seu cotidiano, com total 
 					suporte e atendimento via whatsapp, o grande diferencial deste programa é que você terá um treino 
 					por video chamada 1 vez na semana comigo, é isso mesmo, eu vou treinar, motivar e estimular você a 
-					manter os treinos, e isso com certeza será o ponto principal para você ter grandes resultados</h4>
+					manter os treinos, e isso com certeza será o ponto principal para você ter grandes resultados</h5>
 				<button class="btn btn-amber btn-lg botao-parallax">Saiba mais</button>
 			</div>
 		</div>
@@ -126,7 +128,7 @@
 	</div>
 
 	<!--DEPOIMENTOS-->
-	<div class="container-fluid my-5 px-5 pt-5 pb-3 depoimentos" style="background-color: #E8E7E7; height: 440px;">
+	<div class="container-fluid my-5 px-5 pt-5 pb-3 depoimentos">
 	
 		<div class="d-flex justify-content-center">
 			<h3 id="navbar-example2-two " class="font-weight-bold text-center dark-grey-text pb-2">Depoimentos</h3>
@@ -228,6 +230,7 @@
 		<div></div>
 
      	<h4 id="navbar-example2-three"></h4>
+     	<hr>
 
 		<section class="text-center dark-grey-text"">
 
@@ -558,11 +561,11 @@
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
 					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">Por que nos contratar ?</h4>
 					<hr class="hr-light my-4 w-50">
-					<h4 class="subtext-header mt-2 mb-4 px-5 container" align="justify">Vejo que muitos estão buscando videos de treinos no youtube e ficando perdidos no 
+					<h5 class="subtext-header mt-2 mb-4  container texto-parallax" align="justify">Vejo que muitos estão buscando videos de treinos no youtube e ficando perdidos no 
 						meio do caminho, não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento, o que 
 						fazer ? como fazer ? quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
 						com videos gratuitos. Você precisa de organização mesmo treinando em casa, a organização nos treinos é muito importante 
-						para que não sobrecarregue a musculatura.</h4>
+						para que não sobrecarregue a musculatura.</h5>
 					<button class="btn btn-amber btn-lg botao-parallax">
 						<a class="text-white effect-scroll" href="index#planos" target="_self" id="#planos">Ver planos</a>
 					</button>
@@ -578,7 +581,7 @@
   <section class="mt-5">
 
     <!-- Section heading -->
-    <h3 class="font-weight-bold black-text mb-4 pb-2 text-center ">Frequently Asked Questions</h3>
+    <h3 class="font-weight-bold text-black-50 mb-4 pb-2 text-center ">Frequently Asked Questions</h3>
     <hr class="w-header">
     <!-- Section description -->
     <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Got a question? We've got answers. If you have some other questions, see our support center.</p>
@@ -596,7 +599,7 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 class="black-text font-weight-normal mb-0">
+                <h5 class="text-white font-weight-normal mb-0">
                   Is this a secure site for purchases? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -620,7 +623,7 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="black-text font-weight-normal mb-0">
+                <h5 class="text-white font-weight-normal mb-0">
                   How long are your contracts? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -644,7 +647,7 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="black-text font-weight-normal mb-0">
+                <h5 class="text-white font-weight-normal mb-0">
                   Can I cancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -668,7 +671,7 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
-                <h5 class="black-text font-weight-normal mb-0">
+                <h5 class="text-white font-weight-normal mb-0">
                   Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -724,7 +727,7 @@
             </div>
 
             <div class="col-md-2 mr-auto">
-              <button class="btn btn-block btn-primary">Subscribe</button>
+              <button class="btn btn-block btn-warning">Subscribe</button>
             </div>
           </div>
         </form>
