@@ -106,6 +106,11 @@ body {
 
 .carousel-indicators li {
   background-color: white !important; }
+  
+  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 100px;
+    height: 100px;
+}
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -179,20 +184,22 @@ body {
 .carousel-indicators li {
     background-color: #ffc107 !important;
 }
+
     @media only screen and (max-width: 767px) {
   .carousel-indicators, ol{
-        margin-bottom: -120px !important;
-   } }
+        display: none;
+   }
+    }
 
     @media only screen and (max-width: 375px) {
   .carousel-indicators, ol{
-        margin-bottom: -199px !important;
+    display: none;
    } }
 
 
 
 
-    carousel-indicators
+   
 
 .card-meio {
   position: relative !important; }
@@ -389,7 +396,7 @@ body {
 .texto_descricao_marca {
   z-index: 99;
   position: absolute!important;
-  margin-top: 50px!important;
+  
   color: white; }
 
   .texto_descricao_marca1 {
@@ -1705,11 +1712,27 @@ body {
    }
  
  }
+ @media only screen and  (min-width: 500px) {
+ .texto_descricao_marca1 {
+    margin-top: 120px !important
+    ;
+   }
+ 
+ }
+  @media only screen and  (min-width: 500px) {
+ .texto_descricao_marca {
+    margin-top: 120px !important
+    ;
+   }
+ 
+ }
+
+ 
 
  /*Faq - COLOR*/
 .card-header {
     
-    background-color: #ffc107;
+    background-color: #ffc107;}
     
 
 

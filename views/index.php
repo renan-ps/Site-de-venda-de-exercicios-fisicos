@@ -146,7 +146,7 @@
 					<div class="wrapper-carousel-fix">
 					
 						<!-- Carousel Wrapper -->
-						<div id="myCarousel1" class="carousel no-flex testimonial-carousel slide" data-ride="carousel"
+						<div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide" data-ride="carousel"
 							data-interval="false" style="height: 340px!important;">
 							<ol class="carousel-indicators" style="padding-top: -200px !important; padding-bottom: 10px;">
 								<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
@@ -197,12 +197,12 @@
 							<!--Controls-->
 							<a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
 							data-slide="prev">
-							<span class="icon-prev" aria-hidden="true"></span>
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 							</a>
 							<a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
 							data-slide="next">
-							<span class="icon-next" aria-hidden="true"></span>
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 							</a>
 							<!--Controls-->
@@ -232,7 +232,7 @@
      	<h4 id="navbar-example2-three"></h4>
      	<hr>
 
-		<section class="text-center dark-grey-text"">
+		<section class="text-center dark-grey-text">
 
 			<!-- Section heading -->
 			<h3 class="font-weight-bold pb-2 mb-4 color-text-plan">Nossos planos</h3>
@@ -575,16 +575,18 @@
 </div>
 
 	<div class="container my-5">
-
+	
 
   <!--Section: Content-->
   <section class="mt-5">
+  
 
     <!-- Section heading -->
-    <h3 class="font-weight-bold text-black-50 mb-4 pb-2 text-center ">Frequently Asked Questions</h3>
+    <p class="lead text-muted mx-auto text-center">Ficou Alguma Duvida ?</p>
+    <h2 class="font-weight-bold text-black-50 mb-4 pb-2 text-center ">Perguntas Frequentes</h2>
     <hr class="w-header">
     <!-- Section description -->
-    <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Got a question? We've got answers. If you have some other questions, see our support center.</p>
+    
 
 		<div class="row">
       <div class="col-md-12 col-lg-10 mx-auto mb-5">
@@ -599,8 +601,8 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 class="text-white font-weight-normal mb-0">
-                  Is this a secure site for purchases? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                  Is this a secure site for purchases? <i class=" float-right fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -623,8 +625,8 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="text-white font-weight-normal mb-0">
-                  How long are your contracts? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                  How long are your contracts? <i class="float-right  fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -647,8 +649,8 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
-                <h5 class="text-white font-weight-normal mb-0">
-                  Can I cancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                  Can I cancel my subscription? <i class="float-right  fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -671,8 +673,8 @@
             <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
-                <h5 class="text-white font-weight-normal mb-0">
-                  Can I request refund? <i class="fas fa-angle-down rotate-icon"></i>
+                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                  Can I request refund? <i class=" float-right fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -693,6 +695,7 @@
         
       </div>
     </div>
+</div>
 
 	</section>
   
@@ -711,9 +714,10 @@
 
       <div class="container text-center my-5">
 
-        <h3 class="font-weight-bold text-center white-text pb-2">News and Updates</h3>
-        <p class="lead text-center white-text pt-2 mb-5">Subscribe to our newsletter and receive the latest news
-          from MDB.</p>
+        <h3 class="font-weight-bold text-center white-text pb-2">Noticias e Atualizações</h3>
+        <p class="lead text-center white-text pt-2 mb-5">
+Assine a nossa newsletter e receba as últimas notícias
+          .</p>
 
         <form class="input-grey mb-5" action="" method="post" target="_blank">
           <div class="form-row">
@@ -722,12 +726,12 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text rgba-white-light border-0"><i class="fa fa-envelope white-text"></i></span>
                 </div>
-                <input type="email" name="EMAIL" class="form-control form-control-lg rgba-white-light white-text border-0 z-depth-0" placeholder="Email Address">
+                <input type="email" name="EMAIL" class="form-control form-control-lg rgba-white-light white-text border-0 z-depth-0" placeholder="Email">
               </div>
             </div>
 
             <div class="col-md-2 mr-auto">
-              <button class="btn btn-block btn-warning">Subscribe</button>
+              <button class="btn btn-block btn-warning">Inscrever</button>
             </div>
           </div>
         </form>
