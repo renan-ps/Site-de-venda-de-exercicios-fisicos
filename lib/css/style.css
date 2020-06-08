@@ -363,7 +363,7 @@ body {
 .texto_descricao_marca {
   z-index: 99;
   position: absolute;
-  margin-top: -150px;
+  margin-top: 150px;
   color: white; }
 
 /*Parallax-divider1*/
@@ -380,6 +380,12 @@ body {
 .parallax-divider1 {
   height: 350px;
   width: 100%; }
+
+.texto_descricao_marca1 {
+  z-index: 99;
+  position: absolute;
+  margin-top: 150px;
+  color: white; }
 
 .buttom-como-funciona {
   background-color: rgba(255, 0, 0, 0.5);

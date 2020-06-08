@@ -89,7 +89,7 @@
 			<div class="col-md-6 col-sm-12 " id="navbar-example2-mdo">
 				 <span id="span_sobre"></span>
 			
-				<h3 class="text-lg-left" style="">José Acácio:</h3>
+				<h3 class="text-lg-left">José Acácio:</h3>
 				<hr class="bg-warning w-100 text-left ">
 				<p align="justify">Desde que se formou em educação física o professor José Acácio já planejava levar sua filosofia de trabalho para as 
 					pessoas. Uma filosofia baseada em hábitos saudáveis práticas regulares de atividade física, que, aliás, é uma forma 
@@ -106,7 +106,7 @@
 
 	<!--CONSULTORIA-->
 	
-	<div class="view ">
+	<div class="view" id="consultoria">
 	<div class="parallax1 parallax-divider1" ></div>
 
 		<div class="mask rgba-black-strong align-items-center " >
