@@ -731,7 +731,7 @@ Assine a nossa newsletter e receba as últimas notícias
             </div>
 
             <div class="col-md-2 mr-auto">
-              <button class="btn btn-block btn-warning">Inscrever</button>
+              <button class="btn btn-block rounded btn-warning">Inscrever</button>
             </div>
           </div>
         </form>
