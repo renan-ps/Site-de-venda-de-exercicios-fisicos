@@ -62,5 +62,11 @@ body {
 
 .style-navbar {
     height: 5em;
-    background-color: $cor-padrao-cliente-2!important;
+    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 1)!important;
+}
+
+.cor-transicao-navbar {
+    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 0)!important;
+    -webkit-transition: all .4s!important;
+    transition: all .4s!important;
 }
