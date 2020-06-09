@@ -23,3 +23,6 @@ define('HOST', "localhost");
 define('BD', "personal");
 define('USER', "root");
 define('PASS', "");
+
+#Outras informações
+include_once("recaptcha.php");

@@ -1,0 +1,28 @@
+.perguntas-ficou-duvidas {
+    color: $cor-padrao-cliente-2!important;
+    font-weight: 400!important;
+}
+
+.perguntas-frequentes-titulo {
+    font-size: 2em!important;
+}
+
+.bloco-perguntas {
+    background-color: $cor-padrao-cliente-2!important;
+    color: #fff!important;
+}
+
+.botao-duvidas {
+    @include border-radius-buttom-default;
+    background-color: $cor-padrao-cliente-2!important;
+    color: #fff;
+}
+
+.botao-duvidas:hover {
+    color: #fff;
+}
+
+.botao-duvidas:active {
+    -webkit-transform: scale(0.9)!important;
+    transform: scale(0.9)!important;
+}
