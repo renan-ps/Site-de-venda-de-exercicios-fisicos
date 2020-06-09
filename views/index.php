@@ -602,11 +602,11 @@
           <div class="card border-top border-bottom-0 border-left border-right border-lightX">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingOne1">
+
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-
-                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                 <h5 class="text-white font-weight-normal mb-2 mt-2">
 				Você prescreve dieta na sua consultoria fitness ? <i class=" float-right fas fa-angle-down rotate-icon"></i>
 
                 </h5>
@@ -628,12 +628,13 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingTwo2">
+
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
 				Posso contratar em um mês e parar no outro ? <i class="float-right  fas fa-angle-down rotate-icon"></i>
+
                 </h5>
               </a>
             </div>
@@ -655,7 +656,9 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingThree3">
+
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree3">
+
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
 
@@ -681,7 +684,9 @@
           <div class="card border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light bloco-perguntas p-4" role="tab" id="headingThree4">
+
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree4">
+
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
 
