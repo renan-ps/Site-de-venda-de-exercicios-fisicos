@@ -598,10 +598,10 @@
           <div class="card border-top border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                <h5 class="text-white font-weight-normal btn-warning">
                   Is this a secure site for purchases? <i class=" float-right fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -622,10 +622,10 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="text-white font-weight-normal mb-2 mt-2">
+                <h5 class="text-white font-weight-normal mb-2 mt-2 btn-warning">
                   How long are your contracts? <i class="float-right  fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
@@ -646,7 +646,7 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree3">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
@@ -670,7 +670,7 @@
           <div class="card border-left border-right border-light">
 
             <!-- Card header -->
-            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+            <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree4">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
