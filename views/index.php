@@ -88,8 +88,8 @@
 				
 			<div class="col-md-6 col-sm-12 " id="navbar-example2-mdo">
 				 <span id="span_sobre"></span>
-				<span>SOBRE MIN</span>
-				<h3 class="text-lg-left" style="">José Acácio:</h3>
+			
+				<h3 class="text-lg-left">José Acácio:</h3>
 				<hr class="bg-warning w-100 text-left ">
 				<p align="justify">Desde que se formou em educação física o professor José Acácio já planejava levar sua filosofia de trabalho para as 
 					pessoas. Uma filosofia baseada em hábitos saudáveis práticas regulares de atividade física, que, aliás, é uma forma 
@@ -106,7 +106,7 @@
 
 	<!--CONSULTORIA-->
 	
-	<div class="view ">
+	<div class="view" id="consultoria">
 	<div class="parallax1 parallax-divider1" ></div>
 
 		<div class="mask rgba-black-strong align-items-center " >
@@ -490,8 +490,8 @@
 				<div class="box-dicas">
 					<div align=justify>
 						<p class="titulo-dica-texto" align="justify">Efeito platô</p>
-						<p class="dica-texto" align="justify">Quem nunca seguiu a dieta à risca, seguiu o treino minuciosamente, perdeu 2, 3, 5KG
-							em um mês, ficou mega feliz porquer suas roupas voltaram a servir, as amigas[…]</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
 					</div>
 				</div>
 				
@@ -512,8 +512,8 @@
 					<div>
 						<p class="titulo-dica-texto" align="justify">Contínuo ou Intervalado ?</p>
 						<p class="dica-texto" align="justify">
-							Você sabe qual deles será melhor no emagrecimento?
-							Vou te mostrar detalhe por detalhe a importância de cada um deles e para quais resultados são utilizados. Treino contínuo: […]
+						Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]
 						</p>
 					</div>
 				</div>
@@ -534,8 +534,8 @@
 				<div class="box-dicas">
 					<div>
 						<p class="titulo-dica-texto" align="justify">Treino Hiit</p>
-						<p class="dica-texto" align="justify">HIIT é uma sigla inglesa para treinamento intervalado de alta intensidade.
-							 Neste treino alternamos estímulos de alta intensidade com períodos de descanso que podem[…]</p>
+						<p class="dica-texto" align="justify">Como utilizar o aeróbio em jejum para perder gordura mais rápido? Encontre 
+							essa resposta e mais nesse artigo. Em todo programa de treinamento voltado para o […]</p>
 					</div>
 				</div>
 
@@ -561,9 +561,11 @@
 				<div class="col-md-12 mb-4 white-text text-center wow fadeIn texto_descricao_marca" >
 					<h4 class="font-weight-bold white-text mb-0 pt-md-2 pt-2 display-4">Por que nos contratar ?</h4>
 					<hr class="hr-light my-4 w-50">
+
 					<h5 class="subtext-header mt-2 mb-4  container texto-parallax" align="justify">Vejo que muitos estão buscando videos de treinos no youtube e ficando perdidos no 
 						meio do caminho, não vai adiantar, você vai se atrapalhar e correr o risco de se lesionar a qualquer momento, o que 
 						fazer ? como fazer ? quanto fazer ? São essas as principais perguntas que recebo de pessoas que estão tentando treinar 
+
 						com videos gratuitos. Você precisa de organização mesmo treinando em casa, a organização nos treinos é muito importante 
 						para que não sobrecarregue a musculatura.</h5>
 					<button class="btn btn-amber btn-lg botao-parallax">
@@ -581,9 +583,11 @@
   <section class="mt-5">
   
 
+
     <!-- Section heading -->
-    <p class="lead text-muted mx-auto text-center">Ficou Alguma Duvida ?</p>
-    <h2 class="font-weight-bold text-black-50 mb-4 pb-2 text-center ">Perguntas Frequentes</h2>
+    <p class="lead text-muted mx-auto text-center perguntas-ficou-duvidas">Ficou Alguma Duvida ?</p>
+    <h2 class="font-weight-bold text-black-50 mb-4 pb-2 text-center">Perguntas Frequentes</h2>
+
     <hr class="w-header">
     <!-- Section description -->
     
@@ -595,14 +599,16 @@
         <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
           <!-- Accordion card -->
-          <div class="card border-top border-bottom-0 border-left border-right border-light">
+          <div class="card border-top border-bottom-0 border-left border-right border-lightX">
 
             <!-- Card header -->
+
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                <h5 class="text-white font-weight-normal btn-warning">
-                  Is this a secure site for purchases? <i class=" float-right fas fa-angle-down rotate-icon"></i>
+                 <h5 class="text-white font-weight-normal mb-2 mt-2">
+				Você prescreve dieta na sua consultoria fitness ? <i class=" float-right fas fa-angle-down rotate-icon"></i>
+
                 </h5>
               </a>
             </div>
@@ -611,7 +617,7 @@
             <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
               data-parent="#accordionEx">
               <div class="card-body">
-                Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.
+			  	Não. Prescrição de dieta é prática exclusiva do nutricionista
               </div>
             </div>
 
@@ -622,11 +628,13 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
+
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
-                <h5 class="text-white font-weight-normal mb-2 mt-2 btn-warning">
-                  How long are your contracts? <i class="float-right  fas fa-angle-down rotate-icon"></i>
+                <h5 class="text-white font-weight-normal mb-2 mt-2">
+				Posso contratar em um mês e parar no outro ? <i class="float-right  fas fa-angle-down rotate-icon"></i>
+
                 </h5>
               </a>
             </div>
@@ -635,7 +643,9 @@
             <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
               data-parent="#accordionEx">
               <div class="card-body">
-              	Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.
+			  Sim. Não há qualquer tipo de fidelização ou renovação automática.
+
+
               </div>
             </div>
 
@@ -646,11 +656,14 @@
           <div class="card border-bottom-0 border-left border-right border-light">
 
             <!-- Card header -->
+
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree3">
+
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
                 aria-expanded="false" aria-controls="collapseThree3">
+
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
-                  Can I cancel my subscription? <i class="float-right  fas fa-angle-down rotate-icon"></i>
+				Como vou saber se estou malhando certo? <i class="float-right  fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -659,7 +672,8 @@
             <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
               data-parent="#accordionEx">
               <div class="card-body">
-								You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.
+			  No meu app de treino temos fotos e vídeos demonstrativos de todos os exercícios. Mas caso precise de alguma
+			   orientação extra é só me chamar no whatsapp.
               </div>
             </div>
 
@@ -670,11 +684,14 @@
           <div class="card border-left border-right border-light">
 
             <!-- Card header -->
+
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingThree4">
+
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
                 aria-expanded="false" aria-controls="collapseThree4">
+
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
-                  Can I request refund? <i class=" float-right fas fa-angle-down rotate-icon"></i>
+				 Quando começa a vigência do plano de consultoria? <i class=" float-right fas fa-angle-down rotate-icon"></i>
                 </h5>
               </a>
             </div>
@@ -683,7 +700,7 @@
             <div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
               data-parent="#accordionEx">
               <div class="card-body">
-								Unfortunately, not. We do not issue full or partial refunds for any reason.    
+			  A partir do dia em que eu te entrego a periodização pronta começamos a contar os 30 dias de validade para cada planilha.   
               </div>
             </div>
 
@@ -714,6 +731,7 @@
 
       <div class="container text-center my-5">
 
+
         <h3 class="font-weight-bold text-center white-text pb-2">Noticias e Atualizações</h3>
         <p class="lead text-center white-text pt-2 mb-5">
 Assine a nossa newsletter e receba as últimas notícias
@@ -724,27 +742,23 @@ Assine a nossa newsletter e receba as últimas notícias
             <div class="col-md-4 ml-auto">
               <div class="input-group input-group-lg z-depth-1">
                 <div class="input-group-prepend">
-                  <span class="input-group-text rgba-white-light border-0"><i class="fa fa-envelope white-text"></i></span>
+                  <span class="input-group-text rgba-black-light border-0"><i class="fa fa-envelope white-text"></i></span>
                 </div>
+
                 <input type="email" name="EMAIL" class="form-control form-control-lg rgba-white-light white-text border-0 z-depth-0" placeholder="Email">
               </div>
             </div>
 
             <div class="col-md-2 mr-auto">
-              <button class="btn btn-block rounded btn-warning">Inscrever</button>
+
+              <button class="btn btn-block botao-duvidas">Se inscrever</button>
+
+
             </div>
           </div>
         </form>
 
-        <div class="social text-center">
-          <a class="mx-1" href="#"><i class="fab fa-facebook-f p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-twitter p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-linkedin-in p-2 rounded rgba-white-light white-text"></i></a>
-          <a class="mx-1" href="#"><i class="fab fa-instagram p-2 rounded rgba-white-light white-text"></i></a>
-        </div>
-
       </div>
-
     </div>
 
   </section>

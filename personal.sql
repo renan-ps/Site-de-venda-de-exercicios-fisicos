@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Maio-2020 às 01:02
--- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.4.2
+-- Generation Time: 29-Maio-2020 às 22:40
+-- Versão do servidor: 10.1.36-MariaDB
+-- versão do PHP: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,8 +19,22 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `personal`
+-- Database: `personal`
 --
+CREATE DATABASE IF NOT EXISTS `personal` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `personal`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `attempt`
+--
+
+CREATE TABLE `attempt` (
+  `id` int(11) NOT NULL,
+  `ip` varchar(20) NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -45,14 +59,26 @@ INSERT INTO `biografia` (`idBiografia`, `tituloBiografia`, `textoBiografia`, `im
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `confirmation`
+--
+
+CREATE TABLE `confirmation` (
+  `id` int(11) NOT NULL,
+  `email` varchar(90) NOT NULL,
+  `token` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `contato`
 --
 
 CREATE TABLE `contato` (
   `idPersonal` int(11) NOT NULL,
   `emailPersonal` varchar(40) NOT NULL,
-  `dataCriacao` datetime NOT NULL DEFAULT current_timestamp(),
-  `dataAtualizacao` datetime NOT NULL DEFAULT current_timestamp(),
+  `dataCriacao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dataAtualizacao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `telefonePersonal` int(20) NOT NULL,
   `WhatsAppPersonal` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -74,62 +100,79 @@ CREATE TABLE `users` (
   `idUsuario` int(11) NOT NULL,
   `nome` varchar(90) NOT NULL,
   `email` varchar(90) NOT NULL,
-  `sena` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
   `dataNascimento` varchar(20) NOT NULL,
-  `cpf` varchar(20) NOT NULL,
-  `dataCriacao` datetime NOT NULL DEFAULT current_timestamp(),
+  `telefone` varchar(20) NOT NULL,
+  `dataCriacao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `permissoes` varchar(20) NOT NULL,
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Extraindo dados da tabela `users`
---
-
-INSERT INTO `users` (`idUsuario`, `nome`, `email`, `sena`, `dataNascimento`, `cpf`, `dataCriacao`, `permissoes`, `status`) VALUES
-(6, 'joalison', 'joalison1', '3382039', '21021996', '16866668', '2020-05-27 12:41:53', '1', '1');
-
---
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `biografia`
+-- Indexes for table `attempt`
+--
+ALTER TABLE `attempt`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `biografia`
 --
 ALTER TABLE `biografia`
   ADD PRIMARY KEY (`idBiografia`);
 
 --
--- Índices para tabela `contato`
+-- Indexes for table `confirmation`
+--
+ALTER TABLE `confirmation`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `contato`
 --
 ALTER TABLE `contato`
   ADD PRIMARY KEY (`idPersonal`);
 
 --
--- Índices para tabela `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`idUsuario`),
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `biografia`
+-- AUTO_INCREMENT for table `attempt`
+--
+ALTER TABLE `attempt`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `biografia`
 --
 ALTER TABLE `biografia`
   MODIFY `idBiografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de tabela `contato`
+-- AUTO_INCREMENT for table `confirmation`
+--
+ALTER TABLE `confirmation`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `contato`
 --
 ALTER TABLE `contato`
   MODIFY `idPersonal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de tabela `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
