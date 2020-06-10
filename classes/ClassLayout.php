@@ -14,8 +14,11 @@ class ClassLayout{
         $html .= "    <meta charset='utf-8'>\n";
         $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
         $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
+        $html .= "  <meta name=theme-color content=#FCC00A>\n";
+        $html.="<meta name=apple-mobile-web-app-status-bar-style content=#FCC00A>\n";
+        $html.="<meta name=msapplication-navbutton-color content=#75b529>\n";
 
-        $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
         <i style='margin-top:16px' class='fab fa-whatsapp'></i>
         </a>\n";
@@ -39,9 +42,9 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar py-3'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar'>";
 
-    $html .= "            <div class='container-navbar'>";
+    $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
                                 <img src='image/logo.png'>
                               </a>";
@@ -74,7 +77,7 @@ class ClassLayout{
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
-                                        <a class='nav-link waves-effect' href='xxx' target='_blank'><span>FAQ</span></a>
+                                        <a class='nav-link waves-effect' href='index#faq' id='#faq' target='_self'><span>FAQ</span></a>
                                     </li>\n";
       $html .= "                  </ul>\n\n";
     $html .= "                </div>";
@@ -103,7 +106,7 @@ class ClassLayout{
                       </div>
                       <div class=sobre-mim-footer>
                         <h3>Sobre mim</h3>
-                        <p>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
+                        <p align='justify'>Eu quero ajudar você a alcançar de forma definitiva os seus objetivos na academia e mudar de vez 
                           a sua relação com seu corpo.</p>
                       </div>
                       <ul class=contact-footer>
@@ -118,7 +121,7 @@ class ClassLayout{
                         <li><h3>Seções</h3></li>
                         <li><a href=#>Sobre mim</a></li>
                         <li><a href=#>Como vou te ajudar</a></li>
-                        <li><a href=#>Seu treino entregue em alto nível</a></li>
+                        <li><a href=#>Seu treino em alto nível</a></li>
                         <li><a href=#>Passo a passo para contratar</a></li>
                         <li><a href=#>Planos</a></li>
                         <li><a href=#>Depoimentos</a></li>
