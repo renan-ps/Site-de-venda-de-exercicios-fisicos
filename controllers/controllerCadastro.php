@@ -9,6 +9,6 @@ $validate->validateConfSenha($senha, $senhaConf);
 $validate->validateForcaSenha($senha);
 $validate->validateCaptcha($gRecaptchaResponse);
 
-var_dump($validate->getErro());
+//var_dump($validate->getErro());
 
-$validate->validateFinalCad($arrVar);
+echo $validate->validateFinalCad($arrVar); //$arrVar é da helpers/variables
