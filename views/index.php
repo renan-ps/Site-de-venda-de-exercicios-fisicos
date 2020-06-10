@@ -606,7 +606,8 @@
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingOne1">
               <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                 aria-controls="collapseOne1">
-                 <h5 class="text-white font-weight-normal mb-2 mt-2">
+
+               <h5 class="text-white font-weight-normal mb-2 mt-2">
 				Você prescreve dieta na sua consultoria fitness ? <i class=" float-right fas fa-angle-down rotate-icon"></i>
 
                 </h5>
@@ -632,6 +633,7 @@
             <div class="card-header border-bottom border-light bg-warning" role="tab" id="headingTwo2">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                 aria-expanded="false" aria-controls="collapseTwo2">
+
                 <h5 class="text-white font-weight-normal mb-2 mt-2">
 				Posso contratar em um mês e parar no outro ? <i class="float-right  fas fa-angle-down rotate-icon"></i>
 
