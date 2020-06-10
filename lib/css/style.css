@@ -1708,4 +1708,8 @@ body {
   -webkit-transform: scale(0.9);
   transform: scale(0.9); }
 
+ /*Estilo, bolinhas Carousel*/
+.carousel-indicators li {
+    background-color: #f0c207 !important;
+}
 /*# sourceMappingURL=style.css.map */
