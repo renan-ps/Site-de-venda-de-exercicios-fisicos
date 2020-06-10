@@ -13,6 +13,7 @@
             <input type="password" id="senha" name="senha" placeholder="Senha">
             <input type="password" id="senhaConf" name="senhaConf" placeholder="Confirme sua senha">
             <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+            <div class="retornoCad"></div>
             <input type="submit" value="Cadastrar">
         </div>
     </form>
@@ -60,6 +61,8 @@
 
 </footer>
 
+<script src='lib/js/zepto.min.js'></script>
+<script src='lib/js/sweetalert.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>

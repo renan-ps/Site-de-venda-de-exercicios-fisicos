@@ -1779,7 +1779,7 @@
 											"top": 355,
 											"width": 363.1494140625,
 											"height": 13,
-											"text": "+validateFinalCad(arrVar: string)",
+											"text": "+validateFinalCad(arrVar: string): string",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3205,6 +3205,15 @@
 									},
 									"name": "arrVar",
 									"type": "string"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFynjOunlxv7KU=",
+									"_parent": {
+										"$ref": "AAAAAAFyZzfbSkvYmNs="
+									},
+									"type": "string",
+									"direction": "return"
 								}
 							]
 						}
