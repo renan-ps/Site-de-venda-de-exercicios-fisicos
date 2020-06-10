@@ -2,7 +2,7 @@
 /*HEADER*/
 body {
   background-color: #ebeef3;
-  padding-top: 3rem;
+  padding-top: 0;
   padding-bottom: 3rem;
   color: #5a5a5a; }
 
@@ -24,11 +24,10 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: #333333;
+  color: #f0c20a !important;
   padding-right: 0 !important;
   font-family: "Comfortaa", Arial, Tahoma, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300; }
+  font-size: 1.1em; }
 
 .menu a:hover {
   text-decoration: underline; }
@@ -44,7 +43,9 @@ body {
       border: none; } }
 
 .container-navbar img {
-  width: 4.3em; }
+  width: 5em;
+  -webkit-transition: all 0.7s !important;
+  transition: all 0.7s !important; }
 
 .nav-item span {
   margin: 0 !important;
@@ -52,14 +53,22 @@ body {
   border: 0 !important;
   vertical-align: baseline; }
 
-.style-navbar {
+#style-navbar {
   height: 5em;
-  background-color: rgba(240, 194, 10, 0) !important; }
-
-.cor-transicao-navbar {
-  background-color: #f0c20a !important;
+  background-color: rgba(240, 194, 10, 0);
   -webkit-transition: all 0.4s !important;
   transition: all 0.4s !important; }
+
+.cor-transicao-navbar {
+  background-color: rgba(240, 194, 10, 0.9) !important;
+  -webkit-transition: all 0.4s !important;
+  transition: all 0.4s !important; }
+  .cor-transicao-navbar a {
+    color: #fff !important; }
+  .cor-transicao-navbar img {
+    width: 4.3em;
+    -webkit-transition: all .7s !important;
+    transition: all .7s !important; }
 
 /*CAROUSEL*/
 .carousel-inner {
@@ -229,7 +238,7 @@ body {
 
 .titulo-artigos {
   text-align: center;
-  color: #333333; }
+  color: #5a5a5a; }
 
 .dicas {
   display: flex;
@@ -291,7 +300,7 @@ body {
   text-overflow: Ellipsis;
   margin-top: 0.1em;
   font-size: 1.5em;
-  color: #333333;
+  color: #5a5a5a;
   text-align: center; }
 
 .dica-texto {
@@ -302,7 +311,7 @@ body {
   width: 90%;
   margin: 0 auto;
   font-weight: bold;
-  color: #333333; }
+  color: #5a5a5a; }
 
 .box-leia-mais {
   width: 100%;
@@ -402,10 +411,6 @@ body {
 
 .perguntas-frequentes-titulo {
   font-size: 2em !important; }
-
-.bloco-perguntas {
-  background-color: #f0c20a !important;
-  color: #fff !important; }
 
 .botao-duvidas {
   -webkit-border-radius: 25px !important;
@@ -688,7 +693,7 @@ a {
 
 .links p {
   margin-bottom: 0.5em;
-  color: #333333;
+  color: #5a5a5a;
   font-weight: bold; }
 
 .links a {
@@ -885,7 +890,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   margin: 40px 8px 10px 8px;
-  color: #333333; }
+  color: #5a5a5a; }
 
 /* STRUCTURE */
 .wrapper {
@@ -1713,5 +1718,98 @@ body {
 .botao-plano-premium:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9); }
+
+.imagem-abdomen {
+  width: 100%;
+  height: auto; }
+
+.imagem-abdomen img {
+  width: 100%;
+  max-width: 100%;
+  height: 20em;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 2; }
+
+.texto-img-resultados {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+  z-index: 1;
+  font-family: 'Anton', sans-serif;
+  color: #fff; }
+
+.transforme-se-resultados-texto {
+  font-size: 3.5em; }
+
+.descricao-transforme-se-resultados-texto {
+  font-size: 2em;
+  animation-delay: .5s; }
+
+.titulo-e-descricao-resultados h1 {
+  text-align: center;
+  margin-top: 1em; }
+
+.titulo-e-descricao-resultados p {
+  text-align: center; }
+
+.conteudo-resultados {
+  margin-bottom: 10em; }
+
+.container-imagem-descricao-conteudo-resultados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 5em auto 3em; }
+
+.nome-aluno-redesocial-resultados {
+  border-bottom: 2px solid #36639a;
+  margin-bottom: 0.8em; }
+
+.nome-aluno-resultado {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0; }
+
+.rede-social-resultados {
+  font-size: 1em;
+  color: #5a5a5a; }
+
+.img-antes-depois-resultados {
+  width: 45%;
+  height: auto;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+.img-antes-depois-resultados img {
+  width: 100%;
+  max-width: 100%;
+  height: 25em;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+.descricao-antes-depois-resultados h4 {
+  margin-bottom: 1em;
+  color: #36639a; }
+
+.p-resultado-alcancado {
+  color: #36639a;
+  text-decoration: underline; }
+
+.p-resultado-alcancado-depoimento {
+  font-weight: 400; }
+
+.p-resultado-alcancado-depoimento::before {
+  content: "\201C";
+  font-size: 1.3em; }
+
+.p-resultado-alcancado-depoimento::after {
+  content: "\201D";
+  font-size: 1.3em; }
+
+.descricao-antes-depois-resultados {
+  width: 45%; }
 
 /*# sourceMappingURL=style.css.map */

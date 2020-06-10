@@ -3,7 +3,7 @@
 	
 
 	<!--APRESENTAÇÃO-->
-	<div class="z-depth-1 mt-0"  data-offset="0">
+	<div>
 		<h4 id="carousel_home"></h4>
 
 		<main role="main">
