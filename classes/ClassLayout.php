@@ -42,7 +42,7 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light bg-warning'>";
 
     $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
