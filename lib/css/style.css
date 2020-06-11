@@ -1725,9 +1725,16 @@ body {
   }
 }
 
-.sobre_personal{
-  height: 600px;
-}
+@media only screen and (max-width: 767px) {
+  #personal {
+    height: 610px;
+   } }
+
+
+@media only screen and (max-width: 584px) {
+  #personal {
+    height: 650px;
+    } }
 
 
 
