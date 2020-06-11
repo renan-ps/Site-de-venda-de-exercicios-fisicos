@@ -1737,6 +1737,12 @@ body {
     } }
 
 
+@media only screen and (max-width: 320px) {
+  #personal {
+    height: 700px;
+    } }
+
+
 @media (max-width: 353px) {
  .parallax-divider1 {
     height: 900px!important;
@@ -1789,3 +1795,8 @@ body {
     width: 114px !important;
     height: 182px !important;
 }
+
+
+
+
+/*# sourceMappingURL=style.css.map */
