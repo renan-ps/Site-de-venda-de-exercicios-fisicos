@@ -43,7 +43,7 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light' id='style-navbar' >";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light bg-tranparent' id='style-navbar'>";
 
     $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
@@ -163,6 +163,7 @@ class ClassLayout{
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
 
   
+            <script src='". DIRPAGE ."lib/js/zepto.min.js'></script>
             <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
             <script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>
             <script src='". DIRPAGE ."lib/js/javascript.js'></script>

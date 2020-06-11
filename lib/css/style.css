@@ -54,7 +54,6 @@ body {
   vertical-align: baseline; }
 
 #style-navbar {
-  height: 5em;
   background-color: rgba(240, 194, 10, 0);
   -webkit-transition: all 0.4s !important;
   transition: all 0.4s !important; }
