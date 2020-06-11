@@ -1712,4 +1712,68 @@ body {
 .carousel-indicators li {
     background-color: #f0c207 !important;
 }
+.carousel-indicators li {
+    display: none !important;
+}
+
+@media only screen and  (max-width: 767px) {
+  .texto-personal {
+    margin-bottom: 200px !important;
+    height: 800px!important;
+    background-color: black;
+    
+  }
+}
+
+.sobre_personal{
+  height: 600px;
+}
+
+
+
+@media (max-width: 360px) {
+ .parallax-divider1 {
+    height: 400px!important;
+  }
+}
+@media (max-width: 360px) {
+ .parallax-divider {
+    height: 4000px!important;
+  }
+}
+
+@media (max-width: 600px) {
+ .parallax-divider1 {
+    height: 380px!important;
+  }
+}
+@media (max-width: 600px) {
+ .parallax-divider {
+    height: 370px!important;
+  }
+}
+
+
+@media (max-width: 600px) {
+ .texto_descricao_marca1 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+ .texto_descricao_marca {
+    margin-top: 0;
+  }
+}
+.carousel .carousel-control-next-icon {
+    width: 114px !important;
+    height: 182px !important;
+}
+.carousel .carousel-control-prev-icon {
+    width: 114px !important;
+    height: 182px !important;
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */

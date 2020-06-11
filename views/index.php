@@ -86,12 +86,12 @@
 
 				<!-- TEXTO APRESENTAÇÃO-->
 				
-			<div class="col-md-6 col-sm-12 " id="navbar-example2-mdo">
+			<div class="col-md-6 col-sm-12 texto-personal " id="navbar-example2-mdo">
 				 <span id="span_sobre"></span>
 			
 				<h3 class="text-lg-left">José Acácio:</h3>
 				<hr class="bg-warning w-100 text-left ">
-				<p align="justify">Desde que se formou em educação física o professor José Acácio já planejava levar sua filosofia de trabalho para as 
+				<p align="justify text-center">Desde que se formou em educação física o professor José Acácio já planejava levar sua filosofia de trabalho para as 
 					pessoas. Uma filosofia baseada em hábitos saudáveis práticas regulares de atividade física, que, aliás, é uma forma 
 					de lazer e socialização além de ser a forma mais inteligente de promover a saúde do nosso corpo; alimentação como um 
 					prazer e não como uma compulsão, pois em excesso será um fardo carregado pela maioria das pessoas. Hoje não se pode 
@@ -128,7 +128,7 @@
 	</div>
 
 	<!--DEPOIMENTOS-->
-	<div class="container-fluid my-5 px-5 pt-5 pb-3 depoimentos">
+	<div class="container-fluid my-5 px-5  pb-3 depoimentos">
 	
 		<div class="d-flex justify-content-center">
 			<h3 id="navbar-example2-two " class="font-weight-bold text-center dark-grey-text pb-2">Depoimentos</h3>
@@ -230,7 +230,7 @@
 		<div></div>
 
      	<h4 id="navbar-example2-three"></h4>
-     	<hr>
+
 
 		<section class="text-center dark-grey-text">
 
