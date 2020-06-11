@@ -70,7 +70,7 @@
 	</style>
 	<!--SOBRE O PERSONAL-->
 	
-	<div class="container pt-5 pb-5 sobre_personal" id="personal">
+	<div class="container  sobre_personal" id="personal">
 		<div class="row apresentacao">
 			
 			<!-- FOTO APRESENTAÇÃO-->
