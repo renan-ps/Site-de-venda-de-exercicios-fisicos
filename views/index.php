@@ -3,7 +3,7 @@
 	
 
 	<!--APRESENTAÇÃO-->
-	<div data-spy="scroll" data-target="#navbar-example2" class="scrollspy-example z-depth-1 " style="margin-top: 94px!important;" data-offset="0">
+	<div>
 		<h4 id="carousel_home"></h4>
 
 		<main role="main">
@@ -411,6 +411,8 @@
 	</div>
 
 	<!--ARTIGOS-->
+
+	<!--ADICIONAR TEMPO DE LEITURA-->
 	<section class="artigos ">
 
 		<h1 class="titulo-artigos">Artigos</h1>
@@ -754,8 +756,6 @@ Assine a nossa newsletter e receba as últimas notícias
             <div class="col-md-2 mr-auto">
 
               <button class="btn btn-block botao-duvidas">Se inscrever</button>
-
-
             </div>
           </div>
         </form>
