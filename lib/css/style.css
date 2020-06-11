@@ -1737,24 +1737,34 @@ body {
     } }
 
 
+@media (max-width: 353px) {
+ .parallax-divider1 {
+    height: 900px!important;
+  }
+}
+@media (max-width: 353px) {
+ .parallax-divider {
+    height: 900px!important;
+  }
+}
 
 @media (max-width: 360px) {
  .parallax-divider1 {
-    height: 400px!important;
+    height: 439px!important;
   }
 }
 @media (max-width: 360px) {
  .parallax-divider {
-    height: 4000px!important;
+    height: 439px!important;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px ) and (min-width: 400px) {
  .parallax-divider1 {
     height: 380px!important;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width: 400px){
  .parallax-divider {
     height: 370px!important;
   }
@@ -1779,8 +1789,3 @@ body {
     width: 114px !important;
     height: 182px !important;
 }
-
-
-
-
-/*# sourceMappingURL=style.css.map */
