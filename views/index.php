@@ -4,7 +4,7 @@
 
 	<!--APRESENTAÇÃO-->
 	<div>
-		<h4 id="carousel_home"></h4>
+		
 
 		<main role="main">
 
@@ -15,10 +15,10 @@
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner">
-			<div class="carousel-item active">
+			<div class="carousel-item active ">
 				<img class="d-block w-100" src="image/img-carousel-1.jpg">
-				<div class="container">
-				<div class="carousel-caption text-left">
+				<div class=" ">
+				<div class="carousel-caption  ">
 					<h1>Treinos ao ar livre.</h1>
 					<p>Todo mundo sabe que a prática de atividades físicas faz bem para a saúde, contribuindo para uma vida ativa e saudável.
 						 Porém, nem todos gostam de frequentar academias, e acabam optando por exercícios físicos ao ar livre, que oferecem
@@ -41,7 +41,7 @@
 			<div class="carousel-item">
 				<img class="d-block w-100" src="image/img-carousel-3.jpeg">
 				<div class="container">
-				<div class="carousel-caption text-right">
+				<div class="carousel-caption ">
 					<h1>Corrida diária.</h1>
 					<p>Praticar um esporte como a corrida também é uma das melhores coisas que você pode fazer pelo seu cérebro em termos de 
 						humor, memória e aprendizado.</p>
