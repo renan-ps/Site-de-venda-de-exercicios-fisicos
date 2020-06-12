@@ -4,14 +4,17 @@ namespace Classes;
 
 Use Models\ClassCadastro;
 Use ZxcvbnPhp\Zxcvbn;
+use Classes\ClassPassword;
 
 class ClassValidate{
     private $erro=[];
     private $cadastro;
+    private $password;
 
     public function __construct()
     {
-        $this->cadastro=new ClassCadastro();
+        $this->cadastro = new ClassCadastro();
+        $this->password = new ClassPassword();
     }
 
     #Valida se os campos desejados foram preenchidos.
@@ -32,8 +35,8 @@ class ClassValidate{
     }
 
     #Valida se o dado é um e-mail
-    public function validateEmail($par){
-        if (filter_var($par,FILTER_VALIDATE_EMAIL)){
+    public function validateEmail($email){
+        if (filter_var($email,FILTER_VALIDATE_EMAIL)){
             return true;
         }else{
             $this->setErro("E-mail inválido.");
@@ -100,6 +103,16 @@ class ClassValidate{
 
         }else{
             #login
+        }
+    }
+
+    #Verifica se o hash da senha digitada é o mesmo cadastrado no banco de dados.
+    public function validateSenha($email, $senha){
+        if($this->password->verifyHash($email, $senha)){
+            return true;
+        }else{
+            $this->setErro("E-mail e/ou senha inválido(s).");
+            return false;
         }
     }
 
