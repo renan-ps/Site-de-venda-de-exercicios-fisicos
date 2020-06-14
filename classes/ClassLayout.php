@@ -25,8 +25,8 @@ class ClassLayout{
 
         $html .= "    <meta name='description' content='$description'>\n";
         $html .= "    <meta name='author' content='$author'>\n\n";
+        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css'>";
         $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>\n";
-        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css\n'>";
         $html .= "    <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>\n";
         $html .= "    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>";
         $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
@@ -34,6 +34,7 @@ class ClassLayout{
         $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css' rel='stylesheet'>\n";
         $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>";
         $html .= "    <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap' rel='stylesheet'>";
+        $html .= "    <link href='https://fonts.googleapis.com/css2?family=Anton&display=swap' rel='stylesheet'>";
         $html .= "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>";
 
         $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
@@ -42,7 +43,7 @@ class ClassLayout{
         $html .= "<body class='body'>\n";
         $html .= "    <header>\n\n";
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light white style-navbar'>";
+		$html .= "        <nav class='navbar fixed-top navbar-expand-lg navbar-light bg-tranparent' id='style-navbar'>";
 
     $html .= "            <div class='container container-navbar'>";
     $html .= "                <a class='navbar-brand' href='#'>
@@ -68,17 +69,31 @@ class ClassLayout{
                                         <a class='nav-link waves-effect effect-scroll' href='index#planos' target='_self' id='#planos'><span>Planos</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
-                                        <a class='nav-link waves-effect effect-scroll' href='index#como-funciona' target='_self' id='#como-funciona'><span>Como funciona ?</span></a>
+                                        <a class='nav-link waves-effect effect-scroll ' href='index#como-funciona' target='_self' id='#como-funciona'><span>Como funciona ?</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll' href='index#porque-contratar' target='_self' id='#porque-contratar'><span>Por que contratar ?</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
-                                        <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
+                                        <a class='nav-link waves-effect' href='resultados' id='#resultados' target='_self'><span>Resultados</span></a>
                                     </li>\n";
       $html .= "                    <li class='nav-item'>
-                                        <a class='nav-link waves-effect' href='index#faq' id='#faq' target='_self'><span>FAQ</span></a>
+                                        <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
+$html .= "                          <li class='nav-item dropdown'>
+                                         <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
+          aria-haspopup='true' aria-expanded='false'>Login</a>
+        <div class='dropdown-menu dropdown-primary' aria-labelledby='navbarDropdownMenuLink'>
+          <a class='dropdown-item' href='#'>Entrar</a>
+          <a class='dropdown-item' href='#'>Cadastra-se</a>
+          
+                                    </li>\n";
+
+
+
+  
+        
+
       $html .= "                  </ul>\n\n";
     $html .= "                </div>";
     $html .= "              </div>";
@@ -138,7 +153,7 @@ class ClassLayout{
                         <li><a href=#>Como funciona</a></li>
                         <li><a href=#>Loja</a></li>
                         <li><a href=#>Artigos</a></li>
-                        <li><a href=#>A consultoria</a></li>
+                        <li><a href=#>FAQ</a></li>
                       </ul>
                     </div>
                   </div>
