@@ -3,6 +3,7 @@
 namespace Classes;
 
 Use Models\ClassCadastro;
+use Models\ClassLogin;
 Use ZxcvbnPhp\Zxcvbn;
 use Classes\ClassPassword;
 
@@ -10,11 +11,14 @@ class ClassValidate{
     private $erro=[];
     private $cadastro;
     private $password;
+    private $login;
+    private $tentativas;
 
     public function __construct()
     {
         $this->cadastro = new ClassCadastro();
         $this->password = new ClassPassword();
+        $this->login = new ClassLogin();
     }
 
     #Valida se os campos desejados foram preenchidos.
@@ -153,6 +157,27 @@ class ClassValidate{
             //$this->cadastro->insertCad($arrVar);
         }
         return json_encode($arrResponse);
+    }
+
+    #validação das tentativas de login
+    public function validateAttemptLogin(){
+        if($this->login->countAttempt() >= 5){
+            $this->setErro("Você realizou muitas tentativas de login inválidas. Por favor, espere 20 minutos antes de tentar novamente.");
+            $this->tentativas = true;
+            return false;
+        }else{
+            $this->tentativas = false;
+            return true;
+        }
+    }
+
+    #Validação final do login
+    public function validateFinalLogin($email){
+        if(count($this->getErro()) > 0){
+            $this->login->insertAttempt();
+        }else{
+            $this->login->deleteAttempt();
+        }
     }
 
 
