@@ -23,22 +23,32 @@
                 </div>
 
                
-                <form class="form-login">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
+                <form method="post" action="<?php echo DIRPAGE . 'controllers/controllerLogin'; ?>" id="formLogin" class="form-login">
+                    <input type="text" id="email" class="fadeIn second" name="email" placeholder="E-mail">
+                    <input type="password" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
+                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                     <input type="submit" class="fadeIn fourth" value="Entrar">
                 </form>
 
                 <div id="formFooter" class="formulario-login-footer">
-                    <a class="underlineHover" href="#">Esqueceu sua senha ?</a>
+                    <a class="underlineHover" href="#">Esqueceu sua senha?</a>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='lib/js/zepto.min.js'></script>
+    <script src='lib/js/sweetalert.min.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
+    <script src='lib/js/jquery.js'></script>
+    <script src='lib/js/index.js'></script>
+    <script src='lib/js/vanilla-masker.min.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf-sP8UAAAAAJBsCaxkocgA4CfOaLlvGv-TyYfm"></script>
+    <script src='lib/js/javascript.js'></script>
 
 </body>
 
