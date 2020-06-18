@@ -1,7 +1,10 @@
 <?php echo \Classes\ClassLayout::setHeader('Plano-Básico', "", ""); ?>
 <div class="plano-basico">
-   <div class="container-plano-basico"> 
+    <div class="banner-plano-basico">
+        <img src="image/img-banner-plano-basico.jpg" alt="">
         <h1 class="animate__animated animate__lightSpeedInLeft">Plano Básico</h1>
+    </div>
+   <div class="container-plano-basico"> 
         <div class="container-apresentacao-plano-basico">
             <div class="container-img-valor-plano-basico">
                 <div class="img-plano-basico">
@@ -53,18 +56,18 @@
         </div>
 
         <div class="forma-de-pagamento">
-                <h5>Pague seu plano com:</h5>
+                <h5>Pague com:</h5>
                     
-                <div class="cartoes-plano-basico">
+                <div class="cartoes-plano">
                    <img src="image/icon-mastercard.svg" alt="cartão de crédito"> 
                    <img src="image/icon-visa.svg" alt="cartão de crédito">
-                   <img class="america-plano-basico" src="image/icon-american-express.svg" alt="cartão de crédito">
-                   <img class="pay-pal-plano-basico" src="image/icon-paypal.svg" alt="Pay-pal">
+                   <img class="america-plano" src="image/icon-american-express.svg" alt="cartão de crédito">
+                   <img class="pay-pal-plano" src="image/icon-paypal.svg" alt="Pay-pal">
                  
 
                 </div>
 
-                <input class="botao-plano-basico" type="submit" value="Comprar" alt="Botão">
+                <input class="botao-plano" type="submit" value="Comprar" alt="Botão">
             </div>
 
         
