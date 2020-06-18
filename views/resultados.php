@@ -3,9 +3,9 @@
 <div class="resultados">
     <div class="img-resultados-container">
         <div class="imagem-abdomen">
-            <img src="image/img-abdomen.png" alt="">
+            <img src="image/img-abdomen-resultados.png" alt="">
         </div>
-        <div class="texto-img-resultados">
+        <div class="texto-img-principal-resultados">
             <p class="animate__animated animate__bounceInDown transforme-se-resultados-texto">Transforme-se</p>
             <p class="animate__animated animate__bounceInDown descricao-transforme-se-resultados-texto">Obtenha resultados nunca alcançados</p>
         </div>
@@ -19,7 +19,7 @@
 
         <div class="container-imagem-descricao-conteudo-resultados">
             <div class="img-antes-depois-resultados">
-                <div class="nome-aluno-redesocial-resultados">
+                <div class="nome-aluno-rede-social-resultados">
                     <p class="nome-aluno-resultado">Monique Monteiro - Lisboa</p>
                     <p>
                         <a class="rede-social-resultados" href="https://www.facebook.com/caroline.monteiro?fref=ts">
@@ -52,7 +52,7 @@
 
         <div class="container-imagem-descricao-conteudo-resultados">
             <div class="img-antes-depois-resultados">
-                <div class="nome-aluno-redesocial-resultados">
+                <div class="nome-aluno-rede-social-resultados">
                     <p class="nome-aluno-resultado">Maurício Bittencourt - Porto</p>
                     <p>
                         <a class="rede-social-resultados" href="https://www.facebook.com/caroline.monteiro?fref=ts">
@@ -82,7 +82,7 @@
 
         <div class="container-imagem-descricao-conteudo-resultados">
             <div class="img-antes-depois-resultados">
-                <div class="nome-aluno-redesocial-resultados">
+                <div class="nome-aluno-rede-social-resultados">
                     <p class="nome-aluno-resultado">Eduardo Vilela - Porto</p>
                     <p>
                         <a class="rede-social-resultados" href="https://www.facebook.com/caroline.monteiro?fref=ts">
