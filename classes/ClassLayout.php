@@ -80,6 +80,20 @@ class ClassLayout{
       $html .= "                    <li class='nav-item'>
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
+$html .= "                          <li class='nav-item dropdown'>
+                                         <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
+          aria-haspopup='true' aria-expanded='false'>Login</a>
+        <div class='dropdown-menu dropdown-primary' aria-labelledby='navbarDropdownMenuLink'>
+          <a class='dropdown-item' href='#'>Entrar</a>
+          <a class='dropdown-item' href='#'>Cadastra-se</a>
+          
+                                    </li>\n";
+
+
+
+  
+        
+
       $html .= "                  </ul>\n\n";
     $html .= "                </div>";
     $html .= "              </div>";

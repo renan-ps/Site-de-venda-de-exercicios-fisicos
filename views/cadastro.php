@@ -1,3 +1,5 @@
+
+
 <?php echo \Classes\ClassLayout::setHeader('Cadastro', "Faça seu cadastro", ""); ?>
 
 <div class="container-cadastro">
