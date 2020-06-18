@@ -153,7 +153,10 @@
 			<div class="container-fluid">
 				<div class="row mb-3">
 					<div class="col-lg-4">
-						<div class="card mb-3">
+						<div class="card mb-3 card">
+							<div class="card-header py-3">
+								<p class="text-primary m-0 font-weight-bold">Alterar Foto</p>
+							</div>
 
 							<div class="card-body text-center shadow" style="height: 318px;">
 									
