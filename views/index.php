@@ -4,8 +4,6 @@
 
 	<!--APRESENTAÇÃO-->
 	<div>
-		<h4 id="carousel_home"></h4>
-
 		<main role="main">
 
 		<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -14,7 +12,7 @@
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
-			<div class="carousel-inner">
+			<div class="carousel-inner ">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="image/img-carousel-1.jpg">
 				<div class="container">
@@ -27,7 +25,7 @@
 				</div>
 				</div>
 			</div>
-			<div class="carousel-item">
+			<div class="carousel-item ">
 				<img class="d-block w-100" src="image/img-carousel-2.jpg">
 				<div class="container">
 				<div class="carousel-caption">
@@ -237,7 +235,7 @@
 			<!-- Section heading -->
 			<h3 class="font-weight-bold pb-2 mb-4 color-text-plan">Nossos planos</h3>
 			<!-- Section deion -->
-			<p class="text-muted w-responsive mx-auto mb-5 color-text-plan">Confira o plano que mais se enquadra ao perfil do seu dia a dia.</p>
+			<p class="text-muted w-responsive mx-auto mb-5 color-text-plan confira-plano-text-style">Confira o plano que mais se enquadra ao perfil do seu dia a dia.</p>
 
 		
 			<div class="row">
@@ -315,7 +313,7 @@
 						<!--Price -->
 						<h2 class="font-weight-bold my-4 color-text-plan">R$129,90</h2>
 						<p class="color-text-plan">Se você procura algo mais completo e intenso, com direito a equipamentos, veja o plano Advanced.</p>
-						<a class="btn color-buttom btn-rounded color-text-buttom" href="">Saiba mais</a>
+						<a class="btn color-buttom btn-rounded color-text-buttom" href="plano-advanced">Saiba mais</a>
 
 					</div>
 				</div>
@@ -377,8 +375,8 @@
 					<span class="number">1</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">Contrate-nos</h6>
-					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
+					<h5 class="font-weight-bold dark-grey-text mb-3">Contrate-nos</h5>
+					<p class="text-muted como-funciona-descricao">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
 				<li class="step-element pb-0">
@@ -386,8 +384,8 @@
 					<span class="number">2</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">Entre em nossa plataforma</h6>
-					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
+					<h5 class="font-weight-bold dark-grey-text mb-3">Entre em nossa plataforma</h5>
+					<p class="text-muted como-funciona-descricao">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
 				<li class="step-element pb-0">
@@ -395,8 +393,8 @@
 					<span class="number">3</span>
 					</div>
 					<div class="step-excerpt">
-					<h6 class="font-weight-bold dark-grey-text mb-3">Escolha a modalidade que mais se enquadra no seu perfil</h6>
-					<p class="text-muted">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
+					<h5 class="font-weight-bold dark-grey-text mb-3">Escolha a modalidade que mais se enquadra no seu perfil</h5>
+					<p class="text-muted como-funciona-descricao">Think the or organization same proposal to affected heard reclined in be it reassuring.</p>
 					</div>
 				</li>
 				</ol>
@@ -415,7 +413,7 @@
 	<!--ADICIONAR TEMPO DE LEITURA-->
 	<section class="artigos ">
 
-		<h1 class="titulo-artigos">Artigos</h1>
+		<h2 class="titulo-artigos">Artigos</h2>
 			
 		<div class="dicas">
 

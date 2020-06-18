@@ -26,11 +26,12 @@ body {
 }
 
 .menu a {
-    text-decoration: none;
-    color: $cor-padrao-cliente-2!important;
     padding-right: 0!important;
+    text-decoration: none;
+    color: #fff!important;
     font-family: "Comfortaa", Arial, Tahoma, sans-serif;
     font-size: 1.1em;
+    font-weight: 500;
 }
 
 .menu a:hover {
@@ -61,22 +62,22 @@ body {
     vertical-align: baseline;
 }
 
-#style-navbar {
-    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 1);
-    -webkit-transition: all .4s!important;
-    transition: all .4s!important;
-}
-
 .cor-transicao-navbar {
-    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 0.1)!important;
-    -webkit-transition: all .4s!important;
-    transition: all .4s!important;
+    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 0.1);
+    -webkit-transition: all .4s;
+    transition: all .4s;
     a {
-        color: #fff!important;
+        color: #fff;
     }
     img {
         width: 4.3em;
-        -webkit-transition: all .7s !important;
-        transition: all .7s !important;
+        -webkit-transition: all .7s;
+        transition: all .7s;
     }
+}
+
+.cor-dropdown {
+    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 0.1);
+    -webkit-transition: all .7s;
+    transition: all .7s;
 }

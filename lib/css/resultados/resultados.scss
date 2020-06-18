@@ -9,10 +9,9 @@
     height: 20em;
     object-fit: cover;
     object-position: center;
-    flex-shrink: 2;
 }
 
-.texto-img-resultados {
+.texto-img-principal-resultados {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -41,7 +40,7 @@
 }
 
 .conteudo-resultados {
-    margin-bottom: 10em;
+    margin: 8em 0 10em;
 }
 
 .container-imagem-descricao-conteudo-resultados {
@@ -49,12 +48,12 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 5em auto 3em;
+    margin: 0 auto;
 }
 
-.nome-aluno-redesocial-resultados {
-    border-bottom: 2px solid $cor-padrao-cliente-1;
+.nome-aluno-rede-social-resultados {
     margin-bottom: 0.8em;
+    border-bottom: 2px solid $cor-padrao-cliente-1;
 }
 
 .nome-aluno-resultado {
@@ -81,6 +80,10 @@
     @include border-radius-default;
 }
 
+.descricao-antes-depois-resultados {
+    width: 45%;
+}
+
 .descricao-antes-depois-resultados h4 {
     margin-bottom: 1em;
     color: $cor-padrao-cliente-1;
@@ -103,8 +106,4 @@
 .p-resultado-alcancado-depoimento::after {
     content: "\201D";
     font-size: 1.3em;
-}
-
-.descricao-antes-depois-resultados {
-    width: 45%;
 }

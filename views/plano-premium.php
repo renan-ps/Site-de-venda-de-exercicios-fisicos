@@ -1,7 +1,11 @@
 <?php echo \Classes\ClassLayout::setHeader('Plano-Premium', "", ""); ?>
 <div class="plano-premium">
-   <div class="container-plano-premium"> 
+
+    <div class="banner-plano-premium">
+        <img src="image/img-banner-plano-premium.jpg" alt="">
         <h1 class="animate__animated animate__lightSpeedInLeft">Plano Premium</h1>
+    </div>
+   <div class="container-plano-premium"> 
         <div class="container-apresentacao-plano-premium">
             <div class="container-img-valor-plano-premium">
                 <div class="img-plano-premium">
@@ -58,16 +62,16 @@
         <div class="forma-de-pagamento">
                 <h5>Pague seu plano com:</h5>
                     
-                <div class="cartoes-plano-premium">
+                <div class="cartoes-plano">
                    <img src="image/icon-mastercard.svg" alt="cartão de crédito"> 
                    <img src="image/icon-visa.svg" alt="cartão de crédito">
-                   <img class="america-plano-premium" src="image/icon-american-express.svg" alt="cartão de crédito">
-                   <img class="pay-pal-plano-premium" src="image/icon-paypal.svg" alt="Pay-pal">
+                   <img class="america-plano" src="image/icon-american-express.svg" alt="cartão de crédito">
+                   <img class="pay-pal-plano" src="image/icon-paypal.svg" alt="Pay-pal">
                  
 
                 </div>
 
-                <input class="botao-plano-premium" type="submit" value="Comprar" alt="Botão">
+                <input class="botao-plano" type="submit" value="Comprar" alt="Botão">
             </div>
 
         
