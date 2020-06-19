@@ -1,4 +1,6 @@
 <?php
+$session = new \Classes\ClassSessions();
+$session->verifyInsideSession();
 
 echo \Classes\ClassLayout::setHeaderUser();
 echo \Classes\ClassLayout::setNavbarSideUser();
