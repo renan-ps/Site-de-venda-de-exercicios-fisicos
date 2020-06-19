@@ -8,4 +8,5 @@ $validate->validateSenha($email, $senha);
 $validate->validateCaptcha($gRecaptchaResponse);
 $validate->validateAttemptLogin();
 $validate->validateFinalLogin($email);
-var_dump($validate->getErro());
+
+echo "<script> window.location.href='" . DIRPAGE . "user/'</script>";
