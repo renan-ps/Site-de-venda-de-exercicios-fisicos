@@ -90,7 +90,7 @@ class ClassSessions{
 				echo "
 				<script>
 					alert('Sua sessão expirou. Faça login novamente.');
-					window.location.href = '". DIRPAGE ."login/';
+					window.location.href = '". DIRPAGE ."login';
 				</script>
 			";
 			}
