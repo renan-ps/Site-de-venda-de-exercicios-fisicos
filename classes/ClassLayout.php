@@ -83,7 +83,7 @@ $html .= "                          <li class='nav-item dropdown '>
                                          <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
           aria-haspopup='true' aria-expanded='false'>Login</a>
         <div class='dropdown-menu dropdown-primary background-dropdown' aria-labelledby='navbarDropdownMenuLink'>
-          <a class='dropdown-item' href='#' >Entrar</a>
+          <a class='dropdown-item' href='..\views\login.php' >Entrar</a>
           <a class='dropdown-item' href='#'>Cadastra-se</a>
           
                                     </li>\n";
