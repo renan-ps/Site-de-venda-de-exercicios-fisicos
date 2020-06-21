@@ -1,10 +1,32 @@
+    .banner-loja {
+        width: 100%;
+        height: auto;
+        filter: brightness(50%);
+    }
+    
+    .banner-loja img {
+        width: 100%;
+        height: 6.6em;
+        object-fit: cover;
+    }
+    
     .titulo-loja {
-        width: 90%;
-        margin: 3em auto 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .titulo-loja-1,
+    .titulo-loja-2 {
+        margin: 2em 0 0;
         text-align: center;
         color: $cor-padrao-cliente-1;
         @include font-family-default;
         font-size: 2.5em;
+    }
+    
+    .titulo-loja-2 {
+        animation-delay: .5s;
     }
     
     .container-loja {
@@ -108,12 +130,21 @@
     }
     
     .favorito-produto::before {
-        content: "\2661";
-        color: white;
+        content: "\2764";
+        color: #fff;
         margin-right: 0.3em;
         vertical-align: middle;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+    
+    .favorito-produto-active::before {
+        content: "\2764";
+        color: red;
+        margin-right: 0.3em;
+        vertical-align: middle;
+        font-weight: 400;
+        font-size: 1em;
     }
     
     .descricao-produto {
@@ -151,17 +182,34 @@
         font-weight: 800;
     }
     
-    .paypal {
+    .icon-cartoes-loja {
         text-align: center;
     }
     
-    .paypal p {
+    .icon-cartoes-loja p {
         font-weight: 500;
-        margin: 0;
     }
     
-    .paypal img {
+    .master-loja {
+        width: 3.5em;
+    }
+    
+    .visa-loja {
+        width: 4.5em;
+    }
+    
+    .america-loja {
+        width: 2.5em;
+    }
+    
+    .paypal-loja {
         width: 6.5em;
+    }
+    
+    .master-loja,
+    .visa-loja,
+    .america-loja {
+        margin-right: 1em;
     }
     
     .botao-produto {
