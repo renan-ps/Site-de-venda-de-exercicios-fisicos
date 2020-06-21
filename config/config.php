@@ -26,3 +26,5 @@ define('PASS', "");
 
 #Outras informações
 include_once("recaptcha.php");
+
+define ("DOMAIN", $_SERVER["HTTP_HOST"]);

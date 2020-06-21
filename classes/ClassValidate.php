@@ -13,12 +13,14 @@ class ClassValidate{
     private $password;
     private $login;
     private $tentativas;
+    private $sessions;
 
     public function __construct()
     {
         $this->cadastro = new ClassCadastro();
         $this->password = new ClassPassword();
         $this->login = new ClassLogin();
+        $this->sessions = new ClassSessions();
     }
 
     #Valida se os campos desejados foram preenchidos.
@@ -177,6 +179,7 @@ class ClassValidate{
             $this->login->insertAttempt();
         }else{
             $this->login->deleteAttempt();
+            $this->sessions->setSessions($email);
         }
     }
 

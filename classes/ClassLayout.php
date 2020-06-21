@@ -4,7 +4,6 @@ namespace Classes;
 class ClassLayout{
 
     //Definição das tags do head
-
     public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
         $html = "<!DOCTYPE html>\n";
         $html .= "<html lang='pt-pt'>\n";
@@ -105,6 +104,8 @@ $html .= "                          <li class='nav-item dropdown '>
 
         return $html;
     }
+
+
     //Definição das tags do footer
     public static function setFooter(){
 
@@ -378,16 +379,22 @@ $html .= "                          <li class='nav-item dropdown '>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js'></script>
+
    <script src='" . DIRPAGE . "theme.js' type='text/javascript' charset='utf-8'></script>
    <script src='" . DIRPAGE . "Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
+   <script src='../../lib/js/theme.js' type='text/javascript' charset='utf-8'></script>
+   <script src='../../lib/js/Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
 </body>
 
 </html>
 ";
 	}
 
-
 }
+
+
 
 
 
