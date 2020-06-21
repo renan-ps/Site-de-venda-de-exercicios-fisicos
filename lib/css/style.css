@@ -90,6 +90,13 @@ body {
     transition: all .7s;
 }
 
+.background-dropdown{
+    background-color: #E0B923;
+}
+.background-dropdown a:hover{
+    background-color:  #E0B923;
+}
+
 
 /*CAROUSEL*/
 
