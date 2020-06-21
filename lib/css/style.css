@@ -148,7 +148,18 @@ body {
 }
 
 .carousel-indicators li {
-    background-color: white !important;
+
+  background-color: #F0C208 !important; }
+
+
+  .carousel .carousel-control-next-icon {
+    width: 114px !important;
+    height: 182px !important;
+}
+
+.carousel .carousel-control-prev-icon {
+    width: 114px !important;
+    height: 182px !important;
 }
 
 
