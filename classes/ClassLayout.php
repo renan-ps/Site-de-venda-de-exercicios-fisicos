@@ -79,11 +79,11 @@ class ClassLayout{
       $html .= "                    <li class='nav-item'>
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
-$html .= "                          <li class='nav-item dropdown'>
+$html .= "                          <li class='nav-item dropdown '>
                                          <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
           aria-haspopup='true' aria-expanded='false'>Login</a>
-        <div class='dropdown-menu dropdown-primary' aria-labelledby='navbarDropdownMenuLink'>
-          <a class='dropdown-item' href='#'>Entrar</a>
+        <div class='dropdown-menu dropdown-primary background-dropdown' aria-labelledby='navbarDropdownMenuLink'>
+          <a class='dropdown-item' href='#' >Entrar</a>
           <a class='dropdown-item' href='#'>Cadastra-se</a>
           
                                     </li>\n";
@@ -191,6 +191,7 @@ $html .= "                          <li class='nav-item dropdown'>
         ";
         return $html;
     }
+
 
 
 	//Definição das tags do head da parte do usuário
@@ -378,8 +379,13 @@ $html .= "                          <li class='nav-item dropdown'>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js'></script>
+
+   <script src='" . DIRPAGE . "theme.js' type='text/javascript' charset='utf-8'></script>
+   <script src='" . DIRPAGE . "Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
    <script src='../../lib/js/theme.js' type='text/javascript' charset='utf-8'></script>
    <script src='../../lib/js/Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
 </body>
 
 </html>
