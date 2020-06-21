@@ -42,3 +42,24 @@
 .lista-item-plano-premium li:nth-child(5) {
     text-decoration: none;
 }
+
+.retina-plano-premium p {
+    @media (max-width: 1147px) {
+        margin-top: 25%;
+    }
+    @media (max-width: 887px) {
+        margin-top: 30%;
+    }
+    @media (max-width: 741px) {
+        margin-top: 20%;
+    }
+    @media (max-width: 633px) {
+        margin-top: 25%;
+    }
+    @media (max-width: 741px) {
+        margin-top: 20%;
+    }
+    @media (max-width: 481px) {
+        margin-top: 30%;
+    }
+}
