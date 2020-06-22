@@ -66,7 +66,7 @@ class ClassValidate{
             if ($b > 0){
                 return true;
             }else{
-								//$this->setErro("E-mail não cadastrado.");
+                                //$this->setErro("E-mail não cadastrado.");
                 return false;
             }
         }
@@ -156,7 +156,7 @@ class ClassValidate{
                 "retorno" => "success",
                 "erros" => null
             ];
-            //$this->cadastro->insertCad($arrVar);
+            $this->cadastro->insertCad($arrVar);
         }
         return json_encode($arrResponse);
     }
@@ -176,20 +176,20 @@ class ClassValidate{
   #Validação final do login
   public function validateFinalLogin($email){
     if(count($this->getErro()) > 0){
-    	$this->login->insertAttempt();
-    	$arrResponse=[
-		    "retorno" => "erro",
-		    "erros" => $this->getErro(),
-		    "tentativas" => $this->tentativas
-	    ];
+        $this->login->insertAttempt();
+        $arrResponse=[
+            "retorno" => "erro",
+            "erros" => $this->getErro(),
+            "tentativas" => $this->tentativas
+        ];
     }else{
         $this->login->deleteAttempt();
         $this->sessions->setSessions($email);
-	      $arrResponse=[
-		      "retorno" => "success",
-		      "page" => DIRPAGE.'user/',
-		      "tentativas" => $this->tentativas
-	      ];
+          $arrResponse=[
+              "retorno" => "success",
+              "page" => DIRPAGE.'user/',
+              "tentativas" => $this->tentativas
+          ];
     }
 
     return json_encode($arrResponse);
