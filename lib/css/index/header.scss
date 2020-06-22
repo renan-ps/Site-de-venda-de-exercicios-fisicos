@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include alinha-elemento-centro(80%);
+    @include alinha-elemento-centro(100%);
 }
 
 .menu {

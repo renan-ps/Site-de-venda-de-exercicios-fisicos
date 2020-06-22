@@ -1,132 +1,109 @@
 <?php echo \Classes\ClassLayout::setHeader('Loja', "", ""); ?>
 
-
-
-    <div class="container" style="margin-top: 120px;">
-
-            <div class="container mt-5">
-
-  
-  <!--Section: Content-->
-  <section class="dark-grey-text text-center">
-    
-    <!-- Section heading -->
-    <h3 class="font-weight-bold mb-4 pb-2 ">Our bestsellers</h3>
-    <!-- Section description -->
-    <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit fugit, error amet numquam iure provident voluptate esse quasi nostrum quisquam eum porro a pariatur veniam.</p>
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
-        <!-- Card -->
-        <div class="card align-items-center">
-          <!-- Card image -->
-          <div class="view overlay">
-           <div class="container carousel_img_loja" style="width: 275px;height: 215px;">
-    <!--Carousel Wrapper-->
-<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <!--First slide-->
-    <div class="carousel-item active">
-      <img class="d-block w-25"  style="    height: 17rem;" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg"
-        alt="First slide">
-    </div>
-    <!--/First slide-->
-    <!--Second slide-->
-    <div class="carousel-item">
-      <img class="d-block w-25" style="    height: 13rem;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
-        alt="Second slide">
-    </div>
-    <!--/Second slide-->
-    <!--Third slide-->
-    <div class="carousel-item">
-      <img class="d-block w-25" style="    height: 13rem;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-        alt="Third slide">
-    </div>
-    <!--/Third slide-->
-  </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" style="margin-top: -270px!important;" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" style="margin-top: -270px!important; "aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <!--/.Controls-->
+<div class="banner-loja">
+    <img src="image/img-banner-loja.jpg" alt="Roupas de academia">
 </div>
-<!--/.Carousel Wrapper-->
+<div class="titulo-loja">
+    <h2 class="titulo-loja-1 animate__animated animate__lightSpeedInRight">Loja do Z</h2>
+    <h2 class="titulo-loja-2 animate__animated animate__rotateIn">é</h2>
 </div>
-            <a>
-              <div class="mask rgba-white-slight"></div>
-            </a>
-          </div>
-          <!-- Card image -->
-          <!-- Card content -->
-          <div class="card-body text-center">
-            <!-- Category & Title -->
-            <a href="" class="grey-text">
-              <h6>Shirt</h6>
-            </a>
-            <h5 class="mb-3">
-              <strong>
-                <a href="" class="dark-grey-text">Denim shirt
-                  <span class="badge badge-pill danger-color">NEW</span>
-                </a>
-              </strong>
-            </h5>
-            <h5 class="font-weight-bold blue-text mb-0">
-              <strong>120$</strong>
-            </h5>
-          </div>
-          <!-- Card content -->
+
+<div class="container-loja">
+
+    <div class="produto" id="1">
+        <div class="imagem-produto">
+            <img class="img-propaganda-1-1" src="image/blusa-produto-frente.jpeg" alt="imagem de propaganda de roupa">
+            <img class="img-produto-2 img-propaganda-1-2" src="image/blusa-produto-verso.jpeg" alt="imagem de propaganda de roupa">
+
+            <div class="container-produto">
+                <div class="box-saiba-mais-produto">
+                    <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
+                </div>
+            </div>
         </div>
-        <!-- Card -->
-      </div>
-      <!-- Grid column -->
-
-
-
-     
-
-   
-     
-
+        <div class="descricao-produto">
+            <h4>Blusa feminina</h4>
+            <p align="justify">A Regata Fitness tem um tecido slim fit que dá um toque mais feminino.
+            </p>
+        </div>
+        <div class="tamanho-roupa-produto">
+            <label for="p">P</label>
+            <input type="radio" value="P" id="P" name="tamanho">
+            <label for="m">M</label>
+            <input type="radio" value="M" id="m" name="tamanho">
+            <label for="g">G</label>
+            <input type="radio" value="G" id="g" name="tamanho">
+        </div>
+        <div class="valor-produto"><span>$99,90</span><br>Ou em até 10x de R$9,90 s/juros</div>
+        <div class="botao-produto">
+            <input type="submit" value="Comprar"></input>
+        </div>
     </div>
-    <!-- Grid row -->
 
-  </section>
-  <!--Section: Content-->
+    <div class="produto" id="2">
+        <div class="imagem-produto">
+            <img class="img-propaganda-2-1" src="image/img-equipamento-loja.jpg" alt="imagem de equipamento de musculação">
+            <img class="img-produto-2 img-propaganda-2-2" src="image/img-equipamento-loja-2.jpg" alt="imagem de equipamento de musculação">
 
+            <div class="container-produto">
+                <div class="box-saiba-mais-produto">
+                    <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="descricao-produto">
+            <h4>Par de Halter</h4>
+            <p align="justify">Hateres de ferro com quatro anilhas cada, barra e presilhas.
+                Ambas totalizam 20kg.
+            </p>
+        </div>
+        <div class="valor-produto"><span>$139,90</span><br>Ou em até 10x de R$13,90 s/juros</div>
+        <div class="botao-produto">
+            <input type="submit" class="botao-compra-produto" value="Comprar"></input>
+        </div>
+    </div>
 
+    <div class="produto" id="3">
+        <div class="imagem-produto">
+            <img src="image/img-treino-loja.jpg" class="img-propaganda-3-1" alt="imagem de pessoas se exercitando">
+            <img src="image/img-treino-loja-2.jpeg" class="img-produto-2 img-propaganda-3-2" alt="imagem de pessoas se exercitando">
+
+            <div class="container-produto">
+                <div class="box-saiba-mais-produto">
+                    <div class="saiba-mais-produto"><a href="saiba-mais">Saiba mais</a></div>
+                    <div class="favorito-produto"><a href="#">Favoritos</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="descricao-produto">
+            <h4>Treinos de Resistência</h4>
+            <p align="justify">Treinos de resistência são poderosos no combate ao cansaço e te proporciona uma vida muito mais saudável.
+            </p>
+        </div>
+        <div class="valor-produto"><span>R$64,90</span><br>Ou em até 10x de R$6,49 s/juros</div>
+
+        <div class="botao-produto">
+            <input type="submit" class="botao-compra-produto" value="Comprar"></input>
+        </div>
+    </div>
 </div>
 
-
-        
-    </div>
-    
-</div>
-
-<div class="paypal">
+<div class="icon-cartoes-loja">
     <p>Pague com:</p>
-    <img src="image/icon-paypal.svg" alt="icon-paypal">
+    <img class="master-loja" src="image/icon-mastercard.svg" alt="cartão de crédito">
+    <img class="visa-loja" src="image/icon-visa.svg" alt="cartão de crédito">
+    <img class="america-loja" src="image/icon-american-express.svg" alt="cartão de crédito">
+    <img class="paypal-loja" src="image/icon-paypal.svg" alt="Pay-pal">
+
+
 </div>
+
 
 
 
 
 <!-- Footer -->
 <?php echo \Classes\ClassLayout::setFooter() ?>
-

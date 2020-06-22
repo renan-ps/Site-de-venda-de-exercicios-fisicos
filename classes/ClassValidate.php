@@ -2,10 +2,11 @@
 
 namespace Classes;
 
-Use Models\ClassCadastro;
+use Models\ClassCadastro;
 use Models\ClassLogin;
-Use ZxcvbnPhp\Zxcvbn;
+use ZxcvbnPhp\Zxcvbn;
 use Classes\ClassPassword;
+use Classes\ClassMail;
 
 class ClassValidate{
     private $erro=[];
@@ -14,6 +15,7 @@ class ClassValidate{
     private $login;
     private $tentativas;
     private $sessions;
+    private $mail;
 
     public function __construct()
     {
@@ -21,6 +23,7 @@ class ClassValidate{
         $this->password = new ClassPassword();
         $this->login = new ClassLogin();
         $this->sessions = new ClassSessions();
+        $this->mail = new ClassMail();
     }
 
     #Valida se os campos desejados foram preenchidos.
@@ -152,11 +155,23 @@ class ClassValidate{
                 "erros" => $this->getErro()
             ];
         }else{
-            $arrResponse=[
-                "retorno" => "success",
-                "erros" => null
-            ];
-            //$this->cadastro->insertCad($arrVar);
+        	$this->mail->sendMail(
+        		$arrVar['email'],
+		        $arrVar['nome'],
+		        $arrVar['token'],
+	          "Confirme seu e-mail | " . NAME,
+		        "
+		        <p><strong>Olá, {$arrVar['nome']}!</strong></p>
+		        <p>Houve um cadastro no site " . NAME . " com este e-mail, estamos enviando essa mensagem apenas para confirmar o seu cadastro.</p>
+		        <p>Confirme seu e-mail <a href='" . DIRPAGE . "controllers/controllerConfirmacao/{$arrVar['email']}/{$arrVar['token']}'>clicando aqui</a>.</p>
+		        <p>Att,<br>Equipe <strong>" . NAME . "</strong></p>
+		        "
+	        );
+          $arrResponse=[
+            "retorno" => "success",
+            "erros" => null
+          ];
+          $this->cadastro->insertCad($arrVar);
         }
         return json_encode($arrResponse);
     }
