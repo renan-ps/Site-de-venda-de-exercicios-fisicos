@@ -156,7 +156,7 @@ class ClassValidate{
                 "retorno" => "success",
                 "erros" => null
             ];
-            //$this->cadastro->insertCad($arrVar);
+            $this->cadastro->insertCad($arrVar);
         }
         return json_encode($arrResponse);
     }
