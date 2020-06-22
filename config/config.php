@@ -24,6 +24,13 @@ define('BD', "personal");
 define('USER', "root");
 define('PASS', "");
 
+#Informações do servidor de e-mail
+define("HOSTMAIL", "");
+define("USERMAIL", "");
+define("PASSMAIL", "");
+define("CONTACTMAIL", "");
+
+
 #Outras informações
 include_once("recaptcha.php");
 
