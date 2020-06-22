@@ -204,6 +204,7 @@ $html .= "                          <li class='nav-item dropdown '>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>Perfil</title>
+  <meta name='theme-color' content='#234C80'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>

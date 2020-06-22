@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <html>
 
-<div id="demo" style="margin-left: 20px; padding-top: 20px;"><i class="fas fa-arrow-left fa-3x"></i></div>
+<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="personal.php" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
 
 <style type="text/css" media="screen">
 	@media (min-width: 1200px) {
@@ -16,7 +16,7 @@
 
 <body class="bg img-fluid" >
 	<div class="container">
-		<div class="row justify-content-center" style="margin-top: 0px;">
+		<div class="row justify-content-center div-login">
 			<div class="col-md-9 col-lg-12 col-xl-10">
 				<div class="card shadow-lg o-hidden border-0 my-5">
 					<div class="card-body p-0">
@@ -60,10 +60,10 @@
 											</form>
 
 											<div class="text-center">
-												<a class="small" href="forgot-password.html">Esqueceu a senha?</a>
+												<a class="small" href="user/reset_senha_user">Esqueceu a senha?</a>
 											</div>
 											<div class="text-center">
-												<a class="small" href="register.html">Criar conta!</a>
+												<a class="small" href="cadastro">Criar conta!</a>
 											</div>
 										</div>
 									</div>
