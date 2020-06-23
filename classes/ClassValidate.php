@@ -2,10 +2,11 @@
 
 namespace Classes;
 
-Use Models\ClassCadastro;
+use Models\ClassCadastro;
 use Models\ClassLogin;
-Use ZxcvbnPhp\Zxcvbn;
+use ZxcvbnPhp\Zxcvbn;
 use Classes\ClassPassword;
+use Classes\ClassMail;
 
 class ClassValidate{
     private $erro=[];
@@ -14,6 +15,7 @@ class ClassValidate{
     private $login;
     private $tentativas;
     private $sessions;
+    private $mail;
 
     public function __construct()
     {
@@ -21,6 +23,7 @@ class ClassValidate{
         $this->password = new ClassPassword();
         $this->login = new ClassLogin();
         $this->sessions = new ClassSessions();
+        $this->mail = new ClassMail();
     }
 
     #Valida se os campos desejados foram preenchidos.
@@ -152,11 +155,7 @@ class ClassValidate{
                 "erros" => $this->getErro()
             ];
         }else{
-            $arrResponse=[
-                "retorno" => "success",
-                "erros" => null
-            ];
-            $this->cadastro->insertCad($arrVar);
+
         }
         return json_encode($arrResponse);
     }
