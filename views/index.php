@@ -129,9 +129,11 @@
 	</div>
 
 	<!--DEPOIMENTOS-->
-	<div class="container-fluid my-5 px-5  pb-3 depoimentos" id="depoimentos">
+
+	<div class="container-fluid my-0 px-5  pb-3 depoimentos" id="depoimentos">
+
 	
-		<div class="d-flex justify-content-center">
+		<div class="d-flex justify-content-center pt-3">
 			<h3 id="navbar-example2-two " class="font-weight-bold text-center dark-grey-text pb-2">Depoimentos</h3>
 		</div>
 

@@ -79,12 +79,12 @@ class ClassLayout{
       $html .= "                    <li class='nav-item'>
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
                                     </li>\n";
-$html .= "                          <li class='nav-item dropdown'>
+$html .= "                          <li class='nav-item dropdown '>
                                          <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
           aria-haspopup='true' aria-expanded='false'>Login</a>
-        <div class='dropdown-menu dropdown-primary' aria-labelledby='navbarDropdownMenuLink'>
-          <a class='dropdown-item' href='#'>Entrar</a>
-          <a class='dropdown-item' href='#'>Cadastra-se</a>
+        <div class='dropdown-menu dropdown-primary background-dropdown' aria-labelledby='navbarDropdownMenuLink'>
+          <a class='dropdown-item' href='login' >Entrar</a>
+          <a class='dropdown-item' href='cadastro'>Cadastra-se</a>
           
                                     </li>\n";
 
@@ -194,6 +194,7 @@ $html .= "                          <li class='nav-item dropdown'>
     }
 
 
+
 	//Definição das tags do head da parte do usuário
 	public static function setHeaderUser(){
 		$html = "
@@ -204,6 +205,7 @@ $html .= "                          <li class='nav-item dropdown'>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>Perfil</title>
+  <meta name='theme-color' content='#234C80'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>
@@ -212,6 +214,8 @@ $html .= "                          <li class='nav-item dropdown'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
 </head>
+  
+
 ";
 
 		return $html;
@@ -379,13 +383,57 @@ $html .= "                          <li class='nav-item dropdown'>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js'></script>
+
+   <script src='" . DIRPAGE . "theme.js' type='text/javascript' charset='utf-8'></script>
+   <script src='" . DIRPAGE . "Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
    <script src='../../lib/js/theme.js' type='text/javascript' charset='utf-8'></script>
    <script src='../../lib/js/Profile-Edit-Form.js' type='text/javascript' charset='utf-8'></script>
+
 </body>
 
 </html>
 ";
 	}
+
+  public static function setHeaderLogin(){
+    $html = "<!doctype html>
+<html lang='pt-br'>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='apple-touch-icon' sizes='57x57' href='../image/mini-icone/apple-icon-57x57.png'>
+  <link rel='apple-touch-icon' sizes='60x60' href='../image/mini-icone/apple-icon-60x60.png'>
+  <link rel='apple-touch-icon' sizes='72x72' href='../image/mini-icone/apple-icon-72x72.png'>
+  <link rel='apple-touch-icon' sizes='76x76' href='../image/mini-icone/apple-icon-76x76.png'>
+  <link rel='apple-touch-icon' sizes'114x114' href='../image/mini-icone/apple-icon-114x114.png'>
+  <link rel='apple-touch-icon' sizes'120x120' href='../image/mini-icone/apple-icon-120x120.png'>
+  <link rel='apple-touch-icon' sizes''144x144' href='../image/mini-icone/apple-icon-144x144.png'>
+  <link rel='apple-touch-icon' sizes'152x152' href='../image/mini-icone/apple-icon-152x152.png'>
+  <link rel='apple-touch-icon' sizes'180x180' href='/apple-icon-180x180.png'>
+  <link rel='icon' type='image/png' sizes='192x192'  href='../image/mini-icone/android-icon-192x192.png'>
+  <link rel='icon' type='image/png' sizes='32x32' href='../image/mini-icone/favicon-32x32.png'>
+  <link rel='icon' type='image/png' sizes='96x96' href='../image/mini-icone/favicon-96x96.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='../image/mini-icone/favicon-16x16.png'>
+  <link rel='maniest' hef='../im'ge/mini'icone/manifest.json'>
+  <meta name='msapplication-TileColor' content='#ffffff'>
+  <meta name='msapplication-TileImage' content='../image/mini-icone/ms-icon-144x144.png'>
+  <meta name='theme-color' content='#f6c23e'>
+  <title>Treino do Zé - Login</title>
+  
+  <link rel='stylesheet' href='../lib/css/user/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+  <link rel='stylesheet' href='../lib/css/style.css'>
+  
+</head>
+
+<body class='bg-gradient-primary' style='background-color: rgb(88,73,146);     background-image: linear-gradient(180deg,#f6c23e 10%,#f6c23e85);'>";
+  }
 
 }
 

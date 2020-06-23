@@ -5,6 +5,7 @@
       <path value="$PROJECT_DIR$/lib/vendor/composer" />
       <path value="$PROJECT_DIR$/lib/vendor/bjeavons/zxcvbn-php" />
       <path value="$PROJECT_DIR$/lib/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/lib/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

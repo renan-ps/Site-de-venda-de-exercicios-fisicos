@@ -1,3 +1,4 @@
+<?php echo \Classes\ClassLayout::setHeaderUser('Login', "Faça seu Login", ""); ?>
 <!DOCTYPE html>
 <html>
 
@@ -31,8 +32,8 @@
                                         <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Escreva o email cadastrado" name="email"></div><button class="btn btn-primary btn-block text-white btn-user"
                                             type="submit">Redefinir senha</button></form>
                                     <div class="text-center">
-                                        <hr><a class="small" href="register.html">Criar Conta!</a></div>
-                                    <div class="text-center"><a class="small" href="login.html">Já tem uma Conta? Faça Login!</a></div>
+                                        <hr><a class="small" href="../cadastro">Criar Conta!</a></div>
+                                    <div class="text-center"><a class="small" href="../login">Já tem uma Conta? Faça Login!</a></div>
                                 </div>
                             </div>
                         </div>

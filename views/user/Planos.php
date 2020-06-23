@@ -23,6 +23,10 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="Planos.php"><i class="fas fa-window-maximize"></i><span>Gerenciar Plano</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="Perfil_user.php"><i class="fas fa-user-circle"></i><span>Minhas Informaçoes</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="time_line_user.php"><i class="fas fa-key"></i><span>TimeLine</span></a></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fas fa-window-maximize"></i><span>Gerenciar Pagamentos</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
             </div>
@@ -132,19 +136,34 @@
             <div class="container-fluid">
                 <h3 class="text-dark mb-1" style="margin-top: -16px;">Meu Plano</h3>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Start: NMDIG Jumbotron Basic 2 Actions -->
                 <section>
                     <div class="jumbotron">
                         <h1 class="text-center" style="margin-top: -14px;margin-bottom: 11px;">Ooops!</h1>
                         <h1 class="text-center">Nenhum Plano Ativo</h1>
                         <p class="text-center">Assine um plano e começe uma vida mais saudavel</p>
-                        <p class="text-center"><a class="btn btn-primary" role="button" href="#">Ver Planos</a><br><a class="btn btn-link btn-sm" role="button" href="#">Cancelar</a></p>
+                        <p class="text-center"><a class="btn btn-primary" role="button" href="#" data-toggle="collapse" data-target="#collapseOne2">Ver Planos</a><br><a class="btn btn-link btn-sm" role="button" href="#">Cancelar</a></p>
                     </div>
                 </section>
                 <!-- End: NMDIG Jumbotron Basic 2 Actions -->
             </div>
-            <div class="container">
+          
+        </div>
+        <div class="accordion" id="accordionExample275">
+  <div class="card z-depth-0 bordered">
+    <div class="" id="headingOne2">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" "
+          aria-expanded="true" aria-controls="collapseOne2">
+          
+        </button>
+      </h5>
+    </div>
+    <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2"
+      data-parent="#accordionExample275">
+      <div class="card-body">
+         <div class="container-fluid">
                 <!-- Start: clean responsive pricing --><div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
@@ -196,7 +215,11 @@
     </div>
                 <!-- End: clean responsive pricing -->
             </div>
-        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
         <footer class="bg-white sticky-footer">
             <div class="container my-auto">
                 <div class="text-center my-auto copyright"><span>Copyright © CornOut 2019</span></div>
