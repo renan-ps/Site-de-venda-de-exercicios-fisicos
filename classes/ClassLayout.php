@@ -135,26 +135,27 @@ $html .= "                          <li class='nav-item dropdown '>
                     <div class=colun-footer-2>
                       <ul class=secoes-footer>
                         <li><h3>Seções</h3></li>
-                        <li><a href=#>Sobre mim</a></li>
-                        <li><a href=#>Como vou te ajudar</a></li>
-                        <li><a href=#>Seu treino em alto nível</a></li>
-                        <li><a href=#>Passo a passo para contratar</a></li>
-                        <li><a href=#>Planos</a></li>
-                        <li><a href=#>Depoimentos</a></li>
-                        <li><a href=#>Perguntas frequentes</a></li>
+                        <li><a class='effect-scroll' id='#personal' href='index#personal'>Sobre mim</a></li>
+						<li><a class='effect-scroll' id='#depoimentos' href='index#depoimentos'>Depoimentos</a></li>
+						<li><a class='effect-scroll' id='#planos' href='planos'>Planos</a></li>
+						<li><a class='effect-scroll' id='#como-funciona' href=#>Como Funciona</a></li>
+                        <li><a class='effect-scroll' id='#artigos' href='artigos'>Artigos</a></li>
+						<li><a class='effect-scroll' id='#porque-contratar' href='porque-contratar'>Por que nos contratar</a></li>
+                        <li><a class='effect-scroll' id='#faq' href='faq'>FAQ</a></li>
+						
+                        
                       </ul>
                     </div>
 
                     <div class=colun-footer-3>
                       <ul class=links-uteis-footer>
                         <li><h3>Links úteis</h3></li>
-                        <li><a href=#>Plano Básico</a></li>
-                        <li><a href=#>Plano Premium</a></li>
-                        <li><a href=#>Plano Advanced</a></li>
-                        <li><a href=#>Como funciona</a></li>
-                        <li><a href=#>Loja</a></li>
-                        <li><a href=#>Artigos</a></li>
-                        <li><a href=#>FAQ</a></li>
+                        <li><a href='plano-basico'>Plano Básico</a></li>
+                        <li><a href='plano-premium'>Plano Premium</a></li>
+						<li><a href='plano-advanced'>Plano Advanced</a></li>
+						<li><a href=loja>Loja</a></li>
+                        <li><a href='resultados'>Resultados</a></li>
+                        <li><a href=#>Login</a></li>
                       </ul>
                     </div>
                   </div>

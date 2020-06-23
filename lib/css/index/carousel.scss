@@ -15,10 +15,9 @@
 .carousel-buttom {
     background-color: $cor-padrao-cliente-2;
     @include border-radius-buttom-default;
-}
-
-.carousel-buttom:hover {
-    color: #fff!important;
+    &:hover {
+        color: #fff!important;
+    }
 }
 
 

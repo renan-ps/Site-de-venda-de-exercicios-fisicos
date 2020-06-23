@@ -24,7 +24,7 @@
 					<p>Todo mundo sabe que a prática de atividades físicas faz bem para a saúde, contribuindo para uma vida ativa e saudável.
 						 Porém, nem todos gostam de frequentar academias, e acabam optando por exercícios físicos ao ar livre, que oferecem
 						  diversos benefícios para a mente e para o corpo.</p>
-					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Assine hoje</a></p>
+					<p><a class="btn btn-lg carousel-buttom effect-scroll" id="#planos" href="planos" role="button">Assine hoje</a></p>
 				</div>
 				</div>
 			</div>
@@ -35,7 +35,7 @@
 					<h1>Alongamentos matinais.</h1>
 					<p>Os alongamentos matinais são uma atividade segura e útil para toda a gente e podem ajudar a melhorar a flexibilidade
 						 geral, a coordenação neuromuscular, o equilíbrio e a consciência postural.</p>
-					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Leia mais</a></p>
+					<p><a class="btn btn-lg carousel-buttom effect-scroll" id="#artigos" href="artigos" role="button">Leia mais</a></p>
 				</div>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 					<h1>Corrida diária.</h1>
 					<p>Praticar um esporte como a corrida também é uma das melhores coisas que você pode fazer pelo seu cérebro em termos de 
 						humor, memória e aprendizado.</p>
-					<p><a class="btn btn-lg carousel-buttom" href="#" role="button">Consulte</a></p>
+					<p><a class="btn btn-lg carousel-buttom effect-scroll" id="#artigos" href="artigos" role="button">Consulte</a></p>
 				</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 	</style>
 	<!--SOBRE O PERSONAL-->
 	
-	<div class="container  sobre_personal" id="personal">
+	<div class="container  sobre_personal pt-5 pb-5" id="personal">
 		<div class="row apresentacao">
 			
 			<!-- FOTO APRESENTAÇÃO-->
@@ -129,7 +129,9 @@
 	</div>
 
 	<!--DEPOIMENTOS-->
-	<div class="container-fluid my-0 px-5  pb-3 depoimentos">
+
+	<div class="container-fluid my-0 px-5  pb-3 depoimentos" id="depoimentos">
+
 	
 		<div class="d-flex justify-content-center pt-3">
 			<h3 id="navbar-example2-two " class="font-weight-bold text-center dark-grey-text pb-2">Depoimentos</h3>
@@ -414,7 +416,7 @@
 	<!--ARTIGOS-->
 
 	<!--ADICIONAR TEMPO DE LEITURA-->
-	<section class="artigos ">
+	<section class="artigos" id="artigos">
 
 		<h2 class="titulo-artigos">Artigos</h2>
 			
@@ -588,7 +590,7 @@
 
 
     <!-- Section heading -->
-    <p class="lead text-muted mx-auto text-center perguntas-ficou-duvidas">Ficou Alguma Duvida ?</p>
+    <p class="lead text-muted mx-auto text-center perguntas-ficou-duvidas" id="faq">Ficou Alguma Duvida ?</p>
     <h2 class="font-weight-bold text-black-50 mb-4 pb-2 text-center">Perguntas Frequentes</h2>
 
     <hr class="w-header">
