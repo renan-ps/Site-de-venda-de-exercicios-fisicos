@@ -5,102 +5,102 @@ class ClassLayout{
 
     //Definição das tags do head
     public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
-        $html = "<!DOCTYPE html>\n";
-        $html .= "<html lang='pt-pt'>\n";
-        $html .= "<head>\n";
-        $html .= "    <title>".NAME." - $title</title>\n\n";
+        $html = "<!DOCTYPE html>
+        <html lang='pt-pt'>
+        <head>
+            <title>".NAME." - $title</title>
 
-        $html .= "    <meta charset='utf-8'>\n";
-        $html .= "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n";
-        $html .= "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n";
-        $html .= "  <meta name=theme-color content=#FCC00A>\n";
-        $html.="<meta name=apple-mobile-web-app-status-bar-style content=#FCC00A>\n";
-        $html.="<meta name=msapplication-navbutton-color content=#75b529>\n";
+            <meta charset='utf-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+           <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+          <meta name=theme-color content=#FCC00A>
+        <meta name=apple-mobile-web-app-status-bar-style content=#FCC00A>
+        <meta name=msapplication-navbutton-color content=#75b529>
 
-        $html .= "    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+            <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
         <i style='margin-top:16px' class='fab fa-whatsapp'></i>
-        </a>\n";
+        </a>
 
-        $html .= "    <meta name='description' content='$description'>\n";
-        $html .= "    <meta name='author' content='$author'>\n\n";
-        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css'>";
-        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>\n";
-        $html .= "    <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>\n";
-        $html .= "    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>";
-        $html .= "    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>\n";
-        $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>\n";
-        $html .= "    <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css' rel='stylesheet'>\n";
-        $html .= "    <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>";
-        $html .= "    <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap' rel='stylesheet'>";
-        $html .= "    <link href='https://fonts.googleapis.com/css2?family=Anton&display=swap' rel='stylesheet'>";
-        $html .= "    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>";
+            <meta name='description' content='$description'>
+            <meta name='author' content='$author'>
+            <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css'>
+            <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>
+            <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>
+            <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+            <link href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css2?family=Anton&display=swap' rel='stylesheet'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>
 
-        $html .= "    <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>\n";
+            <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>
 
-        $html .= "</head>\n\n";
-        $html .= "<body class='body'>\n";
-        $html .= "    <header>\n\n";
+        </head>
+        <body class='body'>
+            <header>
         
-		$html .= "        <nav class='navbar fixed-top navbar-expand-lg  navbar-light' id='dynamic-navbar'>";
+		        <nav class='navbar fixed-top navbar-expand-lg  navbar-light' id='dynamic-navbar'>
 
-    $html .= "            <div class='container container-navbar'>";
-    $html .= "                <a class='navbar-brand' href='#'>
+                <div class='container container-navbar'>
+                    <a class='navbar-brand' href='#'>
                                 <img src='image/logo.png'>
-                              </a>";
+                              </a>
                               
-    $html .= "                <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
+                    <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
                                 aria-controls='basicExampleNav' aria-expanded='false' aria-label='Toggle navigation'>
                                 <span class='navbar-toggler-icon'></span>
-                             </button>";
-    $html .= "               <div class='collapse navbar-collapse' id='basicExampleNav'>";
-      $html .= "                <ul class='menu navbar-nav mr-auto'>";
-      $html .= "                    <li class='nav-item'>
+                             </button>
+                   <div class='collapse navbar-collapse' id='basicExampleNav'>
+                      <ul class='menu navbar-nav mr-auto'>
+                          <li class='nav-item'>
                                       <a class='nav-link waves-effect  text-wrap' href='index' target='_self'>Home</a>
-                                    </li>";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll' href='index#personal' target='_self' id='#personal'><span>O Personal</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll' href='index#consultoria' target='_self' id='#consultoria'><span>A Consultoria</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll' href='index#planos' target='_self' id='#planos'><span>Planos</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll ' href='index#como-funciona' target='_self' id='#como-funciona'><span>Como funciona ?</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect effect-scroll' href='index#porque-contratar' target='_self' id='#porque-contratar'><span>Por que contratar ?</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect' href='resultados' id='#resultados' target='_self'><span>Resultados</span></a>
-                                    </li>\n";
-      $html .= "                    <li class='nav-item'>
+                                    </li>
+                          <li class='nav-item'>
                                         <a class='nav-link waves-effect' href='loja' target='_self'><span>Loja</span></a>
-                                    </li>\n";
-$html .= "                          <li class='nav-item dropdown '>
+                                    </li>
+                          <li class='nav-item dropdown '>
                                          <a class='nav-link dropdown-toggle' id='navbarDropdownMenuLink' data-toggle='dropdown'
           aria-haspopup='true' aria-expanded='false'>Login</a>
         <div class='dropdown-menu dropdown-primary background-dropdown' aria-labelledby='navbarDropdownMenuLink'>
           <a class='dropdown-item' href='login' >Entrar</a>
           <a class='dropdown-item' href='cadastro'>Cadastra-se</a>
           
-                                    </li>\n";
+                                    </li>
 
 
 
   
         
 
-      $html .= "                  </ul>\n\n";
-    $html .= "                </div>";
-    $html .= "              </div>";
+                        </ul>
+                    </div>
+                  </div>
 
-		$html .= "            </section>\n\n";
-		$html .= "        </nav>\n\n";
-	    $html .= "    </header>\n\n\n";
-	    $html .="    <main>\n\n";
+		            </section>
+		        </nav>
+	        </header>
+	        <main>";
 
         return $html;
     }
