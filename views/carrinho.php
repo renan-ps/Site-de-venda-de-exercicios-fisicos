@@ -28,13 +28,14 @@ $(document).ready(function() {
             <!-- Pills navs -->
             <ul class="nav md-pills nav-justified pills-primary font-weight-bold">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#tabCheckoutBilling123" role="tab">1. Billing</a>
+                <a class="nav-link active" data-toggle="tab" href="#tabCheckoutBilling123" role="tab">1. 
+Faturamento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tabCheckoutAddons123" role="tab">2. Addons</a>
+                <a class="nav-link" data-toggle="tab" href="#tabCheckoutAddons123" role="tab">2. Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tabCheckoutPayment123" role="tab">3. Payment</a>
+                <a class="nav-link" data-toggle="tab" href="#tabCheckoutPayment123" role="tab">3. Pagementos</a>
               </li>
             </ul>
 
@@ -51,114 +52,77 @@ $(document).ready(function() {
                   <div class="row">
 
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-12 mb-4">
 
                       <!--firstName-->
-                      <label for="firstName" class="">First name</label>
-                      <input type="text" id="firstName" class="form-control">
+                      <label for="firstName" class="">Nome</label>
+                      <input type="text" id="nome" class="form-control" required="" onfocus="">
 
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-6 mb-2">
-
-                      <!--lastName-->
-                      <label for="lastName" class="">Last name</label>
-                      <input type="text" id="lastName" class="form-control">
-
-                    </div>
-                    <!--Grid column-->
-
-                  </div>
-                  <!--Grid row-->
 
                   <!--Username-->
-                  <div class="input-group mb-4">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">@</span>
+                 <div class="col-md-12 mb-4">
+
+                      <!--firstName-->
+                      <label for="email" class="">Email</label>
+                      <input type="email" id="nome" class="form-control" required="">
+
                     </div>
-                    <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
+
+                    
+
                   </div>
+                
+                <div class="row">
+                  <div class="col-md-10">
+                        <label for="address" class="">Endereço</label>
+                  <input type="text" id="endereco" class="form-control mb-4" placeholder="Logradouro, Rua, Avenida">
+                  </div>
+                  <div class="col-md-2">
+                        <label for="address" class="">Numero</label>
+                  <input type="text" id="numero_endereco" class="form-control mb-4" placeholder="">
+                  </div>
+                </div>
 
-                  <!--email-->
-                  <label for="email" class="">Email (optional)</label>
-                  <input type="text" id="email" class="form-control mb-4" placeholder="youremail@example.com">
-
-                  <!--address-->
-                  <label for="address" class="">Address</label>
-                  <input type="text" id="address" class="form-control mb-4" placeholder="1234 Main St">
-
-                  <!--address-2-->
-                  <label for="address-2" class="">Address 2 (optional)</label>
-                  <input type="text" id="address-2" class="form-control mb-4" placeholder="Apartment or suite">
-
-                  <!--Grid row-->
-                  <div class="row">
+                 
+<div class="row">
 
                     <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-
-                      <label for="country">Country</label>
-                      <select class="custom-select d-block w-100" id="country" required>
-                        <option value="">Choose...</option>
-                        <option>United States</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please select a valid country.
-                      </div>
+                    <div class="col-lg-2 col-md-2 mb-4">
+ <label for="address" class="">Prefixo</label>
+                  <input type="tel" id="prefixo" class="form-control mb-4" placeholder="+(55)">
+                     
 
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="col-lg-5 col-md-6 mb-4">
 
-                      <label for="state">State</label>
-                      <select class="custom-select d-block w-100" id="state" required>
-                        <option value="">Choose...</option>
-                        <option>California</option>
-                      </select>
-                      <div class="invalid-feedback">
-                        Please provide a valid state.
-                      </div>
+                     <label for="address" class="">Telefone</label>
+                  <input type="tel" id="telefone" class="form-control mb-4" placeholder="">
 
                     </div>
-                    <!--Grid column-->
+                     <div class="col-lg-5 col-md-6 mb-4">
 
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-
-                      <label for="zip">Zip</label>
-                      <input type="text" class="form-control" id="zip" placeholder="" required>
-                      <div class="invalid-feedback">
-                        Zip code required.
-                      </div>
+                     <label for="address" class="">CPF</label>
+                  <input type="tel" id="telefone" class="form-control mb-4" placeholder="">
 
                     </div>
-                    <!--Grid column-->
 
                   </div>
                   <!--Grid row-->
 
-                  <hr>
+                  
 
-                  <div class="mb-1">
-                    <input type="checkbox" class="form-check-input filled-in" id="chekboxRules">
-                    <label class="form-check-label" for="chekboxRules">I accept the terms and conditions</label>
-                  </div>
-                  <div class="mb-1">
-                    <input type="checkbox" class="form-check-input filled-in" id="safeTheInfo">
-                    <label class="form-check-label" for="safeTheInfo">Save this information for next time</label>
-                  </div>
-                  <div class="mb-1">
-                    <input type="checkbox" class="form-check-input filled-in" id="subscribeNewsletter">
-                    <label class="form-check-label" for="subscribeNewsletter">Subscribe to the newsletter</label>
-                  </div>
+                  
 
                   <hr>
 
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Next step</button>
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Próximo Passo</button>
 
                 </form>
 
@@ -183,15 +147,15 @@ $(document).ready(function() {
                   <!--Grid column-->
                   <div class="col-md-7 mb-4">
 
-                    <h5 class="mb-3 h5">Additional premium support</h5>
+                    <h5 class="mb-3 h5">Plano Premium</h5>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ea ut aperiam corrupti,
                       dolorem.</p>
 
                     <!--Name-->
                     <select class="mdb-select colorful-select dropdown-info">
-                      <option value="" disabled>Choose a period of time</option>
-                      <option value="1" selected>+6 months : 200$</option>
+                      <option value="" disabled selected class="mb-1">Escolha o Periodo de tempo</option>
+                      <option value="1" >+6 months : 200$</option>
                       <option value="2">+12 months: 400$</option>
                       <option value="3">+18 months: 800$</option>
                       <option value="4">+24 months: 1200$</option>
@@ -207,46 +171,10 @@ $(document).ready(function() {
 
                 <hr class="mb-5">
 
-                <!--Grid row-->
-                <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-5 mb-4">
-
-                    <img src="https://mdbootstrap.com/img/Photos/Others/images/44.jpg" class="img-fluid z-depth-1-half"
-                      alt="Second sample image">
-
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-7 mb-4">
-
-                    <h5 class="mb-3 h5">MDB Membership</h5>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ea ut aperiam corrupti,
-                      dolorem.</p>
-
-                    <!--Name-->
-                    <select class="mdb-select colorful-select dropdown-info">
-                      <option value="" disabled>Choose a period of time</option>
-                      <option value="1" selected>+6 months : 200$</option>
-                      <option value="2">+12 months: 400$</option>
-                      <option value="3">+18 months: 800$</option>
-                      <option value="4">+24 months: 1200$</option>
-                    </select>
-
-                    <button type="button" class="btn btn-primary btn-md">Add MDB Membership to the cart</button>
-
-                  </div>
-                  <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
 
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Next step</button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Próximo Passo</button>
 
               </div>
               <!--/.Panel 2-->
@@ -254,33 +182,33 @@ $(document).ready(function() {
               <!--Panel 3-->
               <div class="tab-pane fade" id="tabCheckoutPayment123" role="tabpanel">
 
-                <div class="d-block my-3">
+                <div class="d-block my-3 ml-3">
                   <div class="mb-2">
                     <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap4" checked
                       required>
-                    <label class="form-check-label" for="radioWithGap4">Credit card</label>
+                    <label class="form-check-label" for="radioWithGap4"><i class="fas fa-credit-card"></i>   Cartão de Credito</label>
                   </div>
                   <div class="mb-2">
                     <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
                       required>
-                    <label class="form-check-label" for="radioWithGap5">Debit card</label>
+                    <label class="form-check-label" for="radioWithGap5"><i class="fab fa-cc-paypal"></i>  Paypal</label>
                   </div>
                   <div class="mb-2">
                     <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap6" required>
-                    <label class="form-check-label" for="radioWithGap6">Paypal</label>
+                    <label class="form-check-label" for="radioWithGap6"><i class="far fa-credit-card"></i>  Pag seguro</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 mb-3">
-                    <label for="cc-name123">Name on card</label>
+                    <label for="cc-name123">Nome </label>
                     <input type="text" class="form-control" id="cc-name123" placeholder="" required>
-                    <small class="text-muted">Full name as displayed on card</small>
+                    <small class="text-muted">Nome Completo escrito no cartão</small>
                     <div class="invalid-feedback">
                       Name on card is required
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
-                    <label for="cc-number123">Credit card number</label>
+                    <label for="cc-number123">Numero do Cartão</label>
                     <input type="text" class="form-control" id="cc-number123" placeholder="" required>
                     <div class="invalid-feedback">
                       Credit card number is required
@@ -289,14 +217,14 @@ $(document).ready(function() {
                 </div>
                 <div class="row">
                   <div class="col-md-3 mb-3">
-                    <label for="cc-expiration123">Expiration</label>
+                    <label for="cc-expiration123">Data de Validade</label>
                     <input type="text" class="form-control" id="cc-expiration123" placeholder="" required>
                     <div class="invalid-feedback">
                       Expiration date required
                     </div>
                   </div>
                   <div class="col-md-3 mb-3">
-                    <label for="cc-cvv123">CVV</label>
+                    <label for="cc-cvv123">Codigo CVV</label>
                     <input type="text" class="form-control" id="cc-cvv123" placeholder="" required>
                     <div class="invalid-feedback">
                       Security code required
@@ -305,7 +233,7 @@ $(document).ready(function() {
                 </div>
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Place order</button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar Pedido</button>
 
               </div>
               <!--/.Panel 3-->
@@ -320,20 +248,20 @@ $(document).ready(function() {
           <!--Grid column-->
           <div class="col-lg-4 mb-4">
 
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Place order</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar Compra</button>
 
             <!--Card-->
             <div class="card z-depth-0 border border-light rounded-0">
 
               <!--Card content-->
               <div class="card-body">
-                <h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Summary</h4>
+                <h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Itens no Carrinho</h4>
 
                 <hr>
 
                 <dl class="row">
                   <dd class="col-sm-8">
-                    MDBootstrap UI KIT (jQuery version) - License 6-10 poeple + unlimited projects
+                   Plano Premium
                   </dd>
                   <dd class="col-sm-4">
                     $ 2000
@@ -342,36 +270,9 @@ $(document).ready(function() {
 
                 <hr>
 
-                <dl class="row">
-                  <dd class="col-sm-8">
-                    Premium support - 2 years
-                  </dd>
-                  <dd class="col-sm-4">
-                    $ 2000
-                  </dd>
-                </dl>
+               
 
-                <hr>
-
-                <dl class="row">
-                  <dd class="col-sm-8">
-                    MDB Membership - 2 years
-                  </dd>
-                  <dd class="col-sm-4">
-                    $ 2000
-                  </dd>
-                </dl>
-
-                <hr>
-
-                <dl class="row">
-                  <dt class="col-sm-8">
-                    Total
-                  </dt>
-                  <dt class="col-sm-4">
-                    $ 2000
-                  </dt>
-                </dl>
+                
               </div>
 
             </div>

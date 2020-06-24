@@ -37,7 +37,7 @@
         </div>
         <div class="valor-produto"><span>$99,90</span><br>Ou em até 10x de R$9,90 s/juros</div>
         <div class="botao-produto">
-            <input type="submit" value="Comprar"></input>
+            <a href="carrinho" title=""><input type="submit" value="Comprar"></input></a>
         </div>
     </div>
 

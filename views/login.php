@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <html>
 
-<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="personal.php" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
+<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="index" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
 
 <style type="text/css" media="screen">
 	@media (min-width: 1200px) {
