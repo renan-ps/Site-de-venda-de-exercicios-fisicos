@@ -770,8 +770,8 @@ Assine a nossa newsletter e receba as últimas notícias
   <!-- Section -->
   
 </div>
-
 	<?php echo \Classes\ClassLayout::setFooter() ?>
+	<script src="lib/js/scrollspy.js"></script>
 	
 
 

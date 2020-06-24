@@ -128,7 +128,7 @@ $html .= "                          <li class='nav-item dropdown '>
                       <ul class=contact-footer>
                         <li> <h3>Entre em Contato</h3></li>
                         <li><p><i class='fab fa-whatsapp icon-whatsapp-footer'></i> +351 35263789</p></li>
-                        <li><p class=email-footer>treinodoze@gmail.com</p></li>
+                        <li><p class=email-footer>contato@treinodoze.com</p></li>
                       </ul>
                     </div>
                   
@@ -137,11 +137,11 @@ $html .= "                          <li class='nav-item dropdown '>
                         <li><h3>Seções</h3></li>
                         <li><a class='effect-scroll' id='#personal' href='index#personal'>Sobre mim</a></li>
 						<li><a class='effect-scroll' id='#depoimentos' href='index#depoimentos'>Depoimentos</a></li>
-						<li><a class='effect-scroll' id='#planos' href='planos'>Planos</a></li>
+						<li><a class='effect-scroll' id='#planos' href='index#planos'>Planos</a></li>
 						<li><a class='effect-scroll' id='#como-funciona' href=#>Como Funciona</a></li>
-                        <li><a class='effect-scroll' id='#artigos' href='artigos'>Artigos</a></li>
-						<li><a class='effect-scroll' id='#porque-contratar' href='porque-contratar'>Por que nos contratar</a></li>
-                        <li><a class='effect-scroll' id='#faq' href='faq'>FAQ</a></li>
+                        <li><a class='effect-scroll' id='#artigos' href='index#artigos'>Artigos</a></li>
+						<li><a class='effect-scroll' id='#porque-contratar' href='index#porque-contratar'>Por que nos contratar</a></li>
+                        <li><a class='effect-scroll' id='#faq' href='index#faq'>FAQ</a></li>
 						
                         
                       </ul>
@@ -161,9 +161,9 @@ $html .= "                          <li class='nav-item dropdown '>
                   </div>
               
                 <div class=container-redes-sociais-footer>
-                  <a href=facebook><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
+                  <a href=https://www.facebook.com/search/top/?q=treino%20do%20z%C3%A9><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
                   <a href=twitter><i class='fab fa-twitter icons-rede-sociais-footer'></i></a>
-                  <a href=instagram><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
+                  <a href=https://instagram.com/treinodoze?igshid=1u8rffiv386kb><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
                   <a href=youtube><i class='fab fa-youtube icons-rede-sociais-footer'></i></a>
                   <a href=whatsapp><i class='fab fa-whatsapp icons-rede-sociais-footer'></i></a>
                 </div>
@@ -187,6 +187,7 @@ $html .= "                          <li class='nav-item dropdown '>
             <script src='". DIRPAGE ."lib/js/index.js'></script>
             <script src='lib/js/loja.js'></script>
             <script src='lib/js/planos.js'></script>
+           
         </body>
         </html>
         ";
