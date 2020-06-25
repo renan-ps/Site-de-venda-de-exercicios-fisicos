@@ -6,7 +6,7 @@ $('#dataNascimento').on('focus', function () {
 
 //Retorno do caminho absoluto (root)
 function getRoot(){
-    var root = "http://"+document.location.hostname+"/personal/";
+    var root = "https://"+document.location.hostname+"/TreinoDoZe/";
     return root;
 }
 
