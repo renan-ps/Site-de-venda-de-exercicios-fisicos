@@ -3,21 +3,22 @@
 <html>
 
 
-<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="index" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
+
 
 <style type="text/css" media="screen">
-    @media (min-width: 1200px) {
+
     .bg  {
-        background-image:  url(<?php echo DIRIMG . '../image/Fundo-Login.svg'; ?>) ;
+        background-image:  url(<?php echo DIRIMG . '../image/Fundo-Login.png'; ?>) ;
     }
-}
+   
+
 </style>
 
 
-<body class="bg img-fluid" >
-    <div class="container">
-        <div class="row justify-content-center" style="margin-top: 128px;">
-            <div class="col-md-9 col-lg-12 col-xl-10">
+<body class="bg img-fluid  " >
+    <div class="container ">
+        <div class="row justify-content-center div-reset-user" >
+            <div class="col-md-9 col-lg-12 col-xl-10 ">
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
                         <div class="row">

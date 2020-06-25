@@ -3,27 +3,33 @@
 <html lang="pt-br">
 <html>
 
-<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="index" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
-
 <style type="text/css" media="screen">
 	@media (min-width: 1200px) {
 	.bg  {
-		background-image:  url(<?php echo DIRIMG . '../image/Fundo-Login.svg'; ?>) ;
+		background-image:  url(<?php echo DIRIMG . '../image/Fundo-Login.png'; ?>) ;
+		background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100;height: auto;
 	}
 }
+
 </style>
 
 
+
 <body class="bg img-fluid" >
+	<div class="">
+		
+	</div>
 	<div class="container">
 		<div class="row justify-content-center div-login">
-			<div class="col-md-9 col-lg-12 col-xl-10">
+			<div class="col-md-9 col-lg-12 col-xl-10 col-9">
 				<div class="card shadow-lg o-hidden border-0 my-5">
 					<div class="card-body p-0">
 						<div class="row">
 							<div class="col-lg-6 d-none d-lg-flex">
-								<div class="flex-grow-1 bg-login-image" style="background-image: url(<?php echo DIRIMG . '../image/img-carousel-2.jpg'; ?>);"></div>
-								<img src="../image/Fundo-Login.svg" alt="">
+								<div class="flex-grow-1 bg-login-image " style="background-image: url(<?php echo DIRIMG . '../image/dogs/image1.jpeg'; ?>); "></div>
+								
 							</div>
 							<div class="col-lg-6">
 								<div class="p-5">
@@ -33,6 +39,7 @@
 									<div style="color: red; margin: 2.5% auto; line-height: 20px;" class="resultadoForm"></div>
 									
 									<form class="user form-login" method="post" action="<?php echo DIRPAGE . 'controllers/controllerLogin'; ?>" id="formLogin">
+										
 										<div class="form-group">
 											<input class="form-control form-control-user" type="email"   placeholder="E-mail" id="email" name="email">
 										</div>

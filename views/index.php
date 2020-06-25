@@ -163,9 +163,9 @@
 								<div class="view card-img-64 mx-auto mt-5 mb-4">
 								<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg" class="rounded-circle img-fluid" alt="smaple image">
 								</div>
-								<p class="text-muted">- Anna Morian</p>
+								<h1 class="text-muted">- Anna Morian</h1>
 
-								<p class="lead font-italic container texto_depoimento" >"Me mudei para um prédio que tem uma pequena academia 
+								<p class="lead font-italic container texto_depoimento" style="font-size: 20px" >"Me mudei para um prédio que tem uma pequena academia 
 									mas não conseguiria usar sem o auxilio do HDT para montar meus treinos. Gostei muito da forma em que o 
 									treino vai mudando constantemente e sempre respeitando nossa opinião. Recomendo!"</p>
 								
@@ -176,9 +176,9 @@
 								<div class="view card-img-64 mx-auto mt-5 mb-4">
 								<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="smaple image">
 								</div>
-								<p class="text-muted">- Teresa May</p>
+								<h1 class="text-muted">- Teresa May</h1>
 
-								<p class="lead font-italic container texto_depoimento">"Mais que uma consultoria, um profissional que sempre está
+								<p class="lead font-italic container texto_depoimento" style="font-size: 20px">"Mais que uma consultoria, um profissional que sempre está
 									 acompanhando meu desempenho e adaptando os treinos de acordo com minha rotina.."</p>
 							
 							</div>
@@ -189,8 +189,8 @@
 								<div class="view card-img-64 mx-auto mt-5 mb-4">
 								<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid" alt="smaple image">
 								</div>
-								<p class="text-muted">- Kate Allise</p>
-								<p class="lead font-italic container texto_depoimento">"Com os treinos personalizados montados online foi 
+								<h1 class="text-muted">- Kate Allise</h1>
+								<p class="lead font-italic container texto_depoimento" style="font-size: 20px">"Com os treinos personalizados montados online foi 
 									possível aliar a rotina com os objetivos de saúde. Os treinos ficam ainda mais dinâmicos e se encaixam bem quando a rotina está apertada."</p>
 							
 							</div>
@@ -748,7 +748,7 @@ Assine a nossa newsletter e receba as últimas notícias
           <div class="form-row">
             <div class="col-md-4 ml-auto">
               <div class="input-group input-group-lg z-depth-1">
-                <div class="input-group-prepend">
+                <div class="input-group-prepend" style="margin-button: 10px;">
                   <span class="input-group-text rgba-black-light border-0"><i class="fa fa-envelope white-text"></i></span>
                 </div>
 
@@ -756,7 +756,7 @@ Assine a nossa newsletter e receba as últimas notícias
               </div>
             </div>
 
-            <div class="col-md-2 mr-auto">
+            <div class="mr-auto col-auto  espacamento" style="margin-top: 2px;">
 
               <button class="btn btn-block botao-duvidas">Se inscrever</button>
             </div>

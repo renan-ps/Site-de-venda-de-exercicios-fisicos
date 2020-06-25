@@ -83,7 +83,7 @@ Faturamento</a>
                   </div>
                   <div class="col-md-2">
                         <label for="address" class="">Numero</label>
-                  <input type="text" id="numero_endereco" class="form-control mb-4" placeholder="">
+                  <input type="text" id="numero_endereco" class="form-control mb-4" placeholder="N°">
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ Faturamento</a>
 
                   <hr>
 
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Próximo Passo</button>
+                  <button class="btn btn-warning btn-lg btn-block" type="submit">Próximo Passo</button>
 
                 </form>
 
@@ -174,7 +174,7 @@ Faturamento</a>
 
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Próximo Passo</button>
+                <button class="btn btn-warning btn-lg btn-block" type="submit">Próximo Passo</button>
 
               </div>
               <!--/.Panel 2-->
@@ -233,7 +233,7 @@ Faturamento</a>
                 </div>
                 <hr class="mb-4">
 
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar Pedido</button>
+                <button class="btn btn-warning btn-lg btn-block" type="submit">Realizar Pedido</button>
 
               </div>
               <!--/.Panel 3-->
@@ -248,7 +248,7 @@ Faturamento</a>
           <!--Grid column-->
           <div class="col-lg-4 mb-4">
 
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar Compra</button>
+            <button class="btn btn-warning btn-lg btn-block" type="submit">Realizar Compra</button>
 
             <!--Card-->
             <div class="card z-depth-0 border border-light rounded-0">

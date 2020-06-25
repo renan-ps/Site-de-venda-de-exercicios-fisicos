@@ -5,6 +5,7 @@ class ClassLayout{
 
     //Definição das tags do head
     public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
+
         $html = "<!DOCTYPE html>
         <html lang='pt-pt'>
         <head>
@@ -41,6 +42,7 @@ class ClassLayout{
         </head>
         <body class='body'>
             <header>
+
         
 		        <nav class='navbar fixed-top navbar-expand-lg  navbar-light' id='dynamic-navbar'>
 
@@ -97,10 +99,12 @@ class ClassLayout{
                     </div>
                   </div>
 
+
 		            </section>
 		        </nav>
 	        </header>
 	        <main>";
+
 
         return $html;
     }
@@ -205,7 +209,7 @@ class ClassLayout{
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
-	<title>Perfil</title>
+	
   <meta name='theme-color' content='#234C80'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
@@ -214,6 +218,12 @@ class ClassLayout{
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:16px;
+        z-index:1000;' target='_blank'>
+         <img  class='whatsapp' src='https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png' />
+      
+        </a>
+
 </head>
   
 
