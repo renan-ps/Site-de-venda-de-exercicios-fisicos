@@ -13,7 +13,7 @@ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$barra}{$pastaInterna}"); //Inclus√
 
 
 #Atalhos
-define('DIRIMG', DIRPAGE."img/");
+define('DIRIMG', DIRPAGE."image/");
 define('DIRCSS', DIRPAGE."lib/css/");
 define('DIRJS', DIRPAGE."lib/js/");
 

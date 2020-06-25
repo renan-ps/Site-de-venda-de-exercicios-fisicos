@@ -10,7 +10,7 @@ class ClassLayout{
         <head>
             <title>".NAME." - $title</title>
 
-            <meta charset='utf-8'>
+            <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">
             <meta name='viewport' content='width=device-width, initial-scale=1'>
            <meta http-equiv='X-UA-Compatible' content='IE=edge'>
           <meta name=theme-color content=#FCC00A>
@@ -46,7 +46,7 @@ class ClassLayout{
 
                 <div class='container container-navbar'>
                     <a class='navbar-brand' href='#'>
-                                <img src='image/logo.png'>
+                                <img src='" . DIRIMG . "logo.png'>
                               </a>
                               
                     <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
@@ -107,7 +107,7 @@ class ClassLayout{
 
 
     //Definição das tags do footer
-    public static function setFooter(){
+    public static function setFooter($par=null){
 
         $html = "
         </main>
@@ -186,6 +186,7 @@ class ClassLayout{
             <script src='". DIRPAGE ."lib/js/index.js'></script>
             <script src='lib/js/loja.js'></script>
             <script src='lib/js/planos.js'></script>
+            
         </body>
         </html>
         ";
