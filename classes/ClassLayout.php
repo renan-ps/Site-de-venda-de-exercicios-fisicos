@@ -128,41 +128,42 @@ class ClassLayout{
                       <ul class=contact-footer>
                         <li> <h3>Entre em Contato</h3></li>
                         <li><p><i class='fab fa-whatsapp icon-whatsapp-footer'></i> +351 35263789</p></li>
-                        <li><p class=email-footer>treinodoze@gmail.com</p></li>
+                        <li><p class=email-footer>contato@treinodoze.com</p></li>
                       </ul>
                     </div>
                   
                     <div class=colun-footer-2>
                       <ul class=secoes-footer>
                         <li><h3>Seções</h3></li>
-                        <li><a href=#>Sobre mim</a></li>
-                        <li><a href=#>Como vou te ajudar</a></li>
-                        <li><a href=#>Seu treino em alto nível</a></li>
-                        <li><a href=#>Passo a passo para contratar</a></li>
-                        <li><a href=#>Planos</a></li>
-                        <li><a href=#>Depoimentos</a></li>
-                        <li><a href=#>Perguntas frequentes</a></li>
+                        <li><a class='effect-scroll' id='#personal' href='index#personal'>Sobre mim</a></li>
+						<li><a class='effect-scroll' id='#depoimentos' href='index#depoimentos'>Depoimentos</a></li>
+						<li><a class='effect-scroll' id='#planos' href='index#planos'>Planos</a></li>
+						<li><a class='effect-scroll' id='#como-funciona' href=#>Como Funciona</a></li>
+                        <li><a class='effect-scroll' id='#artigos' href='index#artigos'>Artigos</a></li>
+						<li><a class='effect-scroll' id='#porque-contratar' href='index#porque-contratar'>Por que nos contratar</a></li>
+                        <li><a class='effect-scroll' id='#faq' href='index#faq'>FAQ</a></li>
+						
+                        
                       </ul>
                     </div>
 
                     <div class=colun-footer-3>
                       <ul class=links-uteis-footer>
                         <li><h3>Links úteis</h3></li>
-                        <li><a href=#>Plano Básico</a></li>
-                        <li><a href=#>Plano Premium</a></li>
-                        <li><a href=#>Plano Advanced</a></li>
-                        <li><a href=#>Como funciona</a></li>
-                        <li><a href=#>Loja</a></li>
-                        <li><a href=#>Artigos</a></li>
-                        <li><a href=#>FAQ</a></li>
+                        <li><a href='plano-basico'>Plano Básico</a></li>
+                        <li><a href='plano-premium'>Plano Premium</a></li>
+						<li><a href='plano-advanced'>Plano Advanced</a></li>
+						<li><a href=loja>Loja</a></li>
+                        <li><a href='resultados'>Resultados</a></li>
+                        <li><a href=#>Login</a></li>
                       </ul>
                     </div>
                   </div>
               
                 <div class=container-redes-sociais-footer>
-                  <a href=facebook><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
+                  <a href=https://www.facebook.com/search/top/?q=treino%20do%20z%C3%A9><i class='fab fa-facebook-f icons-rede-sociais-footer'></i></a>
                   <a href=twitter><i class='fab fa-twitter icons-rede-sociais-footer'></i></a>
-                  <a href=instagram><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
+                  <a href=https://instagram.com/treinodoze?igshid=1u8rffiv386kb><i class='fab fa-instagram icons-rede-sociais-footer'></i></a>
                   <a href=youtube><i class='fab fa-youtube icons-rede-sociais-footer'></i></a>
                   <a href=whatsapp><i class='fab fa-whatsapp icons-rede-sociais-footer'></i></a>
                 </div>
@@ -186,6 +187,7 @@ class ClassLayout{
             <script src='". DIRPAGE ."lib/js/index.js'></script>
             <script src='lib/js/loja.js'></script>
             <script src='lib/js/planos.js'></script>
+           
         </body>
         </html>
         ";
@@ -204,6 +206,7 @@ class ClassLayout{
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>Perfil</title>
+  <meta name='theme-color' content='#234C80'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>

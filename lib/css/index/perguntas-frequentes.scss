@@ -8,6 +8,12 @@
     font-size: 2em!important;
 }
 
+.perguntas-ficou-duvidas {
+    width: 25%;
+    color: $cor-padrao-cliente-2 !important;
+    font-weight: 400 !important;
+}
+
 .botao-duvidas {
     @include border-radius-buttom-default;
     background-color: $cor-padrao-cliente-2!important;
