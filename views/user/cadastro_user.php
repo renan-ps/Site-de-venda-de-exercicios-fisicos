@@ -17,7 +17,7 @@
             <div class="card-body p-0">
                 <div class="row">
                     <div class="col-lg-5 d-none d-lg-flex">
-                        <div class="flex-grow-1 bg-register-image" style="background-image: url(&quot;assets/img/dogs/image2.jpeg?h=a0a7d00bcd8e4f84f4d8ce636a8f94d4&quot;);"></div>
+                        <div class="flex-grow-1 bg-register-image" style="background-image: url(<?php echo DIRIMG . '../image/img-carousel-2.jpg'; ?>);"></div>
                     </div>
                     <div class="col-lg-7">
                         <div class="p-5">
@@ -26,13 +26,26 @@
                             </div>
                             <form class="user">
                                 <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nome" name="first_name"></div>
-                                    <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Sobrenome" name="last_name"></div>
+
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Nome" name="first_name">
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Sobrenome" name="last_name"></div>
                                 </div>
-                                <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email " name="email"></div>
+
+                                <div class="form-group">
+                                    <input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email " name="email">
+                                </div>
+
                                 <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Senha" name="password"></div>
-                                    <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Reescreva a senha" name="password_repeat"></div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Senha" name="password"></div>
+                                    
+                                    <div class="col-sm-6">
+                                        <input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Reescreva a senha" name="password_repeat">
+                                    </div>
                                 </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Criar Conta</button>
                                 <hr><a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i class="fab fa-google"></i>&nbsp; Criar com Google</a><a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i class="fab fa-facebook-f"></i>&nbsp; Criar com Facebook</a>
                                 <hr>

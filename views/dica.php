@@ -2,7 +2,8 @@
 
 	<section class="principal">
 		
-		<div class="imagem-background">			
+		<div class="imagem-background">	
+			<img src="image/treino-em-casa.jpg" alt="Mulher se exercitando">		
 			<p>Como emagrecer em casa</p>
 		</div>
 
@@ -12,7 +13,7 @@
 				
 				<h2>Emagrecendo em casa </h2>
 				<p>Entenda como a prática de atividades físicas em casa pode ir além do básico</p>
-				<p>por <strong>Ygor Joalison Renan ● 18/05/2020</strong></p>
+				<p>por <strong>José Acácio ● 18/05/2020</strong></p>
 				<div class="icon-treino-em-casa">
 					<img src="image/icon-dumbbell.svg">
 				</div>

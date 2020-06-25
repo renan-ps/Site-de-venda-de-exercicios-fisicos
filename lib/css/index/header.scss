@@ -32,10 +32,9 @@ body {
     font-family: "Comfortaa", Arial, Tahoma, sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-}
-
-.menu a:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .nav-item {
@@ -63,7 +62,7 @@ body {
 }
 
 .cor-transicao-navbar {
-    background-color: transparentize($color: $cor-padrao-cliente-2, $amount: 0.1);
+    background-color: transparentize($color: $cor-padrao-cliente-1, $amount: 0.1);
     -webkit-transition: all .4s;
     transition: all .4s;
     a {
