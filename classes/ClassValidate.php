@@ -69,7 +69,9 @@ class ClassValidate{
             if ($b > 0){
                 return true;
             }else{
-                                //$this->setErro("E-mail não cadastrado.");
+
+								//$this->setErro("E-mail não cadastrado.");
+
                 return false;
             }
         }
