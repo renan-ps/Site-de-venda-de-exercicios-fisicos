@@ -1,17 +1,20 @@
+<?php echo \Classes\ClassLayout::setHeaderUser('Login', "Faça seu Login", ""); ?>
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Recuperação de senha</title>
-     <link rel="stylesheet" href="../../lib/css/user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-   
-</head>
 
-<body class="bg-gradient-primary">
+<div id="demo" style="margin-left: 20px; padding-top: 20px;"><a href="index" title=""><i class="fas fa-arrow-left fa-3x"></i></a></div>
+
+<style type="text/css" media="screen">
+    @media (min-width: 1200px) {
+    .bg  {
+        background-image:  url(<?php echo DIRIMG . '../image/Fundo-Login.svg'; ?>) ;
+    }
+}
+</style>
+
+
+<body class="bg img-fluid" >
     <div class="container">
         <div class="row justify-content-center" style="margin-top: 128px;">
             <div class="col-md-9 col-lg-12 col-xl-10">
@@ -19,7 +22,7 @@
                     <div class="card-body p-0">
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-flex">
-                                <div class="flex-grow-1 bg-password-image" style="background-image: url(&quot;../../image/dogs/image1.jpeg?h=430aabda8f7926f94f558f54049fc6e6&quot;);"></div>
+                                <div class="flex-grow-1 bg-password-image"style="background-image: url(<?php echo DIRIMG . '../image/dogs/image1.jpeg'; ?>);"></div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
@@ -31,8 +34,8 @@
                                         <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Escreva o email cadastrado" name="email"></div><button class="btn btn-primary btn-block text-white btn-user"
                                             type="submit">Redefinir senha</button></form>
                                     <div class="text-center">
-                                        <hr><a class="small" href="register.html">Criar Conta!</a></div>
-                                    <div class="text-center"><a class="small" href="login.html">Já tem uma Conta? Faça Login!</a></div>
+                                        <hr><a class="small" href="../cadastro">Criar Conta!</a></div>
+                                    <div class="text-center"><a class="small" href="../login">Já tem uma Conta? Faça Login!</a></div>
                                 </div>
                             </div>
                         </div>

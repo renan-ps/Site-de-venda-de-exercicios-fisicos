@@ -69,7 +69,9 @@ class ClassValidate{
             if ($b > 0){
                 return true;
             }else{
+
 								//$this->setErro("E-mail não cadastrado.");
+
                 return false;
             }
         }
@@ -155,23 +157,7 @@ class ClassValidate{
                 "erros" => $this->getErro()
             ];
         }else{
-        	$this->mail->sendMail(
-        		$arrVar['email'],
-		        $arrVar['nome'],
-		        $arrVar['token'],
-	          "Confirme seu e-mail | " . NAME,
-		        "
-		        <p><strong>Olá, {$arrVar['nome']}!</strong></p>
-		        <p>Houve um cadastro no site " . NAME . " com este e-mail, estamos enviando essa mensagem apenas para confirmar o seu cadastro.</p>
-		        <p>Confirme seu e-mail <a href='" . DIRPAGE . "controllers/controllerConfirmacao/{$arrVar['email']}/{$arrVar['token']}'>clicando aqui</a>.</p>
-		        <p>Att,<br>Equipe <strong>" . NAME . "</strong></p>
-		        "
-	        );
-          $arrResponse=[
-            "retorno" => "success",
-            "erros" => null
-          ];
-          $this->cadastro->insertCad($arrVar);
+
         }
         return json_encode($arrResponse);
     }
@@ -191,20 +177,20 @@ class ClassValidate{
   #Validação final do login
   public function validateFinalLogin($email){
     if(count($this->getErro()) > 0){
-    	$this->login->insertAttempt();
-    	$arrResponse=[
-		    "retorno" => "erro",
-		    "erros" => $this->getErro(),
-		    "tentativas" => $this->tentativas
-	    ];
+        $this->login->insertAttempt();
+        $arrResponse=[
+            "retorno" => "erro",
+            "erros" => $this->getErro(),
+            "tentativas" => $this->tentativas
+        ];
     }else{
         $this->login->deleteAttempt();
         $this->sessions->setSessions($email);
-	      $arrResponse=[
-		      "retorno" => "success",
-		      "page" => DIRPAGE.'user/',
-		      "tentativas" => $this->tentativas
-	      ];
+          $arrResponse=[
+              "retorno" => "success",
+              "page" => DIRPAGE.'user/',
+              "tentativas" => $this->tentativas
+          ];
     }
 
     return json_encode($arrResponse);
