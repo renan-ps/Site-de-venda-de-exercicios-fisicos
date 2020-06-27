@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Jun-2020 às 04:02
+-- Generation Time: 27-Jun-2020 às 22:16
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.10
 
@@ -25,6 +25,44 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `assinaturas`
+--
+
+DROP TABLE IF EXISTS `assinaturas`;
+CREATE TABLE IF NOT EXISTS `assinaturas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` int(11) NOT NULL,
+  `plano` int(11) NOT NULL,
+  `desconto` float(6,2) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `fk_usuario` (`usuario`),
+  KEY `fk_plano` (`plano`)
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `assinaturas`
+--
+
+INSERT INTO `assinaturas` (`id`, `usuario`, `plano`, `desconto`) VALUES
+(15, 13, 3, 0.00),
+(16, 13, 3, 0.00),
+(17, 13, 3, 0.00),
+(18, 13, 3, 0.00),
+(19, 13, 3, 0.00),
+(20, 13, 3, 0.00),
+(21, 13, 3, 0.00),
+(22, 13, 3, 0.00),
+(23, 13, 3, 0.00),
+(24, 13, 3, 0.00),
+(25, 13, 3, 0.00),
+(26, 13, 3, 0.00),
+(27, 13, 3, 0.00),
+(28, 13, 3, 0.00),
+(29, 13, 3, 0.00);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `attempt`
 --
 
@@ -34,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `attempt` (
   `ip` varchar(20) NOT NULL,
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -70,40 +108,20 @@ CREATE TABLE IF NOT EXISTS `confirmation` (
   `email` varchar(90) NOT NULL,
   `token` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `confirmation`
 --
 
 INSERT INTO `confirmation` (`id`, `email`, `token`) VALUES
-(5, 'renansoaresinfo@gmail.com', '39fad94257ac7d1b8ad532b166cb4d789bbe92e4404b10cc7fc39ad4c7ae6d9824c9286aa385ab8510da4bbb10984eb9cab8b9b35fcfe4ed7f2fcdcd16290265'),
-(6, 'renansoaresinfo@gmail.com', '8a0716ac07ef720af90a528441cb668bb72d0f5737c9b3069ed14fa4b3d501cda6a53f347eb703dd88db6beeacdfc77fbabbad9697eaa875355953a3c7d3d965'),
-(7, 'renansoaresinfo@gmail.com', '077fb1fc5352de9a6c5674a09c93f8d40297fc25a1a967809c901295ff1ff6420034f4b7cc6e14c8d218ff403218c6a02f1d03fabdd724ba1e9c61d3451f356a'),
-(8, 'renansoaresinfo@gmail.com', '0a82d972eda711988fbda57176fbb519f1b410663109e530961d27b7d09b9f37c35803dcfe17529af6f56c9f56cbb9041a733baf1e80d7fda1afde8c32b5d08a'),
-(9, 'renansoaresinfo@gmail.com', '4e3a4623ed92b816321c1803e578071fd89d31acd28c2026a949be09a1616e8f7491624f29c92f2de7cabe4719716936092fd148becbc779c76d4dd00a96b859'),
-(10, 'renansoaresinfo@gmail.com', '11a7f054c63e3b0de184510aa74a4f603738e8c36b5d9db1a1760dde4a6408e6e94121866e705925303b9480ee5d03a04b17bf420445f5fd83e0b9d7cdeadf31'),
-(11, 'renansoaresinfo@gmail.com', '8b2b81c5655ec1d9d67488654a8cc46c5c4ec56792d686f9775b2e13829080ef184ce2288bfa0d75c6926252750627830e164fef068aa318d80ea7cc603912cb'),
-(12, 'renansoaresinfo@gmail.com', '0c474a90c6e653ec07fd654e192f67e50ee03d6f741f21ebe84c7e0cf36acd7dae851bb1e0ac6586630837a759af4217ab435531e561c41e26e73c03960c310c'),
-(13, 'renansoaresinfo@gmail.com', 'cea39ad58e36074e6215080bd05c60a9099a2065d9dcd35c5ae117f2e625144578549dc2360bbc66696d3ad0725c4982ae5766fdf2c6bb2d7ea967dabbef04cc'),
-(14, 'renansoaresinfo@gmail.com', '0c26368039d94266e72d93e46300eeaa2967355e986e9a8ed73451d92c43d51ef9ed8f5c325dc36544e832c2a370adfe183acdd7b7d9f4fbee88c2e6e4f65fdc'),
-(15, 'renansoaresinfo@gmail.com', '96791dfd2c6869ab8778da39d16dcf7928249b971154e0529c1b019ad4ae80a47a7ce7867371130134ac759889980fdff9ca4b1a2d7314a40c06ce5c4846c26f'),
-(16, 'renansoaresinfo@gmail.com', 'c3d992b1f0209bdc1d20eb8d7a70774df082131f950b43219d4b91d32519657e7ea03b1af1df319c9737401f4c8d72e3dd91c1719cb65fa5096d0945f881276a'),
-(17, 'renansoaresinfo@gmail.com', 'c7ec85c45259c8c8ece21f12892f58618ae797773fe786488d70a288f6c4609da2a0ecfc1aa6703e760a25c0a96186a9c0a31d8b75593f9a3a61cd8db1c73a78'),
-(18, 'renansoaresinfo@gmail.com', '9dccccb32f34368ead3d6419ce882b5d231227b588b276eed8fada4e14778c4aa3c2450e73209c0aaf275f21ceb3f69ce82c213029916556ee69bec630a1b9ab'),
-(19, 'renansoaresinfo@gmail.com', '813ebdb8b008b3f4c370694dfa8813083da0e6af3283b3263e89b522be1447211159bb6f0cf1e127b92b2c1bb982a4629dfe4e562137ef7c80aaa45b3b26e5b4'),
-(20, 'renansoaresinfo@gmail.com', '3a91249d5bcf5c42bfd81573cffe87c98c60af6bc8c7631565eb6b785b97876f0501509b006ef0293da513e0d571269a6a0e1c86695a81663aba3f09339f89e0'),
-(21, 'renansoaresinfo@gmail.com', 'c6014fddaed39c5d25d132c74b27e339776bef42adc049a1fa20ecb26c393a0fa42f6ad28a9f2e0444c8981b09cf2b7381f47a7d81ff4ed8ae5a87dba2a988a4'),
-(22, 'renansoaresinfo@gmail.com', '44b7b9e85268c2053a09ab406d2e507eff73be47d34a72173bcfce21a4fdeb60e5e5c0193108cd7e622099472fda7205d7193f2b551cf9735645a59dca05deb5'),
-(23, 'renansoaresinfo@gmail.com', 'fa0411d2e0d648667705dd967be74fe3cf038c796711d2a7b507e1ad70f763af78548f6d6837023d4d9225afa6035814ec1c8715d5515a24cf2a525ae95546e4'),
-(24, 'renansoaresinfo@gmail.com', '9f3aa1779b95936fbd45df4914aa281239c200185d122d0f409d6535a5aed11f86061a89240487086aea16f995f75dae4691b04507d983821c5917c4171d62ae'),
-(25, 'renansoaresinfo@gmail.com', '112032557f8d1bb58f9a915983c023f1a3525e3b7e65f42b8c0b57d1d25256284eb85647b7f9a9b44724cda5d337e01ab4a190236683babf4e61c9bde129048a'),
-(26, 'renansoaresinfo@gmail.com', '250c3b75cf93216af9492be034d3223ea587a020f48a9a83614bf27a89377e3680640e797274425915b5fa0392c4878ae26ebfbad21fc435ee3eb4fd6cb6eb42'),
-(27, 'renansoaresinfo@gmail.com', '88f6fed9ce61b97c2c5165f4ec1c1ca19cedd42887d41ce1d13fe6540ba672bb233a901ebbe6e33b439c5ef07452c17a61cc9d0882bd85f6aa79b182ed490e7a'),
-(28, '', '266f106feccba4521b764ef4ed7771cd0736706970e24eceeb81097dfc06bd9534fd8981a7b501084472b7f2c045907dfbf5175981101d678c4f59f0da936ac6'),
-(29, '', '859e9237deb27f513fd2b511ac6368e6449a1be1f82d1070391eff61e0c3520384b4f3f52d6fb12dc2a1fba9daece285e9b5f82080763a6ce0ab0756d049ba88'),
-(30, 'renansoaresinfo@gmai.com', '9cafbfdcb2b7782bec8e3ce74e06de9c56342eda8e95bafe0cff8d1249cebf76e65c07ab773298d9999c8d00fe2f29a38c854a852282289165b5351751d9a45c'),
-(31, '', 'ea2aa244ba913106661a2513174c058127416bd01a2ba18162b5160586d64c94719583fd9693ecda055aa304248e48ea335e4a609f4a36a7dfe3317c4c3c894f');
+(33, 'renan@gmail.com', '63a1eb8027bfb961b8e217815d59b24a61b2227a07f3c7b86951ce57896603dddf0fae59b2a6e0e4066da8cfd6ce73aa1d99544f482454e2f35f66c81badd37e'),
+(34, 'renan2@gmail.com', '2f50a9fe9beeb4a81e9c9791d75ddfff1e81c3768177883fe2572f15c1c21fc3c682593bb1063f7a589523a19e5415310741c43b61fc9a056a94e80c12c8cf11'),
+(35, 'renan2@gmail.com', 'b1f79a9cf0bb57bf1d7373fecd0c764bdfd326dfa1f58dbaeeb57a9933d1804cbe99c0db6f8d3eadd21cade3def68f12d05cd0c51387154b21336962bed9f9f1'),
+(36, 'renan@gmail.com', '14cab4aae47bbd090a8d028ed4d72071e0147b3992358a78c75299e2b3029583c5901130954532e111715f84fbb2b29787732b3c2077c80e88e3729e953e1fb7'),
+(37, 'renan@gmail.com', '82043eb530baa0ea92c5a0bbc7c2565a26d52d9cc9fe8a742baefe1426da95f76c15e27291f94a198bd2daf4ea6efc7777b7f5f1be079b180dc064d857b643bc'),
+(38, 'renan2@gmail.com', '70922be76af091a3e7b1ad4970c110562760f7c8cb4dc74cf89a640468df284fc74e31929455ea4a8ace8800bc19f4d368f0cfa7526bc2ec8fcf3f238c6eb792'),
+(39, 'renan@gmail.com', 'a2e18130d30149a358cef5541db1f1162f5c09083ba81353f0c00a6d2127d04f8a57d8c6676d28bfb9d1d2c5d698c43aa8d504c0acc29053eb278f006a283234');
 
 -- --------------------------------------------------------
 
@@ -132,6 +150,35 @@ INSERT INTO `contato` (`idPersonal`, `emailPersonal`, `dataCriacao`, `dataAtuali
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `planos`
+--
+
+DROP TABLE IF EXISTS `planos`;
+CREATE TABLE IF NOT EXISTS `planos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) NOT NULL,
+  `subtitulo` varchar(255) NOT NULL,
+  `descricaoIndex` varchar(255) NOT NULL,
+  `descricao` text NOT NULL,
+  `img1` varchar(255) NOT NULL,
+  `img2` varchar(255) NOT NULL,
+  `video` varchar(255) NOT NULL,
+  `preco` float(6,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `planos`
+--
+
+INSERT INTO `planos` (`id`, `titulo`, `subtitulo`, `descricaoIndex`, `descricao`, `img1`, `img2`, `video`, `preco`) VALUES
+(1, 'Plano Básico', 'O plano básico mais querido do mercado!', 'Você que tem o dia apertado e não consegue parar para fazer exercícios, nosso plano Basic One é perfeito pra você.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-basico.jpg', 'img-plano-basico.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 89.00),
+(2, 'Plano Premium', 'O plano campeão de vendas!', 'Se você quer além um treino, acompanhamento presencial de um nutricionista, conferira o plano Premium.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-premium.jpg', 'img-plano-premium.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 115.50),
+(3, 'Plano Advanced', 'O plano completo para te deixar completo', 'Se você procura algo mais completo e intenso, com direito a equipamentos, veja o plano Advanced.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-advanced.jpg', 'img-plano-advanced.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 129.90);
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `users`
 --
 
@@ -149,7 +196,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `status` varchar(20) NOT NULL,
   PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `users`
@@ -157,8 +204,18 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`idUsuario`, `nome`, `email`, `senha`, `dataNascimento`, `telefone`, `endereco`, `dataCriacao`, `permissoes`, `status`) VALUES
 (13, 'Renan', 'renansoaresinfo@gmail.com', '$2y$10$sz6dg8BwmdqBIzdCbexRWOkdDqeWshN0O549Nc8azrHIb50qBaopS', '18/03/1995', '21976990053', 'Rua Paulo Duarte', '2020-05-30 23:47:14', 'user', 'confirmation'),
-(14, '', '', '$2y$10$u8bVDSeM9Fgk/TvYtehs4.i0SYYf8O8he3831bXOwdMSN/YqTQOJa', '', '', '', '2020-06-05 16:41:34', 'user', 'confirmation'),
-(16, '', 'renansoaresinfo@gmai.com', '$2y$10$9TXfDLIk545t3PyYmjhTPOBOZOtIVKAVATdgkiPlED2dAjUQy9bfC', '', '', '', '2020-06-05 21:50:49', 'user', 'confirmation');
+(24, 'Renan', 'renan@gmail.com', '$2y$10$GsLoedUNGQmtmVNJZt4Jrus7eqW/tyk/OGxbY1O6hWNs1eK/xgKEa', '18/03/1995', '21976990053', 'Rua A', '2020-06-27 05:23:09', 'user', 'confirmation');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `assinaturas`
+--
+ALTER TABLE `assinaturas`
+  ADD CONSTRAINT `fk_plano` FOREIGN KEY (`plano`) REFERENCES `planos` (`id`),
+  ADD CONSTRAINT `fk_usuario` FOREIGN KEY (`usuario`) REFERENCES `users` (`idUsuario`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

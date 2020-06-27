@@ -14,9 +14,9 @@ if (!isset($_SESSION['login'])) {
 
 use Classes\ClassPlano;
 
-$_SESSION['selectPlan'] = $_POST['plano'];
 $dPlano = new ClassPlano;
 $p = $dPlano->getPlan($_SESSION['selectPlan']);
+$discount = 0;
 ?>
 
 <script type="text/javascript">
@@ -77,6 +77,11 @@ $p = $dPlano->getPlan($_SESSION['selectPlan']);
 
 							<div class=" mt-5">
 								<form method="post" action="<?php echo DIRPAGE . 'controllers/controllerAssinatura' ?>">
+									<input type="hidden" name="idUsuario" value="<?php echo $_SESSION['idUser']; ?>">
+									<input type="hidden" name="idPlano" value="<?php echo $p['id']; ?>">
+									<input type="hidden" name="desconto" value="<?php echo $discount; ?>">
+									<input type="hidden" name="valor" value="<?php echo $p['preco']; ?>">
+									<input type="hidden" name="nomePlano" value="<?php echo $p['titulo']; ?>">
 									<button class="btn btn-primary btn-lg btn-block">Realizar Compra</button>
 								</form>
 							</div>
