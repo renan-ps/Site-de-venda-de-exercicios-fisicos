@@ -35,19 +35,19 @@ Class ClassPaypal{
 	}
 
 	#Cria o plano do usuário
-	public function createPlan($valor, $nomePlano, $idCompra){
+	public function createPlan($valor, $nomePlano, $idAssinatura){
 		$definition = new PaymentDefinition();
 		$definition->setName('Regular Payments');           //Nome que aparecerá para o cliente
 		$definition->setType('REGULAR');                     //Tipo de plano
 		$definition->setFrequency('MONTH');              //Tipo de frequência de cobrança
 		$definition->setFrequencyInterval("1");    //Intervalo de frequência
 		$definition->setCycles("0");                        //Ciclos de cobrança
-		$definition->setAmount(new Currency(                      //Valor
+		$definition->setAmount(new Currency((                      //Valor
 			array(
 				'value'=> $valor,
 				'currency'=>'BRL'
 			)
-		));
+		)));
 
 
 		$plan = new Plan();
@@ -57,8 +57,8 @@ Class ClassPaypal{
 
 
 		$preferences = new MerchantPreferences();
-		$preferences->setUrl(DIRPAGE . 'obrigado?id=' . $idCompra);
-		$preferences->setCancelUrl(DIRPAGE . 'erro?id=' . $idCompra);
+		$preferences->setReturnUrl(DIRPAGE . 'obrigado?id=' . $idAssinatura);
+		$preferences->setCancelUrl(DIRPAGE . 'erro?id=' . $idAssinatura);
 		$preferences->setAutoBillAmount("YES");                       //Cobrança automática ou não
 		$preferences->setInitialFailAmountAction('CONTINUE');   //Cobrar ou parar após falha no pagamento
 		$preferences->setMaxFailAttempts('3');                       //Tentativas após primeira falha no pagamento
