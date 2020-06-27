@@ -78,7 +78,6 @@ class ClassSessions{
 			$this->destructSessions();
 			echo "
 				<script>
-					
 					window.location.href = '". DIRPAGE ."login';
 				</script>
 			";
@@ -100,7 +99,7 @@ class ClassSessions{
   #Destróia as sessions existentes
 	public function destructSessions(){
 		foreach(array_keys($_SESSION) as $key){
-			unset($_SESSION['key']);
+			unset($_SESSION[$key]);
 		}
 	}
 }

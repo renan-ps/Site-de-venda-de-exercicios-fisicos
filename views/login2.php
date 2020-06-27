@@ -32,7 +32,8 @@
 		    </form>
 
 	      <div id="formFooter" class="formulario-login-footer">
-	        <a class="underlineHover" href="#">Esqueceu sua senha?</a>
+		      <p><a class="underlineHover" href="<?php echo DIRPAGE . 'cadastro' ?>">Cadastre-se</a></p>
+		      <p><a class="underlineHover" href="#">Esqueceu sua senha?</a></p>
 	      </div>
 
 	    </div>

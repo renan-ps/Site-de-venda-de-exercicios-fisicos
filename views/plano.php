@@ -4,36 +4,32 @@ use Classes\ClassPlano;
 
 $dPlano = new ClassPlano;
 $plano = $_GET['p'];
-$p = $dPlano->getPlano($plano);
+$p = $dPlano->getPlan($plano);
 
 echo \Classes\ClassLayout::setHeader($p['titulo'], "", "");
 ?>
 
 <div class="plano-basico">
 	<div class="banner-plano-basico">
-		<img src="image/img-banner-plano-basico.jpg" alt="">
-		<h1 class="animate__animated animate__lightSpeedInLeft">Plano Básico</h1>
+		<img src="<?php echo DIRIMG . $p['img1'] ?>" alt="">
+		<h1 class="animate__animated animate__lightSpeedInLeft"><?php echo $p['titulo'] ?></h1>
 	</div>
 	<div class="container-plano-basico">
 		<div class="container-apresentacao-plano-basico">
 			<div class="container-img-valor-plano-basico">
 				<div class="img-plano-basico">
-					<img src="image/img-plano-basico.jpg" alt="Mulher se exercitando">
-					<div class="retina-plano-basico"><p>O plano básico mais querido do mercado</p></div>
+					<img src="<?php echo DIRIMG . $p['img2'] ?>" alt="Mulher se exercitando">
+					<div class="retina-plano-basico"><p><?php echo $p['subtitulo'] ?></p></div>
 					<div class="avaliacao-plano-basico"><a href="avaliacoes">347 avaliações para esse plano<br>&#11088;&#11088;&#11088;&#11088;&#11088;</a></div>
 				</div>
 				<div class="valor-plano-basico">
-					<p class="valor-basico">R$89,90</p>
-					<div> Pague em até 10x R$8,90<br>No cartão de crédito</div>
+					<p class="valor-basico">R$<?php echo number_format($p['preco'], 2, ",", "") ?></p>
+					<div> Pague em até 10x R$<?php echo number_format(($p['preco'] / 10), 2, ",", "") ?><br>No cartão de crédito</div>
 				</div>
 			</div>
 
 			<div class="descricao-plano-basico">
-				<p align="justify">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-					dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum."</p>
+				<p align="justify"><?php echo $p['descricao'] ?></p>
 			</div>
 
 		</div>
@@ -56,9 +52,7 @@ echo \Classes\ClassLayout::setHeader($p['titulo'], "", "");
 
 			<div class="video-experimental-plano-basico">
 				<h3>Confira nossa aula experimental</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/XW9IZfHiVZM" frameborder="0"
-				        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-				</iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/XW9IZfHiVZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 
 
@@ -76,8 +70,10 @@ echo \Classes\ClassLayout::setHeader($p['titulo'], "", "");
 
 
 			</div>
-
-			<input class="botao-plano" type="submit" value="Comprar" alt="Botão">
+			<form action="carrinho" method="post">
+				<input type="hidden" name="plano" value="<?php echo $p['id']; ?>">
+				<input class="botao-plano" type="submit" value="Comprar" alt="Botão">
+			</form>
 		</div>
 
 

@@ -30,7 +30,6 @@ define("USERMAIL", "");
 define("PASSMAIL", "");
 define("CONTACTMAIL", "");
 
-
 #Outras informações
 include_once("recaptcha.php");
 
