@@ -14,6 +14,7 @@ if (!isset($_SESSION['login'])) {
 
 use Classes\ClassPlano;
 
+$_SESSION['selectPlan'] = $_POST['plano'];
 $dPlano = new ClassPlano;
 $p = $dPlano->getPlan($_SESSION['selectPlan']);
 ?>
@@ -30,83 +31,61 @@ $p = $dPlano->getPlan($_SESSION['selectPlan']);
 <div class="container mt-5">
 
 
-	<!--Section: Content-->
-	<section class="dark-grey-text">
+	<div class="card">
+		<div class="card-body">
 
-		<div class="card">
-			<div class="card-body">
+			<!--Grid row-->
+			<div class="row">
 
-				<!--Grid row-->
-				<div class="row">
+				<div class="col-lg-3 d-none d-md-none d-sm-none d-lg-block">
+					<img src="<?php echo DIRIMG . 'cart.jpg' ?>" class="img-fluid">
+				</div>
 
-					<div class="col-lg-3 d-none d-md-none d-sm-none d-lg-block">
-						<img src="<?php echo DIRIMG . 'cart.jpg' ?>" class="img-fluid">
-					</div>
+				<!--Grid column-->
+				<div class="col-lg-9 mb-12">
 
-					<!--Grid column-->
-					<div class="col-lg-9 mb-12">
+					<!--Card-->
+					<div class="card z-depth-0 border border-light rounded-0">
 
-						<!--Card-->
-						<div class="card z-depth-0 border border-light rounded-0">
+						<!--Card content-->
+						<div class="card-body">
+							<h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Itens no Carrinho</h4>
 
-							<!--Card content-->
-							<div class="card-body">
-								<h4 class="mb-4 mt-1 h5 text-center font-weight-bold">Itens no Carrinho</h4>
+							<hr>
 
-								<hr>
+							<dl class="row">
+								<dd class="col-sm-8">
+									<?php echo $p['titulo']; ?>
+								</dd>
+								<dd class="col-sm-4">
+									R$ <?php echo number_format($p['preco'], 2, ",", "") ?>
+								</dd>
+							</dl>
 
-								<dl class="row">
-									<dd class="col-sm-8">
-										<?php echo $p['titulo']; ?>
-									</dd>
-									<dd class="col-sm-4">
-										R$ <?php echo number_format($p['preco'], 2, ",", "") ?>
-									</dd>
-								</dl>
+							<hr>
 
-								<hr>
-
-									<form>
-										<div class="form-group row">
-											<input type="text" class="form-control col-sm-7" id="cupom" placeholder="Cupom de Desconto">
-											<div class="col-sm-5">
-												<button type="submit" class="col-sm-12 btn btn-primary mb-2">Aplicar</button>
-											</div>
-										</div>
-
-<!--										<div class="form-group col-sm-7 mb-2">-->
-<!--											<label for="cupom" class="sr-only">Cupom de desconto</label>-->
-<!--											<input type="text" class="form-control" id="cupom" placeholder="Cupom de Desconto">-->
-<!--										</div>-->
-<!--										<button type="submit" class=" col-sm-5 btn btn-primary mb-2">Aplicar</button>-->
-									</form>
-
-
-
-								<div class="card-footer mt-3">
-									<form method="post" action="<?php echo DIRPAGE . 'controllers/controllerAssinatura' ?>">
-										<button class="btn btn-primary btn-lg btn-block">Realizar Compra</button>
-									</form>
+							<form>
+								<div class="form-group row">
+									<input type="text" class="form-control col-sm-7" id="cupom" placeholder="Cupom de Desconto">
+									<div class="col-sm-5">
+										<button type="submit" class="col-sm-12 btn btn-primary mb-2">Aplicar</button>
+									</div>
 								</div>
 
 
+							</form>
+
+							<div class=" mt-5">
+								<form method="post" action="<?php echo DIRPAGE . 'controllers/controllerAssinatura' ?>">
+									<button class="btn btn-primary btn-lg btn-block">Realizar Compra</button>
+								</form>
 							</div>
 
+
 						</div>
-						<!--/.Card-->
-
-
 					</div>
-					<!--Grid column-->
-
 				</div>
-				<!--Grid row-->
-
 			</div>
 		</div>
-
-	</section>
-	<!--Section: Content-->
-
-
+	</div>
 </div>
