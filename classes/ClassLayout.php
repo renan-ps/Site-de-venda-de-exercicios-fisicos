@@ -5,12 +5,13 @@ class ClassLayout{
 
     //Definição das tags do head
     public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
+
         $html = "<!DOCTYPE html>
         <html lang='pt-pt'>
         <head>
             <title>".NAME." - $title</title>
 
-            <meta charset='utf-8'>
+            <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">
             <meta name='viewport' content='width=device-width, initial-scale=1'>
            <meta http-equiv='X-UA-Compatible' content='IE=edge'>
           <meta name=theme-color content=#FCC00A>
@@ -41,12 +42,13 @@ class ClassLayout{
         </head>
         <body class='body'>
             <header>
+
         
 		        <nav class='navbar fixed-top navbar-expand-lg  navbar-light' id='dynamic-navbar'>
 
                 <div class='container container-navbar'>
                     <a class='navbar-brand' href='#'>
-                                <img src='image/logo.png'>
+                                <img src='" . DIRIMG . "logo.png'>
                               </a>
                               
                     <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#basicExampleNav'
@@ -97,17 +99,19 @@ class ClassLayout{
                     </div>
                   </div>
 
+
 		            </section>
 		        </nav>
 	        </header>
 	        <main>";
+
 
         return $html;
     }
 
 
     //Definição das tags do footer
-    public static function setFooter(){
+    public static function setFooter($par=null){
 
         $html = "
         </main>
@@ -187,7 +191,7 @@ class ClassLayout{
             <script src='". DIRPAGE ."lib/js/index.js'></script>
             <script src='lib/js/loja.js'></script>
             <script src='lib/js/planos.js'></script>
-           
+
         </body>
         </html>
         ";
@@ -197,7 +201,7 @@ class ClassLayout{
 
 
 	//Definição das tags do head da parte do usuário
-	public static function setHeaderUser(){
+	public static function setHeaderUser($titulo = NAME){
 		$html = "
 <!DOCTYPE html>
 <html>
@@ -205,7 +209,7 @@ class ClassLayout{
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
-	<title>Perfil</title>
+	<title> " . $titulo . "</title>
   <meta name='theme-color' content='#234C80'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
 	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
@@ -214,6 +218,12 @@ class ClassLayout{
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:16px;
+        z-index:1000;' target='_blank'>
+         <img  class='whatsapp' src='https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png' />
+      
+        </a>
+
 </head>
   
 
@@ -435,6 +445,32 @@ class ClassLayout{
 
 <body class='bg-gradient-primary' style='background-color: rgb(88,73,146);     background-image: linear-gradient(180deg,#f6c23e 10%,#f6c23e85);'>";
   }
+
+	//Definição das tags do head da parte do usuário
+	public static function setHeaderCarrinho(){
+		$html = "
+<!DOCTYPE html>
+<html>
+			
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+	<title>" . NAME . " - " . "Carrinho</title>
+  <meta name='theme-color' content='#234C80'>
+	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
+	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
+	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>
+	<link rel='stylesheet' href='" . DIRCSS . "user/styles.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+</head>
+  
+
+";
+
+		return $html;
+	}
 
 }
 
