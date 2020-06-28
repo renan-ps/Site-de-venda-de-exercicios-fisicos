@@ -1,21 +1,29 @@
 <?php
 session_start();
 header('Content-type: text/html; charset=utf-8');
-echo \Classes\ClassLayout::setHeaderCarrinho('Carrinho', "Faça seu cadastro", "");
+echo \Classes\ClassLayout::setHeaderCarrinho();
 
 if (!isset($_POST['plano']) && !isset($_SESSION['selectPlan'])) {
-	echo "<script>window.location.href = 'http://localhost/personal/#planos';</script>";
+	header("Location: " . DIRPAGE . "#planos");
+}else{
+	if (!isset($_SESSION['login'])) {
+		$_SESSION['selectPlan'] = $_POST['plano'];
+		sleep(0.01);
+		header("Location: " . DIRPAGE . "login");
+	}
 }
 
-if (!isset($_SESSION['login'])) {
-	$_SESSION['selectPlan'] = $_POST['plano'];
-	echo "<script>window.location.href = 'http://localhost/personal/login';</script>";
-}
+
 
 use Classes\ClassPlano;
 
 $dPlano = new ClassPlano;
-$p = $dPlano->getPlan($_SESSION['selectPlan']);
+if (isset($_SESSION['selectPlan'])){
+	$p = $dPlano->getPlan($_SESSION['selectPlan']);
+}else{
+	$_SESSION['selectPlan'] = $_POST['plano'];
+	$p = $dPlano->getPlan($_SESSION['selectPlan']);
+}
 $discount = 0;
 ?>
 
