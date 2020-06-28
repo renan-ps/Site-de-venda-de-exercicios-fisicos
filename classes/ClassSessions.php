@@ -66,6 +66,7 @@ class ClassSessions{
     $this->verifyIdSessions();
     $_SESSION['login'] = true;
     $_SESSION['time'] = time();
+	  $_SESSION['idUser'] = $this->login->getDataUser($email)['data']['idUsuario'];
     $_SESSION['name'] = $this->login->getDataUser($email)['data']['nome'];
     $_SESSION['email'] = $this->login->getDataUser($email)['data']['email'];
     $_SESSION['permition'] = $this->login->getDataUser($email)['data']['permissoes'];
@@ -78,7 +79,6 @@ class ClassSessions{
 			$this->destructSessions();
 			echo "
 				<script>
-					
 					window.location.href = '". DIRPAGE ."login';
 				</script>
 			";
@@ -100,7 +100,7 @@ class ClassSessions{
   #Destróia as sessions existentes
 	public function destructSessions(){
 		foreach(array_keys($_SESSION) as $key){
-			unset($_SESSION['key']);
+			unset($_SESSION[$key]);
 		}
 	}
 }
