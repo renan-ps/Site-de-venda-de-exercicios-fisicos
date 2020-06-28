@@ -1,7 +1,6 @@
 <?php
-
 namespace Classes;
-
+session_start();
 use Models\ClassCadastro;
 use Models\ClassLogin;
 use ZxcvbnPhp\Zxcvbn;

@@ -5,7 +5,6 @@ $session->verifyInsideSession();
 echo \Classes\ClassLayout::setHeaderUser();
 echo \Classes\ClassLayout::setNavbarSideUser();
 echo \Classes\ClassLayout::setNavbarHighUser();
-
 ?>
 
 

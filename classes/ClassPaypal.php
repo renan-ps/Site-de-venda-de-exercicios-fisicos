@@ -13,25 +13,26 @@ use PayPal\Api\Agreement;
 use PayPal\Api\Payer;
 use PayPal\Common\PayPalModel;
 
-
 Class ClassPaypal{
 	private $config;
 
 	public function __construct(){
 		$this->config = new \PayPal\Rest\ApiContext(
 			new \PayPal\Auth\OAuthTokenCredential(
-				'AVFHmmLqRUJGwV0ykqznh7Vdq5uNZEOErZLDB_bwXKh3VODyNUAJm312kPKWPMDz6EAUnZvVx0bw3j9D', //Client ID
-				'EG4h9bTj0ocYLz0JsJDzw1BfUYRX5L4SjKrLfhWOxbn9YNk7rZ3PEMhwggh3HZmb555KExdmPwilzRI6' //Client Secret
+				'AVFHmmLqRUJGwV0ykqznh7Vdq5uNZEOErZLDB_bwXKh3VODyNUAJm312kPKWPMDz6EAUnZvVx0bw3j9D',
+				'EG4h9bTj0ocYLz0JsJDzw1BfUYRX5L4SjKrLfhWOxbn9YNk7rZ3PEMhwggh3HZmb555KExdmPwilzRI6'
 			)
 		);
-	}
 
-	#Cria configurações
-	public function setConfig(){
 		$this->config->setConfig(array(
 			'mode' => 'sandbox',
 			'http.ConnectionTimeOut' => 30      //Timeout
 		));
+	}
+
+	#Cria configurações
+	public function setConfig(){
+
 	}
 
 	#Cria o plano do usuário
@@ -42,23 +43,23 @@ Class ClassPaypal{
 		$definition->setFrequency('MONTH');              //Tipo de frequência de cobrança
 		$definition->setFrequencyInterval("1");    //Intervalo de frequência
 		$definition->setCycles("0");                        //Ciclos de cobrança
-		$definition->setAmount(new Currency((                      //Valor
+		$definition->setAmount(new Currency(                      //Valor
 			array(
 				'value'=> $valor,
 				'currency'=>'BRL'
 			)
-		)));
+		));
 
 
 		$plan = new Plan();
-		$plan->setName($nomePlano);                                     //Nome do plano
-		$plan->setDescription("Assinatura Treino do Zé");  //Descrição
-		$plan->setType("INFINITE");                            //Duração do plano: INFINITE ou FIXED
+		$plan->setName($nomePlano);                                       //Nome do plano
+		$plan->setDescription("Assinatura Treino do Zé");       //Descrição
+		$plan->setType("INFINITE");                                 //Duração do plano: INFINITE ou FIXED
 
 
 		$preferences = new MerchantPreferences();
-		$preferences->setReturnUrl(DIRPAGE . 'obrigado?id=' . $idAssinatura);
-		$preferences->setCancelUrl(DIRPAGE . 'erro?id=' . $idAssinatura);
+		$preferences->setReturnUrl('obrigado?id=' . $idAssinatura);
+		$preferences->setCancelUrl('erro?id=' . $idAssinatura);
 		$preferences->setAutoBillAmount("YES");                       //Cobrança automática ou não
 		$preferences->setInitialFailAmountAction('CONTINUE');   //Cobrar ou parar após falha no pagamento
 		$preferences->setMaxFailAttempts('3');                       //Tentativas após primeira falha no pagamento
@@ -108,7 +109,7 @@ Class ClassPaypal{
 
 	#Redirecionamento do usuário para o pagamento no Paypal
 	function redirectUser($url){
-		header('Location' . $url);
+		header('Location: ' . $url);
 	}
 
 
