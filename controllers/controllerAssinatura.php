@@ -1,6 +1,6 @@
 <?php
 
-$validate = new Classes\ClassPaypal;
+$validate = new \Classes\ClassPaypal();
 $signature = new \Models\ClassAssinatura();
 
 $idUser = $_POST['idUsuario'];
@@ -12,9 +12,11 @@ $planName = $_POST['nomePlano'];
 $userSignature = $signature->createSignature($idUser, $idPlan, $discount);
 $idSignature = $signature->getLastSignature($idUser);
 
+
 $userPlan = $validate->createPlan($cost, $planName, $idSignature);
+
 $userPlan = $validate->activePlan($userPlan);
 
-$userSubscription = $validate->createAgreement($userPlan);
+$userSubscription = $validate->createAgreement($userPlan, $planName);
 
-$validate->redirectUser($userSubscription->getApprovalLink());
+redirectUser($userSubscription->getAprovalLink());
