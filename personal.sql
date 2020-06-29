@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Jun-2020 às 22:16
+-- Generation Time: 29-Jun-2020 às 22:56
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.10
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `personal`
 --
+CREATE DATABASE IF NOT EXISTS `personal` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `personal`;
 
 -- --------------------------------------------------------
 
@@ -34,31 +36,19 @@ CREATE TABLE IF NOT EXISTS `assinaturas` (
   `usuario` int(11) NOT NULL,
   `plano` int(11) NOT NULL,
   `desconto` float(6,2) NOT NULL,
+  `idTransacao` varchar(255) DEFAULT NULL,
+  `status` varchar(1) NOT NULL DEFAULT 'p',
   PRIMARY KEY (`id`),
   KEY `fk_usuario` (`usuario`),
   KEY `fk_plano` (`plano`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `assinaturas`
 --
 
-INSERT INTO `assinaturas` (`id`, `usuario`, `plano`, `desconto`) VALUES
-(15, 13, 3, 0.00),
-(16, 13, 3, 0.00),
-(17, 13, 3, 0.00),
-(18, 13, 3, 0.00),
-(19, 13, 3, 0.00),
-(20, 13, 3, 0.00),
-(21, 13, 3, 0.00),
-(22, 13, 3, 0.00),
-(23, 13, 3, 0.00),
-(24, 13, 3, 0.00),
-(25, 13, 3, 0.00),
-(26, 13, 3, 0.00),
-(27, 13, 3, 0.00),
-(28, 13, 3, 0.00),
-(29, 13, 3, 0.00);
+INSERT INTO `assinaturas` (`id`, `usuario`, `plano`, `desconto`, `idTransacao`, `status`) VALUES
+(1, 13, 2, 0.00, NULL, 'p');
 
 -- --------------------------------------------------------
 
@@ -72,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `attempt` (
   `ip` varchar(20) NOT NULL,
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
