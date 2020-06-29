@@ -5,22 +5,24 @@ echo \Classes\ClassLayout::setHeaderCarrinho();
 
 if (!isset($_POST['plano']) && !isset($_SESSION['selectPlan'])) {
 	header("Location: " . DIRPAGE . "#planos");
-}else{
+} else {
 	if (!isset($_SESSION['login'])) {
 		$_SESSION['selectPlan'] = $_POST['plano'];
 		sleep(0.01);
 		header("Location: " . DIRPAGE . "login");
 	}
+	if (isset($_POST['plano'])) {
+		$_SESSION['selectPlan'] = $_POST['plano'];
+	}
 }
-
 
 
 use Classes\ClassPlano;
 
 $dPlano = new ClassPlano;
-if (isset($_SESSION['selectPlan'])){
+if (isset($_SESSION['selectPlan'])) {
 	$p = $dPlano->getPlan($_SESSION['selectPlan']);
-}else{
+} else {
 	$_SESSION['selectPlan'] = $_POST['plano'];
 	$p = $dPlano->getPlan($_SESSION['selectPlan']);
 }

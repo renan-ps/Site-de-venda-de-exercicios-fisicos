@@ -9,12 +9,14 @@ Class ClassAssinatura extends ClassCrud{
 	public function createSignature($user, $plan, $discount){
 		$this->insertDB(
 			"assinaturas",
-			"?,?,?,?",
+			"?,?,?,?,?,?",
 			array(
 				0,
 				$user,
 				$plan,
-				$discount
+				$discount,
+				NULL,
+				'p'
 			)
 		);
 	}
@@ -31,6 +33,19 @@ Class ClassAssinatura extends ClassCrud{
 		$return = $lastSignature->fetch(\PDO::FETCH_ASSOC);
 
 		return $return['id'];
+	}
+
+	public function setIdTransacao($idSignature, $idPaypal){
+		$signature = $this->updateDB(
+			"assinaturas",
+			"idTransacao = ?, status = ?",
+			"id = ?",
+			array(
+				$idPaypal,
+				"a",
+				$idSignature
+				)
+		);
 	}
 
 
