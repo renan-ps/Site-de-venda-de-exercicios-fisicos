@@ -14,7 +14,7 @@
                 <img src="image/img-compra-nao-efetuada.png" alt="">
             </div>
             <h1>Infelizmente sua compra não pode ser efetuada.</h1>
-            <p>Tente novamente mais tarde</p>
+            <p>Tente novamente mais tarde.</p>
         </div>
     </body>
 
