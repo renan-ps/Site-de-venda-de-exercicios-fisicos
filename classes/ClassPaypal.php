@@ -55,11 +55,12 @@ Class ClassPaypal{
 		$plan->setName($nomePlano);                                       //Nome do plano
 		$plan->setDescription("Assinatura Treino do Zé");       //Descrição
 		$plan->setType("INFINITE");                                 //Duração do plano: INFINITE ou FIXED
+		$plan->setPaymentDefinitions(array($definition));
 
 
 		$preferences = new MerchantPreferences();
-		$preferences->setReturnUrl('obrigado?id=' . $idAssinatura);
-		$preferences->setCancelUrl('erro?id=' . $idAssinatura);
+		$preferences->setReturnUrl('https://setaragency.com/TreinoDoZe/return_signature?result=success');
+		$preferences->setCancelUrl('https://setaragency.com/TreinoDoZe/return_signature?result=error');
 		$preferences->setAutoBillAmount("YES");                       //Cobrança automática ou não
 		$preferences->setInitialFailAmountAction('CONTINUE');   //Cobrar ou parar após falha no pagamento
 		$preferences->setMaxFailAttempts('3');                       //Tentativas após primeira falha no pagamento
@@ -73,9 +74,9 @@ Class ClassPaypal{
 	#Ativa o plano do usuário
 	public function activePlan($plan){
 		$patch = new Patch();
-		$value = new PayPalModel("({'state': 'ACTIVE'})");
+		$value = new PayPalModel('{"state": "ACTIVE"}');
 		$patch->setOp('replace');
-		$patch->setOp('/');
+		$patch->setPath('/');
 		$patch->setValue($value);
 
 		$patchRequest = new PatchRequest();
