@@ -13,7 +13,7 @@ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$barra}{$pastaInterna}"); //Inclus�
 
 
 #Atalhos
-define('DIRIMG', DIRPAGE."img/");
+define('DIRIMG', DIRPAGE."image/");
 define('DIRCSS', DIRPAGE."lib/css/");
 define('DIRJS', DIRPAGE."lib/js/");
 
@@ -25,11 +25,10 @@ define('USER', "root");
 define('PASS', "");
 
 #Informações do servidor de e-mail
-define("HOSTMAIL", "");
-define("USERMAIL", "");
-define("PASSMAIL", "");
-define("CONTACTMAIL", "");
-
+define("HOSTMAIL", "smtp.umbler.com");
+define("USERMAIL", "contato@setaragency.com");
+define("PASSMAIL", "w!4]5G[qOB");
+define("CONTACTMAIL", "contato@setaragency.com");
 
 #Outras informações
 include_once("recaptcha.php");

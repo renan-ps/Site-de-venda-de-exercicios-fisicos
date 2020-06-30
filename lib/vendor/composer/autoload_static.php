@@ -25,6 +25,7 @@ class ComposerStaticInit740481219a9bceb4e5fe99a74e178c02
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
@@ -50,6 +51,10 @@ class ComposerStaticInit740481219a9bceb4e5fe99a74e178c02
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
@@ -64,11 +69,22 @@ class ComposerStaticInit740481219a9bceb4e5fe99a74e178c02
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'PayPal' => 
+            array (
+                0 => __DIR__ . '/..' . '/paypal/rest-api-sdk-php/lib',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit740481219a9bceb4e5fe99a74e178c02::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit740481219a9bceb4e5fe99a74e178c02::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit740481219a9bceb4e5fe99a74e178c02::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
