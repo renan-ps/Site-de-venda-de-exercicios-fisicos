@@ -168,6 +168,16 @@ class ClassValidate
 				"erros" => $this->getErro()
 			];
 		} else {
+			$this->mail->sendMail(
+				$arrVar['email'],
+				$arrVar['nome'],
+				$arrVar['token'],
+				"Confirme seu E-mail",
+				"Olá {$arrVar['nome']}, seja bem vindo ao " . NAME ."!<br><br>
+				É com muita alegria que recebemos sua solicitação de abertura de conta!<br>
+				Por favor, confime seu e-mail <a href='". DIRPAGE ."controllers/controllerConfirmacaoEmail/{$arrVar['email']}/{$arrVar['token']}'>clicando aqui</a>.
+				"
+			);
 			$arrResponse=[
 				"retorno"=>"success",
 				"erros"=>null

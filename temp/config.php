@@ -25,10 +25,10 @@ define('USER', "setar");
 define('PASS', ")V3a4,jKfW");
 
 #Informações do servidor de e-mail
-define("HOSTMAIL", "");
-define("USERMAIL", "");
-define("PASSMAIL", "");
-define("CONTACTMAIL", "");
+define("HOSTMAIL", "smtp.umbler.com");
+define("USERMAIL", "contato@setaragency.com");
+define("PASSMAIL", "w!4]5G[qOB");
+define("CONTACTMAIL", "contato@setaragency.com");
 
 
 #Outras informações

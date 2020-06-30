@@ -24,7 +24,7 @@ class ClassMail{
 			$this->mail->SMTPAuth     = true;                                   // Enable SMTP authentication
 			$this->mail->Username     = USERMAIL;                               // SMTP username
 			$this->mail->Password     = PASSMAIL;                               // SMTP password
-			$this->mail->SMTPSecure   = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+			$this->mail->SMTPSecure   = 'tls';                                  // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 			$this->mail->Port         = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 			$this->mail->CharSet      = 'utf-8';
 			$this->mail->SMTPOptions  = array(
@@ -37,7 +37,7 @@ class ClassMail{
 
 			//Recipients
 			$this->mail->setFrom(CONTACTMAIL, NAME);
-			$this->mail->addAddress($email, $nome);     // Add a recipient
+			$this->mail->addAddress($email, $nome);                             // Add a recipient
 
 			// Content
 			$this->mail->isHTML(true);                                  // Set email format to HTML
