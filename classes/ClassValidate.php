@@ -216,7 +216,7 @@ class ClassValidate
 			if (isset($_SESSION['selectPlan'])){
 				$page = DIRPAGE . 'carrinho';
 			}else{
-				$page = DIRPAGE . 'user/';
+				$page = DIRPAGE . 'dashboard/';
 			}
 			$arrResponse = [
 				"retorno" => "success",

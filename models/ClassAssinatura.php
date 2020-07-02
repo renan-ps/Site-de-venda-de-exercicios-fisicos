@@ -9,13 +9,14 @@ Class ClassAssinatura extends ClassCrud{
 	public function createSignature($user, $plan, $discount){
 		$this->insertDB(
 			"assinaturas",
-			"?,?,?,?,?,?",
+			"?,?,?,?,?,?,?",
 			array(
 				0,
 				$user,
 				$plan,
 				$discount,
 				NULL,
+				date("Y-m-d"),
 				'p'
 			)
 		);
