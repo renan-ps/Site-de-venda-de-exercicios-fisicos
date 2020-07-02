@@ -82,39 +82,30 @@ if ($assinatura['status'] == 'a') {
                         <div class="card-header">
                             <strong>Sobre o plano</strong>
                         </div>
-                        <!-- /.card-header -->
+
+                        <?php
+                        if($assinatura['status'] === 'a'){?>
+                            <!-- /.card-header -->
                         <div class="card-body">
-                            <strong><i class="fas fa-book mr-1"></i> Education</strong>
-
-                            <p class="text-muted">
-                                B.S. in Computer Science from the University of Tennessee at Knoxville
-                            </p>
-
-                            <hr>
-
-                            <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-                            <p class="text-muted">Malibu, California</p>
-
-                            <hr>
-
-                            <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-                            <p class="text-muted">
-                                <span class="tag tag-danger">UI Design</span>
-                                <span class="tag tag-success">Coding</span>
-                                <span class="tag tag-info">Javascript</span>
-                                <span class="tag tag-warning">PHP</span>
-                                <span class="tag tag-primary">Node.js</span>
-                            </p>
-
-                            <hr>
-
-                            <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+                            <ul class="">
+                                <?php echo $plano['possui'] ?>
+                            </ul>
                         </div>
                         <!-- /.card-body -->
+                        <div class="card-footer">
+                            <span class="align-middle">Deseja cancelar?</span>
+                            <button class="btn btn-danger float-right btn-sm">Cancelar assinatura</button>
+                        </div>
+                        <?php }else{ ?>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p class="text-center">Você não possui um plano ativo.</p>
+                                <p class="text-center"><a href="<?php echo DIRPAGE .'#planos' ?>">Clique aqui</a> para visualizar nossos planos.</p>
+                            </div>
+                            
+                        <?php } ?>
+
+
                     </div>
                     <!-- /.card -->
                 </div>
