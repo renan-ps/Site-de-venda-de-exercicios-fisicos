@@ -73,7 +73,7 @@ class ClassSessions{
   }
 
   #Valida as páginas internas do sistema
-  public function verifyInsideSession(){
+  public function verifyInsideSession($permition){
 	  $this->verifyIdSessions();
 		if(!isset($_SESSION['login']) || !isset($_SESSION['permition']) || !isset($_SESSION['canary'])){
 			$this->destructSessions();
@@ -85,6 +85,14 @@ class ClassSessions{
 		}else{
 			if($_SESSION['time'] >= time() - $this->timeSession){
 				$_SESSION['time'] = time();
+				if($_SESSION['permition'] != 'admin' && $permition != $_SESSION['permition']){
+					echo "
+				<script>
+					alert('Você não tem acesso a este conteúdo.');
+					window.location.href = '". DIRPAGE ."dashboard';
+				</script>
+			";
+				}
 			}else{
 				$this->destructSessions();
 				echo "

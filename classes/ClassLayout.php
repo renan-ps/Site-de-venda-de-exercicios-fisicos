@@ -1,15 +1,23 @@
 <?php
+
 namespace Classes;
 
-class ClassLayout{
+class ClassLayout
+{
+	public function setHeadRestrito($permition)
+	{
+		$session = new ClassSessions();
+		$session->verifyInsideSession($permition);
+	}
 
-    //Definição das tags do head
-    public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo'){
+	//Definição das tags do head
+	public static function setHeader($title = 'Bem vindo', $description = "", $author = 'YgReJo')
+	{
 
-        $html = "<!DOCTYPE html>
+		$html = "<!DOCTYPE html>
         <html lang='pt-pt'>
         <head>
-            <title>".NAME." - $title</title>
+            <title>" . NAME . " - $title</title>
 
             <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">
             <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -18,16 +26,16 @@ class ClassLayout{
         <meta name=apple-mobile-web-app-status-bar-style content=#FCC00A>
         <meta name=msapplication-navbutton-color content=#75b529>
 
-            <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+            <a href='https://wa.me/" . WHATSAPP . "?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;' target='_blank'>
         <i style='margin-top:16px' class='fab fa-whatsapp'></i>
         </a>
 
             <meta name='description' content='$description'>
             <meta name='author' content='$author'>
-            <link rel='stylesheet' type='text/css' href='".DIRCSS."reset.css'>
+            <link rel='stylesheet' type='text/css' href='" . DIRCSS . "reset.css'>
             <link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>
-            <link rel='shortcut icon' href='".DIRIMG."../image/personal-favicon.png'>
+            <link rel='shortcut icon' href='" . DIRIMG . "../image/personal-favicon.png'>
             <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'>
             <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'>
             <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
@@ -37,7 +45,7 @@ class ClassLayout{
             <link href='https://fonts.googleapis.com/css2?family=Anton&display=swap' rel='stylesheet'>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css'>
 
-            <link rel='stylesheet' type='text/css' href='".DIRPAGE."lib/css/style.css'>
+            <link rel='stylesheet' type='text/css' href='" . DIRPAGE . "lib/css/style.css'>
 
         </head>
         <body class='body'>
@@ -106,14 +114,14 @@ class ClassLayout{
 	        <main>";
 
 
-        return $html;
-    }
+		return $html;
+	}
 
+	//Definição das tags do footer
+	public static function setFooter($par = null)
+	{
 
-    //Definição das tags do footer
-    public static function setFooter($par=null){
-
-        $html = "
+		$html = "
         </main>
             <!-- Footer -->
             <footer>
@@ -183,25 +191,24 @@ class ClassLayout{
           <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js'></script>
 
   
-            <script src='". DIRPAGE ."lib/js/zepto.min.js'></script>
-            <script src='". DIRPAGE ."lib/js/vanilla-masker.min.js'></script>
-            <script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>
-            <script src='". DIRPAGE ."lib/js/javascript.js'></script>
-            <script src='". DIRPAGE ."lib/js/jquery.js'></script>
-            <script src='". DIRPAGE ."lib/js/index.js'></script>
+            <script src='" . DIRPAGE . "lib/js/zepto.min.js'></script>
+            <script src='" . DIRPAGE . "lib/js/vanilla-masker.min.js'></script>
+            <script src='https://www.google.com/recaptcha/api.js?render=" . SITEKEY . "'></script>
+            <script src='" . DIRPAGE . "lib/js/javascript.js'></script>
+            <script src='" . DIRPAGE . "lib/js/jquery.js'></script>
+            <script src='" . DIRPAGE . "lib/js/index.js'></script>
             <script src='lib/js/loja.js'></script>
             <script src='lib/js/planos.js'></script>
 
         </body>
         </html>
         ";
-        return $html;
-    }
-
-
+		return $html;
+	}
 
 	//Definição das tags do head da parte do usuário
-	public static function setHeaderUser($titulo = NAME){
+	public static function setHeaderUser($titulo = NAME)
+	{
 		$html = "
 <!DOCTYPE html>
 <html>
@@ -218,12 +225,6 @@ class ClassLayout{
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
-    <a href='https://wa.me/". WHATSAPP ."?text=Gostaria%20de%20mais%20informações' style='position:fixed;width:60px;height:60px;bottom:100px;right:16px;
-        z-index:1000;' target='_blank'>
-         <img  class='whatsapp' src='https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png' />
-      
-        </a>
-
 </head>
   
 
@@ -233,9 +234,10 @@ class ClassLayout{
 	}
 
 	//Definição das tags da navbar lateral do usuário
-	public static function setNavbarSideUser(){
-    	$html =
-"
+	public static function setNavbarSideUser()
+	{
+		$html =
+			"
 <body id='page-top'>
 	<div id='wrapper'>
 		<nav class='navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0'>
@@ -266,13 +268,14 @@ class ClassLayout{
 			</div>
 		</nav>    	
 ";
-    	return $html;
+		return $html;
 	}
 
 	//Definição das tags da navbar superior do usuário
-	public static function setNavbarHighUser(){
-    	$html =
-"
+	public static function setNavbarHighUser($nome)
+	{
+		$html =
+			"
 		<div class='d-flex flex-column' id='content-wrapper'>
 			<div id='content'>
 				<nav class='navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top'>
@@ -369,7 +372,7 @@ class ClassLayout{
 							</li>
 							<div class='d-none d-sm-block topbar-divider'></div>
 							<li class='nav-item dropdown no-arrow' role='presentation'>
-								<div class='nav-item dropdown no-arrow'><button class='btn btn-primary dropdown-toggle' data-toggle='dropdown' aria-expanded='false' type='button' style='background-color: rgb(62,100,211);'><span class='d-none d-lg-inline mr-2 text-gray-600 small'>Valerie Luna</span><img class='border rounded-circle img-profile' src='assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656'></button>
+								<div class='nav-item dropdown no-arrow'><button class='btn btn-primary dropdown-toggle' data-toggle='dropdown' aria-expanded='false' type='button' style='background-color: rgb(62,100,211);'><span class='d-none d-lg-inline mr-2 text-gray-600 small'>{$nome}</span><img class='border rounded-circle img-profile' src='assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656'></button>
 									<div
 										class='dropdown-menu shadow dropdown-menu-right animated--grow-in' role='menu'><a class='dropdown-item' role='presentation' href='#'><i class='fas fa-user fa-sm fa-fw mr-2 text-gray-400'></i>&nbsp;Profile</a><a class='dropdown-item' role='presentation' href='#'><i class='fas fa-cogs fa-sm fa-fw mr-2 text-gray-400'></i>&nbsp;Settings</a>
 										<a
@@ -382,13 +385,14 @@ class ClassLayout{
 			</nav>
 ";
 
-    	return $html;
+		return $html;
 	}
 
 	//Definição das tags do footer do usuário
-	public static function setFooterUser(){
-    	$html =
-"
+	public static function setFooterUser()
+	{
+		$html =
+			"
 		</div>
 	</div><a class='border rounded d-inline scroll-to-top' href='#page-top'><i class='fas fa-angle-up'></i></a></div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
@@ -405,49 +409,12 @@ class ClassLayout{
 
 </html>
 ";
+		return $html;
 	}
 
-  public static function setHeaderLogin(){
-    $html = "<!doctype html>
-<html lang='pt-br'>
-<html>
-
-<head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <link rel='apple-touch-icon' sizes='57x57' href='../image/mini-icone/apple-icon-57x57.png'>
-  <link rel='apple-touch-icon' sizes='60x60' href='../image/mini-icone/apple-icon-60x60.png'>
-  <link rel='apple-touch-icon' sizes='72x72' href='../image/mini-icone/apple-icon-72x72.png'>
-  <link rel='apple-touch-icon' sizes='76x76' href='../image/mini-icone/apple-icon-76x76.png'>
-  <link rel='apple-touch-icon' sizes'114x114' href='../image/mini-icone/apple-icon-114x114.png'>
-  <link rel='apple-touch-icon' sizes'120x120' href='../image/mini-icone/apple-icon-120x120.png'>
-  <link rel='apple-touch-icon' sizes''144x144' href='../image/mini-icone/apple-icon-144x144.png'>
-  <link rel='apple-touch-icon' sizes'152x152' href='../image/mini-icone/apple-icon-152x152.png'>
-  <link rel='apple-touch-icon' sizes'180x180' href='/apple-icon-180x180.png'>
-  <link rel='icon' type='image/png' sizes='192x192'  href='../image/mini-icone/android-icon-192x192.png'>
-  <link rel='icon' type='image/png' sizes='32x32' href='../image/mini-icone/favicon-32x32.png'>
-  <link rel='icon' type='image/png' sizes='96x96' href='../image/mini-icone/favicon-96x96.png'>
-  <link rel='icon' type='image/png' sizes='16x16' href='../image/mini-icone/favicon-16x16.png'>
-  <link rel='maniest' hef='../im'ge/mini'icone/manifest.json'>
-  <meta name='msapplication-TileColor' content='#ffffff'>
-  <meta name='msapplication-TileImage' content='../image/mini-icone/ms-icon-144x144.png'>
-  <meta name='theme-color' content='#f6c23e'>
-  <title>Treino do Zé - Login</title>
-  
-  <link rel='stylesheet' href='../lib/css/user/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
-  <link rel='stylesheet' href='../lib/css/style.css'>
-  
-</head>
-
-<body class='bg-gradient-primary' style='background-color: rgb(88,73,146);     background-image: linear-gradient(180deg,#f6c23e 10%,#f6c23e85);'>";
-  }
-
 	//Definição das tags do head da parte do usuário
-	public static function setHeaderCarrinho(){
+	public static function setHeaderCarrinho()
+	{
 		$html = "
 <!DOCTYPE html>
 <html>
@@ -468,6 +435,345 @@ class ClassLayout{
   
 
 ";
+
+		return $html;
+	}
+
+	//Definição das tags do head do dashboard
+	public static function getHeadDashboard()
+	{
+		$html =
+			"
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=\"utf-8\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+    <title>" . NAME . " | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+    <!-- Font Awesome -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/fontawesome-free/css/all.min.css\">
+    <!-- Ionicons -->
+    <link rel=\"stylesheet\"
+          href=\"https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css\">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel=\"stylesheet\"
+          href=\"" . DIRLTE . "plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css\">
+    <!-- iCheck -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/icheck-bootstrap/icheck-bootstrap.min.css\">
+    <!-- JQVMap -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/jqvmap/jqvmap.min.css\">
+    <!-- Theme style -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "dist/css/adminlte.min.css\">
+    <!-- overlayScrollbars -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/overlayScrollbars/css/OverlayScrollbars.min.css\">
+    <!-- Daterange picker -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/daterangepicker/daterangepicker.css\">
+    <!-- summernote -->
+    <link rel=\"stylesheet\" href=\"" . DIRLTE . "plugins/summernote/summernote-bs4.css\">
+    <!-- Google Font: Source Sans Pro -->
+    <link href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700\" rel=\"stylesheet\">
+    <!-- Datatables -->
+    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css\">
+		<link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css\">
+</head>
+			";
+
+		return $html;
+	}
+
+	//Definição das tags do sidebar do dashboard(){
+	public static function getSidebarDashboard($permition)
+	{
+		if ($permition == 'admin') {
+			$html =
+				"
+			<body class=\"hold-transition sidebar-mini layout-fixed\">
+<div class=\"wrapper\">
+
+    <!-- Navbar -->
+    <nav class=\"main-header navbar navbar-expand navbar-white navbar-light\">
+        <!-- Left navbar links -->
+        <ul class=\"navbar-nav\">
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"\" class=\"nav-link\">Home</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"#\" class=\"nav-link\">Contato</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"logout\" class=\"nav-link\">Sair</a>
+            </li>
+        </ul>
+
+        <!-- SEARCH FORM -->
+        
+
+        
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class=\"main-sidebar sidebar-dark-primary elevation-4\">
+        <!-- Brand Logo -->
+        <a href=\"/dashboard\" class=\"brand-link\">
+            <img src=\"" . DIRLTE . "dist/img/AdminLTELogo.png\" alt=\"AdminLTE Logo\"
+                 class=\"brand-image img-circle elevation-3\"
+                 style=\"opacity: .8\">
+            <span class=\"brand-text font-weight-light\">" . NAME . "</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class=\"sidebar\">
+            <!-- Sidebar user panel (optional) -->
+            <div class=\"user-panel mt-3 pb-3 mb-3 d-flex\">
+                <div class=\"image\">
+                    <img src=\"" . DIRLTE . "dist/img/user2-160x160.jpg\" class=\"img-circle elevation-2\"
+                         alt=\"User Image\">
+                </div>
+                <div class=\"info\">
+                    <a href=\"#\" class=\"d-block\">{$_SESSION['name']}</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class=\"mt-2\">
+                <ul class=\"nav nav-pills nav-sidebar flex-column\" data-widget=\"treeview\" role=\"menu\"
+                    data-accordion=\"false\">
+                    <!-- Add icons to the links using the .nav-icon class
+												 with font-awesome or any other icon font library -->
+                    <li class=\"nav-item has-treeview\">
+                        <a href=\"#\" class=\"nav-link active\">
+                            <i class=\"nav-icon fas fa-tachometer-alt\"></i>
+                            <p>
+                                Administração
+                                <i class=\"right fas fa-angle-left\"></i>
+                            </p>
+                        </a>
+                        <ul class=\"nav nav-treeview\">
+                            <li class=\"nav-item\">
+                                <a href=\"" . DIRPAGE . "dashboard\" class=\"nav-link \">
+                                    <i class=\"far fa-circle nav-icon\"></i>
+                                    <p>Home</p>
+                                </a>
+                            </li>
+                            <li class=\"nav-item\">
+                                <a href=\"" . DIRPAGE . "dashboard/users\" class=\"nav-link\">
+                                    <i class=\"far fa-circle nav-icon\"></i>
+                                    <p>Lista de Clientes</p>
+                                </a>
+                            </li>
+                            <li class=\"nav-item\">
+                                <a href=\"" . DIRLTE . "index3.html\" class=\"nav-link\">
+                                    <i class=\"far fa-circle nav-icon\"></i>
+                                    <p>Dashboard v3</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=\"nav-header\">Usuário</li>
+                    <li class=\"nav-item\">
+                        <a href=\"edit-profile.html\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-user\"></i>
+                            <p>
+                                Perfil
+                                <!--<span class=\"badge badge-info right\">2</span>-->
+                            </p>
+                        </a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a href=\"" . DIRLTE . "pages/gallery.html\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-address-card\"></i>
+                            <p>
+                                Seu plano
+                            </p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+			";
+		} else {
+			$html =
+				"
+			<body class=\"hold-transition sidebar-mini layout-fixed\">
+<div class=\"wrapper\">
+
+    <!-- Navbar -->
+    <nav class=\"main-header navbar navbar-expand navbar-white navbar-light\">
+        <!-- Left navbar links -->
+        <ul class=\"navbar-nav\">
+            <li class=\"nav-item\">
+                <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"\" class=\"nav-link\">Home</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"#\" class=\"nav-link\">Contato</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"logout\" class=\"nav-link\">Sair</a>
+            </li>
+        </ul>
+
+        <!-- SEARCH FORM -->
+        
+
+        
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class=\"main-sidebar sidebar-dark-primary elevation-4\">
+        <!-- Brand Logo -->
+        <a href=\"/\" class=\"brand-link\">
+            <!--<img src=\"" . DIRLTE . "dist/img/AdminLTELogo.png\" alt=\"AdminLTE Logo\"
+                 class=\"brand-image img-circle elevation-3\"
+                 style=\"opacity: .8\">-->
+            <span class=\"brand-text font-weight-light\">" . NAME . "</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class=\"sidebar\">
+            <!-- Sidebar user panel (optional) -->
+            <div class=\"user-panel mt-3 pb-3 mb-3 d-flex\">
+                <div class=\"image\">
+                    <img src=\"" . DIRLTE . "dist/img/user2-160x160.jpg\" class=\"img-circle elevation-2\"
+                         alt=\"User Image\">
+                </div>
+                <div class=\"info\">
+                    <a href=\"#\" class=\"d-block\">{$_SESSION['name']}</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class=\"mt-2\">
+                <ul class=\"nav nav-pills nav-sidebar flex-column\" data-widget=\"treeview\" role=\"menu\"
+                    data-accordion=\"false\">
+                    <!-- Add icons to the links using the .nav-icon class
+												 with font-awesome or any other icon font library -->
+                    <li class=\"nav-header\">Usuário</li>
+                    <li class=\"nav-item\">
+                        <a href=\"edit-profile.html\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-user\"></i>
+                            <p>
+                                Perfil
+                                <!--<span class=\"badge badge-info right\">2</span>-->
+                            </p>
+                        </a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a href=\"" . DIRLTE . "pages/gallery.html\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-address-card\"></i>
+                            <p>
+                                Seu plano
+                            </p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+			";
+		}
+
+
+		return $html;
+	}
+
+	public static function getFooterDashboard()
+	{
+		$html =
+			"
+			<footer class=\"main-footer\">
+
+    <strong>Copyright &copy; 2020 <a href=\"" . DIRPAGE . "\">" . NAME . "</a>.</strong>
+    Todos os direitos reservados.
+
+    <div class=\"float-right d-none d-sm-inline-block\">
+        Criado e desenvolvido por <strong><a href=\"\"></a></strong>
+    </div>
+</footer>
+
+<!-- Control Sidebar -->
+<aside class=\"control-sidebar control-sidebar-dark\">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src=\"" . DIRLTE . "plugins/jquery/jquery.min.js\"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src=\"" . DIRLTE . "plugins/jquery-ui/jquery-ui.min.js\"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src=\"" . DIRLTE . "plugins/bootstrap/js/bootstrap.bundle.min.js\"></script>
+<!-- ChartJS -->
+<script src=\"" . DIRLTE . "plugins/chart.js/Chart.min.js\"></script>
+<!-- Sparkline -->
+<script src=\"" . DIRLTE . "plugins/sparklines/sparkline.js\"></script>
+<!-- JQVMap -->
+<script src=\"" . DIRLTE . "plugins/jqvmap/jquery.vmap.min.js\"></script>
+<script src=\"" . DIRLTE . "plugins/jqvmap/maps/jquery.vmap.usa.js\"></script>
+<!-- jQuery Knob Chart -->
+<script src=\"" . DIRLTE . "plugins/jquery-knob/jquery.knob.min.js\"></script>
+<!-- daterangepicker -->
+<script src=\"" . DIRLTE . "plugins/moment/moment.min.js\"></script>
+<script src=\"" . DIRLTE . "plugins/daterangepicker/daterangepicker.js\"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src=\"" . DIRLTE . "plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js\"></script>
+<!-- Summernote -->
+<script src=\"" . DIRLTE . "plugins/summernote/summernote-bs4.min.js\"></script>
+<!-- overlayScrollbars -->
+<script src=\"" . DIRLTE . "plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js\"></script>
+<!-- AdminLTE App -->
+<script src=\"" . DIRLTE . "dist/js/adminlte.js\"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src=\"" . DIRLTE . "dist/js/pages/dashboard.js\"></script>
+<!-- AdminLTE for demo purposes -->
+<script src=\"" . DIRLTE . "dist/js/demo.js\"></script>
+
+<!-- Datatables -->
+<script src=\"https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js\"></script>
+<script src=\"https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js\"></script>
+
+<script type=\"text/javascript\">
+    $(document).ready(function() {
+        $('#clientes').DataTable({
+        \"language\": {
+            \"lengthMenu\": \"Mostrando _MENU_ registros por página\",
+            \"zeroRecords\": \"Nada encontrado.\",
+            \"info\": \"Página _PAGE_ de _PAGES_\",
+            \"infoEmpty\": \"Nenhum resultado disponível\",
+            \"infoFiltered\": \"(filtrado de _MAX_ registros no total)\"
+        }
+    });
+    } );
+</script>
+
+</body>
+</html>
+			";
 
 		return $html;
 	}
