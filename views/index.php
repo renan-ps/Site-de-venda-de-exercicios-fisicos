@@ -299,7 +299,7 @@ $p = $planos->getAllPlans();
 							</div>
 
 
-							<h2 class="font-weight-bold my-4 color-text-plan">R$<?php echo number_format($plano['preco'], 2, ",", "") ?></h2>
+							<h2 class="font-weight-bold my-4 color-text-plan">€<?php echo number_format($plano['preco'], 2, ",", "") ?></h2>
 							<p class="color-text-plan"><?php echo $plano['descricaoIndex']; ?></p>
 							<a class="btn color-buttom btn-rounded color-text-buttom" href='plano?p=<?php echo $plano['id'] ?>'>Saiba mais</a>
 

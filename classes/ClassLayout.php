@@ -509,8 +509,6 @@ class ClassLayout
                 <a href=\"logout\" class=\"nav-link\">Sair</a>
             </li>
         </ul>
-
-        <!-- SEARCH FORM -->
         
 
         
@@ -521,7 +519,7 @@ class ClassLayout
     <aside class=\"main-sidebar sidebar-dark-primary elevation-4\">
         <!-- Brand Logo -->
         <a href=\"/dashboard\" class=\"brand-link\">
-            <img src=\"" . DIRLTE . "dist/img/AdminLTELogo.png\" alt=\"AdminLTE Logo\"
+            <img src=\"" . DIRIMG . "logo-dashboard.png\" alt=\"AdminLTE Logo\"
                  class=\"brand-image img-circle elevation-3\"
                  style=\"opacity: .8\">
             <span class=\"brand-text font-weight-light\">" . NAME . "</span>
@@ -532,7 +530,7 @@ class ClassLayout
             <!-- Sidebar user panel (optional) -->
             <div class=\"user-panel mt-3 pb-3 mb-3 d-flex\">
                 <div class=\"image\">
-                    <img src=\"" . DIRLTE . "dist/img/user2-160x160.jpg\" class=\"img-circle elevation-2\"
+                    <img src=\"" . DIRIMG . "no-photo.jpg\" class=\"img-circle elevation-2\"
                          alt=\"User Image\">
                 </div>
                 <div class=\"info\">
