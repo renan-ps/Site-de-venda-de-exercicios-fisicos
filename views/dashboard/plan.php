@@ -102,7 +102,7 @@ if ($assinatura['status'] == 'a') {
                                 <p class="text-center">Você não possui um plano ativo.</p>
                                 <p class="text-center"><a href="<?php echo DIRPAGE .'#planos' ?>">Clique aqui</a> para visualizar nossos planos.</p>
                             </div>
-                            
+
                         <?php } ?>
 
 

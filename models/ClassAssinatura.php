@@ -22,6 +22,18 @@ Class ClassAssinatura extends ClassCrud{
 		);
 	}
 
+	#Verifica se o usuário possui alguma assinatura cadastrada
+	public function verifySignature($user){
+		$query = $this->selectDB(
+			"*",
+			"assinaturas",
+			"where usuario = ?",
+			[$user]
+		);
+
+		return $query->rowCount();
+	}
+
 	#Busca ultima assinatura do usuário
 	public function getLastSignature($idUser){
 		$lastSignature =  $this->selectDB(
@@ -34,6 +46,20 @@ Class ClassAssinatura extends ClassCrud{
 		$return = $lastSignature->fetch(\PDO::FETCH_ASSOC);
 
 		return $return['id'];
+	}
+
+	#Verifica o status da assinatura
+	public function getStatusSinature($idUser){
+		$lastSignature =  $this->selectDB(
+			"status",
+			"assinaturas",
+			"where usuario = ? order by id desc limit 1",
+			array($idUser)
+		);
+
+		$return = $lastSignature->fetch(\PDO::FETCH_ASSOC);
+
+		return $return['status'];
 	}
 
 	public function setIdTransacao($idSignature, $idPaypal){
@@ -49,6 +75,15 @@ Class ClassAssinatura extends ClassCrud{
 		);
 	}
 
+	//Atualiza o plano na assinatura
+	public function setPlanInSignature($user, $plan){
+		$this->updateDB(
+			"assinaturas",
+			"plano = ?",
+			"usuario = ?",
+			[$plan, $user]
+		);
+	}
 
 
 }

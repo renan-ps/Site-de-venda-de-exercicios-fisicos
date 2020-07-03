@@ -19,9 +19,24 @@ $discount = $_POST['desconto'];
 $cost = $_POST['valor'];
 $planName = $_POST['nomePlano'];
 
-$userSignature = $signature->createSignature($idUser, $idPlan, $discount);
-$idSignature = $signature->getLastSignature($idUser);
+//Verifica se o usuário já possui uma assinatura (ativa ou não)
+if ($signature->verifySignature($idUser) > 0){
+	$signature->setPlanInSignature($idUser, $idPlan);
+	$idSignature = $signature->getLastSignature($idUser);
+	if ($signature->getStatusSinature($idUser) === 'a'){
+		echo
+			"
+				<script>
+				var alerta = alert('Você já possui um plano ativo.');
+				window.location.replace('".DIRPAGE."');
+				</script>
+			";
+	}
 
+}else{
+	$userSignature = $signature->createSignature($idUser, $idPlan, $discount);
+	$idSignature = $signature->getLastSignature($idUser);
+}
 
 $config = new PayPal\Rest\ApiContext(
 	new PayPal\Auth\OAuthTokenCredential(
