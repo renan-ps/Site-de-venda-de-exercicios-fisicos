@@ -70,6 +70,7 @@ class ClassSessions{
     $_SESSION['name'] = $this->login->getDataUser($email)['data']['nome'];
     $_SESSION['email'] = $this->login->getDataUser($email)['data']['email'];
     $_SESSION['permition'] = $this->login->getDataUser($email)['data']['permissoes'];
+    $_SESSION['dataCriacao'] = $this->login->getDataUser($email)['data']['dataCriacao'];
   }
 
   #Valida as páginas internas do sistema

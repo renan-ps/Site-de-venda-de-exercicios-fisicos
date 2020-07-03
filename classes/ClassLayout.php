@@ -587,7 +587,7 @@ class ClassLayout
                         </a>
                     </li>
                     <li class=\"nav-item\">
-                        <a href=\"" . DIRLTE . "pages/gallery.html\" class=\"nav-link\">
+                        <a href=\"" . DIRPAGE . "dashboard/plan\" class=\"nav-link\">
                             <i class=\"nav-icon fa fa-address-card\"></i>
                             <p>
                                 Seu plano
@@ -674,7 +674,7 @@ class ClassLayout
                         </a>
                     </li>
                     <li class=\"nav-item\">
-                        <a href=\"" . DIRLTE . "pages/gallery.html\" class=\"nav-link\">
+                        <a href=\"" . DIRPAGE . "dashboard/plan\" class=\"nav-link\">
                             <i class=\"nav-icon fa fa-address-card\"></i>
                             <p>
                                 Seu plano

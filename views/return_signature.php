@@ -3,6 +3,7 @@
 use PayPal\Api\Agreement;
 use Models\ClassAssinatura;
 
+
 $config = new PayPal\Rest\ApiContext(
 	new PayPal\Auth\OAuthTokenCredential(
 		'AVFHmmLqRUJGwV0ykqznh7Vdq5uNZEOErZLDB_bwXKh3VODyNUAJm312kPKWPMDz6EAUnZvVx0bw3j9D',//Client ID;
@@ -11,7 +12,7 @@ $config = new PayPal\Rest\ApiContext(
 );
 
 $config->setConfig(array(
-	'mode'=>'sandbox',
+	'mode' => 'sandbox',
 	'http.ConnectionTimeOut' => 30,
 ));
 
@@ -20,21 +21,23 @@ if (isset($_GET['result'])) {
 		case "success":
 			$token = $_GET['token'];
 			$agreement = new Agreement();
-			try{
+			try {
 				$agreement->execute($token, $config);
-			}catch(Exception $e){
+			} catch (Exception $e) {
 				exit(1);
 			}
 			$agreement = Agreement::get($agreement->getId(), $config);
 			$assinatura = new ClassAssinatura();
 			$assinatura->setIdTransacao($_GET['idSignature'], $agreement->getId());
-			echo "<br><br>Obrigado! <br>";
-			echo "ID da compra: " . $agreement->getId();
+			header('Location:' . DIRPAGE . 'compra-efetuada?id=' . $_GET['idSignature'] . '&idT=' . $agreement->getId());
+			//echo "<br><br>Obrigado! <br>";
+			//echo "ID da compra: " . $agreement->getId();
 
 			break; //END CASE SUCCESS
 
 		case "error":
-			echo "Erro ao comprar";
+			//echo "Erro ao comprar";
+			header('Location: ' . DIRPAGE . 'compra-nao-efetuada');
 			break; //END CASE ERROR
 
 		default:

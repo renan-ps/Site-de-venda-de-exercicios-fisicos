@@ -83,4 +83,16 @@ class ClassManager extends ClassCrud{
 		}
 	}
 
+	#Retorna informações do plano
+	public function getPlan($id){
+		$name = $this->crud->selectDB(
+			"*",
+			"planos",
+			"where id = ?",
+			[$id]
+		);
+
+		return $name->fetch();
+	}
+
 }
