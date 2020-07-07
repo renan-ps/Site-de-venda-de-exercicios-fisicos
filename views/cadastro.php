@@ -94,16 +94,16 @@
 
                             <button class="btn btn-warning btn-block text-white btn-user" type="submit">Criar Conta
                             </button>
-                            <hr>
+                            <!--<hr>
                             <a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i
                                         class="fab fa-google"></i>&nbsp; Criar com Google</a>
                             <a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i
-                                        class="fab fa-facebook-f"></i>&nbsp; Criar com Facebook</a>
+                                        class="fab fa-facebook-f"></i>&nbsp; Criar com Facebook</a>-->
                             <hr>
                         </form>
-                        <div class="text-center"><a class="small" href="user/reset_senha_user">Esqueceu a Senha ?</a>
+                        <div class="text-center"><a class="small" href="<?php echo DIRPAGE . 'recuperar-senha' ?>">Esqueceu a Senha ?</a>
                         </div>
-                        <div class="text-center"><a class="small" href="personal/login">Já tem conta ? Faça Login!</a>
+                        <div class="text-center"><a class="small" href="<?php echo DIRPAGE . 'login' ?>">Já tem conta ? Faça Login!</a>
                         </div>
                     </div>
                 </div>
