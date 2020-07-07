@@ -754,7 +754,7 @@ $p = $planos->getAllPlans();
 					Assine a nossa newsletter e receba as últimas notícias
 					.</p>
 
-<<<<<<< HEAD
+
 				<form class="input-grey mb-5" action="" method="post" target="_blank">
 					<div class="form-row">
 						<div class="col-md-4 ml-auto">
@@ -769,26 +769,14 @@ $p = $planos->getAllPlans();
 								       placeholder="Email">
 							</div>
 						</div>
-=======
-        <form class="input-grey mb-5" action="" method="post" target="_blank">
-          <div class="form-row">
-            <div class="col-md-4 ml-auto">
-              <div class="input-group input-group-lg z-depth-1">
-                <div class="input-group-prepend" style="margin-button: 10px;">
-                  <span class="input-group-text rgba-black-light border-0"><i class="fa fa-envelope white-text"></i></span>
-                </div>
->>>>>>> 4f31190
+
 
 						<div class="col-md-2 mr-auto">
 
-<<<<<<< HEAD
 							<button class="btn btn-block botao-duvidas">Se inscrever</button>
 						</div>
 					</div>
 				</form>
-=======
-            <div class="mr-auto col-auto  espacamento" style="margin-top: 2px;">
->>>>>>> 4f31190
 
 			</div>
 		</div>

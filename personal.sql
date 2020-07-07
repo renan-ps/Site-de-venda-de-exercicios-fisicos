@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Jun-2020 às 22:56
+-- Generation Time: 03-Jul-2020 às 03:33
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.10
 
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `personal`
 --
-CREATE DATABASE IF NOT EXISTS `personal` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `personal`;
 
 -- --------------------------------------------------------
 
@@ -37,18 +35,20 @@ CREATE TABLE IF NOT EXISTS `assinaturas` (
   `plano` int(11) NOT NULL,
   `desconto` float(6,2) NOT NULL,
   `idTransacao` varchar(255) DEFAULT NULL,
+  `dateCreate` date NOT NULL,
   `status` varchar(1) NOT NULL DEFAULT 'p',
   PRIMARY KEY (`id`),
   KEY `fk_usuario` (`usuario`),
   KEY `fk_plano` (`plano`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `assinaturas`
 --
 
-INSERT INTO `assinaturas` (`id`, `usuario`, `plano`, `desconto`, `idTransacao`, `status`) VALUES
-(1, 13, 2, 0.00, NULL, 'p');
+INSERT INTO `assinaturas` (`id`, `usuario`, `plano`, `desconto`, `idTransacao`, `dateCreate`, `status`) VALUES
+(2, 13, 2, 0.00, NULL, '2020-06-26', 'p'),
+(3, 25, 3, 0.00, NULL, '2020-06-26', 'a');
 
 -- --------------------------------------------------------
 
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `attempt` (
   `ip` varchar(20) NOT NULL,
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `confirmation` (
   `email` varchar(90) NOT NULL,
   `token` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `confirmation`
@@ -111,7 +111,8 @@ INSERT INTO `confirmation` (`id`, `email`, `token`) VALUES
 (36, 'renan@gmail.com', '14cab4aae47bbd090a8d028ed4d72071e0147b3992358a78c75299e2b3029583c5901130954532e111715f84fbb2b29787732b3c2077c80e88e3729e953e1fb7'),
 (37, 'renan@gmail.com', '82043eb530baa0ea92c5a0bbc7c2565a26d52d9cc9fe8a742baefe1426da95f76c15e27291f94a198bd2daf4ea6efc7777b7f5f1be079b180dc064d857b643bc'),
 (38, 'renan2@gmail.com', '70922be76af091a3e7b1ad4970c110562760f7c8cb4dc74cf89a640468df284fc74e31929455ea4a8ace8800bc19f4d368f0cfa7526bc2ec8fcf3f238c6eb792'),
-(39, 'renan@gmail.com', 'a2e18130d30149a358cef5541db1f1162f5c09083ba81353f0c00a6d2127d04f8a57d8c6676d28bfb9d1d2c5d698c43aa8d504c0acc29053eb278f006a283234');
+(39, 'renan@gmail.com', 'a2e18130d30149a358cef5541db1f1162f5c09083ba81353f0c00a6d2127d04f8a57d8c6676d28bfb9d1d2c5d698c43aa8d504c0acc29053eb278f006a283234'),
+(40, 'renan2@gmail.com', 'a020facf3d1cbfcdc0d6243e9c1c9ab6abdc0d2670e124cf792b6f391f852985b704c7366231123b633127d3e4483350c5630bf0268543d01b50986dece28d6f');
 
 -- --------------------------------------------------------
 
@@ -150,6 +151,7 @@ CREATE TABLE IF NOT EXISTS `planos` (
   `subtitulo` varchar(255) NOT NULL,
   `descricaoIndex` varchar(255) NOT NULL,
   `descricao` text NOT NULL,
+  `possui` text NOT NULL,
   `img1` varchar(255) NOT NULL,
   `img2` varchar(255) NOT NULL,
   `video` varchar(255) NOT NULL,
@@ -161,10 +163,10 @@ CREATE TABLE IF NOT EXISTS `planos` (
 -- Extraindo dados da tabela `planos`
 --
 
-INSERT INTO `planos` (`id`, `titulo`, `subtitulo`, `descricaoIndex`, `descricao`, `img1`, `img2`, `video`, `preco`) VALUES
-(1, 'Plano Básico', 'O plano básico mais querido do mercado!', 'Você que tem o dia apertado e não consegue parar para fazer exercícios, nosso plano Basic One é perfeito pra você.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-basico.jpg', 'img-plano-basico.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 89.00),
-(2, 'Plano Premium', 'O plano campeão de vendas!', 'Se você quer além um treino, acompanhamento presencial de um nutricionista, conferira o plano Premium.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-premium.jpg', 'img-plano-premium.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 115.50),
-(3, 'Plano Advanced', 'O plano completo para te deixar completo', 'Se você procura algo mais completo e intenso, com direito a equipamentos, veja o plano Advanced.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img-banner-plano-advanced.jpg', 'img-plano-advanced.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 129.90);
+INSERT INTO `planos` (`id`, `titulo`, `subtitulo`, `descricaoIndex`, `descricao`, `possui`, `img1`, `img2`, `video`, `preco`) VALUES
+(1, 'Plano Básico', 'O plano básico mais querido do mercado!', 'Você que tem o dia apertado e não consegue parar para fazer exercícios, nosso plano Basic One é perfeito pra você.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '<li>1 mês de acompanhamento </li>\r\n<li>1 plano de treino personalizado</li>\r\n<li>Suporte online 1 vez por semana.</li>\r\n<li>Vídeos demonstrativos.</li>', 'img-banner-plano-basico.jpg', 'img-plano-basico.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 89.00),
+(2, 'Plano Premium', 'O plano campeão de vendas!', 'Se você quer além um treino, acompanhamento presencial de um nutricionista, conferira o plano Premium.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '<li>3 meses de acompanhamento </li>\r\n<li>3 planos de treino personalizados</li>\r\n<li>Suporte online todos os dias</li>\r\n<li>Vídeos demonstrativos </li>\r\n<li>Parcele em até 3x sem juros</li>', 'img-banner-plano-premium.jpg', 'img-plano-premium.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 115.50),
+(3, 'Plano Advanced', 'O plano completo para te deixar completo', 'Se você procura algo mais completo e intenso, com direito a equipamentos, veja o plano Advanced.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '<li>6 meses de acompanhamento </li>\r\n<li>6 planilhas personalizadas</li>\r\n<li>Suporte online todos os dias</li>\r\n<li>Mentoria 1 vez por semana</li>\r\n<li>Vídeos demonstrativos </li>\r\n<li>E-book Receitas Fit Deliciosas</li>\r\n<li>Parcele em até 6x sem juros</li>', 'img-banner-plano-advanced.jpg', 'img-plano-advanced.jpg', 'https://www.youtube.com/watch?v=XW9IZfHiVZM', 129.90);
 
 -- --------------------------------------------------------
 
@@ -181,20 +183,21 @@ CREATE TABLE IF NOT EXISTS `users` (
   `dataNascimento` varchar(20) NOT NULL,
   `telefone` varchar(20) NOT NULL,
   `endereco` varchar(255) NOT NULL,
-  `dataCriacao` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dataCriacao` date DEFAULT NULL,
   `permissoes` varchar(20) NOT NULL,
   `status` varchar(20) NOT NULL,
   PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `users`
 --
 
 INSERT INTO `users` (`idUsuario`, `nome`, `email`, `senha`, `dataNascimento`, `telefone`, `endereco`, `dataCriacao`, `permissoes`, `status`) VALUES
-(13, 'Renan', 'renansoaresinfo@gmail.com', '$2y$10$sz6dg8BwmdqBIzdCbexRWOkdDqeWshN0O549Nc8azrHIb50qBaopS', '18/03/1995', '21976990053', 'Rua Paulo Duarte', '2020-05-30 23:47:14', 'user', 'confirmation'),
-(24, 'Renan', 'renan@gmail.com', '$2y$10$GsLoedUNGQmtmVNJZt4Jrus7eqW/tyk/OGxbY1O6hWNs1eK/xgKEa', '18/03/1995', '21976990053', 'Rua A', '2020-06-27 05:23:09', 'user', 'confirmation');
+(13, 'Renan', 'renansoaresinfo@gmail.com', '$2y$10$sz6dg8BwmdqBIzdCbexRWOkdDqeWshN0O549Nc8azrHIb50qBaopS', '18/03/1995', '21976990053', 'Rua Paulo Duarte', '2020-05-30', 'admin', 'confirmation'),
+(24, 'Fabio', 'fabio@gmail.com', '$2y$10$GsLoedUNGQmtmVNJZt4Jrus7eqW/tyk/OGxbY1O6hWNs1eK/xgKEa', '18/03/1995', '21976990053', 'Rua A', '2020-06-27', 'user', 'confirmation'),
+(25, 'Ygor', 'ygor@gmail.com', '$2y$10$yr/oQPqDS/6AlcH3wnbx2O//Gv7BsKfkf2gqdqtslsHZ2ntvft4US', '18/03/1995', '21976990053', 'Rua A', '2020-07-01', 'user', 'confirmation');
 
 --
 -- Constraints for dumped tables

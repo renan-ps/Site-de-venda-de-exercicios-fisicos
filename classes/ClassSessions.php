@@ -70,10 +70,11 @@ class ClassSessions{
     $_SESSION['name'] = $this->login->getDataUser($email)['data']['nome'];
     $_SESSION['email'] = $this->login->getDataUser($email)['data']['email'];
     $_SESSION['permition'] = $this->login->getDataUser($email)['data']['permissoes'];
+    $_SESSION['dataCriacao'] = $this->login->getDataUser($email)['data']['dataCriacao'];
   }
 
   #Valida as páginas internas do sistema
-  public function verifyInsideSession(){
+  public function verifyInsideSession($permition){
 	  $this->verifyIdSessions();
 		if(!isset($_SESSION['login']) || !isset($_SESSION['permition']) || !isset($_SESSION['canary'])){
 			$this->destructSessions();
@@ -85,6 +86,14 @@ class ClassSessions{
 		}else{
 			if($_SESSION['time'] >= time() - $this->timeSession){
 				$_SESSION['time'] = time();
+				if($_SESSION['permition'] != 'admin' && $permition != $_SESSION['permition']){
+					echo "
+				<script>
+					alert('Você não tem acesso a este conteúdo.');
+					window.location.href = '". DIRPAGE ."dashboard';
+				</script>
+			";
+				}
 			}else{
 				$this->destructSessions();
 				echo "

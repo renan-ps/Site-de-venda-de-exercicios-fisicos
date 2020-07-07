@@ -1,7 +1,7 @@
 <?php
 
 #Informações do site
-define('NAME', "Projeto Tuga");
+define('NAME', "Treino do Zé");
 define('WHATSAPP', "5521976990053");
 
 #Caminhos absolutos
@@ -16,6 +16,7 @@ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$barra}{$pastaInterna}"); //Inclus�
 define('DIRIMG', DIRPAGE."image/");
 define('DIRCSS', DIRPAGE."lib/css/");
 define('DIRJS', DIRPAGE."lib/js/");
+define('DIRLTE', DIRPAGE."lib/vendor/almasaeed2010/adminlte/");
 
 
 #Acesso ao banco de dados

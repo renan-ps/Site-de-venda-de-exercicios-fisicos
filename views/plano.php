@@ -37,16 +37,11 @@ echo \Classes\ClassLayout::setHeader($p['titulo'], "", "");
 
 		<div class="container-pacote-pagamento-plano-basico">
 
-			<div class="incluso-plano-basico">
-				<h4>O que compõe o plano Básico:</h4>
+			<div class="incluso-plano-advanced">
+				<h4>O que compõe o <?php echo $p['titulo']; ?>:</h4>
 				<br>
-				<ul class="lista-item-plano-basico">
-					<li>1 Consulta</li>
-					<li>3 videos por mês</li>
-					<li>Dúvidas por Whatsapp ilimitado</li>
-					<li>Acompanhamento presencial</li>
-					<li>Nutricionista</li>
-					<li>Equipamentos</li>
+				<ul class="lista-item-plano-advanced">
+					<?php echo $p['possui'] ?>
 				</ul>
 			</div>
 
