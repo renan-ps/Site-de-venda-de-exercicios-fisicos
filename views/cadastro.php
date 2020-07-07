@@ -8,21 +8,7 @@
         }
     }
 </style>
-<style>
-    .whatsapp {
-        position: fixed;
-        top: 72%;
-        left: 94%;
-        padding: 10px;
-        z-index: 10000000;
-    }
-</style>
-<div>
-    <a href="https://api.whatsapp.com/send?phone=55###########"
-       target="_blank">
-        <img class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png"/>
-    </a>
-</div>
+
 
 <body class="bg ">
 <div class="container ">
