@@ -19,7 +19,7 @@ class ClassCadastro extends ClassCrud
         $arrVar['dataNascimento'],
         $arrVar['telefone'],
         $arrVar['endereco'],
-        $arrVar['dataCreate'],
+				date("Y-m-d"),
         'user',
         'confirmation'
       )

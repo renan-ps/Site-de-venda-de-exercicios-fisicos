@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../cursos/javascript-rocketseat/.idea/javascript-rocketseat.iml" filepath="$PROJECT_DIR$/../cursos/javascript-rocketseat/.idea/javascript-rocketseat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dashboards/AdminLTE-3.0.5/.idea/AdminLTE-3.0.5.iml" filepath="$PROJECT_DIR$/../dashboards/AdminLTE-3.0.5/.idea/AdminLTE-3.0.5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/personal.iml" filepath="$PROJECT_DIR$/.idea/personal.iml" />
     </modules>
   </component>
