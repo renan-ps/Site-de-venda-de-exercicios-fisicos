@@ -424,13 +424,8 @@ class ClassLayout
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>" . NAME . " - " . "Carrinho</title>
   <meta name='theme-color' content='#234C80'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/styles.css'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 </head>
   
 
@@ -509,8 +504,6 @@ class ClassLayout
                 <a href=\"logout\" class=\"nav-link\">Sair</a>
             </li>
         </ul>
-
-        <!-- SEARCH FORM -->
         
 
         
@@ -521,7 +514,7 @@ class ClassLayout
     <aside class=\"main-sidebar sidebar-dark-primary elevation-4\">
         <!-- Brand Logo -->
         <a href=\"/dashboard\" class=\"brand-link\">
-            <img src=\"" . DIRLTE . "dist/img/AdminLTELogo.png\" alt=\"AdminLTE Logo\"
+            <img src=\"" . DIRIMG . "logo-dashboard.png\" alt=\"AdminLTE Logo\"
                  class=\"brand-image img-circle elevation-3\"
                  style=\"opacity: .8\">
             <span class=\"brand-text font-weight-light\">" . NAME . "</span>
@@ -532,7 +525,7 @@ class ClassLayout
             <!-- Sidebar user panel (optional) -->
             <div class=\"user-panel mt-3 pb-3 mb-3 d-flex\">
                 <div class=\"image\">
-                    <img src=\"" . DIRLTE . "dist/img/user2-160x160.jpg\" class=\"img-circle elevation-2\"
+                    <img src=\"" . DIRIMG . "no-photo.jpg\" class=\"img-circle elevation-2\"
                          alt=\"User Image\">
                 </div>
                 <div class=\"info\">

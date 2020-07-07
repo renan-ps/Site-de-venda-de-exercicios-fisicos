@@ -62,13 +62,38 @@ Class ClassAssinatura extends ClassCrud{
 		return $return['status'];
 	}
 
-	public function setIdTransacao($idSignature, $idPaypal){
+	#Retorna o idTransacao da assinatura
+	public function getIdPaypal($idUser){
+		$query =  $this->selectDB(
+			"idTransacao",
+			"assinaturas",
+			"where usuario = ?",
+			array($idUser)
+		);
+
+		$return = $query->fetch(\PDO::FETCH_ASSOC);
+
+		return $return['idTransacao'];
+	}
+
+	//Cancela uma assinatura
+	public function cancelSignature($idTransacao){
+		$query = $this->updateDB(
+			"assinaturas",
+			"status = ?",
+			"idTransacao = ?",
+			['c', $idTransacao]
+		);
+	}
+
+	public function setIdTransacao($idSignature, $idPaypal, $discount){
 		$signature = $this->updateDB(
 			"assinaturas",
-			"idTransacao = ?, status = ?",
+			"idTransacao = ?, desconto = ?, status = ?",
 			"id = ?",
 			array(
 				$idPaypal,
+				$discount,
 				"a",
 				$idSignature
 				)

@@ -16,7 +16,7 @@ define('DIRREQ',"{$_SERVER['DOCUMENT_ROOT']}{$barra}{$pastaInterna}"); //Inclus√
 define('DIRIMG', DIRPAGE."image/");
 define('DIRCSS', DIRPAGE."lib/css/");
 define('DIRJS', DIRPAGE."lib/js/");
-
+define('DIRLTE', DIRPAGE."lib/vendor/almasaeed2010/adminlte/");
 
 #Acesso ao banco de dados
 define('HOST', "mysql669.umbler.com");

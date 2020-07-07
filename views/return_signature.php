@@ -28,7 +28,7 @@ if (isset($_GET['result'])) {
 			}
 			$agreement = Agreement::get($agreement->getId(), $config);
 			$assinatura = new ClassAssinatura();
-			$assinatura->setIdTransacao($_GET['idSignature'], $agreement->getId());
+			$assinatura->setIdTransacao($_GET['idSignature'], $agreement->getId(), $_SESSION['desconto']);
 			header('Location:' . DIRPAGE . 'compra-efetuada?id=' . $_GET['idSignature'] . '&idT=' . $agreement->getId());
 			//echo "<br><br>Obrigado! <br>";
 			//echo "ID da compra: " . $agreement->getId();
