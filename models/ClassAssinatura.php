@@ -86,13 +86,14 @@ Class ClassAssinatura extends ClassCrud{
 		);
 	}
 
-	public function setIdTransacao($idSignature, $idPaypal){
+	public function setIdTransacao($idSignature, $idPaypal, $discount){
 		$signature = $this->updateDB(
 			"assinaturas",
-			"idTransacao = ?, status = ?",
+			"idTransacao = ?, desconto = ?, status = ?",
 			"id = ?",
 			array(
 				$idPaypal,
+				$discount,
 				"a",
 				$idSignature
 				)

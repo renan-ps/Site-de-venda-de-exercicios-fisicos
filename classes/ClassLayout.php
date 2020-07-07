@@ -424,13 +424,8 @@ class ClassLayout
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
 	<title>" . NAME . " - " . "Carrinho</title>
   <meta name='theme-color' content='#234C80'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/bootstrap.min.css?h=504792f7254b7c7ba831bdd93d286139'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form-1.css'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/Profile-Edit-Form.css'>
-	<link rel='stylesheet' href='" . DIRCSS . "user/styles.css'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cookie'>
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
 </head>
   
 

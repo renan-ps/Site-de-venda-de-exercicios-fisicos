@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['login'])){
-	header("Location: " . DIRPAGE . "user/");
+	header("Location: " . DIRPAGE . "dashboard/");
 }
 echo \Classes\ClassLayout::setHeaderUser('Login', "Faça seu Login", "");
 
