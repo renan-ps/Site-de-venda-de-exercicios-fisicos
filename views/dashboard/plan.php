@@ -94,7 +94,10 @@ if ($assinatura['status'] == 'a') {
                         <!-- /.card-body -->
                         <div class="card-footer">
                             <span class="align-middle">Deseja cancelar?</span>
-                            <button class="btn btn-danger float-right btn-sm">Cancelar assinatura</button>
+                                <form class="float-right" method="post" action="<?php echo DIRPAGE . 'controllers/controllerCancelarAssinatura' ?>" >
+                                    <input type="hidden" name="form" value="1">
+                                    <button class="btn btn-danger btn-sm">Cancelar assinatura</button>
+                                </form>
                         </div>
                         <?php }else{ ?>
                             <!-- /.card-header -->
