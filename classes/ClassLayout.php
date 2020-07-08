@@ -549,7 +549,7 @@ class ClassLayout
                         </a>
                         <ul class=\"nav nav-treeview\">
                             <li class=\"nav-item\">
-                                <a href=\"" . DIRPAGE . "dashboard\" class=\"nav-link \">
+                                <a href=\"" . DIRPAGE . "dashboard/status\" class=\"nav-link \">
                                     <i class=\"far fa-circle nav-icon\"></i>
                                     <p>Home</p>
                                 </a>
@@ -560,30 +560,26 @@ class ClassLayout
                                     <p>Lista de Clientes</p>
                                 </a>
                             </li>
-                            <li class=\"nav-item\">
-                                <a href=\"" . DIRLTE . "index3.html\" class=\"nav-link\">
-                                    <i class=\"far fa-circle nav-icon\"></i>
-                                    <p>Dashboard v3</p>
-                                </a>
-                            </li>
                         </ul>
                     </li>
 
                     <li class=\"nav-header\">Usuário</li>
+                    
                     <li class=\"nav-item\">
-                        <a href=\"edit-profile.html\" class=\"nav-link\">
+                        <a href=\"" . DIRPAGE . "dashboard\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-address-card\"></i>
+                            <p>
+                                Seu plano
+                            </p>
+                        </a>
+                    </li>
+                    
+                    <li class=\"nav-item\">
+                        <a href=\"#\" class=\"nav-link\">
                             <i class=\"nav-icon fa fa-user\"></i>
                             <p>
                                 Perfil
                                 <!--<span class=\"badge badge-info right\">2</span>-->
-                            </p>
-                        </a>
-                    </li>
-                    <li class=\"nav-item\">
-                        <a href=\"" . DIRPAGE . "dashboard/plan\" class=\"nav-link\">
-                            <i class=\"nav-icon fa fa-address-card\"></i>
-                            <p>
-                                Seu plano
                             </p>
                         </a>
                     </li>
@@ -658,19 +654,20 @@ class ClassLayout
 												 with font-awesome or any other icon font library -->
                     <li class=\"nav-header\">Usuário</li>
                     <li class=\"nav-item\">
-                        <a href=\"edit-profile.html\" class=\"nav-link\">
+                        <a href=\"" . DIRPAGE . "dashboard\" class=\"nav-link\">
+                            <i class=\"nav-icon fa fa-address-card\"></i>
+                            <p>
+                                Seu plano
+                            </p>
+                        </a>
+                    </li>
+                    
+                    <li class=\"nav-item\">
+                        <a href=\"#\" class=\"nav-link\">
                             <i class=\"nav-icon fa fa-user\"></i>
                             <p>
                                 Perfil
                                 <!--<span class=\"badge badge-info right\">2</span>-->
-                            </p>
-                        </a>
-                    </li>
-                    <li class=\"nav-item\">
-                        <a href=\"" . DIRPAGE . "dashboard/plan\" class=\"nav-link\">
-                            <i class=\"nav-icon fa fa-address-card\"></i>
-                            <p>
-                                Seu plano
                             </p>
                         </a>
                     </li>
@@ -745,6 +742,26 @@ class ClassLayout
 <script src=\"" . DIRLTE . "dist/js/pages/dashboard.js\"></script>
 <!-- AdminLTE for demo purposes -->
 <script src=\"" . DIRLTE . "dist/js/demo.js\"></script>
+
+<!-- Bootstrap -->
+<script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
+<script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>
+<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js\" integrity=\"sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI\" crossorigin=\"anonymous\"></script>
+<!-- Modal -->
+<script>
+    $('#modalCliente').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget)
+        var idUser = button.data('iduser')
+        var name = button.data('name')
+        var plan = button.data('plan')
+        
+        var modal = $(this)
+        modal.find('#idUser').val(idUser)
+        modal.find('#modalTitle').text('Detalhes do usuário ' + name)
+        modal.find('#nameUser').val(name)
+        modal.find('#plan').val(plan)
+    })
+</script>
 
 <!-- Datatables -->
 <script src=\"https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js\"></script>
