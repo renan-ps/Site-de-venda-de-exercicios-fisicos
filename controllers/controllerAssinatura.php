@@ -2,6 +2,8 @@
 
 $signature = new \Models\ClassAssinatura();
 
+use Classes\ClassSessions;
+use Classes\ClassPlano;
 use PayPal\Api\ChargeModel;
 use PayPal\Api\Currency;
 use PayPal\Api\MerchantPreferences;
@@ -13,11 +15,17 @@ use PayPal\Api\Agreement;
 use PayPal\Api\Payer;
 use PayPal\Common\PayPalModel;
 
-$idUser = $_POST['idUsuario'];
+$session = new ClassSessions();
+
+$plano = new ClassPlano();
+$p = $plano->getPlan($_POST['idPlano']);
+
+$idUser = $_SESSION['idUser'];
 $idPlan = $_POST['idPlano'];
 $discount = $_POST['desconto'];
-$cost = $_POST['valor'];
-$planName = $_POST['nomePlano'];
+$cost = $_SESSION['totalPlan'];
+$planName = $p['titulo'];
+$interval = $p['duracao'];
 
 //Verifica se o usuário já possui uma assinatura (ativa ou não)
 if ($signature->verifySignature($idUser) > 0){
@@ -51,13 +59,13 @@ $config->setConfig(array(
 ));
 
 
-function createPlan($value, $planName, $config, $idSignature)
+function createPlan($value, $planName, $config, $idSignature, $interval)
 {
 	$definition = new PaymentDefinition();
 	$definition->setName('Regular Payments')                                //Nome que aparecerá para o cliente
 	->setType('REGULAR')                                                   //Tipo de plano
 	->setFrequency('Month')                                            //Tipo de frequência de cobrança
-	->setFrequencyInterval("1")                                   //Intervalo de frequência
+	->setFrequencyInterval($interval)                                 				  //Intervalo de frequência
 	->setCycles("0")                                                      //Ciclos de cobrança
 	->setAmount(new Currency((array('value' => $value, 'currency' => 'BRL'))));   //Valor
 
@@ -124,7 +132,7 @@ function redirectUser($url)
 }
 
 
-$userPlan = createPlan($cost, $planName, $config, $idSignature);
+$userPlan = createPlan($cost, $planName, $config, $idSignature, $interval);
 
 $userPlan = activePlan($userPlan, $config);
 

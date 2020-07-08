@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../dashboards/AdminLTE-3.0.5/.idea/AdminLTE-3.0.5.iml" filepath="$PROJECT_DIR$/../dashboards/AdminLTE-3.0.5/.idea/AdminLTE-3.0.5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/personal.iml" filepath="$PROJECT_DIR$/.idea/personal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../setar/.idea/setar.iml" filepath="$PROJECT_DIR$/../setar/.idea/setar.iml" />
     </modules>
   </component>
 </project>

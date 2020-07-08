@@ -144,7 +144,7 @@ class ClassValidate
 		if ($response->success == true && $response->score >= 0.4) {
 			return true;
 		} else {
-			$this->setErro("Captcha inválido. Atualize a página.");
+			$this->setErro("Captcha inválido. Por favor, tente novamente.");
 			return false;
 		}
 	}
