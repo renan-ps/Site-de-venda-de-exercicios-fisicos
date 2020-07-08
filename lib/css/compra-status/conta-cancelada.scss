@@ -1,0 +1,63 @@
+.bg-conta-cancelada {
+    background-image: url('../../image/fundo-conta-cancelada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: auto;
+    @media (max-width: 1430px) {
+        padding-bottom: 17em;
+    }
+    @media (max-width: 813px) {
+        background-image: none!important;
+        background-position: initial;
+        background-color: #fff;
+        padding-bottom: 0;
+    }
+}
+
+.conta-cancelada-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: 1145px) {
+        width: 80%;
+    }
+    @media (max-width: 1013px) {
+        width: 90%;
+    }
+    @media (max-width: 918px) {
+        margin-left: 0;
+    }
+    @media (max-width: 896px) {
+        width: 100%;
+    }
+    @media (max-width: 813px) {
+        flex-direction: column;
+    }
+    @media (max-width: 662px) {
+        width: 90%;
+        margin: 0 auto!important;
+    }
+}
+
+.img-conta-cancelada {
+    margin-top: 6em;
+}
+
+.texto-conta-cancelada h1 {
+    font-size: 4em;
+    text-align: center;
+    color: red;
+    margin-top: 2.5em;
+    @media (max-width: 813px) {
+        margin-top: 0;
+    }
+}
+
+.texto-conta-cancelada p {
+    font-size: 1.5em;
+}

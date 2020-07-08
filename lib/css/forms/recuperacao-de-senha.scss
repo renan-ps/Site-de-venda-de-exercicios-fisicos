@@ -1,0 +1,46 @@
+.bg-forms {
+    background-image: url('../../image/Fundo-Login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-width: 100;
+    height: auto;
+    @media (max-width: 1430px) {
+        padding-bottom: 15em;
+    }
+}
+
+.style-form-recupera-e-troca-senha {
+    width: 50%;
+    margin: 10em auto 0;
+    border: 0!important;
+    @media (max-width: 660px) {
+        width: 100%;
+    }
+}
+
+.style-form-recupera-e-troca-senha p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.style-form-recupera-e-troca-senha input {
+    border-radius: 25px;
+}
+
+.style-form-recupera-e-troca-senha button {
+    background-color: rgb(46, 89, 217);
+    border-radius: 25px;
+    color: #fff;
+}
+
+.style-form-recupera-e-troca-senha button:hover {
+    color: #fff;
+}
+
+.style-form-recupera-e-troca-senha button:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all .3s;
+    transition: all .7s;
+}
