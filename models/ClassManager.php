@@ -66,8 +66,8 @@ class ClassManager extends ClassCrud{
 		$buscaAtivo = $this->crud->selectDB(
 			"*",
 			"assinaturas",
-			"where usuario = ? and status = ?",
-			[$idUser, 'a']
+			"where usuario = ?",
+			[$idUser]
 		);
 
 		if ($buscaAtivo->rowCount() > 0){
@@ -93,6 +93,16 @@ class ClassManager extends ClassCrud{
 		);
 
 		return $name->fetch();
+	}
+
+	#Edita o usuário
+	public function editUser($idUser, $plan){
+		$this->crud->updateDB(
+			"assinaturas",
+			"plano = ?, status = ?",
+			"usuario = ?",
+			[$plan, 'a', $idUser]
+		);
 	}
 
 }
