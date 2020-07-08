@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="lib/css/style.css">
     </head>
 
-    <body>
+    <body class="bg-forms">
         <div class="container-compra-status">
             <div class="img-compra-nao-efetuada">
                 <img src="image/img-compra-nao-efetuada.png" alt="">
