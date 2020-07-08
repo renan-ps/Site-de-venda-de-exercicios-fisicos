@@ -2,6 +2,8 @@
 echo \Classes\ClassLayout::setHeadRestrito('admin');
 echo \Classes\ClassLayout::getHeadDashboard();
 echo \Classes\ClassLayout::getSidebarDashboard($_SESSION['permition']);
+$plans = new \Classes\ClassPlano();
+$plans = $plans->getAllPlans();
 $manager = new \Models\ClassManager();
 $users = $manager->getUsers();
 ?>
@@ -67,7 +69,7 @@ $users = $manager->getUsers();
 																			echo 'Plano Advanced';
 																			break;
 																		default:
-																			echo 'Nunca assinou';
+																			echo 'Sem assinatura';
 																	}
 																	?></td>
                                 <td><?php
@@ -86,7 +88,13 @@ $users = $manager->getUsers();
 																	}
 																	?></td>
                                 <td>
-                                    <button class="btn btn-primary btn-sm">+</button>
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                            data-target="#modalCliente"
+                                            data-iduser="<?php echo $user['idUsuario']; ?>"
+                                            data-name="<?php echo $user['nome']; ?>"
+                                            data-plan="<?php echo $plano['plano']; ?>">
+                                        Editar
+                                    </button>
                                 </td>
                             </tr>
 
@@ -100,6 +108,47 @@ $users = $manager->getUsers();
     </section>
 
 </div>
+
+<!-- MODAL DE EDITAR USUÁRIO -->
+<div class="modal fade" id="modalCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="post" action="<?php echo DIRPAGE . 'controllers/controllerEditarUsuario' ?>">
+                <div class="modal-body">
+                    <input type="hidden" name="idUser" id="idUser">
+                    <div class="form-group">
+                        <label for="nameUser" class="col-form-label">Nome:</label>
+                        <input type="text" class="form-control" name="nameUser" id="nameUser" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan" class="col-form-label">Plano:</label>
+                        <select class="form-control" name="plan" id="plan">
+                            <?php foreach($plans as $plan){ ?>
+                            <option
+                                    value="<?php echo $plan['id'] ?>"
+                            >
+                              <?php echo $plan['titulo'] ?>
+                            </option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary float">Salvar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 
 
 <?php
