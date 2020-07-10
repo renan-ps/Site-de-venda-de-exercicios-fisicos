@@ -2,3 +2,5 @@
 *.log
 /lib/vendor
 /config/recaptcha.php
+/.phpintel
+/.sass-cache

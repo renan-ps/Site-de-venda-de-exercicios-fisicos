@@ -18,5 +18,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="AdminLTE-3.0.5" />
+    <orderEntry type="module" module-name="setar" />
   </component>
 </module>
