@@ -1,8 +1,11 @@
 <?php
+
 namespace Models;
+
 use Models\ClassCrud;
 
-class ClassManager extends ClassCrud{
+class ClassManager extends ClassCrud
+{
 
 	private $crud;
 
@@ -12,7 +15,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna o total de usuários registrados
-	public function getRegistration(){
+	public function getRegistration()
+	{
 		$r = $this->crud->selectDB(
 			"*",
 			"users",
@@ -25,7 +29,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna o total de planos ativos
-	public function getActivePlans(){
+	public function getActivePlans()
+	{
 		$ap = $this->crud->selectDB(
 			"*",
 			"assinaturas",
@@ -38,7 +43,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna o total de planos não ativos
-	public function getNoActivePlans(){
+	public function getNoActivePlans()
+	{
 		$ap = $this->crud->selectDB(
 			"*",
 			"assinaturas",
@@ -51,7 +57,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna as informações de todos os usuários cadastrados
-	public function getUsers(){
+	public function getUsers()
+	{
 		$query = $this->crud->selectDB(
 			"*",
 			"users",
@@ -62,7 +69,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna o plano atual de um usuário
-	public function getPlanUser($idUser){
+	public function getPlanUser($idUser)
+	{
 		$buscaAtivo = $this->crud->selectDB(
 			"*",
 			"assinaturas",
@@ -70,9 +78,9 @@ class ClassManager extends ClassCrud{
 			[$idUser]
 		);
 
-		if ($buscaAtivo->rowCount() > 0){
+		if ($buscaAtivo->rowCount() > 0) {
 			return $buscaAtivo->fetch();
-		}else{
+		} else {
 			$buscaOutros = $this->crud->selectDB(
 				"*",
 				"assinaturas",
@@ -84,7 +92,8 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Retorna informações do plano
-	public function getPlan($id){
+	public function getPlan($id)
+	{
 		$name = $this->crud->selectDB(
 			"*",
 			"planos",
@@ -96,12 +105,42 @@ class ClassManager extends ClassCrud{
 	}
 
 	#Edita o usuário
-	public function editUser($idUser, $plan){
+	public function editUser($idUser, $plan)
+	{
 		$this->crud->updateDB(
 			"assinaturas",
 			"plano = ?, status = ?",
 			"usuario = ?",
 			[$plan, 'a', $idUser]
+		);
+	}
+
+	#Edita um plano
+	public function editPlan($id, $titulo, $subtitulo, $descricaoIndex, $descricao, $duracao, $preco)
+	{
+		$this->crud->updateDB(
+			"planos",
+			"titulo = ?, subtitulo = ?, descricaoIndex = ?, descricao = ?, duracao = ?, preco = ?",
+			"id = ?",
+			[
+				$titulo,
+				$subtitulo,
+				$descricaoIndex,
+				$descricao,
+				$duracao,
+				$preco,
+				$id
+			]
+		);
+	}
+
+	#Edita a imagem de um plano
+	public function editImagePlan($id, $img, $imgName){
+		$this->crud->updateDB(
+			"planos",
+			"{$imgName} = ?",
+			"id = ?",
+			[$img, $id]
 		);
 	}
 

@@ -557,7 +557,13 @@ class ClassLayout
                             <li class=\"nav-item\">
                                 <a href=\"" . DIRPAGE . "dashboard/users\" class=\"nav-link\">
                                     <i class=\"far fa-circle nav-icon\"></i>
-                                    <p>Lista de Clientes</p>
+                                    <p>Clientes</p>
+                                </a>
+                            </li>
+                            <li class=\"nav-item\">
+                                <a href=\"" . DIRPAGE . "dashboard/plans\" class=\"nav-link\">
+                                    <i class=\"far fa-circle nav-icon\"></i>
+                                    <p>Planos</p>
                                 </a>
                             </li>
                         </ul>
